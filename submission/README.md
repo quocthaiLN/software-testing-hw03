@@ -23,7 +23,7 @@ Khi hoàn tất, bổ sung số màn hình/flow, checklist designed/executed/pas
 
 - `Task1_Plan.md` / `.pdf`: phạm vi và kế hoạch bốn feature; trạng thái thiết kế lịch sử, không thay kết quả thực thi hiện tại.
 - `Task1_Execution_Report.md` / `.pdf`: báo cáo Task 1 đang hoàn thiện, tổng hợp 52 kết quả Web thật, lịch sử chạy/fixture và ma trận widget × heuristic; 16 Mobile vẫn Not run. Checkpoint nguồn có SHA-256 tại `evidence/gui/task1_report_checkpoint.json`.
-- `Task1_Mobile_Manual_Form.md` / `.pdf`: phiếu trống ghi nhận 16 mục Mobile theo lựa chọn kiểm thử thủ công của sinh viên; chưa chứa kết quả.
+- `Task1_Mobile_Manual_Form.md` / `.pdf`: phiếu trống rút gọn còn 8 ca thao tác (MOB-01…08), ánh xạ đủ 16 tiêu chí GUI-D gốc; dùng chung bước kiểm tra để giảm lặp, chưa chứa kết quả. PDF 5 trang. Thống kê Excel vẫn theo 16 tiêu chí gốc, không cộng thêm 8 ca.
 - `Task1_Intake.md` / `.pdf`: feature briefs, 31 widgets, phase order, ma trận widget × heuristic và spec-gaps; PDF chia ma trận H1–H5 / H6–H10 để đọc rõ.
 - `ai/task1_initial_checklist.md` / `.json` / `.pdf`: bản AI gốc 68 mục được giữ để so sánh; PDF 19 trang đã render/kiểm tra.
 - `Task1_AI_Review.md` / `.pdf` và sheet AI Review trong Excel: ghi nhận trả lời “Keep” cho bản đầu; lý do chi tiết/mục sinh viên tự thêm còn thiếu.

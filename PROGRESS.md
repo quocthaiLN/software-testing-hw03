@@ -122,3 +122,12 @@ Previous goal turns produced the manual form, interim execution report and suppo
 Task 1 is not complete. Autonomous device automation stays stopped per user instruction. Prepared documentation work is complete for the available evidence; further completion now depends on user data and student-authored content. Goal is eligible for blocked status after repeated dependency across at least three goal turns, rather than continued automatic status-only turns.
 
 User confirmation after audit: “OK cu de trong phan mobile, toi se bo sung sau”. Keep Mobile actual-result/evidence fields blank and all 16 statuses Not run; do not request those records again until the student supplies them or asks to resume integration. No workbook/report edits are needed because they already show this state. This does not constitute executed or completed Mobile testing.
+
+
+## Task 1 — reduced Mobile manual workflow
+
+| Requirement / step | Status | Outputs / verification evidence | Next action |
+| --- | --- | --- | --- |
+| HW03-T1-04 / HW03-DOC — consolidate Mobile execution | done | User requested fewer Mobile tests. Revised blank manual form and generator to 8 execution cases MOB-01…08, covering each of the original 16 GUI-D IDs exactly once in the primary mapping. Shared interface observations, email checks, valid-save checks, and validation/recovery checks reduce repeated setup. All four phone boundary vectors, both invalid-domain inputs and offline recovery retained. Each original criterion has its own Not run cell; actual inputs/results/images remain blank. PDF reduced from 9 to 5 pages; all 5 rendered and visually inspected, all 8 case IDs and 16 original IDs text-verified. Original AI checklist, workbook, execution report and Web evidence unchanged. README and requirement clarification distinguish grouped cases from checklist-item counts. | Student fills the shorter form later; map genuine observations back to original IDs. No device automation resumed. |
+
+This is an AI-authored workflow revision requested by the student, not independent student review/additions or executed Mobile testing. Task 1 acceptance remains incomplete; no extra results or bug reports claimed.

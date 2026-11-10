@@ -31,3 +31,7 @@ Bắt đầu thực hiện Task 1 cho FR-02, FR-09, FR-17 và FR-04 Mobile theo 
 - FR-17 ghi CRUD nhưng chi tiết chỉ Thêm/Xem/Xóa. Theo chi tiết, không tự bắt buộc Sửa.
 - Không tự bổ sung giới hạn discount percent ≤100 hoặc độ dài tên/code khi đặc tả không nêu.
 - Quy định ảnh Task 3 khác ảnh Failed Task 1; phải đáp ứng cả khi dùng chung bằng chứng.
+
+## Điều chỉnh cách thực hiện Mobile
+
+Theo yêu cầu người dùng rút gọn số test Mobile: phiếu thủ công hiện dùng 8 ca MOB-01…08, gộp đủ 16 tiêu chí GUI-D gốc để giảm các thao tác mở/nhập/lưu lặp lại. Đây là 8 ca thực hiện, không phải giảm số tiêu chí thiết kế xuống 8: bản AI ban đầu, Excel và số liệu 68 designed / 52 executed / 16 Not run vẫn giữ nguyên. Khi có kết quả, cập nhật riêng từng ID gốc theo quan sát; không suy một kết quả chung cho cả nhóm. HW03-T1-04 vẫn chờ dữ liệu thật.

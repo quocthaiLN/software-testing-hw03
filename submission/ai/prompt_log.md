@@ -69,3 +69,8 @@ Artifact record created at 2026-11-10T14:12:09.066380+00:00 (not a recovered mes
 ## Supporting PDF copies
 
 Artifact record created at 2026-11-10T14:15:30.902463+00:00 (not an original chat timestamp). AI exported the existing Task1_Plan, Task1_Intake and Task1_AI_Review Markdown into PDF using bundled marked lexer and ReportLab; source text was not changed. All text blocks and rendered pages were checked. The wide matrix was split into two column panels without dropping cells. No student review content, Mobile results or bug descriptions were supplied by AI. This remains a partial activity record.
+
+
+## Mobile manual workflow reduction — activity summary (partial log)
+
+User prompt: “Ban hay rut gon so luong test tren mobile”. AI revised the manual recording workflow from 16 separately executed entries to 8 grouped cases, retaining traceability and blank per-criterion results for all 16 original GUI-D IDs. Shared setup/observations reduce repetition; phone boundary vectors and failure/recovery coverage retained. Updated generator, Markdown/PDF manual form, README, requirement clarification and progress. No device action, Mobile result, student bug description or independent student addition generated. This entry records the activity; it is not a recovered timestamped original transcript.

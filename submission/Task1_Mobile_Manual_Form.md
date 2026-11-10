@@ -2,14 +2,12 @@
 
 ## Hướng dẫn
 
-1. Phiếu trống để ghi nhận kiểm thử thủ công trên Android thật / Expo Go. Không phải báo cáo kết quả. Tất cả 16 mục giữ trạng thái Not run cho đến khi có thao tác và quan sát thật.
-2. Dùng tài khoản thử của bạn. Ghi model, Android, Expo Go, hướng màn hình, thời gian và phiên bản SUT. Không dùng tài khoản hoặc thông tin cá nhân của người khác.
-3. Trước mỗi mục, đọc bước và kỳ vọng; ghi lại dữ liệu đầu vào thực sự sử dụng. Passed cần quan sát đủ toàn bộ kỳ vọng; Failed cần kết quả thực tế và ảnh. Chưa làm thì giữ Not run. Nếu bước trước chặn, ghi Blocked và ID phụ thuộc; nếu thiếu oracle, ghi Spec-gap để review.
-4. Nếu số điện thoại hợp lệ bị từ chối, vẫn thử đầy đủ bốn vector D007. Không đổi sang số sai đặc tả để gọi các mục lưu thành công là Passed. Các mục phụ thuộc lưu có thể bị chặn; ghi rõ phần nào đã thực hiện.
-5. Với D015, ghi nguyên văn thông báo và cách xuất hiện (inline/native alert). Checklist ban đầu yêu cầu sinh viên review cách áp dụng FR-22; chưa tự coi native alert là tương đương.
-6. Với D016, ghi trạng thái mạng ban đầu để khôi phục đúng sau thử nghiệm. Chỉ ngắt mạng khi đã tới được bước lưu với dữ liệu hợp lệ. Nếu validation đã chặn trước khi gọi mạng, ghi phụ thuộc thay vì tuyên bố đã thử lỗi mạng.
-7. Ảnh Failed đặt tên theo ID và vector, ví dụ GUI-D-007-phone10.png; lưu ảnh gốc. Ghi liên kết/đường dẫn ảnh ở phần kết quả. Bug ID chỉ điền sau khi sinh viên tự viết và đối chiếu bug report.
-8. Phiếu này do AI chuyển định dạng từ checklist đã Keep; không phải mục sinh viên tự bổ sung. Tích hợp lại Excel sau khi đối chiếu kết quả và ảnh; không thay thế bản AI gốc.
+1. Bản rút gọn gồm 8 ca thao tác, gộp từ 16 tiêu chí Mobile gốc. Dùng chung bước mở màn hình, nhập/lưu và quan sát để giảm thao tác lặp. Vẫn ghi kết quả theo ID gốc để đối chiếu Excel; không tính 8 ca là 8 tiêu chí mới.
+2. Phiếu trống cho Android thật / Expo Go; mọi kết quả vẫn Not run. Bản AI gốc và Excel giữ 68 tiêu chí, gồm 16 Mobile chưa chạy; Web giữ 26 Passed / 26 Failed.
+3. Thực hiện MOB-01 đến MOB-08, đăng xuất cuối cùng. Dùng tài khoản thử; ghi môi trường và dữ liệu thực tế. Passed chỉ khi quan sát đủ kỳ vọng; Failed cần ảnh và thực tế. Các tiêu chí cùng ca có thể có kết quả khác nhau.
+4. Nếu số hợp lệ bị từ chối, vẫn thử đủ bốn vector MOB-05. Không dùng số sai đặc tả để kết luận lưu thành công. Phần chưa thể chạy ghi Blocked và ID phụ thuộc; oracle chưa rõ ghi Spec-gap.
+5. Mỗi ghi nhận phải nêu ID gốc và vector; ảnh ví dụ GUI-D-007-phone10.png. Không tự suy kết quả mọi tiêu chí từ một lần lưu. Bug ID chỉ điền sau khi sinh viên tự viết báo cáo.
+6. Đây là bản gộp do AI theo yêu cầu giảm số ca; không phải phần sinh viên tự bổ sung. Kết quả và bằng chứng để trống cho sinh viên điền sau.
 
 ## Môi trường / phiên chạy
 
@@ -20,258 +18,154 @@
 - SUT commit / thay đổi local: __________
 - Tài khoản thử (không ghi mật khẩu/token): __________
 
-## GUI-D-001 - Tiêu đề và nhãn tiếng Việt
+## MOB-01 - Mở hồ sơ và kiểm tra giao diện
 
-**Bước / input theo checklist:** Mở Hồ sơ trên Expo Go; đọc tiêu đề và nhãn.
+**Bước / input:** Sau đăng nhập, mở Hồ sơ. Kiểm tra đúng tài khoản, tiêu đề/nhãn tiếng Việt; quan sát màu Cập nhật và Đăng xuất.
 
-**Kỳ vọng:** Tiêu đề đúng ngữ cảnh, nhãn tiếng Việt nhất quán. Không dùng oracle h1 cho native.
+**Kỳ vọng:** Đúng hồ sơ; nhãn nhất quán; Cập nhật xanh dương, hành động thoát đỏ. Chưa bấm đăng xuất.
 
-**Nguồn / heuristic:** FR-21 language; H2 / H2,H4
+**ID gốc:** GUI-D-001, GUI-D-002, GUI-D-010
 
-| Trường ghi nhận | Nội dung |
-| --- | --- |
-| Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
-| Thực tế quan sát |  |
-| Ảnh / vector / phụ thuộc / điểm cần review |  |
-| Bug ID (nếu có) |  |
-
-## GUI-D-002 - Màu cập nhật và đăng xuất
-
-**Bước / input theo checklist:** Quan sát hai nút khi đã đăng nhập.
-
-**Kỳ vọng:** Cập nhật dùng xanh dương; hành động hủy/thoát dùng đỏ theo quy tắc GUI chung.
-
-**Nguồn / heuristic:** FR-21 / H4
+**Nguồn / heuristic:** FR-21 language; H2; FR-21; FR-04; FR-20 / H2,H3,H4,H6
 
 | Trường ghi nhận | Nội dung |
 | --- | --- |
 | Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
 | Thực tế quan sát |  |
 | Ảnh / vector / phụ thuộc / điểm cần review |  |
 | Bug ID (nếu có) |  |
+| Kết quả GUI-D-001 | Not run |
+| Kết quả GUI-D-002 | Not run |
+| Kết quả GUI-D-010 | Not run |
 
-## GUI-D-003 - Layout trên màn hình điện thoại
+## MOB-02 - Bố cục và bàn phím
 
-**Bước / input theo checklist:** Mở trên điện thoại, ghi device/OS/orientation; quan sát và cuộn.
+**Bước / input:** Trên điện thoại thật, cuộn toàn form; mở bàn phím ở tên, điện thoại và địa chỉ, cuộn rồi đóng bàn phím.
 
-**Kỳ vọng:** Không chồng/cắt nhãn hoặc input; nút cập nhật tiếp cận được bằng cuộn.
+**Kỳ vọng:** Không chồng/cắt nội dung; tiếp cận được trường đang nhập và nút Cập nhật, không mắc kẹt bởi bàn phím.
 
-**Nguồn / heuristic:** strategies Compatibility; H8 / H8
+**ID gốc:** GUI-D-003, GUI-D-011
+
+**Nguồn / heuristic:** strategies Compatibility; H8; strategies Compatibility; H3/H7 / H3,H7,H8
 
 | Trường ghi nhận | Nội dung |
 | --- | --- |
 | Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
 | Thực tế quan sát |  |
 | Ảnh / vector / phụ thuộc / điểm cần review |  |
 | Bug ID (nếu có) |  |
+| Kết quả GUI-D-003 | Not run |
+| Kết quả GUI-D-011 | Not run |
 
-## GUI-D-004 - Nhận biết email chỉ đọc
+## MOB-03 - Email chỉ đọc
 
-**Bước / input theo checklist:** Quan sát email và thử chạm/chọn nhập.
+**Bước / input:** Quan sát email; thử chạm, gõ và dán giá trị khác. Ghi email ban đầu; đối chiếu lại sau ca MOB-04.
 
-**Kỳ vọng:** Email được nhận biết là không sửa được và không gây hiểu nhầm là trường cập nhật.
+**Kỳ vọng:** Nhận biết được email chỉ đọc; không sửa được qua GUI; email vẫn nguyên sau cập nhật các trường khác.
 
-**Nguồn / heuristic:** FR-04; widget Text Boxes State / H4,H6
+**ID gốc:** GUI-D-004, GUI-D-005
+
+**Nguồn / heuristic:** FR-04; widget Text Boxes State; FR-04 / H4,H5,H6
 
 | Trường ghi nhận | Nội dung |
 | --- | --- |
 | Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
 | Thực tế quan sát |  |
 | Ảnh / vector / phụ thuộc / điểm cần review |  |
 | Bug ID (nếu có) |  |
+| Kết quả GUI-D-004 | Not run |
+| Kết quả GUI-D-005 | Not run |
 
-## GUI-D-005 - Không sửa email qua GUI
+## MOB-04 - Lưu hồ sơ hợp lệ
 
-**Bước / input theo checklist:** Thử gõ/dán vào email; cập nhật các trường khác rồi mở lại.
+**Bước / input:** Nhập tên Nguyễn Văn Ánh, điện thoại 0912345678 và địa chỉ hai dòng “12 Nguyễn Trãi<br>Phường Bến Thành”. Sửa địa chỉ, bấm Cập nhật; quan sát phản hồi, rời rồi mở lại Hồ sơ và đối chiếu cả email.
 
-**Kỳ vọng:** Email không đổi qua UI.
+**Kỳ vọng:** Có phản hồi thành công; tên giữ dấu, địa chỉ giữ nội dung đã sửa, không tràn che nút; dữ liệu còn sau mở lại và email không đổi. Không tự đặt giới hạn độ dài tên/địa chỉ.
 
-**Nguồn / heuristic:** FR-04 / H5
+**ID gốc:** GUI-D-006, GUI-D-009, GUI-D-013
+
+**Nguồn / heuristic:** FR-04; H2; FR-04; widget Text Boxes; FR-04; H1 / H1,H2,H7
 
 | Trường ghi nhận | Nội dung |
 | --- | --- |
 | Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
 | Thực tế quan sát |  |
 | Ảnh / vector / phụ thuộc / điểm cần review |  |
 | Bug ID (nếu có) |  |
+| Kết quả GUI-D-006 | Not run |
+| Kết quả GUI-D-009 | Not run |
+| Kết quả GUI-D-013 | Not run |
 
-## GUI-D-006 - Tên tiếng Việt lưu nguyên vẹn
+## MOB-05 - Biên số điện thoại
 
-**Bước / input theo checklist:** Nhập Nguyễn Văn Ánh, lưu với điện thoại hợp lệ rồi mở lại.
+**Bước / input:** Giữ các trường khác hợp lệ. Lần lượt nhập và lưu: 091234567 (9), 0912345678 (10), 09123456789 (11), 091234567890 (12 chữ số). Ghi riêng kết quả từng giá trị.
 
-**Kỳ vọng:** Tên có dấu không bị mất/ký tự lỗi sau lưu. Không tự quy định min/max length.
+**Kỳ vọng:** 9 và 12 chữ số bị từ chối; 10 và 11 chữ số bắt đầu 0 được chấp nhận. Không bỏ hai biên hợp lệ khi gặp lỗi.
 
-**Nguồn / heuristic:** FR-04; H2 / H2
-
-| Trường ghi nhận | Nội dung |
-| --- | --- |
-| Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
-| Thực tế quan sát |  |
-| Ảnh / vector / phụ thuộc / điểm cần review |  |
-| Bug ID (nếu có) |  |
-
-## GUI-D-007 - Biên độ dài số điện thoại
-
-**Bước / input theo checklist:** Lần lượt nhập 091234567 / 0912345678 / 09123456789 / 091234567890 rồi lưu.
-
-**Kỳ vọng:** 9/12 chữ số bị từ chối; 10/11 chữ số bắt đầu 0 được chấp nhận.
+**ID gốc:** GUI-D-007
 
 **Nguồn / heuristic:** FR-04 / H5,H9
 
 | Trường ghi nhận | Nội dung |
 | --- | --- |
 | Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
 | Thực tế quan sát |  |
 | Ảnh / vector / phụ thuộc / điểm cần review |  |
 | Bug ID (nếu có) |  |
+| Kết quả GUI-D-007 | Not run |
 
-## GUI-D-008 - Điện thoại sai miền và kiểu bàn phím
+## MOB-06 - Sai miền, thông báo lỗi và sửa lại
 
-**Bước / input theo checklist:** Chạm điện thoại; thử chuỗi 10 chữ số không bắt đầu 0 và chuỗi có chữ qua dán.
+**Bước / input:** Kiểm tra bàn phím điện thoại; thử lưu 1912345678 và dán 09abc45678. Ghi nội dung/vị trí lỗi, sau đó sửa thành 0912345678 và lưu lại.
 
-**Kỳ vọng:** Có bàn phím thuận nhập điện thoại; dữ liệu sai miền bị từ chối khi lưu. Không coi phone-pad là đủ validate.
+**Kỳ vọng:** Bàn phím thuận nhập số; cả hai dữ liệu sai miền bị từ chối; lỗi dễ hiểu, sửa và thử lại được. FR-22 yêu cầu lỗi trên nút submit; nếu chỉ có native alert, ghi cách xuất hiện để review, không tự coi tương đương.
 
-**Nguồn / heuristic:** FR-04; widget Text Boxes Input type; H7 / H5,H7
+**ID gốc:** GUI-D-008, GUI-D-014, GUI-D-015
+
+**Nguồn / heuristic:** FR-04; widget Text Boxes Input type; H7; FR-04; H9; FR-22 / H5,H7,H9
 
 | Trường ghi nhận | Nội dung |
 | --- | --- |
 | Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
 | Thực tế quan sát |  |
 | Ảnh / vector / phụ thuộc / điểm cần review |  |
 | Bug ID (nếu có) |  |
+| Kết quả GUI-D-008 | Not run |
+| Kết quả GUI-D-014 | Not run |
+| Kết quả GUI-D-015 | Not run |
 
-## GUI-D-009 - Địa chỉ nhiều dòng
+## MOB-07 - Mất mạng và phục hồi
 
-**Bước / input theo checklist:** Dán địa chỉ tiếng Việt nhiều dòng, sửa rồi lưu với điện thoại hợp lệ.
+**Bước / input:** Sau khi đã lưu được dữ liệu hợp lệ, ghi trạng thái mạng rồi ngắt mạng, thay tên/địa chỉ và lưu. Khôi phục mạng như ban đầu, thử lại và mở lại Hồ sơ.
 
-**Kỳ vọng:** Địa chỉ nhập/sửa được, dữ liệu sau lưu giữ nội dung có nghĩa; không tràn che nút.
+**Kỳ vọng:** Không báo thành công giả khi mất mạng; có lỗi và thử lại được; dữ liệu sau phục hồi được đối chiếu thật. Nếu validation chặn trước request, ghi Blocked thay vì kết luận đã thử mất mạng.
 
-**Nguồn / heuristic:** FR-04; widget Text Boxes / H2,H7
-
-| Trường ghi nhận | Nội dung |
-| --- | --- |
-| Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
-| Thực tế quan sát |  |
-| Ảnh / vector / phụ thuộc / điểm cần review |  |
-| Bug ID (nếu có) |  |
-
-## GUI-D-010 - Đến hồ sơ từ điều hướng
-
-**Bước / input theo checklist:** Sau đăng nhập, chạm biểu tượng/liên kết hồ sơ.
-
-**Kỳ vọng:** Mở hồ sơ đúng người đang đăng nhập.
-
-**Nguồn / heuristic:** FR-04; FR-20 / H3,H6
-
-| Trường ghi nhận | Nội dung |
-| --- | --- |
-| Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
-| Thực tế quan sát |  |
-| Ảnh / vector / phụ thuộc / điểm cần review |  |
-| Bug ID (nếu có) |  |
-
-## GUI-D-011 - Bàn phím không chặn thao tác lưu
-
-**Bước / input theo checklist:** Mở bàn phím ở từng trường, cuộn, đóng bàn phím và chạm Cập nhật.
-
-**Kỳ vọng:** Trường đang nhập và nút lưu có thể tiếp cận, không mắc kẹt bởi bàn phím.
-
-**Nguồn / heuristic:** strategies Compatibility; H3/H7 / H3,H7
-
-| Trường ghi nhận | Nội dung |
-| --- | --- |
-| Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
-| Thực tế quan sát |  |
-| Ảnh / vector / phụ thuộc / điểm cần review |  |
-| Bug ID (nếu có) |  |
-
-## GUI-D-012 - Đăng xuất đúng nhãn và hiệu lực
-
-**Bước / input theo checklist:** Quan sát nhãn; chạm đăng xuất rồi mở lại hồ sơ.
-
-**Kỳ vọng:** Nhãn là Đăng xuất; không còn hiển thị hồ sơ riêng như phiên đang đăng nhập, có đường tới login.
-
-**Nguồn / heuristic:** FR-23; FR-04 / H3,H4
-
-| Trường ghi nhận | Nội dung |
-| --- | --- |
-| Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
-| Thực tế quan sát |  |
-| Ảnh / vector / phụ thuộc / điểm cần review |  |
-| Bug ID (nếu có) |  |
-
-## GUI-D-013 - Phản hồi cập nhật thành công
-
-**Bước / input theo checklist:** Cập nhật bộ dữ liệu hợp lệ; quan sát phản hồi rồi rời/mở lại hồ sơ.
-
-**Kỳ vọng:** Có phản hồi thành công và dữ liệu mới được giữ khi mở lại.
-
-**Nguồn / heuristic:** FR-04; H1 / H1
-
-| Trường ghi nhận | Nội dung |
-| --- | --- |
-| Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
-| Thực tế quan sát |  |
-| Ảnh / vector / phụ thuộc / điểm cần review |  |
-| Bug ID (nếu có) |  |
-
-## GUI-D-014 - Sửa điện thoại sau lỗi
-
-**Bước / input theo checklist:** Nhập điện thoại sai rồi lưu; sửa thành 0912345678 và lưu lại.
-
-**Kỳ vọng:** Lỗi dễ hiểu, có thể sửa/thử lại; kết quả thành công thay trạng thái lỗi cũ.
-
-**Nguồn / heuristic:** FR-04; H9 / H9
-
-| Trường ghi nhận | Nội dung |
-| --- | --- |
-| Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
-| Thực tế quan sát |  |
-| Ảnh / vector / phụ thuộc / điểm cần review |  |
-| Bug ID (nếu có) |  |
-
-## GUI-D-015 - Vị trí lỗi form mobile
-
-**Bước / input theo checklist:** Gây lỗi validate, quan sát vị trí thông báo/feedback so với Cập nhật.
-
-**Kỳ vọng:** Theo FR-22 lỗi phải ở trên nút submit; nếu chỉ dùng native alert, ghi khác biệt áp dụng để sinh viên review, không tự coi tương đương.
-
-**Nguồn / heuristic:** FR-22 / H9
-
-| Trường ghi nhận | Nội dung |
-| --- | --- |
-| Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
-| Thực tế quan sát |  |
-| Ảnh / vector / phụ thuộc / điểm cần review |  |
-| Bug ID (nếu có) |  |
-
-## GUI-D-016 - Phục hồi cập nhật khi mất mạng
-
-**Bước / input theo checklist:** Ngắt mạng thiết bị, thay dữ liệu và lưu; khôi phục mạng, mở lại rồi thử lưu.
-
-**Kỳ vọng:** Có lỗi thay vì thành công giả; có thể thử lại; đối chiếu dữ liệu đã lưu thật.
+**ID gốc:** GUI-D-016
 
 **Nguồn / heuristic:** H1/H9; strategies Integration / H1,H9
 
 | Trường ghi nhận | Nội dung |
 | --- | --- |
 | Thời điểm / tiền điều kiện / input thực tế |  |
-| Kết quả | Not run |
 | Thực tế quan sát |  |
 | Ảnh / vector / phụ thuộc / điểm cần review |  |
 | Bug ID (nếu có) |  |
+| Kết quả GUI-D-016 | Not run |
+
+## MOB-08 - Đăng xuất
+
+**Bước / input:** Thực hiện cuối cùng: quan sát nhãn Đăng xuất, chạm nút rồi thử mở lại Hồ sơ.
+
+**Kỳ vọng:** Nhãn là Đăng xuất; phiên đã thoát không còn xem hồ sơ riêng như đang đăng nhập; có đường tới đăng nhập.
+
+**ID gốc:** GUI-D-012
+
+**Nguồn / heuristic:** FR-23; FR-04 / H3,H4
+
+| Trường ghi nhận | Nội dung |
+| --- | --- |
+| Thời điểm / tiền điều kiện / input thực tế |  |
+| Thực tế quan sát |  |
+| Ảnh / vector / phụ thuộc / điểm cần review |  |
+| Bug ID (nếu có) |  |
+| Kết quả GUI-D-012 | Not run |
