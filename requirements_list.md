@@ -5,7 +5,7 @@ Nguồn chuẩn: `2026.HW03.GUI Usability_En.pdf` (9 trang), `../policies.md`, `
 | ID | Nguồn | Scope | Bước / đầu ra | Acceptance criteria và evidence |
 | --- | --- | --- | --- | --- |
 | HW03-SCOPE | §5, tr.3–4; policies Collaboration | Bắt buộc | Chọn màn hình/flow, ghi scope trong main report | Scope cụ thể, đủ phức tạp và hạn chế trùng tính năng. Đề gốc không cho trùng màn hình chính; người dùng xác nhận ngày 2026-11-10 giảng viên/TA cập nhật cho phép trùng màn hình. Áp dụng cập nhật này khi lập kế hoạch; không cần đưa trao đổi phân công vào báo cáo |
-| HW03-T1-01 | §6 Task 1, tr.4 | Bắt buộc | Đọc bài giảng GUI trước thiết kế | Ghi bài giảng/phiên bản đã đối chiếu; hiện chưa có trong workspace |
+| HW03-T1-01 | §6 Task 1, tr.4 | Bắt buộc | Đọc bài giảng GUI trước thiết kế | Ghi bài giảng/phiên bản đã đối chiếu; người dùng cung cấp bản tổng hợp `../skills/gui-testing-guide/`, đã đọc SKILL và bốn references ngày 2026-11-10; hash nguồn ở `environment/task1-design-sources.json` |
 | HW03-T1-02 | §6 Task 1, tr.4; §14 tr.8 | Bắt buộc | AI tạo bản đầu; thiết kế checklist; xuất Excel + summary | >40 mục riêng biệt, đủ IA-01–04; lưu bản AI gốc, mỗi mục có tiêu chí và màn hình; `submission/GUI_Checklist.xlsx` |
 | HW03-T1-03 | §6 Task 1, tr.4 | Bắt buộc | Sinh viên phản biện, sửa và tự thêm mục AI bỏ sót | Có review và giải thích vì sao AI bỏ sót từng mục thêm; `submission/Task1_AI_Review.md` |
 | HW03-T1-04 | §6 Task 1, tr.4 | Bắt buộc | Chạy từng mục; ghi Passed/Failed, Notes, ảnh Failed | Có environment/input/expected/actual/evidence; mọi Failed có lý do và screenshot thật; không lấy smoke checks làm kết quả |
@@ -23,11 +23,11 @@ Nguồn chuẩn: `2026.HW03.GUI Usability_En.pdf` (9 trang), `../policies.md`, `
 
 ## Phạm vi kế hoạch hiện tại
 
-Chỉ lập kế hoạch Task 1 cho FR-02, FR-09, FR-17 và FR-04 Mobile; xem `submission/Task1_Plan.md`. Chưa thiết kế checklist cuối, thực thi hoặc tạo kết quả. Task 2/3 và final được liệt kê để tránh bỏ nghĩa vụ toàn bài, không được mở rộng thành công việc thực thi trong yêu cầu hiện tại.
+Bắt đầu thực hiện Task 1 cho FR-02, FR-09, FR-17 và FR-04 Mobile theo `submission/Task1_Plan.md`. Đã tạo bản AI đầu 68 mục và intake; checklist cuối còn chờ review/bổ sung của sinh viên. Task 2/3 và final được liệt kê để tránh bỏ nghĩa vụ toàn bài, chưa triển khai trong yêu cầu hiện tại.
 
 ## Điểm cần đối chiếu khi triển khai
 
-- Bài giảng GUI/usability và AI Usage Guideline chưa có trong workspace; không viện dẫn giả số slide.
+- Bản tổng hợp bài giảng GUI đã được người dùng chỉ định tại `../skills/gui-testing-guide/`; dùng tên mục và hash thật, không viện dẫn giả số slide. Bài giảng usability và AI Usage Guideline đầy đủ vẫn chưa được cung cấp.
 - FR-17 ghi CRUD nhưng chi tiết chỉ Thêm/Xem/Xóa. Theo chi tiết, không tự bắt buộc Sửa.
 - Không tự bổ sung giới hạn discount percent ≤100 hoặc độ dài tên/code khi đặc tả không nêu.
 - Quy định ảnh Task 3 khác ảnh Failed Task 1; phải đáp ứng cả khi dùng chung bằng chứng.

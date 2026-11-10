@@ -1,0 +1,34 @@
+{
+  "purpose": "Source provenance for Task 1 initial AI draft, not execution evidence",
+  "initial_artifact_generated_at": "2026-11-10T19:28:16.164835+07:00",
+  "sources": [
+    {
+      "path": "skills/gui-testing-guide/SKILL.md",
+      "sha256": "b0b921f788d46735c60dd31ed6077ed1f04d022ba7c361668903fb84405e1246"
+    },
+    {
+      "path": "skills/gui-testing-guide/references/checklists-per-widget.md",
+      "sha256": "f532c8d37c315e90fdc0569b6b5017194c9f25e9dc400f95528490b8f8deb508"
+    },
+    {
+      "path": "skills/gui-testing-guide/references/heuristics.md",
+      "sha256": "4b5eec4b429adadba3452f79b9d15a679d99fd502bd36d062b6d1cf7129e32c3"
+    },
+    {
+      "path": "skills/gui-testing-guide/references/playwright.md",
+      "sha256": "7e099c3406c6e853c817a2ccf47c75662ce64fd490c4bd82f3fe1fde86142754"
+    },
+    {
+      "path": "skills/gui-testing-guide/references/strategies.md",
+      "sha256": "22ace20c9cbb6d521cc223cee5d66fca0950d59c0362f376d717f6d58338f989"
+    },
+    {
+      "path": "eshop-sut/README.md",
+      "sha256": "e44deb191261c190919ffb680db8f19c5f10b9cea5ed2c6c2d0f499806099720"
+    },
+    {
+      "path": "hw03/2026.HW03.GUI Usability_En.pdf",
+      "sha256": "b7f86463510bf2d3060f7216ca776fd0762c7c902321527d903562ed97b23578"
+    }
+  ]
+}
