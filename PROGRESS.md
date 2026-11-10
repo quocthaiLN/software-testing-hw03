@@ -72,3 +72,10 @@ Harness guard was added to refuse reuse of an existing evidence Run ID; verified
 Admin run 02 started 2026-11-10 19:55:19 Asia/Ho_Chi_Minh, duration approximately 42.8 seconds. Uses Edge headless, 1280×800 except C006 at 390×844, SUT application source unchanged. C027 is a controlled empty API response to the real UI, not a claim that backend data were deleted. C028 aborts the coupon-list transport; later create/delete recovery variants were not reached after its load-error assertion failed. C015 verifies the native browser date control, not backend date validation. Negative whitespace code was its own disposable fixture; all other created coupon codes carry the T1 prefix.
 
 Current remaining obligations include B/D execution, student-authored bug reports and GitHub Issues (no remote configured), independent student checklist additions/reasons, AI audit/disclosure and final report/PDF. No completion claim for Task 1 or HW03.
+
+## Task 1 — Apply Coupon
+
+| Requirement / step | Status | Outputs / verification evidence | Next action |
+| --- | --- | --- | --- |
+| HW03-T1-04 step B1 — coupon UI harness | done | Added CheckoutPage, checkout fixture and 8 GUI-B scenarios. Product prices seed real owned backend products; Home → Add to cart → Cart → Checkout uses real UI. No editable-total field mutation. Coupons/users/lifetime usage are own test data; inactive flag is changed only for exact owned coupon ID/code and verified via API. Expired JWT scenario overrides only the outgoing apply header with a signed public-demo token exp=1; server response is real. Pending-response and transport-abort fixtures explicitly labelled. | Run 8 cases; inspect raw eligibility vectors and screenshots before updating counts. |
+| HW03-T1-04 step D0 — connection recheck | in_progress | Rechecked ADB at start of this continuation; list still empty. Android/Expo Go availability is user-confirmed, but no device connection or native UI run verified. | Continue Web testing; prepare physical mobile connection without claiming native execution. |
