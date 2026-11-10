@@ -201,3 +201,12 @@ All source-block text was verified in PDFs, all pages rendered/reviewed; correct
 Browser publication is complete; a selector/navigation acknowledgement timeout was treated as an unconfirmed UI response, then actual Issue state was checked before continuing. No duplicate submission was retried blindly. Images were already present in the user's pushed repository, so they are embedded from immutable committed URLs rather than falsely claiming new file attachments. Scope/results did not change.
 
 Actual Issues now exist, and the repository remote is configured. Earlier “no remote / no Issues” entries are historical. Full Task 1 acceptance is still not asserted: student independent additions, student-authorship condition and complete original AI records/signatures remain unverified. Publication was user-authorized automation with truthful Disclosure preserved.
+
+
+## Git synchronization boundary after Issue publication
+
+The Issues themselves were created and verified successfully. Local linkage/report commit: `2322063`. Automatic approval review rejected the combined commit-and-push command before execution because authorization to create Issues did not specifically authorize pushing reports, workbooks, prompt logs and draft artifacts to public main. A safer local-only commit completed successfully; no workaround or indirect push was attempted. Explicit permission to push that reviewed linkage commit is pending. This note records the publication/synchronization distinction; it does not undo the 29 already-published Issues.
+
+| Requirement / step | Status | Evidence | Next action |
+| --- | --- | --- | --- |
+| HW03-GIT — push linkage reports to public main | blocked | Auto-review rejection for expanded public disclosure; local `2322063` exists and local work is reviewable. Issue creation is done, push has not occurred. | Await explicit user authorization before any push of report/log changes. |
