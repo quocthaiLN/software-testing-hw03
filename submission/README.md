@@ -44,7 +44,7 @@ Không thay đổi SUT hoặc quy tắc FR-04. 1912345678 được ứng dụng 
 ## Còn thiếu để hoàn tất Task 1
 
 1. HW03-T1-03: sinh viên tự bổ sung mục AI bỏ sót và giải thích lý do, ngoài các quyết định Keep/Revise/Remove đã nhận.
-2. HW03-T1-05: bug report Markdown và GitHub Issues kèm ảnh do sinh viên tự viết; cần khử trùng, Bug ID và repository/issue URL thật. Repo hiện chưa có remote.
+2. HW03-T1-05: 29 Issue đã được tạo kèm ảnh và liên kết về 31 Failed. Mô tả hiện từ bản nháp có khai báo AI; điều kiện sinh viên tự viết của môn học chưa được xác nhận.
 3. HW03-AI/DOC: full transcript, audit, disclosure/critique và thông tin/chữ ký thực của sinh viên theo các biểu mẫu áp dụng. Không tạo timestamp hoặc chữ ký thay người dùng.
 
 Chưa có ZIP/điểm tự chấm; xuất Git log thật khi chuẩn bị bộ nộp. Mọi tài liệu giữ trong bộ nộp cuối cần bản PDF và kiểm tra nội dung/layout theo policies. Tiến độ và acceptance criteria: `../PROGRESS.md`, `../requirements_list.md`.
@@ -56,6 +56,11 @@ Theo yêu cầu trực tiếp “Tu sinh giup toi” và “Toi yeu cau ban lam 
 
 - `ai/drafts/Task1_AI_Assistance_Draft.md/.pdf`: 3 đề xuất checklist chưa chạy, audit AI đề xuất cho 4 artifact (1 VALID / 1 INVALID / 2 INCOMPLETE), kết luận AI đề xuất, critique 269 đơn vị phân tách khoảng trắng, Disclosure và chỉ mục bằng chứng.
 - `ai/drafts/Task1_Bug_Report_AI_Draft.md/.pdf`: 29 nhóm bug dự thảo ánh xạ 31 Failed; D007/D013/D014 gom theo cùng hiện tượng từ chối số đúng miền. Chưa chứng minh đây là 29 nguyên nhân gốc độc lập; severity là AI đề xuất.
-- `ai/drafts/github_issues_draft.json`: payload nháp và đường dẫn ảnh cần upload; mọi `published=false`, chưa tạo Issue. `failed_evidence_index.json` giữ đường dẫn đủ 31 mục.
+- `ai/drafts/github_issues_draft.json`: payload nguồn và metadata phát hành; ảnh nhúng từ commit cố định; mọi `published=true`, có `issueUrl`, thời gian tạo thực và nội dung đã đăng. `failed_evidence_index.json` giữ đường dẫn đủ 31 mục.
 
 Nguồn đóng góp của bộ dự thảo được khai báo tập trung tại mục Disclosure trong `ai/drafts/Task1_AI_Assistance_Draft.md/.pdf`; các nhãn tác giả lặp ở tiêu đề/chân trang được lược gọn. Khi sửa Markdown thủ công, dùng `tools/export_task1_draft_pdfs.py` để xuất PDF, tránh sinh lại nguồn bằng các builder ban đầu.
+
+
+## GitHub Issues đã phát hành
+
+Đã tạo và xác minh **29 Issue #1–#29** tại https://github.com/quocthaiLN/software-testing-hw03/issues. 31 mục Failed được ánh xạ đầy đủ trong Excel Execution (Bug ID / Issue URL); D007/D013/D014 dùng chung Issue #27. Đối chiếu public REST xác nhận nội dung đã đăng; tất cả 47 URL PNG được kiểm HTTP 200 và content-type image. Ảnh ghim commit `19cbfb0d5afac98f3d0aab56ef158254f297c682`. Metadata thật ở `evidence/gui/github_published_issues.json`; các kết luận test không thay đổi.

@@ -1,6 +1,6 @@
 # Task 1 - Bug Report Draft
 
-29 nhóm dự thảo từ 31 mục Failed; chưa xác nhận số nguyên nhân gốc độc lập. Nguồn đóng góp được khai báo tập trung ở mục Disclosure của Task1_AI_Assistance_Draft. Issues chưa được tạo.
+29 nhóm dự thảo từ 31 mục Failed; chưa xác nhận số nguyên nhân gốc độc lập. Nguồn đóng góp được khai báo tập trung ở mục Disclosure của Task1_AI_Assistance_Draft. Đã tạo 29 GitHub Issues tại https://github.com/quocthaiLN/software-testing-hw03/issues; đối chiếu từng URL ở mỗi mục.
 
 ## AI-DRAFT-001 - Tiêu đề hiển thị Đăng Ký khi mở trang đăng nhập
 
@@ -26,7 +26,7 @@
 
 **Screenshot files:** evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-001-title-describes-login/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#1](https://github.com/quocthaiLN/software-testing-hw03/issues/1)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-001-title-describes-login/test-failed-1.png)
@@ -55,7 +55,7 @@
 
 **Screenshot files:** evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-002-exactly-one-h1/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#2](https://github.com/quocthaiLN/software-testing-hw03/issues/2)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-002-exactly-one-h1/test-failed-1.png)
@@ -84,7 +84,7 @@
 
 **Screenshot files:** evidence/gui/T1A_20261110_02/artifacts/login-GUI-A-003-Vietnamese-form-labels/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#3](https://github.com/quocthaiLN/software-testing-hw03/issues/3)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1A_20261110_02/artifacts/login-GUI-A-003-Vietnamese-form-labels/test-failed-1.png)
@@ -113,7 +113,7 @@
 
 **Screenshot files:** evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-005-email-input-type-and-invalid-format/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#4](https://github.com/quocthaiLN/software-testing-hw03/issues/4)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-005-email-input-type-and-invalid-format/test-failed-1.png)
@@ -142,7 +142,7 @@
 
 **Screenshot files:** evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-006-password-masked/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#5](https://github.com/quocthaiLN/software-testing-hw03/issues/5)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-006-password-masked/test-failed-1.png)
@@ -171,7 +171,7 @@
 
 **Screenshot files:** evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-007-required-field-markers/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#6](https://github.com/quocthaiLN/software-testing-hw03/issues/6)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-007-required-field-markers/test-failed-1.png)
@@ -200,7 +200,7 @@
 
 **Screenshot files:** evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-010-natural-top-down-tab-order/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#7](https://github.com/quocthaiLN/software-testing-hw03/issues/7)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-010-natural-top-down-tab-order/test-failed-1.png)
@@ -229,7 +229,7 @@
 
 **Screenshot files:** evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-014-error-above-submit/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#8](https://github.com/quocthaiLN/software-testing-hw03/issues/8)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-014-error-above-submit/test-failed-1.png)
@@ -258,7 +258,7 @@
 
 **Screenshot files:** evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-015-lock-threshold-at-three-consecutive-failures/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#9](https://github.com/quocthaiLN/software-testing-hw03/issues/9)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-015-lock-threshold-at-three-consecutive-failures/test-failed-1.png)
@@ -287,7 +287,7 @@
 
 **Screenshot files:** evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-016-login-recovers-after-30-second-lock/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#10](https://github.com/quocthaiLN/software-testing-hw03/issues/10)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-016-login-recovers-after-30-second-lock/test-failed-1.png)
@@ -316,7 +316,7 @@
 
 **Screenshot files:** evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-004-che-20ddb-mb-allows-return-navigation/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#11](https://github.com/quocthaiLN/software-testing-hw03/issues/11)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-004-che-20ddb-mb-allows-return-navigation/test-failed-1.png)
@@ -345,7 +345,7 @@
 
 **Screenshot files:** evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/test-failed-1.png; evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-0d015817badeeee5a9e5bedfbb0905c914d34728.png; evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-a50d0edcce7ebe355541d3a8cd16c95c1a28f672.png; evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-5d7984ac573e42fcf396dc3b3949ca17bfddad2a.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#12](https://github.com/quocthaiLN/software-testing-hw03/issues/12)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/test-failed-1.png)
@@ -377,7 +377,7 @@
 
 **Screenshot files:** evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/test-failed-1.png; evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/attachments/failed-vector-screenshot-5351da4399293cf06c598167d8e8dcfc51dc5fa4.png; evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/attachments/failed-vector-screenshot-6c07a590cc1aafd7749208a986aa3d6d76759513.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#13](https://github.com/quocthaiLN/software-testing-hw03/issues/13)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/test-failed-1.png)
@@ -408,7 +408,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-002-one-descriptive-h1/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#14](https://github.com/quocthaiLN/software-testing-hw03/issues/14)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-002-one-descriptive-h1/test-failed-1.png)
@@ -437,7 +437,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-003-create-blue-and-delete-red/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#15](https://github.com/quocthaiLN/software-testing-hw03/issues/15)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-003-create-blue-and-delete-red/test-failed-1.png)
@@ -466,7 +466,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_04/artifacts/coupons-GUI-C-006-form-does-not-overlap-on-resize/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#16](https://github.com/quocthaiLN/software-testing-hw03/issues/16)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_04/artifacts/coupons-GUI-C-006-form-does-not-overlap-on-resize/test-failed-1.png)
@@ -495,7 +495,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-007-persistent-labels-and-required-markers/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#17](https://github.com/quocthaiLN/software-testing-hw03/issues/17)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-007-persistent-labels-and-required-markers/test-failed-1.png)
@@ -524,7 +524,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-008-empty-and-whitespace-code-rejected/test-failed-1.png; evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-008-empty-and-whitespace-code-rejected/attachments/failed-vector-screenshot-dd47e5f79091326a68927714065be1232f4fbc59.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#18](https://github.com/quocthaiLN/software-testing-hw03/issues/18)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-008-empty-and-whitespace-code-rejected/test-failed-1.png)
@@ -554,7 +554,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-011-discount-value-boundaries/test-failed-1.png; evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-011-discount-value-boundaries/attachments/failed-vector-screenshot-c987449da54c42a0a6eb5ad53ccaac53c2b614dd.png; evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-011-discount-value-boundaries/attachments/failed-vector-screenshot-b4aa88cf82f4afe201180f980c4a1c826e14e0c4.png; evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-011-discount-value-boundaries/attachments/failed-vector-screenshot-adc4ec66cf0a459ec8d862a320d3890bb7fe141a.png; evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-011-discount-value-boundaries/attachments/failed-vector-screenshot-bcfaade74f6d5fe0dc26fdeb8eed9a3d69064dbf.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#19](https://github.com/quocthaiLN/software-testing-hw03/issues/19)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-011-discount-value-boundaries/test-failed-1.png)
@@ -587,7 +587,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-012-minimum-order-boundaries/test-failed-1.png; evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-012-minimum-order-boundaries/attachments/failed-vector-screenshot-06dab7086b1658142682f489c402ca54f59e02e9.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#20](https://github.com/quocthaiLN/software-testing-hw03/issues/20)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-012-minimum-order-boundaries/test-failed-1.png)
@@ -617,7 +617,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-014-all-mandatory-fields-reject-empty-values/test-failed-1.png; evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-014-all-mandatory-fields-reject-empty-values/attachments/failed-vector-screenshot-c1090908fc8a32a4440e509864f3404a924a238d.png; evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-014-all-mandatory-fields-reject-empty-values/attachments/failed-vector-screenshot-97cf7f491768c94cc36652710021c0b00fc67ba7.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#21](https://github.com/quocthaiLN/software-testing-hw03/issues/21)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-014-all-mandatory-fields-reject-empty-values/test-failed-1.png)
@@ -648,7 +648,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-021-tab-reachable-by-keyboard/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#22](https://github.com/quocthaiLN/software-testing-hw03/issues/22)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-021-tab-reachable-by-keyboard/test-failed-1.png)
@@ -677,7 +677,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-024-error-understandable-and-above-submit/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#23](https://github.com/quocthaiLN/software-testing-hw03/issues/23)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-024-error-understandable-and-above-submit/test-failed-1.png)
@@ -706,7 +706,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-025-delete-can-be-cancelled-or-undone/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#24](https://github.com/quocthaiLN/software-testing-hw03/issues/24)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-025-delete-can-be-cancelled-or-undone/test-failed-1.png)
@@ -735,7 +735,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-027-empty-st-96299--isolated-empty-API-fixture/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#25](https://github.com/quocthaiLN/software-testing-hw03/issues/25)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-027-empty-st-96299--isolated-empty-API-fixture/test-failed-1.png)
@@ -764,7 +764,7 @@
 
 **Screenshot files:** evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-028-network--8f8a8--is-visible-and-recoverable/test-failed-1.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#26](https://github.com/quocthaiLN/software-testing-hw03/issues/26)
 
 Ảnh gốc:
 ![test-failed-1.png](../../evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-028-network--8f8a8--is-visible-and-recoverable/test-failed-1.png)
@@ -793,7 +793,7 @@
 
 **Screenshot files:** evidence/gui/T1D_MANUAL_01/image-05.png; evidence/gui/T1D_MANUAL_01/image-04.png; evidence/gui/T1D_MANUAL_01/image-06.png; evidence/gui/T1D_MANUAL_01/image-07.png; evidence/gui/T1D_MANUAL_01/image-09.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#27](https://github.com/quocthaiLN/software-testing-hw03/issues/27)
 
 Ảnh gốc:
 ![image-05.png](../../evidence/gui/T1D_MANUAL_01/image-05.png)
@@ -826,7 +826,7 @@
 
 **Screenshot files:** evidence/gui/T1D_MANUAL_01/image-07.png; evidence/gui/T1D_MANUAL_01/image-09.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#28](https://github.com/quocthaiLN/software-testing-hw03/issues/28)
 
 Ảnh gốc:
 ![image-07.png](../../evidence/gui/T1D_MANUAL_01/image-07.png)
@@ -856,7 +856,7 @@
 
 **Screenshot files:** evidence/gui/T1D_MANUAL_01/image-01.png; evidence/gui/T1D_MANUAL_01/image-11.png; evidence/gui/T1D_MANUAL_01/image-10.png
 
-**GitHub Issue:** Chưa tạo; repository/URL chưa được cung cấp.
+**GitHub Issue:** [#29](https://github.com/quocthaiLN/software-testing-hw03/issues/29)
 
 Ảnh gốc:
 ![image-01.png](../../evidence/gui/T1D_MANUAL_01/image-01.png)

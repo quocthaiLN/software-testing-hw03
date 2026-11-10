@@ -160,7 +160,7 @@ Sinh viên đọc nội dung xác nhận của mẫu AI-03 trước khi ký. B�
 
 ## 5. Bug report worksheet and evidence index
 
-Phần này là khung và danh mục bằng chứng. Nội dung mô tả lỗi nằm tại Task1_Bug_Report_AI_Draft.md/.pdf; nguồn hỗ trợ được khai báo ở mục Disclosure. Issues chưa được tạo. 31 mục Failed không nhất thiết là 31 bug; sinh viên tự gom nguyên nhân trước khi tạo Bug ID.
+Phần này là khung và danh mục bằng chứng. Nội dung mô tả lỗi nằm tại Task1_Bug_Report_AI_Draft.md/.pdf; nguồn hỗ trợ được khai báo ở mục Disclosure. Đã tạo 29 GitHub Issues, ánh xạ 31 mục Failed; URL từng mục nằm trong Task1_Bug_Report_AI_Draft và github_published_issues.json. 31 mục Failed không nhất thiết là 31 bug; sinh viên tự gom nguyên nhân trước khi tạo Bug ID.
 
 Bug ID / Title: __________
 

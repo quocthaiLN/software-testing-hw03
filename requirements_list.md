@@ -44,3 +44,6 @@ Theo yêu cầu sửa số điện thoại cho ba ca Blocked, D006/D009/D016 rev
 ## Phạm vi hiện tại sau rà soát Task 1
 
 Người dùng yêu cầu loại D006/D009/D016; giữ ID và lịch sử, không tính vào phạm vi active. Checklist hiện 65 mục (A16/B8/C28/D13), đủ IA-01…04; 34 Passed / 31 Failed / 0 Not run / 0 Blocked / 0 Spec-gap. D015 được chốt theo FR-22 nguyên văn về vị trí lỗi, không tự thêm điều kiện inline. Bản AI ban đầu 68 mục vẫn là bản lịch sử. HW03-T1-01/02 và bước thực thi của HW03-T1-04 có bằng chứng; HW03-T1-03 (tự bổ sung) và HW03-T1-05 (student bug reports/Issues), AI/DOC vẫn chưa đủ. Không lấy việc thu hẹp scope hoặc có commit tổng kết làm bằng chứng hoàn tất toàn Task 1.
+
+
+GitHub publication update: đã xác minh repo `quocthaiLN/software-testing-hw03`, tạo 29 Issue #1–#29 cho đủ 31 mục Failed; ảnh nhúng ghim commit 19cbfb0, 47 URL PNG kiểm tra thành công. Excel và báo cáo có liên kết thật. Phần xuất bản Issues của HW03-T1-05 đã thực hiện; điều kiện sinh viên tự viết mô tả và đóng góp độc lập/hồ sơ AI vẫn cần xác nhận. Không đổi tác giả nội dung hoặc số liệu test để chốt acceptance.

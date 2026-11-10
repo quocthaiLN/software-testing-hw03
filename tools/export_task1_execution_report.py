@@ -65,13 +65,30 @@ def main():
     archived=[r for r in initial if status[r['id']]=='Removed']
     initial=[r for r in initial if status[r['id']]!='Removed']
     assert len(initial)==65 and len(archived)==3
+    publication_path=SUB/'evidence/gui/github_published_issues.json'
+    publication=json.loads(publication_path.read_text()) if publication_path.exists() else None
+    if publication:
+        assert publication['issueCount']==29 and publication['failedChecklistItemsCovered']==31
+        mapped={id for r in publication['issues'] for id in r['relatedChecklistIds']}
+        assert mapped=={id for id,s in status.items() if s=='Failed'}
+        by_item={id:r for r in publication['issues'] for id in r['relatedChecklistIds']}
+        with zipfile.ZipFile(SUB/'GUI_Checklist.xlsx') as z:
+            ex_values={}
+            for c in ET.fromstring(z.read('xl/worksheets/sheet3.xml')).findall('.//s:c',ns):
+                v=c.find('s:v',ns)
+                if v is not None:ex_values[c.get('r')]=strings[int(v.text)] if c.get('t')=='s' else v.text
+        for row in range(7,75):
+            id=ex_values.get('B'+str(row))
+            if id in by_item:
+                assert ex_values.get('K'+str(row))==by_item[id]['draftId']
+                assert ex_values.get('L'+str(row))==by_item[id]['url'], 'Issue URL differs from published record'
     blocks=[]
     def h(s):blocks.append(('h',s))
     def p(s):blocks.append(('p',s))
     def table(headers,rows,widths=None):blocks.append(('t',(headers,rows,widths)))
     def br():blocks.append(('br',None))
     h('Task 1 - Báo cáo thực thi GUI (bản đang hoàn thiện)')
-    p('Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết kế gồm bốn feature A/B/C/D. Task 1 chưa hoàn tất: Đã tích hợp kết quả Mobile do sinh viên cung cấp và 12 ảnh gốc; D006/D009/D016 đã loại theo yêu cầu; D015 chốt theo FR-22 nguyên văn. 65 tiêu chí active đều có kết luận. Review/bổ sung độc lập và bug reports/Issues vẫn còn thiếu. Báo cáo này tổng hợp hồ sơ thực thi, không thay bug report do sinh viên tự viết.')
+    p('Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết kế gồm bốn feature A/B/C/D. Task 1 chưa hoàn tất: Đã tích hợp kết quả Mobile do sinh viên cung cấp và 12 ảnh gốc; D006/D009/D016 đã loại theo yêu cầu; D015 chốt theo FR-22 nguyên văn. 65 tiêu chí active đều có kết luận. Đã tạo 29 Issue kèm ảnh, ánh xạ 31 Failed; review/bổ sung độc lập và điều kiện tác giả báo cáo vẫn chưa đủ. Báo cáo này tổng hợp hồ sơ thực thi, không thay bug report do sinh viên tự viết.')
     h('1. Thống kê hiện tại')
     summary=[]
     for f,name in FEATURES.items():
@@ -80,7 +97,7 @@ def main():
     summary.append(['Tổng',len(initial),concluded,counts['Passed'],counts['Failed'],counts['Blocked']+counts['Spec-gap'],counts['Not run']])
     table(['Feature','Thiết kế','Chốt P/F','Passed','Failed','Chờ B/S','Not run'],summary,[.35,.11,.11,.11,.11,.11,.10])
     p(f"{concluded}/{len(initial)} mục đã chốt Passed/Failed; {counts['Passed']} Passed / {counts['Failed']} Failed / {counts['Blocked']} Blocked / {counts['Spec-gap']} Spec-gap / {counts['Not run']} Not run. Có 55 lượt scenario Web; 7 nhóm ca Mobile còn lại ánh xạ vào 13 tiêu chí active, không cộng 16 ánh xạ hoặc 12 ảnh thành số scenario runs.")
-    p('Chờ B/S là tổng Blocked và Spec-gap; hai trạng thái vẫn tách riêng theo ID và Excel. Bản AI gốc 68 mục; 3 Removed không tính vào phạm vi active. D015 chốt bằng review oracle trên ảnh hiện có, không phải lượt chạy mới. Số bug duy nhất chưa xác định; Failed không phải số bug đã khử trùng.')
+    p('Chờ B/S là tổng Blocked và Spec-gap; hai trạng thái vẫn tách riêng theo ID và Excel. Bản AI gốc 68 mục; 3 Removed không tính vào phạm vi active. D015 chốt bằng review oracle trên ảnh hiện có, không phải lượt chạy mới. Đã báo cáo 29 nhóm bằng 29 Issue; chưa khẳng định 29 nguyên nhân gốc độc lập. Failed và số Issue là hai số liệu khác nhau.')
     h('2. Phạm vi và cơ sở thiết kế')
     table(['Feature / màn hình','Nội dung trong phạm vi','Giới hạn'],[
       ['A / Web /login','Nhãn, input, focus/bàn phím, login, phản hồi sai/khóa và phục hồi','Tài khoản thử riêng; không khóa tài khoản demo dùng chung'],
@@ -89,7 +106,6 @@ def main():
       ['D / Expo Go Profile','Email chỉ đọc, điện thoại, bàn phím/cuộn, phản hồi lưu và đăng xuất','Loại lưu tên, địa chỉ nhiều dòng và recovery; không gồm lịch sử/hủy đơn']],[.21,.45,.34])
     p('Nguồn: đề HW03 §6 Task 1; EShop README v2.0 FR-02/04/09/17 và FR-21-24; API specification; bản tổng hợp bài giảng tại skills/gui-testing-guide do sinh viên chỉ định. Tiêu chí heuristic có H1-H10 để truy vết, không được tự gán thành yêu cầu nghiệp vụ. Domain/Boundary chọn input và trạng thái; GUI thật vẫn là đối tượng quan sát.')
     table(['IA','A','B','C','D','Tổng'],[[ia]+[sum(r['feature']==f and r['ia']==ia for r in initial)for f in FEATURES]+[sum(r['ia']==ia for r in initial)] for ia in ['IA-01','IA-02','IA-03','IA-04']],[.25,.15,.15,.15,.15,.15])
-    p('Bảo toàn 68 mục AI gốc; Keep ban đầu, sau đó yêu cầu sửa rồi loại D006/D009/D016. Phản biện và phần sinh viên tự thêm còn thiếu.')
     br();h('3. Môi trường và phương pháp thực thi')
     table(['Thành phần','Giá trị / giới hạn'],[
       ['Web GUI đã chạy','Linux; Microsoft Edge headless 155.0.4283.45; viewport 1280×800; C006 thêm 390×844'],
@@ -153,22 +169,24 @@ def main():
       ['evidence/gui/apply_execution.json','8 latest / 8 history; giữ từng vector, fixture và request/response.'],
       ['evidence/gui/T1A_*, T1B_*, T1C_*','Playwright JSON, screenshot và attachment gốc; 26 Web Failed có ảnh local.'],
       ['evidence/gui/mobile_execution.json; T1D_MANUAL_01/','16 tiêu chí ánh xạ, 12 ảnh gốc và hash; 5 Mobile Failed có ảnh, một số ảnh đại diện nhiều vector theo lời người thực hiện.'],
+      ['evidence/gui/github_published_issues.json','29 URL Issue, 31 Failed IDs, thời gian tạo thực và SHA-256 nội dung đã đăng. 47 URL PNG kiểm tra thành công.'],
       ['Task1_AI_Review.md; ai/prompt_log.md','Keep đã ghi nhận; review độc lập/audit/transcript đầy đủ còn thiếu. Prompt log hiện là bản tóm tắt PARTIAL.']],[.46,.54])
     for s in [
       'D006/D009/D016 đã Removed theo yêu cầu; không cần chạy lại trong phạm vi hiện tại. D015 đã chốt Passed theo vị trí và FR-22. Giữ lịch sử revision và ảnh trong mobile_execution.json. Không suy persistence backend từ ảnh form; không tự sửa SUT để bỏ qua validation.',
       'Sinh viên tự review, sửa/bổ sung mục AI bỏ sót và ghi lý do. Không coi gợi ý hoặc phiếu AI tạo là đóng góp độc lập của sinh viên.',
-      'Sinh viên tự viết bug report Markdown, severity và GitHub Issues kèm ảnh; khử trùng trước thống kê bug. Repository HW03 hiện chưa có remote, issue URL/Bug ID chưa có. Báo cáo này không soạn mô tả bug.',
+      'Đã tạo 29 Issue trên quocthaiLN/software-testing-hw03, kèm ảnh ghim commit 19cbfb0; liên kết đủ 31 Failed trong Excel. Nội dung từ bản nháp có khai báo nguồn AI; việc đăng Issue không tự đáp ứng điều kiện sinh viên tự viết theo AI-01 §11.',
       'Hoàn thiện transcript gốc, audit/disclosure/critique và thông tin sinh viên thật. Báo cáo hiện tại do AI tổng hợp dữ liệu thực thi; chưa phải bản sinh viên ký xác nhận.',
       'Hoàn thiện main report và PDF các tài liệu cần giữ, xuất Git log thật khi đóng gói. Task 2, Task 3 và tự chấm/ZIP chưa hoàn thành và không thuộc kết quả Task 1 ở checkpoint này.'
     ]:p(s)
     br();h('9. Tổng kết rà soát Task 1')
+    p('Bảo toàn 68 mục AI gốc; Keep ban đầu, sau đó yêu cầu sửa rồi loại D006/D009/D016. Phản biện và phần sinh viên tự thêm còn thiếu.')
     p('Phạm vi hiện tại 65 mục, bao phủ bốn feature và đủ IA-01…04; 34 Passed / 31 Failed. D006/D009/D016 đã Removed theo yêu cầu, giữ trong lịch sử và không tính hoàn tất bằng cách gán Passed. Phần thực thi theo phạm vi hiện tại đã có kết luận; Task 1 toàn bộ vẫn chưa đủ điều kiện nghiệm thu vì còn hồ sơ bắt buộc do sinh viên thực hiện.')
     table(['Requirement','Kết luận rà soát','Phần còn thiếu'],[
       ['HW03-T1-01','Đã đối chiếu bản tổng hợp bài giảng do sinh viên cung cấp','Không có'],
       ['HW03-T1-02','65 mục active >40; đủ IA; giữ 68 mục AI gốc, Excel và summary','Không có cho bước thiết kế hiện tại'],
       ['HW03-T1-03','Keep/Revise/Remove đã ghi; chưa đủ phần tự bổ sung','Sinh viên tự thêm mục AI bỏ sót và giải thích vì sao'],
       ['HW03-T1-04','65/65 active đã chốt; 31 Failed có đường dẫn ảnh local','Giữ công bố giới hạn ảnh đại diện/vector, timestamp/build Mobile chưa đủ'],
-      ['HW03-T1-05','Chưa hoàn thành','Sinh viên tự viết và khử trùng bug report; GitHub Issues kèm ảnh. Chưa có remote/URL'],
+      ['HW03-T1-05','Đã đăng 29 Issue kèm ảnh, liên kết 31 Failed','Điều kiện mô tả sinh viên tự viết chưa được xác nhận; metadata URL thật đã có'],
       ['HW03-AI / DOC','Báo cáo hiện tại không thay hồ sơ AI bắt buộc','Full transcript, audit/disclosure/critique và bản sinh viên xác nhận còn thiếu']],[.20,.41,.39])
     # Both formats are emitted from the same blocks, preventing summary drift.
     md=[]
@@ -211,11 +229,12 @@ def main():
     paths=[SUB/'GUI_Checklist.xlsx',SUB/'ai/task1_initial_checklist.json']+[SUB/'evidence/gui'/f'{n}_execution.json'for n in sources]
     if mobile_path.exists():paths.append(mobile_path)
     if revision_path.exists():paths.append(revision_path)
+    if publication_path.exists():paths.append(publication_path)
     checkpoint={'purpose':'Evidence checkpoint for interim Task 1 report, not completion approval',
                 'generatedAt':datetime.now(timezone.utc).isoformat(),'counts':dict(counts),
                 'designed':len(initial),'initialDesigned':68,'removed':len(archived),'executed':concluded,'scenarioRuns':55,'manualGroupedCases':7,
                 'manualCriteriaRecorded':sum(r['status']!='Removed' for r in mobile['latest']),'failedLatestImagesPresent':failed_images,
-                'workbookStatusesMatched':True,
+                'workbookStatusesMatched':True,'publishedIssues':publication['issueCount'] if publication else 0,'workbookIssueLinksMatched':bool(publication),
                 'sources':[{ 'path':str(p.relative_to(SUB)),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}for p in paths]}
     (SUB/'evidence/gui/task1_report_checkpoint.json').write_text(json.dumps(checkpoint,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(checkpoint['counts']))

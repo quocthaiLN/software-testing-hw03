@@ -29,12 +29,18 @@
   },
   "pdfRenderedAndVisuallyReviewed": true,
   "studentAdditionsReceived": 0,
-  "repositoryRemoteConfigured": false,
+  "repositoryRemoteConfigured": true,
   "studentBugReportsAndIssuesReceived": false,
   "fullTask1Acceptance": false,
   "remainingRequirements": [
     "HW03-T1-03 independent additions and explanation",
-    "HW03-T1-05 student-authored bug reports and GitHub Issues",
+    "HW03-T1-05 student authorship confirmation; 29 GitHub Issues already published",
     "HW03-AI/DOC complete original records and student confirmation"
-  ]
+  ],
+  "githubIssuesPublished": 29,
+  "allFailedItemsLinkedToIssues": true,
+  "verifiedPublicImageUrls": 47,
+  "studentBugDescriptionsConfirmed": false,
+  "publicationEvidence": "submission/evidence/gui/github_published_issues.json",
+  "publicationUpdatedAt": "2026-11-10T15:57:50.266479+00:00"
 }

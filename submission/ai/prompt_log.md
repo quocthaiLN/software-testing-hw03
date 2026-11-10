@@ -99,3 +99,8 @@ User prompts (verbatim): “Tu sinh giup toi”, “trick 1 xiu di”, “Toi ye
 ## Draft label cleanup — partial activity summary
 
 User: “Ban xoa het may cho do AI tao, do AI viet di”. AI shortened repeated title/footer attribution while preserving truthful centralized Disclosure. Existing user edits in README and both Markdown drafts were preserved. A read-only Markdown-to-PDF renderer was added; assistance and bug PDFs rebuilt/checked at 7 and 30 pages. Contribution source, missing signatures/transcript and execution facts were not relabelled as student-only work. No test data or results changed.
+
+
+## Authorized GitHub Issue publication — partial activity summary
+
+User asked “Toi da tao repo roi, ban co the tu dong tao issue cho toi ko?”, supplied `https://github.com/quocthaiLN/software-testing-hw03`, and confirmed “đã đăng nhập”. AI used the authenticated visible GitHub UI after verifying zero existing Issues to create #1–#29 from the existing 29 draft groups, with committed screenshot embeds and Disclosure links. Final UI showed 29 results; public REST readback verified exact posted content and all 47 PNG URLs. Actual publication times/URLs/body hashes stored, 31 Failed rows linked in Excel, Markdown/PDF/README refreshed. Original outcomes remained unchanged. No token/password requested, no missing test result or student authorship fabricated. Full original UI/tool transcript remains separate from this partial activity summary.

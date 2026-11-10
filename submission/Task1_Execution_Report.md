@@ -1,6 +1,6 @@
 # Task 1 - Báo cáo thực thi GUI (bản đang hoàn thiện)
 
-Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết kế gồm bốn feature A/B/C/D. Task 1 chưa hoàn tất: Đã tích hợp kết quả Mobile do sinh viên cung cấp và 12 ảnh gốc; D006/D009/D016 đã loại theo yêu cầu; D015 chốt theo FR-22 nguyên văn. 65 tiêu chí active đều có kết luận. Review/bổ sung độc lập và bug reports/Issues vẫn còn thiếu. Báo cáo này tổng hợp hồ sơ thực thi, không thay bug report do sinh viên tự viết.
+Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết kế gồm bốn feature A/B/C/D. Task 1 chưa hoàn tất: Đã tích hợp kết quả Mobile do sinh viên cung cấp và 12 ảnh gốc; D006/D009/D016 đã loại theo yêu cầu; D015 chốt theo FR-22 nguyên văn. 65 tiêu chí active đều có kết luận. Đã tạo 29 Issue kèm ảnh, ánh xạ 31 Failed; review/bổ sung độc lập và điều kiện tác giả báo cáo vẫn chưa đủ. Báo cáo này tổng hợp hồ sơ thực thi, không thay bug report do sinh viên tự viết.
 
 
 ## 1. Thống kê hiện tại
@@ -15,7 +15,7 @@ Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết k
 
 65/65 mục đã chốt Passed/Failed; 34 Passed / 31 Failed / 0 Blocked / 0 Spec-gap / 0 Not run. Có 55 lượt scenario Web; 7 nhóm ca Mobile còn lại ánh xạ vào 13 tiêu chí active, không cộng 16 ánh xạ hoặc 12 ảnh thành số scenario runs.
 
-Chờ B/S là tổng Blocked và Spec-gap; hai trạng thái vẫn tách riêng theo ID và Excel. Bản AI gốc 68 mục; 3 Removed không tính vào phạm vi active. D015 chốt bằng review oracle trên ảnh hiện có, không phải lượt chạy mới. Số bug duy nhất chưa xác định; Failed không phải số bug đã khử trùng.
+Chờ B/S là tổng Blocked và Spec-gap; hai trạng thái vẫn tách riêng theo ID và Excel. Bản AI gốc 68 mục; 3 Removed không tính vào phạm vi active. D015 chốt bằng review oracle trên ảnh hiện có, không phải lượt chạy mới. Đã báo cáo 29 nhóm bằng 29 Issue; chưa khẳng định 29 nguyên nhân gốc độc lập. Failed và số Issue là hai số liệu khác nhau.
 
 
 ## 2. Phạm vi và cơ sở thiết kế
@@ -35,8 +35,6 @@ Nguồn: đề HW03 §6 Task 1; EShop README v2.0 FR-02/04/09/17 và FR-21-24; A
 | IA-02 | 6 | 2 | 12 | 3 | 23 |
 | IA-03 | 2 | 1 | 4 | 3 | 10 |
 | IA-04 | 4 | 4 | 6 | 3 | 17 |
-
-Bảo toàn 68 mục AI gốc; Keep ban đầu, sau đó yêu cầu sửa rồi loại D006/D009/D016. Phản biện và phần sinh viên tự thêm còn thiếu.
 
 
 ## 3. Môi trường và phương pháp thực thi
@@ -266,13 +264,14 @@ Các scenario có nhiều biến thể không chứng minh mọi nhánh nếu d�
 | evidence/gui/apply_execution.json | 8 latest / 8 history; giữ từng vector, fixture và request/response. |
 | evidence/gui/T1A_*, T1B_*, T1C_* | Playwright JSON, screenshot và attachment gốc; 26 Web Failed có ảnh local. |
 | evidence/gui/mobile_execution.json; T1D_MANUAL_01/ | 16 tiêu chí ánh xạ, 12 ảnh gốc và hash; 5 Mobile Failed có ảnh, một số ảnh đại diện nhiều vector theo lời người thực hiện. |
+| evidence/gui/github_published_issues.json | 29 URL Issue, 31 Failed IDs, thời gian tạo thực và SHA-256 nội dung đã đăng. 47 URL PNG kiểm tra thành công. |
 | Task1_AI_Review.md; ai/prompt_log.md | Keep đã ghi nhận; review độc lập/audit/transcript đầy đủ còn thiếu. Prompt log hiện là bản tóm tắt PARTIAL. |
 
 D006/D009/D016 đã Removed theo yêu cầu; không cần chạy lại trong phạm vi hiện tại. D015 đã chốt Passed theo vị trí và FR-22. Giữ lịch sử revision và ảnh trong mobile_execution.json. Không suy persistence backend từ ảnh form; không tự sửa SUT để bỏ qua validation.
 
 Sinh viên tự review, sửa/bổ sung mục AI bỏ sót và ghi lý do. Không coi gợi ý hoặc phiếu AI tạo là đóng góp độc lập của sinh viên.
 
-Sinh viên tự viết bug report Markdown, severity và GitHub Issues kèm ảnh; khử trùng trước thống kê bug. Repository HW03 hiện chưa có remote, issue URL/Bug ID chưa có. Báo cáo này không soạn mô tả bug.
+Đã tạo 29 Issue trên quocthaiLN/software-testing-hw03, kèm ảnh ghim commit 19cbfb0; liên kết đủ 31 Failed trong Excel. Nội dung từ bản nháp có khai báo nguồn AI; việc đăng Issue không tự đáp ứng điều kiện sinh viên tự viết theo AI-01 §11.
 
 Hoàn thiện transcript gốc, audit/disclosure/critique và thông tin sinh viên thật. Báo cáo hiện tại do AI tổng hợp dữ liệu thực thi; chưa phải bản sinh viên ký xác nhận.
 
@@ -280,6 +279,8 @@ Hoàn thiện main report và PDF các tài liệu cần giữ, xuất Git log t
 
 
 ## 9. Tổng kết rà soát Task 1
+
+Bảo toàn 68 mục AI gốc; Keep ban đầu, sau đó yêu cầu sửa rồi loại D006/D009/D016. Phản biện và phần sinh viên tự thêm còn thiếu.
 
 Phạm vi hiện tại 65 mục, bao phủ bốn feature và đủ IA-01…04; 34 Passed / 31 Failed. D006/D009/D016 đã Removed theo yêu cầu, giữ trong lịch sử và không tính hoàn tất bằng cách gán Passed. Phần thực thi theo phạm vi hiện tại đã có kết luận; Task 1 toàn bộ vẫn chưa đủ điều kiện nghiệm thu vì còn hồ sơ bắt buộc do sinh viên thực hiện.
 
@@ -289,6 +290,6 @@ Phạm vi hiện tại 65 mục, bao phủ bốn feature và đủ IA-01…04; 3
 | HW03-T1-02 | 65 mục active >40; đủ IA; giữ 68 mục AI gốc, Excel và summary | Không có cho bước thiết kế hiện tại |
 | HW03-T1-03 | Keep/Revise/Remove đã ghi; chưa đủ phần tự bổ sung | Sinh viên tự thêm mục AI bỏ sót và giải thích vì sao |
 | HW03-T1-04 | 65/65 active đã chốt; 31 Failed có đường dẫn ảnh local | Giữ công bố giới hạn ảnh đại diện/vector, timestamp/build Mobile chưa đủ |
-| HW03-T1-05 | Chưa hoàn thành | Sinh viên tự viết và khử trùng bug report; GitHub Issues kèm ảnh. Chưa có remote/URL |
+| HW03-T1-05 | Đã đăng 29 Issue kèm ảnh, liên kết 31 Failed | Điều kiện mô tả sinh viên tự viết chưa được xác nhận; metadata URL thật đã có |
 | HW03-AI / DOC | Báo cáo hiện tại không thay hồ sơ AI bắt buộc | Full transcript, audit/disclosure/critique và bản sinh viên xác nhận còn thiếu |
 
