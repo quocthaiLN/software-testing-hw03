@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-11-10T14:15:30.901898+00:00",
+  "purpose": "PDF copies only; no results or student review added",
+  "documents": [
+    {
+      "source": "submission/Task1_Plan.md",
+      "sourceSha256": "19d17a1f669326fd03e330934859af57d413fbe8f70bccdf4638769282e2683b",
+      "pdf": "submission/Task1_Plan.pdf",
+      "pdfSha256": "7d56ededfe9b2e6c513a5ffde3370849dd82adfc063e9099a472fd4e4cdf752c",
+      "pages": 4,
+      "sourceTextVerified": true,
+      "renderedAndVisuallyReviewed": true
+    },
+    {
+      "source": "submission/Task1_Intake.md",
+      "sourceSha256": "928656d9e9543ded294af451972b244473d82e07a7dfb0db83b50fa462a4e26b",
+      "pdf": "submission/Task1_Intake.pdf",
+      "pdfSha256": "fae4cbf2e469235a3891235bd1dd93d8377fa5e468301bf35505deb5df56b552",
+      "pages": 7,
+      "sourceTextVerified": true,
+      "renderedAndVisuallyReviewed": true
+    },
+    {
+      "source": "submission/Task1_AI_Review.md",
+      "sourceSha256": "4d2679c8b1dea2282822936ba7513404b68e0117d6e70b203bd5b524a0f6b2f3",
+      "pdf": "submission/Task1_AI_Review.pdf",
+      "pdfSha256": "9600df813ac0a6839447672912da7214bce13be8b68b264dec736ed6070340ad",
+      "pages": 1,
+      "sourceTextVerified": true,
+      "renderedAndVisuallyReviewed": true
+    }
+  ]
+}

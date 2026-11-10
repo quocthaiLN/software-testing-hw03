@@ -65,3 +65,7 @@ Artifact record created at 2026-11-10T14:06:31.822931+00:00 (not a recovered cha
 ## Interim execution report preparation
 
 Artifact record created at 2026-11-10T14:12:09.066380+00:00 (not a recovered message timestamp). AI summarized existing real Web raw JSON into Task1_Execution_Report.md/.pdf and a reproducible builder. Compared workbook statuses, checked Failed image files, emitted source hashes, and rendered/checked the PDF. Mobile remains 16 Not run; no device automation, bug descriptions, severity, signatures or independent student critique were created. This activity summary does not replace the required full verbatim transcript.
+
+## Supporting PDF copies
+
+Artifact record created at 2026-11-10T14:15:30.902463+00:00 (not an original chat timestamp). AI exported the existing Task1_Plan, Task1_Intake and Task1_AI_Review Markdown into PDF using bundled marked lexer and ReportLab; source text was not changed. All text blocks and rendered pages were checked. The wide matrix was split into two column panels without dropping cells. No student review content, Mobile results or bug descriptions were supplied by AI. This remains a partial activity record.

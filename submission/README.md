@@ -21,16 +21,16 @@ Khi hoàn tất, bổ sung số màn hình/flow, checklist designed/executed/pas
 
 ## Task 1 hiện tại
 
-- `Task1_Plan.md`: phạm vi và kế hoạch bốn feature.
+- `Task1_Plan.md` / `.pdf`: phạm vi và kế hoạch bốn feature; trạng thái thiết kế lịch sử, không thay kết quả thực thi hiện tại.
 - `Task1_Execution_Report.md` / `.pdf`: báo cáo Task 1 đang hoàn thiện, tổng hợp 52 kết quả Web thật, lịch sử chạy/fixture và ma trận widget × heuristic; 16 Mobile vẫn Not run. Checkpoint nguồn có SHA-256 tại `evidence/gui/task1_report_checkpoint.json`.
 - `Task1_Mobile_Manual_Form.md` / `.pdf`: phiếu trống ghi nhận 16 mục Mobile theo lựa chọn kiểm thử thủ công của sinh viên; chưa chứa kết quả.
-- `Task1_Intake.md`: feature briefs, 31 widgets, phase order, ma trận widget × heuristic và spec-gaps.
+- `Task1_Intake.md` / `.pdf`: feature briefs, 31 widgets, phase order, ma trận widget × heuristic và spec-gaps; PDF chia ma trận H1–H5 / H6–H10 để đọc rõ.
 - `ai/task1_initial_checklist.md` / `.json` / `.pdf`: bản AI gốc 68 mục được giữ để so sánh; PDF 19 trang đã render/kiểm tra.
-- `Task1_AI_Review.md` và sheet AI Review trong Excel: ghi nhận trả lời “Keep” cho bản đầu; lý do chi tiết/mục sinh viên tự thêm còn thiếu.
+- `Task1_AI_Review.md` / `.pdf` và sheet AI Review trong Excel: ghi nhận trả lời “Keep” cho bản đầu; lý do chi tiết/mục sinh viên tự thêm còn thiếu.
 - Checklist thiết kế 68; thực thi 52 mục A/B/C; Passed 26; Failed 26; Not run 16 (Mobile D). Có 55 GUI scenario runs; các lần chạy lại không thành mục hoặc bug mới. Lỗi launcher C01 được giữ riêng, không tính là kết quả sản phẩm.
 - `evidence/gui/login_execution.json`: quan sát và lịch sử chạy thô, không phải bug report. Các mô tả bug và severity cần sinh viên tự viết theo AI Agreement.
 - `evidence/gui/admin_execution.json`: 28 mục Admin, kết quả cuối 15 Passed / 13 Failed. C006 chuyển từ kết quả hình học ban đầu sang Failed sau QA và đo vùng hiển thị input. C027 dùng phản hồi rỗng có kiểm soát; C028 dùng fault injection, được ghi rõ trong dữ liệu gốc.
 - `evidence/gui/apply_execution.json`: 8 mục Apply Coupon, 5 Passed / 3 Failed; giỏ hàng được tạo bằng sản phẩm thật và UI, không sửa trực tiếp tổng tiền. Fixture JWT hết hạn, giữ response chờ và ngắt mạng được ghi rõ; không có đơn hàng/thanh toán được tạo trong phần B.
 - Bộ chạy và hướng dẫn tái lập ở `../tools/gui/README.md`. Edge headless không được tính thay Chrome/Firefox/Expo Go cho Task 3.
 
-Nguồn hướng dẫn GUI là bản tổng hợp do sinh viên cung cấp tại `skills/gui-testing-guide/`; các tài liệu thiết kế khác ngoài bản checklist AI đầu còn chờ PDF. Mọi tài liệu được giữ trong bộ nộp cuối cần bản PDF theo policies, được render và kiểm tra trước đóng gói. Chưa có ZIP hoặc điểm tự chấm.
+Nguồn hướng dẫn GUI là bản tổng hợp do sinh viên cung cấp tại `skills/gui-testing-guide/`; kế hoạch, intake và phiếu AI Review đã có PDF, được đối chiếu nội dung và render/kiểm tra. Hồ sơ AI và tài liệu cuối vẫn cần được hoàn thiện và xuất bản PDF tương ứng. Mọi tài liệu được giữ trong bộ nộp cuối cần bản PDF theo policies, được render và kiểm tra trước đóng gói. Chưa có ZIP hoặc điểm tự chấm.
