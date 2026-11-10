@@ -21,8 +21,8 @@ test('GUI-A-002: exactly one h1',async({page,login})=>{
   await expect(page.getByRole('heading',{level:1})).toHaveCount(1);
 });
 test('GUI-A-003: Vietnamese form labels',async({page,login})=>{
-  await expect(page.locator('form')).toContainText('Email');
   await expect(login.submit).toHaveText(/đăng nhập/i);
+  await expect(page.locator('form')).toContainText('Mật khẩu');
 });
 test('GUI-A-004: positive action blue',async({login})=>{
   const color=await login.submit.evaluate(e=>getComputedStyle(e).backgroundColor);

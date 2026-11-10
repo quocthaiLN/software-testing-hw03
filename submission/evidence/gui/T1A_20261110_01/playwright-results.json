@@ -1,0 +1,1091 @@
+{
+  "config": {
+    "argv": [
+      "/home/le-nguyen-quoc-thai/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "tools/gui/playwright.config.mjs"
+    ],
+    "configFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs",
+    "rootDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 65000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.spec.mjs",
+      "file": "login.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GUI-A-001: title describes login",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3738,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading').first()\nExpected pattern: \u001b[32m/đăng nhập/i\u001b[39m\nReceived string:  \u001b[31m\"Đăng Ký\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading').first()\u001b[22m\n\u001b[2m    10 × locator resolved to <h2 class=\"text-2xl font-bold mb-6 text-center\">Đăng Ký</h2>\u001b[22m\n\u001b[2m       - unexpected value \"Đăng Ký\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading').first()\nExpected pattern: \u001b[32m/đăng nhập/i\u001b[39m\nReceived string:  \u001b[31m\"Đăng Ký\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading').first()\u001b[22m\n\u001b[2m    10 × locator resolved to <h2 class=\"text-2xl font-bold mb-6 text-center\">Đăng Ký</h2>\u001b[22m\n\u001b[2m       - unexpected value \"Đăng Ký\"\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:18:51",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 51,
+                      "line": 18
+                    },
+                    "snippet": "  16 |\n  17 | test('GUI-A-001: title describes login',async({page,login})=>{\n> 18 |   await expect(page.getByRole('heading').first()).toHaveText(/đăng nhập/i);\n     |                                                   ^\n  19 | });\n  20 | test('GUI-A-002: exactly one h1',async({page,login})=>{\n  21 |   await expect(page.getByRole('heading',{level:1})).toHaveCount(1);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 51,
+                        "line": 18
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('heading').first()\nExpected pattern: \u001b[32m/đăng nhập/i\u001b[39m\nReceived string:  \u001b[31m\"Đăng Ký\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading').first()\u001b[22m\n\u001b[2m    10 × locator resolved to <h2 class=\"text-2xl font-bold mb-6 text-center\">Đăng Ký</h2>\u001b[22m\n\u001b[2m       - unexpected value \"Đăng Ký\"\u001b[22m\n\n\n  16 |\n  17 | test('GUI-A-001: title describes login',async({page,login})=>{\n> 18 |   await expect(page.getByRole('heading').first()).toHaveText(/đăng nhập/i);\n     |                                                   ^\n  19 | });\n  20 | test('GUI-A-002: exactly one h1',async({page,login})=>{\n  21 |   await expect(page.getByRole('heading',{level:1})).toHaveCount(1);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:18:51"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:40:54.651Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-001-title-describes-login/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDAxIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQwOjU4Ljc4MVoiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAidGV4dCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9CiAgXQp9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-001-title-describes-login/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 51,
+                    "line": 18
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-e9e7dc95fd90c3ea95d4",
+          "file": "login.spec.mjs",
+          "line": 17,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-002: exactly one h1",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3263,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 1 })\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\u001b[2m    10 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 1 })\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\u001b[2m    10 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:21:53",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 53,
+                      "line": 21
+                    },
+                    "snippet": "  19 | });\n  20 | test('GUI-A-002: exactly one h1',async({page,login})=>{\n> 21 |   await expect(page.getByRole('heading',{level:1})).toHaveCount(1);\n     |                                                     ^\n  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n  24 |   await expect(page.locator('form')).toContainText('Email');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 53,
+                        "line": 21
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('heading', { level: 1 })\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('heading', { level: 1 })\u001b[22m\n\u001b[2m    10 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n\n  19 | });\n  20 | test('GUI-A-002: exactly one h1',async({page,login})=>{\n> 21 |   await expect(page.getByRole('heading',{level:1})).toHaveCount(1);\n     |                                                     ^\n  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n  24 |   await expect(page.locator('form')).toContainText('Email');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:21:53"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:40:59.218Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-002-exactly-one-h1/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDAyIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjAyLjU4N1oiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAidGV4dCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9CiAgXQp9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-002-exactly-one-h1/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 53,
+                    "line": 21
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-001e7a768a66cb1e7c98",
+          "file": "login.spec.mjs",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-003: Vietnamese form labels",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3240,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('form')\nExpected substring: \u001b[32m\"Email\"\u001b[39m\nReceived string:    \u001b[31m\"UsernameMật khẩuQuên mật khẩu?Sign InChưa có tài khoản? Đăng ký ngay\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form')\u001b[22m\n\u001b[2m    10 × locator resolved to <form class=\"space-y-4\">…</form>\u001b[22m\n\u001b[2m       - unexpected value \"UsernameMật khẩuQuên mật khẩu?Sign InChưa có tài khoản? Đăng ký ngay\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('form')\nExpected substring: \u001b[32m\"Email\"\u001b[39m\nReceived string:    \u001b[31m\"UsernameMật khẩuQuên mật khẩu?Sign InChưa có tài khoản? Đăng ký ngay\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form')\u001b[22m\n\u001b[2m    10 × locator resolved to <form class=\"space-y-4\">…</form>\u001b[22m\n\u001b[2m       - unexpected value \"UsernameMật khẩuQuên mật khẩu?Sign InChưa có tài khoản? Đăng ký ngay\"\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:24:38",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 38,
+                      "line": 24
+                    },
+                    "snippet": "  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n> 24 |   await expect(page.locator('form')).toContainText('Email');\n     |                                      ^\n  25 |   await expect(login.submit).toHaveText(/đăng nhập/i);\n  26 | });\n  27 | test('GUI-A-004: positive action blue',async({login})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 38,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('form')\nExpected substring: \u001b[32m\"Email\"\u001b[39m\nReceived string:    \u001b[31m\"UsernameMật khẩuQuên mật khẩu?Sign InChưa có tài khoản? Đăng ký ngay\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form')\u001b[22m\n\u001b[2m    10 × locator resolved to <form class=\"space-y-4\">…</form>\u001b[22m\n\u001b[2m       - unexpected value \"UsernameMật khẩuQuên mật khẩu?Sign InChưa có tài khoản? Đăng ký ngay\"\u001b[22m\n\n\n  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n> 24 |   await expect(page.locator('form')).toContainText('Email');\n     |                                      ^\n  25 |   await expect(login.submit).toHaveText(/đăng nhập/i);\n  26 | });\n  27 | test('GUI-A-004: positive action blue',async({login})=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:24:38"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:03.026Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-003-Vietnamese-form-labels/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDAzIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjA2LjM3NFoiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAidGV4dCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9CiAgXQp9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-003-Vietnamese-form-labels/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 38,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-ec6e31951566c2a2260f",
+          "file": "login.spec.mjs",
+          "line": 23,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-004: positive action blue",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 301,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:06.782Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDA0IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjA3LjE1N1oiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAidGV4dCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9CiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-75e7731372017fc4cd0c",
+          "file": "login.spec.mjs",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-005: email input type and invalid format",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3233,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('form input').first()\nExpected: \u001b[32m\"email\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form input').first()\u001b[22m\n\u001b[2m    10 × locator resolved to <input value=\"\" required=\"\" type=\"text\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"text\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('form input').first()\nExpected: \u001b[32m\"email\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form input').first()\u001b[22m\n\u001b[2m    10 × locator resolved to <input value=\"\" required=\"\" type=\"text\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"text\"\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:33:29",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 29,
+                      "line": 33
+                    },
+                    "snippet": "  31 | });\n  32 | test('GUI-A-005: email input type and invalid format',async({login,page})=>{\n> 33 |   await expect(login.email).toHaveAttribute('type','email');\n     |                             ^\n  34 |   await login.fill('not-an-email',demo.password);\n  35 |   await login.submit.click();\n  36 |   await expect(page.locator('form input:invalid')).toHaveCount(1);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 29,
+                        "line": 33
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('form input').first()\nExpected: \u001b[32m\"email\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form input').first()\u001b[22m\n\u001b[2m    10 × locator resolved to <input value=\"\" required=\"\" type=\"text\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"text\"\u001b[22m\n\n\n  31 | });\n  32 | test('GUI-A-005: email input type and invalid format',async({login,page})=>{\n> 33 |   await expect(login.email).toHaveAttribute('type','email');\n     |                             ^\n  34 |   await login.fill('not-an-email',demo.password);\n  35 |   await login.submit.click();\n  36 |   await expect(page.locator('form input:invalid')).toHaveCount(1);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:33:29"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:07.217Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-005-email-input-type-and-invalid-format/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDA1IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjEwLjQxM1oiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAidGV4dCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9CiAgXQp9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-005-email-input-type-and-invalid-format/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 29,
+                    "line": 33
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-18c368bfbaeb15b3d3d9",
+          "file": "login.spec.mjs",
+          "line": 32,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-006: password masked",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3391,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('form input').nth(1)\nExpected: \u001b[32m\"password\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form input').nth(1)\u001b[22m\n\u001b[2m    10 × locator resolved to <input required=\"\" type=\"text\" value=\"GuiDemo123!\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"text\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('form input').nth(1)\nExpected: \u001b[32m\"password\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form input').nth(1)\u001b[22m\n\u001b[2m    10 × locator resolved to <input required=\"\" type=\"text\" value=\"GuiDemo123!\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"text\"\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:41:32",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 32,
+                      "line": 41
+                    },
+                    "snippet": "  39 | test('GUI-A-006: password masked',async({login})=>{\n  40 |   await login.password.fill(demo.password);\n> 41 |   await expect(login.password).toHaveAttribute('type','password');\n     |                                ^\n  42 | });\n  43 | test('GUI-A-007: required field markers',async({page,login})=>{\n  44 |   await expect(page.locator('form label').nth(0)).toContainText('*');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 32,
+                        "line": 41
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('form input').nth(1)\nExpected: \u001b[32m\"password\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveAttribute\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form input').nth(1)\u001b[22m\n\u001b[2m    10 × locator resolved to <input required=\"\" type=\"text\" value=\"GuiDemo123!\" class=\"w-full border p-2 rounded\"/>\u001b[22m\n\u001b[2m       - unexpected value \"text\"\u001b[22m\n\n\n  39 | test('GUI-A-006: password masked',async({login})=>{\n  40 |   await login.password.fill(demo.password);\n> 41 |   await expect(login.password).toHaveAttribute('type','password');\n     |                                ^\n  42 | });\n  43 | test('GUI-A-007: required field markers',async({page,login})=>{\n  44 |   await expect(page.locator('form label').nth(0)).toContainText('*');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:41:32"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:10.854Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-006-password-masked/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDA2IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjE0LjMzOFoiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAidGV4dCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IHRydWUsCiAgICAgICJmb2N1c2VkIjogdHJ1ZQogICAgfQogIF0KfQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-006-password-masked/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 32,
+                    "line": 41
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-08f75fd00e33417a2e31",
+          "file": "login.spec.mjs",
+          "line": 39,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-007: required field markers",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3240,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('form label').first()\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"Username\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form label').first()\u001b[22m\n\u001b[2m    10 × locator resolved to <label class=\"block text-gray-700 mb-2\">Username</label>\u001b[22m\n\u001b[2m       - unexpected value \"Username\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('form label').first()\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"Username\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form label').first()\u001b[22m\n\u001b[2m    10 × locator resolved to <label class=\"block text-gray-700 mb-2\">Username</label>\u001b[22m\n\u001b[2m       - unexpected value \"Username\"\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:44:51",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 51,
+                      "line": 44
+                    },
+                    "snippet": "  42 | });\n  43 | test('GUI-A-007: required field markers',async({page,login})=>{\n> 44 |   await expect(page.locator('form label').nth(0)).toContainText('*');\n     |                                                   ^\n  45 |   await expect(page.locator('form label').nth(1)).toContainText('*');\n  46 | });\n  47 | test('GUI-A-008: blank required fields rejected',async({page,login},info)=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 51,
+                        "line": 44
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('form label').first()\nExpected substring: \u001b[32m\"*\"\u001b[39m\nReceived string:    \u001b[31m\"Username\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for locator('form label').first()\u001b[22m\n\u001b[2m    10 × locator resolved to <label class=\"block text-gray-700 mb-2\">Username</label>\u001b[22m\n\u001b[2m       - unexpected value \"Username\"\u001b[22m\n\n\n  42 | });\n  43 | test('GUI-A-007: required field markers',async({page,login})=>{\n> 44 |   await expect(page.locator('form label').nth(0)).toContainText('*');\n     |                                                   ^\n  45 |   await expect(page.locator('form label').nth(1)).toContainText('*');\n  46 | });\n  47 | test('GUI-A-008: blank required fields rejected',async({page,login},info)=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:44:51"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:14.752Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-007-required-field-markers/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDA3IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjE4LjA4NFoiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAidGV4dCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9CiAgXQp9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-007-required-field-markers/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 51,
+                    "line": 44
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-73e959a92f0ae9d327d8",
+          "file": "login.spec.mjs",
+          "line": 43,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-008: blank required fields rejected",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 496,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "email missing",
+                      "duration": 134
+                    },
+                    {
+                      "title": "password missing",
+                      "duration": 69
+                    },
+                    {
+                      "title": "both missing",
+                      "duration": 50
+                    }
+                  ],
+                  "startTime": "2026-11-10T12:41:18.505Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDA4IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjE5LjA4MFoiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidHlwZSI6ICJ0ZXh0IiwKICAgICAgInJlcXVpcmVkIjogdHJ1ZSwKICAgICAgInZhbGlkIjogZmFsc2UsCiAgICAgICJmb2N1c2VkIjogZmFsc2UKICAgIH0KICBdCn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-0c179321a21b5bd206c7",
+          "file": "login.spec.mjs",
+          "line": 47,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-009: replace and edit field values",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 331,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:19.156Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDA5IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjE5LjQzMloiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiB0cnVlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9LAogICAgewogICAgICAidHlwZSI6ICJ0ZXh0IiwKICAgICAgInJlcXVpcmVkIjogdHJ1ZSwKICAgICAgInZhbGlkIjogdHJ1ZSwKICAgICAgImZvY3VzZWQiOiB0cnVlCiAgICB9CiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-50e7a6b49abf275db7a0",
+          "file": "login.spec.mjs",
+          "line": 56,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-010: natural top-down tab order",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3246,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('link', { name: 'EShop', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: 'EShop', exact: true })\u001b[22m\n\u001b[2m    10 × locator resolved to <a href=\"/\" data-discover=\"true\" class=\"text-2xl font-bold\">EShop</a>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('link', { name: 'EShop', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: 'EShop', exact: true })\u001b[22m\n\u001b[2m    10 × locator resolved to <a href=\"/\" data-discover=\"true\" class=\"text-2xl font-bold\">EShop</a>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:70:66",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 66,
+                      "line": 70
+                    },
+                    "snippet": "  68 | test('GUI-A-010: natural top-down tab order',async({page,login})=>{\n  69 |   await page.keyboard.press('Tab');\n> 70 |   await expect(page.getByRole('link',{name:'EShop',exact:true})).toBeFocused();\n     |                                                                  ^\n  71 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Giỏ hàng',exact:true})).toBeFocused();\n  72 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Đăng nhập',exact:true})).toBeFocused();\n  73 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Đăng ký',exact:true})).toBeFocused();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 66,
+                        "line": 70
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeFocused\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator:  getByRole('link', { name: 'EShop', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toBeFocused\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('link', { name: 'EShop', exact: true })\u001b[22m\n\u001b[2m    10 × locator resolved to <a href=\"/\" data-discover=\"true\" class=\"text-2xl font-bold\">EShop</a>\u001b[22m\n\u001b[2m       - unexpected value \"inactive\"\u001b[22m\n\n\n  68 | test('GUI-A-010: natural top-down tab order',async({page,login})=>{\n  69 |   await page.keyboard.press('Tab');\n> 70 |   await expect(page.getByRole('link',{name:'EShop',exact:true})).toBeFocused();\n     |                                                                  ^\n  71 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Giỏ hàng',exact:true})).toBeFocused();\n  72 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Đăng nhập',exact:true})).toBeFocused();\n  73 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Đăng ký',exact:true})).toBeFocused();\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:70:66"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:19.499Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-010-natural-top-down-tab-order/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDEwIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjIyLjcyMVoiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAidGV4dCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9CiAgXQp9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-010-natural-top-down-tab-order/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 66,
+                    "line": 70
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-d2da46e80ce3b46c3749",
+          "file": "login.spec.mjs",
+          "line": 68,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-011: support links navigate by mouse and keyboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 695,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:23.160Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDExIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjIzLjk0NloiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL3JlZ2lzdGVyIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9IFTDoGkgS2hv4bqjblxuSOG7jSBUw6puXG5FbWFpbFxuTeG6rXQga2jhuql1XG5cblnDqnUgY+G6p3U6IFThu5FpIHRoaeG7g3UgOCBrw70gdOG7sSwgY8OzIGNo4buvIGhvYSwgY2jhu68gdGjGsOG7nW5nLCBz4buRIHbDoCBrw70gdOG7sSDEkeG6t2MgYmnhu4d0LlxuXG7EkMSDbmcgS8O9XG7EkMOjIGPDsyB0w6BpIGtob+G6o24/IMSQxINuZyBuaOG6rXBcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAidGV4dCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9LAogICAgewogICAgICAidHlwZSI6ICJwYXNzd29yZCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9CiAgXQp9"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-a3219a6fb6bcebc35e96",
+          "file": "login.spec.mjs",
+          "line": 77,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-012: successful login by click and enter",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 706,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:24.018Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDEyIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjI0LjY3M1oiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczLyIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wXG5HaeG7jyBow6BuZ1xuQ2jDoG8sIEhXMDMgR1VJIExvZ2luXG5UaG/DoXRcbkRhbmggc8OhY2ggc+G6o24gcGjhuqltXG5Uw6xtXG5pUGhvbmUgMTUgUHJvIE1heFxuXG4zMCwwMDAsMDAwIFZORFxuXG5YZW0gY2hpIHRp4bq/dFxuVGjDqm0gdsOgbyBnaeG7j1xuU2Ftc3VuZyBHYWxheHkgUzI0IFVsdHJhXG5cbjI4LDAwMCwwMDAgVk5EXG5cblhlbSBjaGkgdGnhur90XG5UaMOqbSB2w6BvIGdp4buPXG5NYWNCb29rIFBybyBNM1xuXG40NSwwMDAsMDAwIFZORFxuXG5YZW0gY2hpIHRp4bq/dFxuVGjDqm0gdsOgbyBnaeG7j1xuVGFpIG5naGUgQWlyUG9kcyBQcm8gMlxuXG42LDAwMCwwMDAgVk5EXG5cblhlbSBjaGkgdGnhur90XG5UaMOqbSB2w6BvIGdp4buPXG5Cw6BuIHBow61tIGPGoSBLZXljaHJvbiBRMVxuXG40LDAwMCwwMDAgVk5EXG5cblhlbSBjaGkgdGnhur90XG5UaMOqbSB2w6BvIGdp4buPXG5IaeG7g24gdGjhu4sgNSBz4bqjbiBwaOG6qW1cbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiBmYWxzZSwKICAgICAgInZhbGlkIjogdHJ1ZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfQogIF0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-a5fbf08de699a20d7c52",
+          "file": "login.spec.mjs",
+          "line": 89,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-013: safe generic authentication error",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 405,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:24.738Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDEzIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjI1LjA5MFoiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsSQxINuZyBuaOG6rXAgdGjhuqV0IGLhuqFpLiBWdWkgbMOybmcga2nhu4NtIHRyYSBs4bqhaS5cbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiB0cnVlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9LAogICAgewogICAgICAidHlwZSI6ICJ0ZXh0IiwKICAgICAgInJlcXVpcmVkIjogdHJ1ZSwKICAgICAgInZhbGlkIjogdHJ1ZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfQogIF0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-c1ca50015d7ba85d7ed4",
+          "file": "login.spec.mjs",
+          "line": 97,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-014: error above submit",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 339,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m425\u001b[39m\nReceived:    \u001b[31m565\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m425\u001b[39m\nReceived:    \u001b[31m565\u001b[39m\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:107:32",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 32,
+                      "line": 107
+                    },
+                    "snippet": "  105 |   await expect(login.error).toBeVisible();\n  106 |   const error=await login.error.boundingBox();const button=await login.submit.boundingBox();\n> 107 |   expect(error.y+error.height).toBeLessThanOrEqual(button.y);\n      |                                ^\n  108 | });\n  109 | test('GUI-A-015: lock threshold at three consecutive failures',async({page,login,makeUser},info)=>{\n  110 |   const observations=[];"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 32,
+                        "line": 107
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThanOrEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: <= \u001b[32m425\u001b[39m\nReceived:    \u001b[31m565\u001b[39m\n\n  105 |   await expect(login.error).toBeVisible();\n  106 |   const error=await login.error.boundingBox();const button=await login.submit.boundingBox();\n> 107 |   expect(error.y+error.height).toBeLessThanOrEqual(button.y);\n      |                                ^\n  108 | });\n  109 | test('GUI-A-015: lock threshold at three consecutive failures',async({page,login,makeUser},info)=>{\n  110 |   const observations=[];\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:107:32"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:25.163Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-014-error-above-submit/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDE0IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjI1LjQ4N1oiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsSQxINuZyBuaOG6rXAgdGjhuqV0IGLhuqFpLiBWdWkgbMOybmcga2nhu4NtIHRyYSBs4bqhaS5cbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiB0cnVlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9LAogICAgewogICAgICAidHlwZSI6ICJ0ZXh0IiwKICAgICAgInJlcXVpcmVkIjogdHJ1ZSwKICAgICAgInZhbGlkIjogdHJ1ZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfQogIF0KfQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-014-error-above-submit/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 32,
+                    "line": 107
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-1d4eb5f6a4881494146a",
+          "file": "login.spec.mjs",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-015: lock threshold at three consecutive failures",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4183,
+                  "error": {
+                    "message": "Error: after 2 wrong attempts\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:5173/\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:5173/\u001b[7mlogin\u001b[27m\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - after 2 wrong attempts with timeout 3000ms\u001b[22m\n\u001b[2m    10 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:5173/login\"\u001b[22m\n",
+                    "stack": "Error: after 2 wrong attempts\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:5173/\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:5173/\u001b[7mlogin\u001b[27m\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - after 2 wrong attempts with timeout 3000ms\u001b[22m\n\u001b[2m    10 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:5173/login\"\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:117:72",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 72,
+                      "line": 117
+                    },
+                    "snippet": "  115 |     const response=await login.login(user.email,user.password);\n  116 |     observations.push({wrongAttempts:count,correctLoginStatus:response.status(),observedAt:new Date().toISOString()});\n> 117 |     if(count<3)await expect.soft(page,`after ${count} wrong attempts`).toHaveURL('http://localhost:5173/');\n      |                                                                        ^\n  118 |     else await expect.soft(page).toHaveURL(/\\/login$/);\n  119 |   }\n  120 |   await info.attach('threshold-observations',{body:JSON.stringify(observations,null,2),contentType:'application/json'});"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 72,
+                        "line": 117
+                      },
+                      "message": "Error: after 2 wrong attempts\n\n\u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:5173/\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:5173/\u001b[7mlogin\u001b[27m\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - after 2 wrong attempts with timeout 3000ms\u001b[22m\n\u001b[2m    10 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:5173/login\"\u001b[22m\n\n\n  115 |     const response=await login.login(user.email,user.password);\n  116 |     observations.push({wrongAttempts:count,correctLoginStatus:response.status(),observedAt:new Date().toISOString()});\n> 117 |     if(count<3)await expect.soft(page,`after ${count} wrong attempts`).toHaveURL('http://localhost:5173/');\n      |                                                                        ^\n  118 |     else await expect.soft(page).toHaveURL(/\\/login$/);\n  119 |   }\n  120 |   await info.attach('threshold-observations',{body:JSON.stringify(observations,null,2),contentType:'application/json'});\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:117:72"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:25.901Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "threshold-observations",
+                      "contentType": "application/json",
+                      "body": "WwogIHsKICAgICJ3cm9uZ0F0dGVtcHRzIjogMSwKICAgICJjb3JyZWN0TG9naW5TdGF0dXMiOiAyMDAsCiAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjI2LjUyMloiCiAgfSwKICB7CiAgICAid3JvbmdBdHRlbXB0cyI6IDIsCiAgICAiY29ycmVjdExvZ2luU3RhdHVzIjogNDAzLAogICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMjo0MToyNi43ODZaIgogIH0sCiAgewogICAgIndyb25nQXR0ZW1wdHMiOiAzLAogICAgImNvcnJlY3RMb2dpblN0YXR1cyI6IDQwMywKICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTI6NDE6MzAuMTU0WiIKICB9Cl0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-015-lock-threshold-at-three-consecutive-failures/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDE1IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQxOjMwLjE5MVoiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsSQxINuZyBuaOG6rXAgdGjhuqV0IGLhuqFpLiBWdWkgbMOybmcga2nhu4NtIHRyYSBs4bqhaS5cbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiB0cnVlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9LAogICAgewogICAgICAidHlwZSI6ICJ0ZXh0IiwKICAgICAgInJlcXVpcmVkIjogdHJ1ZSwKICAgICAgInZhbGlkIjogdHJ1ZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfQogIF0KfQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-015-lock-threshold-at-three-consecutive-failures/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 72,
+                    "line": 117
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-85a130672ca26b401ab1",
+          "file": "login.spec.mjs",
+          "line": 109,
+          "column": 1
+        },
+        {
+          "title": "GUI-A-016: login recovers after 30-second lock",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 34663,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:5173/\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:5173/\u001b[7mlogin\u001b[27m\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 3000ms\u001b[22m\n\u001b[2m    10 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:5173/login\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:5173/\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:5173/\u001b[7mlogin\u001b[27m\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 3000ms\u001b[22m\n\u001b[2m    10 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:5173/login\"\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:135:22",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 22,
+                      "line": 135
+                    },
+                    "snippet": "  133 |     beforeStatus:before.status(),afterStatus:after.status(),\n  134 |   },null,2),contentType:'application/json'});\n> 135 |   await expect(page).toHaveURL('http://localhost:5173/');\n      |                      ^\n  136 | });\n  137 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 22,
+                        "line": 135
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"http://localhost:5173/\"\u001b[39m\nReceived: \u001b[31m\"http://localhost:5173/\u001b[7mlogin\u001b[27m\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 3000ms\u001b[22m\n\u001b[2m    10 × locator resolved to <html lang=\"en\">…</html>\u001b[22m\n\u001b[2m       - unexpected value \"http://localhost:5173/login\"\u001b[22m\n\n\n  133 |     beforeStatus:before.status(),afterStatus:after.status(),\n  134 |   },null,2),contentType:'application/json'});\n> 135 |   await expect(page).toHaveURL('http://localhost:5173/');\n      |                      ^\n  136 | });\n  137 |\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:135:22"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:41:30.610Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "lock-duration-observations",
+                      "contentType": "application/json",
+                      "body": "ewogICJmaXJzdENoZWNrQXQiOiAiMjAyNi0xMS0xMFQxMjo0MTozMS4xNTRaIiwKICAiZWxhcHNlZE1zIjogMzExNzksCiAgImJlZm9yZVN0YXR1cyI6IDQwMywKICAiYWZ0ZXJTdGF0dXMiOiA0MDMKfQ=="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-016-login-recovers-after-30-second-lock/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDE2IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQyOjA1LjM3MVoiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsSQxINuZyBuaOG6rXAgdGjhuqV0IGLhuqFpLiBWdWkgbMOybmcga2nhu4NtIHRyYSBs4bqhaS5cbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiB0cnVlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9LAogICAgewogICAgICAidHlwZSI6ICJ0ZXh0IiwKICAgICAgInJlcXVpcmVkIjogdHJ1ZSwKICAgICAgInZhbGlkIjogdHJ1ZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfQogIF0KfQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-016-login-recovers-after-30-second-lock/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 22,
+                    "line": 135
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-bb394ea285caf3c423aa",
+          "file": "login.spec.mjs",
+          "line": 122,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T12:40:54.307Z",
+    "duration": 71211.97399999999,
+    "expected": 6,
+    "skipped": 0,
+    "unexpected": 10,
+    "flaky": 0
+  }
+}

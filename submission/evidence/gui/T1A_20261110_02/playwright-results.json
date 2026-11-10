@@ -1,0 +1,163 @@
+{
+  "config": {
+    "argv": [
+      "/home/le-nguyen-quoc-thai/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "tools/gui/playwright.config.mjs",
+      "--grep",
+      "GUI-A-003"
+    ],
+    "configFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs",
+    "rootDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_02/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 65000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_02/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "login.spec.mjs",
+      "file": "login.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GUI-A-003: Vietnamese form labels",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3318,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Sign In|Đăng nhập/i })\nExpected pattern: \u001b[32m/đăng nhập/i\u001b[39m\nReceived string:  \u001b[31m\"Sign In\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Sign In|Đăng nhập/i })\u001b[22m\n\u001b[2m    10 × locator resolved to <button tabindex=\"1\" type=\"submit\" class=\"w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700\">Sign In</button>\u001b[22m\n\u001b[2m       - unexpected value \"Sign In\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Sign In|Đăng nhập/i })\nExpected pattern: \u001b[32m/đăng nhập/i\u001b[39m\nReceived string:  \u001b[31m\"Sign In\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Sign In|Đăng nhập/i })\u001b[22m\n\u001b[2m    10 × locator resolved to <button tabindex=\"1\" type=\"submit\" class=\"w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700\">Sign In</button>\u001b[22m\n\u001b[2m       - unexpected value \"Sign In\"\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:24:30",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                      "column": 30,
+                      "line": 24
+                    },
+                    "snippet": "  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n> 24 |   await expect(login.submit).toHaveText(/đăng nhập/i);\n     |                              ^\n  25 |   await expect(page.locator('form')).toContainText('Mật khẩu');\n  26 | });\n  27 | test('GUI-A-004: positive action blue',async({login})=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                        "column": 30,
+                        "line": 24
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Sign In|Đăng nhập/i })\nExpected pattern: \u001b[32m/đăng nhập/i\u001b[39m\nReceived string:  \u001b[31m\"Sign In\"\u001b[39m\nTimeout: 3000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Sign In|Đăng nhập/i })\u001b[22m\n\u001b[2m    10 × locator resolved to <button tabindex=\"1\" type=\"submit\" class=\"w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700\">Sign In</button>\u001b[22m\n\u001b[2m       - unexpected value \"Sign In\"\u001b[22m\n\n\n  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n> 24 |   await expect(login.submit).toHaveText(/đăng nhập/i);\n     |                              ^\n  25 |   await expect(page.locator('form')).toContainText('Mật khẩu');\n  26 | });\n  27 | test('GUI-A-004: positive action blue',async({login})=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:24:30"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:42:52.051Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_02/artifacts/login-GUI-A-003-Vietnamese-form-labels/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUEtMDAzIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjQyOjU1LjQ2OVoiLAogICJicm93c2VyIjogIjE1NS4wLjQyODMuNDUiLAogICJvcyI6ICJsaW51eCIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMTI4MCwKICAgICJoZWlnaHQiOiA4MDAKICB9LAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2xvZ2luIiwKICAidmlzaWJsZVRleHQiOiAiRVNob3Bcbkdp4buPIGjDoG5nXG7EkMSDbmcgbmjhuq1wXG7EkMSDbmcga8O9XG7EkMSDbmcgS8O9XG5Vc2VybmFtZVxuTeG6rXQga2jhuql1XG5RdcOqbiBt4bqtdCBraOG6qXU/XG5TaWduIEluXG5DaMawYSBjw7MgdMOgaSBraG/huqNuPyDEkMSDbmcga8O9IG5nYXlcbsKpIDIwMjYgRVNob3AgU1VULiBEw6BuaCBjaG8gbeG7pWMgxJHDrWNoIGtp4buDbSB0aOG7rS4iLAogICJpbnB1dHMiOiBbCiAgICB7CiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZSwKICAgICAgImZvY3VzZWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInR5cGUiOiAidGV4dCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlLAogICAgICAiZm9jdXNlZCI6IGZhbHNlCiAgICB9CiAgXQp9"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1A_20261110_02/artifacts/login-GUI-A-003-Vietnamese-form-labels/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs",
+                    "column": 30,
+                    "line": 24
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "3842dacad0df568be5d4-ec6e31951566c2a2260f",
+          "file": "login.spec.mjs",
+          "line": 23,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T12:42:51.673Z",
+    "duration": 3960.1189999999997,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

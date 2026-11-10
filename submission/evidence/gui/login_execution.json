@@ -1,0 +1,1295 @@
+{
+  "purpose": "Raw automated GUI execution observations; not a student-written bug report",
+  "metrics": {
+    "designed": 68,
+    "passed": 6,
+    "failed": 10,
+    "notRun": 52,
+    "executed": 16,
+    "runs": 17
+  },
+  "latest": [
+    {
+      "itemId": "GUI-A-001",
+      "runId": "T1A_20261110_01_GUI-A-001",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:40:54.651Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-001",
+        "observedAt": "2026-11-10T12:40:58.781Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toHaveText(expected) failed\n\nLocator: getByRole('heading').first()\nExpected pattern: /đăng nhập/i\nReceived string:  \"Đăng Ký\"\nTimeout: 3000ms\n\nCall log:\n  - Expect \"toHaveText\" with timeout 3000ms\n  - waiting for getByRole('heading').first()\n    10 × locator resolved to <h2 class=\"text-2xl font-bold mb-6 text-center\">Đăng Ký</h2>\n       - unexpected value \"Đăng Ký\"\n\n\n  16 |\n  17 | test('GUI-A-001: title describes login',async({page,login})=>{\n> 18 |   await expect(page.getByRole('heading').first()).toHaveText(/đăng nhập/i);\n     |                                                   ^\n  19 | });\n  20 | test('GUI-A-002: exactly one h1',async({page,login})=>{\n  21 |   await expect(page.getByRole('heading',{level:1})).toHaveCount(1);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:18:51"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-001-title-describes-login/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-002",
+      "runId": "T1A_20261110_01_GUI-A-002",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:40:59.218Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-002",
+        "observedAt": "2026-11-10T12:41:02.587Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toHaveCount(expected) failed\n\nLocator:  getByRole('heading', { level: 1 })\nExpected: 1\nReceived: 0\nTimeout:  3000ms\n\nCall log:\n  - Expect \"toHaveCount\" with timeout 3000ms\n  - waiting for getByRole('heading', { level: 1 })\n    10 × locator resolved to 0 elements\n       - unexpected value \"0\"\n\n\n  19 | });\n  20 | test('GUI-A-002: exactly one h1',async({page,login})=>{\n> 21 |   await expect(page.getByRole('heading',{level:1})).toHaveCount(1);\n     |                                                     ^\n  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n  24 |   await expect(page.locator('form')).toContainText('Email');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:21:53"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-002-exactly-one-h1/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-003",
+      "runId": "T1A_20261110_02_GUI-A-003",
+      "suiteRun": "T1A_20261110_02",
+      "startedAt": "2026-11-10T12:42:52.051Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-003",
+        "observedAt": "2026-11-10T12:42:55.469Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toHaveText(expected) failed\n\nLocator: getByRole('button', { name: /Sign In|Đăng nhập/i })\nExpected pattern: /đăng nhập/i\nReceived string:  \"Sign In\"\nTimeout: 3000ms\n\nCall log:\n  - Expect \"toHaveText\" with timeout 3000ms\n  - waiting for getByRole('button', { name: /Sign In|Đăng nhập/i })\n    10 × locator resolved to <button tabindex=\"1\" type=\"submit\" class=\"w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700\">Sign In</button>\n       - unexpected value \"Sign In\"\n\n\n  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n> 24 |   await expect(login.submit).toHaveText(/đăng nhập/i);\n     |                              ^\n  25 |   await expect(page.locator('form')).toContainText('Mật khẩu');\n  26 | });\n  27 | test('GUI-A-004: positive action blue',async({login})=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:24:30"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_02/artifacts/login-GUI-A-003-Vietnamese-form-labels/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-004",
+      "runId": "T1A_20261110_01_GUI-A-004",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:06.782Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-004",
+        "observedAt": "2026-11-10T12:41:07.157Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-005",
+      "runId": "T1A_20261110_01_GUI-A-005",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:07.217Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-005",
+        "observedAt": "2026-11-10T12:41:10.413Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator:  locator('form input').first()\nExpected: \"email\"\nReceived: \"text\"\nTimeout:  3000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" with timeout 3000ms\n  - waiting for locator('form input').first()\n    10 × locator resolved to <input value=\"\" required=\"\" type=\"text\" class=\"w-full border p-2 rounded\"/>\n       - unexpected value \"text\"\n\n\n  31 | });\n  32 | test('GUI-A-005: email input type and invalid format',async({login,page})=>{\n> 33 |   await expect(login.email).toHaveAttribute('type','email');\n     |                             ^\n  34 |   await login.fill('not-an-email',demo.password);\n  35 |   await login.submit.click();\n  36 |   await expect(page.locator('form input:invalid')).toHaveCount(1);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:33:29"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-005-email-input-type-and-invalid-format/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-006",
+      "runId": "T1A_20261110_01_GUI-A-006",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:10.854Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-006",
+        "observedAt": "2026-11-10T12:41:14.338Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": true
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator:  locator('form input').nth(1)\nExpected: \"password\"\nReceived: \"text\"\nTimeout:  3000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" with timeout 3000ms\n  - waiting for locator('form input').nth(1)\n    10 × locator resolved to <input required=\"\" type=\"text\" value=\"GuiDemo123!\" class=\"w-full border p-2 rounded\"/>\n       - unexpected value \"text\"\n\n\n  39 | test('GUI-A-006: password masked',async({login})=>{\n  40 |   await login.password.fill(demo.password);\n> 41 |   await expect(login.password).toHaveAttribute('type','password');\n     |                                ^\n  42 | });\n  43 | test('GUI-A-007: required field markers',async({page,login})=>{\n  44 |   await expect(page.locator('form label').nth(0)).toContainText('*');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:41:32"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-006-password-masked/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-007",
+      "runId": "T1A_20261110_01_GUI-A-007",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:14.752Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-007",
+        "observedAt": "2026-11-10T12:41:18.084Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('form label').first()\nExpected substring: \"*\"\nReceived string:    \"Username\"\nTimeout: 3000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 3000ms\n  - waiting for locator('form label').first()\n    10 × locator resolved to <label class=\"block text-gray-700 mb-2\">Username</label>\n       - unexpected value \"Username\"\n\n\n  42 | });\n  43 | test('GUI-A-007: required field markers',async({page,login})=>{\n> 44 |   await expect(page.locator('form label').nth(0)).toContainText('*');\n     |                                                   ^\n  45 |   await expect(page.locator('form label').nth(1)).toContainText('*');\n  46 | });\n  47 | test('GUI-A-008: blank required fields rejected',async({page,login},info)=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:44:51"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-007-required-field-markers/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-008",
+      "runId": "T1A_20261110_01_GUI-A-008",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:18.505Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-008",
+        "observedAt": "2026-11-10T12:41:19.080Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": true
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-009",
+      "runId": "T1A_20261110_01_GUI-A-009",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:19.156Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-009",
+        "observedAt": "2026-11-10T12:41:19.432Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": true
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-010",
+      "runId": "T1A_20261110_01_GUI-A-010",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:19.499Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-010",
+        "observedAt": "2026-11-10T12:41:22.721Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toBeFocused() failed\n\nLocator:  getByRole('link', { name: 'EShop', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  3000ms\n\nCall log:\n  - Expect \"toBeFocused\" with timeout 3000ms\n  - waiting for getByRole('link', { name: 'EShop', exact: true })\n    10 × locator resolved to <a href=\"/\" data-discover=\"true\" class=\"text-2xl font-bold\">EShop</a>\n       - unexpected value \"inactive\"\n\n\n  68 | test('GUI-A-010: natural top-down tab order',async({page,login})=>{\n  69 |   await page.keyboard.press('Tab');\n> 70 |   await expect(page.getByRole('link',{name:'EShop',exact:true})).toBeFocused();\n     |                                                                  ^\n  71 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Giỏ hàng',exact:true})).toBeFocused();\n  72 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Đăng nhập',exact:true})).toBeFocused();\n  73 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Đăng ký',exact:true})).toBeFocused();\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:70:66"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-010-natural-top-down-tab-order/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-011",
+      "runId": "T1A_20261110_01_GUI-A-011",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:23.160Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-011",
+        "observedAt": "2026-11-10T12:41:23.946Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/register",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký Tài Khoản\nHọ Tên\nEmail\nMật khẩu\n\nYêu cầu: Tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.\n\nĐăng Ký\nĐã có tài khoản? Đăng nhập\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "password",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-012",
+      "runId": "T1A_20261110_01_GUI-A-012",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:24.018Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-012",
+        "observedAt": "2026-11-10T12:41:24.673Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 GUI Login\nThoát\nDanh sách sản phẩm\nTìm\niPhone 15 Pro Max\n\n30,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nSamsung Galaxy S24 Ultra\n\n28,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nMacBook Pro M3\n\n45,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nTai nghe AirPods Pro 2\n\n6,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nBàn phím cơ Keychron Q1\n\n4,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nHiển thị 5 sản phẩm\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": false,
+            "valid": true,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-013",
+      "runId": "T1A_20261110_01_GUI-A-013",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:24.738Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-013",
+        "observedAt": "2026-11-10T12:41:25.090Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-014",
+      "runId": "T1A_20261110_01_GUI-A-014",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:25.163Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-014",
+        "observedAt": "2026-11-10T12:41:25.487Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(received).toBeLessThanOrEqual(expected)\n\nExpected: <= 425\nReceived:    565\n\n  105 |   await expect(login.error).toBeVisible();\n  106 |   const error=await login.error.boundingBox();const button=await login.submit.boundingBox();\n> 107 |   expect(error.y+error.height).toBeLessThanOrEqual(button.y);\n      |                                ^\n  108 | });\n  109 | test('GUI-A-015: lock threshold at three consecutive failures',async({page,login,makeUser},info)=>{\n  110 |   const observations=[];\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:107:32"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-014-error-above-submit/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-015",
+      "runId": "T1A_20261110_01_GUI-A-015",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:25.901Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-015",
+        "observedAt": "2026-11-10T12:41:30.191Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {
+        "threshold-observations": [
+          {
+            "wrongAttempts": 1,
+            "correctLoginStatus": 200,
+            "observedAt": "2026-11-10T12:41:26.522Z"
+          },
+          {
+            "wrongAttempts": 2,
+            "correctLoginStatus": 403,
+            "observedAt": "2026-11-10T12:41:26.786Z"
+          },
+          {
+            "wrongAttempts": 3,
+            "correctLoginStatus": 403,
+            "observedAt": "2026-11-10T12:41:30.154Z"
+          }
+        ]
+      },
+      "assertionMessages": [
+        "Error: after 2 wrong attempts\n\nexpect(page).toHaveURL(expected) failed\n\nExpected: \"http://localhost:5173/\"\nReceived: \"http://localhost:5173/login\"\nTimeout:  3000ms\n\nCall log:\n  - after 2 wrong attempts with timeout 3000ms\n    10 × locator resolved to <html lang=\"en\">…</html>\n       - unexpected value \"http://localhost:5173/login\"\n\n\n  115 |     const response=await login.login(user.email,user.password);\n  116 |     observations.push({wrongAttempts:count,correctLoginStatus:response.status(),observedAt:new Date().toISOString()});\n> 117 |     if(count<3)await expect.soft(page,`after ${count} wrong attempts`).toHaveURL('http://localhost:5173/');\n      |                                                                        ^\n  118 |     else await expect.soft(page).toHaveURL(/\\/login$/);\n  119 |   }\n  120 |   await info.attach('threshold-observations',{body:JSON.stringify(observations,null,2),contentType:'application/json'});\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:117:72"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-015-lock-threshold-at-three-consecutive-failures/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-016",
+      "runId": "T1A_20261110_01_GUI-A-016",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:30.610Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-016",
+        "observedAt": "2026-11-10T12:42:05.371Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {
+        "lock-duration-observations": {
+          "firstCheckAt": "2026-11-10T12:41:31.154Z",
+          "elapsedMs": 31179,
+          "beforeStatus": 403,
+          "afterStatus": 403
+        }
+      },
+      "assertionMessages": [
+        "Error: expect(page).toHaveURL(expected) failed\n\nExpected: \"http://localhost:5173/\"\nReceived: \"http://localhost:5173/login\"\nTimeout:  3000ms\n\nCall log:\n  - Expect \"toHaveURL\" with timeout 3000ms\n    10 × locator resolved to <html lang=\"en\">…</html>\n       - unexpected value \"http://localhost:5173/login\"\n\n\n  133 |     beforeStatus:before.status(),afterStatus:after.status(),\n  134 |   },null,2),contentType:'application/json'});\n> 135 |   await expect(page).toHaveURL('http://localhost:5173/');\n      |                      ^\n  136 | });\n  137 |\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:135:22"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-016-login-recovers-after-30-second-lock/test-failed-1.png"
+    }
+  ],
+  "history": [
+    {
+      "itemId": "GUI-A-001",
+      "runId": "T1A_20261110_01_GUI-A-001",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:40:54.651Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-001",
+        "observedAt": "2026-11-10T12:40:58.781Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toHaveText(expected) failed\n\nLocator: getByRole('heading').first()\nExpected pattern: /đăng nhập/i\nReceived string:  \"Đăng Ký\"\nTimeout: 3000ms\n\nCall log:\n  - Expect \"toHaveText\" with timeout 3000ms\n  - waiting for getByRole('heading').first()\n    10 × locator resolved to <h2 class=\"text-2xl font-bold mb-6 text-center\">Đăng Ký</h2>\n       - unexpected value \"Đăng Ký\"\n\n\n  16 |\n  17 | test('GUI-A-001: title describes login',async({page,login})=>{\n> 18 |   await expect(page.getByRole('heading').first()).toHaveText(/đăng nhập/i);\n     |                                                   ^\n  19 | });\n  20 | test('GUI-A-002: exactly one h1',async({page,login})=>{\n  21 |   await expect(page.getByRole('heading',{level:1})).toHaveCount(1);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:18:51"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-001-title-describes-login/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-002",
+      "runId": "T1A_20261110_01_GUI-A-002",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:40:59.218Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-002",
+        "observedAt": "2026-11-10T12:41:02.587Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toHaveCount(expected) failed\n\nLocator:  getByRole('heading', { level: 1 })\nExpected: 1\nReceived: 0\nTimeout:  3000ms\n\nCall log:\n  - Expect \"toHaveCount\" with timeout 3000ms\n  - waiting for getByRole('heading', { level: 1 })\n    10 × locator resolved to 0 elements\n       - unexpected value \"0\"\n\n\n  19 | });\n  20 | test('GUI-A-002: exactly one h1',async({page,login})=>{\n> 21 |   await expect(page.getByRole('heading',{level:1})).toHaveCount(1);\n     |                                                     ^\n  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n  24 |   await expect(page.locator('form')).toContainText('Email');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:21:53"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-002-exactly-one-h1/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-003",
+      "runId": "T1A_20261110_01_GUI-A-003",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:03.026Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-003",
+        "observedAt": "2026-11-10T12:41:06.374Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('form')\nExpected substring: \"Email\"\nReceived string:    \"UsernameMật khẩuQuên mật khẩu?Sign InChưa có tài khoản? Đăng ký ngay\"\nTimeout: 3000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 3000ms\n  - waiting for locator('form')\n    10 × locator resolved to <form class=\"space-y-4\">…</form>\n       - unexpected value \"UsernameMật khẩuQuên mật khẩu?Sign InChưa có tài khoản? Đăng ký ngay\"\n\n\n  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n> 24 |   await expect(page.locator('form')).toContainText('Email');\n     |                                      ^\n  25 |   await expect(login.submit).toHaveText(/đăng nhập/i);\n  26 | });\n  27 | test('GUI-A-004: positive action blue',async({login})=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:24:38"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-003-Vietnamese-form-labels/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-004",
+      "runId": "T1A_20261110_01_GUI-A-004",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:06.782Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-004",
+        "observedAt": "2026-11-10T12:41:07.157Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-005",
+      "runId": "T1A_20261110_01_GUI-A-005",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:07.217Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-005",
+        "observedAt": "2026-11-10T12:41:10.413Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator:  locator('form input').first()\nExpected: \"email\"\nReceived: \"text\"\nTimeout:  3000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" with timeout 3000ms\n  - waiting for locator('form input').first()\n    10 × locator resolved to <input value=\"\" required=\"\" type=\"text\" class=\"w-full border p-2 rounded\"/>\n       - unexpected value \"text\"\n\n\n  31 | });\n  32 | test('GUI-A-005: email input type and invalid format',async({login,page})=>{\n> 33 |   await expect(login.email).toHaveAttribute('type','email');\n     |                             ^\n  34 |   await login.fill('not-an-email',demo.password);\n  35 |   await login.submit.click();\n  36 |   await expect(page.locator('form input:invalid')).toHaveCount(1);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:33:29"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-005-email-input-type-and-invalid-format/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-006",
+      "runId": "T1A_20261110_01_GUI-A-006",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:10.854Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-006",
+        "observedAt": "2026-11-10T12:41:14.338Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": true
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toHaveAttribute(expected) failed\n\nLocator:  locator('form input').nth(1)\nExpected: \"password\"\nReceived: \"text\"\nTimeout:  3000ms\n\nCall log:\n  - Expect \"toHaveAttribute\" with timeout 3000ms\n  - waiting for locator('form input').nth(1)\n    10 × locator resolved to <input required=\"\" type=\"text\" value=\"GuiDemo123!\" class=\"w-full border p-2 rounded\"/>\n       - unexpected value \"text\"\n\n\n  39 | test('GUI-A-006: password masked',async({login})=>{\n  40 |   await login.password.fill(demo.password);\n> 41 |   await expect(login.password).toHaveAttribute('type','password');\n     |                                ^\n  42 | });\n  43 | test('GUI-A-007: required field markers',async({page,login})=>{\n  44 |   await expect(page.locator('form label').nth(0)).toContainText('*');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:41:32"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-006-password-masked/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-007",
+      "runId": "T1A_20261110_01_GUI-A-007",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:14.752Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-007",
+        "observedAt": "2026-11-10T12:41:18.084Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toContainText(expected) failed\n\nLocator: locator('form label').first()\nExpected substring: \"*\"\nReceived string:    \"Username\"\nTimeout: 3000ms\n\nCall log:\n  - Expect \"toContainText\" with timeout 3000ms\n  - waiting for locator('form label').first()\n    10 × locator resolved to <label class=\"block text-gray-700 mb-2\">Username</label>\n       - unexpected value \"Username\"\n\n\n  42 | });\n  43 | test('GUI-A-007: required field markers',async({page,login})=>{\n> 44 |   await expect(page.locator('form label').nth(0)).toContainText('*');\n     |                                                   ^\n  45 |   await expect(page.locator('form label').nth(1)).toContainText('*');\n  46 | });\n  47 | test('GUI-A-008: blank required fields rejected',async({page,login},info)=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:44:51"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-007-required-field-markers/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-008",
+      "runId": "T1A_20261110_01_GUI-A-008",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:18.505Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-008",
+        "observedAt": "2026-11-10T12:41:19.080Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": true
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-009",
+      "runId": "T1A_20261110_01_GUI-A-009",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:19.156Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-009",
+        "observedAt": "2026-11-10T12:41:19.432Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": true
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-010",
+      "runId": "T1A_20261110_01_GUI-A-010",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:19.499Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-010",
+        "observedAt": "2026-11-10T12:41:22.721Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toBeFocused() failed\n\nLocator:  getByRole('link', { name: 'EShop', exact: true })\nExpected: focused\nReceived: inactive\nTimeout:  3000ms\n\nCall log:\n  - Expect \"toBeFocused\" with timeout 3000ms\n  - waiting for getByRole('link', { name: 'EShop', exact: true })\n    10 × locator resolved to <a href=\"/\" data-discover=\"true\" class=\"text-2xl font-bold\">EShop</a>\n       - unexpected value \"inactive\"\n\n\n  68 | test('GUI-A-010: natural top-down tab order',async({page,login})=>{\n  69 |   await page.keyboard.press('Tab');\n> 70 |   await expect(page.getByRole('link',{name:'EShop',exact:true})).toBeFocused();\n     |                                                                  ^\n  71 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Giỏ hàng',exact:true})).toBeFocused();\n  72 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Đăng nhập',exact:true})).toBeFocused();\n  73 |   await page.keyboard.press('Tab');await expect(page.getByRole('link',{name:'Đăng ký',exact:true})).toBeFocused();\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:70:66"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-010-natural-top-down-tab-order/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-011",
+      "runId": "T1A_20261110_01_GUI-A-011",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:23.160Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-011",
+        "observedAt": "2026-11-10T12:41:23.946Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/register",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký Tài Khoản\nHọ Tên\nEmail\nMật khẩu\n\nYêu cầu: Tối thiểu 8 ký tự, có chữ hoa, chữ thường, số và ký tự đặc biệt.\n\nĐăng Ký\nĐã có tài khoản? Đăng nhập\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "password",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-012",
+      "runId": "T1A_20261110_01_GUI-A-012",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:24.018Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-012",
+        "observedAt": "2026-11-10T12:41:24.673Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 GUI Login\nThoát\nDanh sách sản phẩm\nTìm\niPhone 15 Pro Max\n\n30,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nSamsung Galaxy S24 Ultra\n\n28,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nMacBook Pro M3\n\n45,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nTai nghe AirPods Pro 2\n\n6,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nBàn phím cơ Keychron Q1\n\n4,000,000 VND\n\nXem chi tiết\nThêm vào giỏ\nHiển thị 5 sản phẩm\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": false,
+            "valid": true,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-013",
+      "runId": "T1A_20261110_01_GUI-A-013",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:24.738Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-A-013",
+        "observedAt": "2026-11-10T12:41:25.090Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": ""
+    },
+    {
+      "itemId": "GUI-A-014",
+      "runId": "T1A_20261110_01_GUI-A-014",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:25.163Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-014",
+        "observedAt": "2026-11-10T12:41:25.487Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(received).toBeLessThanOrEqual(expected)\n\nExpected: <= 425\nReceived:    565\n\n  105 |   await expect(login.error).toBeVisible();\n  106 |   const error=await login.error.boundingBox();const button=await login.submit.boundingBox();\n> 107 |   expect(error.y+error.height).toBeLessThanOrEqual(button.y);\n      |                                ^\n  108 | });\n  109 | test('GUI-A-015: lock threshold at three consecutive failures',async({page,login,makeUser},info)=>{\n  110 |   const observations=[];\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:107:32"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-014-error-above-submit/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-015",
+      "runId": "T1A_20261110_01_GUI-A-015",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:25.901Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-015",
+        "observedAt": "2026-11-10T12:41:30.191Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {
+        "threshold-observations": [
+          {
+            "wrongAttempts": 1,
+            "correctLoginStatus": 200,
+            "observedAt": "2026-11-10T12:41:26.522Z"
+          },
+          {
+            "wrongAttempts": 2,
+            "correctLoginStatus": 403,
+            "observedAt": "2026-11-10T12:41:26.786Z"
+          },
+          {
+            "wrongAttempts": 3,
+            "correctLoginStatus": 403,
+            "observedAt": "2026-11-10T12:41:30.154Z"
+          }
+        ]
+      },
+      "assertionMessages": [
+        "Error: after 2 wrong attempts\n\nexpect(page).toHaveURL(expected) failed\n\nExpected: \"http://localhost:5173/\"\nReceived: \"http://localhost:5173/login\"\nTimeout:  3000ms\n\nCall log:\n  - after 2 wrong attempts with timeout 3000ms\n    10 × locator resolved to <html lang=\"en\">…</html>\n       - unexpected value \"http://localhost:5173/login\"\n\n\n  115 |     const response=await login.login(user.email,user.password);\n  116 |     observations.push({wrongAttempts:count,correctLoginStatus:response.status(),observedAt:new Date().toISOString()});\n> 117 |     if(count<3)await expect.soft(page,`after ${count} wrong attempts`).toHaveURL('http://localhost:5173/');\n      |                                                                        ^\n  118 |     else await expect.soft(page).toHaveURL(/\\/login$/);\n  119 |   }\n  120 |   await info.attach('threshold-observations',{body:JSON.stringify(observations,null,2),contentType:'application/json'});\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:117:72"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-015-lock-threshold-at-three-consecutive-failures/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-016",
+      "runId": "T1A_20261110_01_GUI-A-016",
+      "suiteRun": "T1A_20261110_01",
+      "startedAt": "2026-11-10T12:41:30.610Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-016",
+        "observedAt": "2026-11-10T12:42:05.371Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\nĐăng nhập thất bại. Vui lòng kiểm tra lại.\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": true,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {
+        "lock-duration-observations": {
+          "firstCheckAt": "2026-11-10T12:41:31.154Z",
+          "elapsedMs": 31179,
+          "beforeStatus": 403,
+          "afterStatus": 403
+        }
+      },
+      "assertionMessages": [
+        "Error: expect(page).toHaveURL(expected) failed\n\nExpected: \"http://localhost:5173/\"\nReceived: \"http://localhost:5173/login\"\nTimeout:  3000ms\n\nCall log:\n  - Expect \"toHaveURL\" with timeout 3000ms\n    10 × locator resolved to <html lang=\"en\">…</html>\n       - unexpected value \"http://localhost:5173/login\"\n\n\n  133 |     beforeStatus:before.status(),afterStatus:after.status(),\n  134 |   },null,2),contentType:'application/json'});\n> 135 |   await expect(page).toHaveURL('http://localhost:5173/');\n      |                      ^\n  136 | });\n  137 |\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:135:22"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-016-login-recovers-after-30-second-lock/test-failed-1.png"
+    },
+    {
+      "itemId": "GUI-A-003",
+      "runId": "T1A_20261110_02_GUI-A-003",
+      "suiteRun": "T1A_20261110_02",
+      "startedAt": "2026-11-10T12:42:52.051Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-A-003",
+        "observedAt": "2026-11-10T12:42:55.469Z",
+        "browser": "155.0.4283.45",
+        "os": "linux",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "url": "http://localhost:5173/login",
+        "visibleText": "EShop\nGiỏ hàng\nĐăng nhập\nĐăng ký\nĐăng Ký\nUsername\nMật khẩu\nQuên mật khẩu?\nSign In\nChưa có tài khoản? Đăng ký ngay\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "inputs": [
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          },
+          {
+            "type": "text",
+            "required": true,
+            "valid": false,
+            "focused": false
+          }
+        ]
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toHaveText(expected) failed\n\nLocator: getByRole('button', { name: /Sign In|Đăng nhập/i })\nExpected pattern: /đăng nhập/i\nReceived string:  \"Sign In\"\nTimeout: 3000ms\n\nCall log:\n  - Expect \"toHaveText\" with timeout 3000ms\n  - waiting for getByRole('button', { name: /Sign In|Đăng nhập/i })\n    10 × locator resolved to <button tabindex=\"1\" type=\"submit\" class=\"w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700\">Sign In</button>\n       - unexpected value \"Sign In\"\n\n\n  22 | });\n  23 | test('GUI-A-003: Vietnamese form labels',async({page,login})=>{\n> 24 |   await expect(login.submit).toHaveText(/đăng nhập/i);\n     |                              ^\n  25 |   await expect(page.locator('form')).toContainText('Mật khẩu');\n  26 | });\n  27 | test('GUI-A-004: positive action blue',async({login})=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/login.spec.mjs:24:30"
+      ],
+      "screenshot": "evidence/gui/T1A_20261110_02/artifacts/login-GUI-A-003-Vietnamese-form-labels/test-failed-1.png"
+    }
+  ]
+}

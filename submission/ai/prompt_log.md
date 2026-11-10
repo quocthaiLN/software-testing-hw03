@@ -37,3 +37,5 @@ User response (verbatim):
 > Keep
 
 Recorded as user's global retain decision for the 68-item draft; not a student-authored rationale or an independent addition. AI next created a Playwright Login harness and started the actual 16-item run `T1A_20261110_01` against localhost with isolated demo accounts. Raw execution output is evidence, not a student-authored bug description. Initial checklist Markdown/JSON/PDF remain preserved; workbook is the working execution record. No original message timestamp or reviewer identity/signature was invented.
+
+Run outcome: 16 Login items, 6 Passed / 10 Failed. One additional A003 run checked Vietnamese action text after narrowing the original assertion; final item totals unchanged. AI imported real JSON observations into Excel and retained all raw reports/screenshots, without drafting student bug descriptions. PDF of the initial checklist was generated and all 19 pages rendered/visually checked. Student additions and detailed critique remain missing; the full original conversation/tool log still needs export for the final audit.
