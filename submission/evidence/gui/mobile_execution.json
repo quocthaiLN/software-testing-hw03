@@ -1,0 +1,420 @@
+{
+  "purpose": "Student-reported Mobile observations and AI mapping to original criteria; not bug report",
+  "platform": "Physical Android / Expo Go (per session context); exact app/build at this manual run not independently verified",
+  "inputEvidence": [
+    {
+      "number": 1,
+      "path": "evidence/gui/T1D_MANUAL_01/image-01.png",
+      "sha256": "e569640cbcc22a19cfe9ceb8ecfcf226faa4907d2448e76d6e025c4838c1ae4b"
+    },
+    {
+      "number": 2,
+      "path": "evidence/gui/T1D_MANUAL_01/image-02.png",
+      "sha256": "c38c4cbf97c42e35d79d9ab6508a2b37e5dd1a5365a2581273acf5bcfbc9bbef"
+    },
+    {
+      "number": 3,
+      "path": "evidence/gui/T1D_MANUAL_01/image-03.png",
+      "sha256": "c38c4cbf97c42e35d79d9ab6508a2b37e5dd1a5365a2581273acf5bcfbc9bbef"
+    },
+    {
+      "number": 4,
+      "path": "evidence/gui/T1D_MANUAL_01/image-04.png",
+      "sha256": "9635ad13f19c2ccb4b2c3e4223d1614f49c0b08bcd4aba28b24cab0ce4efc097"
+    },
+    {
+      "number": 5,
+      "path": "evidence/gui/T1D_MANUAL_01/image-05.png",
+      "sha256": "9635ad13f19c2ccb4b2c3e4223d1614f49c0b08bcd4aba28b24cab0ce4efc097"
+    },
+    {
+      "number": 6,
+      "path": "evidence/gui/T1D_MANUAL_01/image-06.png",
+      "sha256": "51586cfbda4f8f36acc42b7606afbd85940875523ac894d460f9feddfca344ec"
+    },
+    {
+      "number": 7,
+      "path": "evidence/gui/T1D_MANUAL_01/image-07.png",
+      "sha256": "9635ad13f19c2ccb4b2c3e4223d1614f49c0b08bcd4aba28b24cab0ce4efc097"
+    },
+    {
+      "number": 8,
+      "path": "evidence/gui/T1D_MANUAL_01/image-08.png",
+      "sha256": "e0e560b4abb540c05e6be8a18c6003930debf943aa0bc6aa1d247126778c1851"
+    },
+    {
+      "number": 9,
+      "path": "evidence/gui/T1D_MANUAL_01/image-09.png",
+      "sha256": "ca745b95dbd917a87f8f32fa1bd344cc43ac1133f958f43ac6cbe79cc93c9f2a"
+    },
+    {
+      "number": 10,
+      "path": "evidence/gui/T1D_MANUAL_01/image-10.png",
+      "sha256": "ca745b95dbd917a87f8f32fa1bd344cc43ac1133f958f43ac6cbe79cc93c9f2a"
+    },
+    {
+      "number": 11,
+      "path": "evidence/gui/T1D_MANUAL_01/image-11.png",
+      "sha256": "f6f4dd5a26d88053f7cf42f72b20b41eb21add93dcd10e213c5b390f4fabd580"
+    },
+    {
+      "number": 12,
+      "path": "evidence/gui/T1D_MANUAL_01/image-12.png",
+      "sha256": "ca745b95dbd917a87f8f32fa1bd344cc43ac1133f958f43ac6cbe79cc93c9f2a"
+    }
+  ],
+  "clarifications": [
+    "Ảnh 9 thay ảnh 6 cho 1912345678 thành công.",
+    "Ảnh có chữ Lỗi cập nhật là lúc tắt mạng (ảnh 8).",
+    "Người dùng xác nhận ảnh 11 sau Thoát, ảnh 10 đăng nhập lại/mở Profile.",
+    "Ảnh 12 được người dùng xác nhận là cập nhật sau bật lại mạng; hiển thị 1912345678."
+  ],
+  "limitations": [
+    "Ảnh 4,5,7 có cùng nội dung alert; từng vector được ghi theo lời người thực hiện.",
+    "Không biết timestamp đầy đủ, bản build chạy, hay trạng thái backend tại lúc chụp.",
+    "Hash xác nhận các nhóm ảnh giống nguyên byte: 2/3, 4/5/7, 9/10/12. Các ngữ cảnh thao tác riêng dựa trên lời người thực hiện, không phải frame độc lập; giữ đủ 12 upload để truy vết."
+  ],
+  "latest": [
+    {
+      "itemId": "GUI-D-001",
+      "runId": "T1D_MANUAL_01_GUI-D-001",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Passed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "MOB-01: người dùng xác nhận PASS; ảnh hiển thị Hồ sơ của bạn và các nhãn tiếng Việt."
+      },
+      "actual": "MOB-01: người dùng xác nhận PASS; ảnh hiển thị Hồ sơ của bạn và các nhãn tiếng Việt.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-01.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-01.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-002",
+      "runId": "T1D_MANUAL_01_GUI-D-002",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Passed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "MOB-01: người dùng xác nhận PASS; ảnh có Cập nhật xanh và Thoát đỏ. Nhãn đăng xuất được đánh giá riêng ở D012."
+      },
+      "actual": "MOB-01: người dùng xác nhận PASS; ảnh có Cập nhật xanh và Thoát đỏ. Nhãn đăng xuất được đánh giá riêng ở D012.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-01.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-01.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-003",
+      "runId": "T1D_MANUAL_01_GUI-D-003",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Passed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "MOB-02: người dùng xác nhận PASS; ảnh toàn form và ảnh khi bàn phím mở. Khả năng cuộn/đóng bàn phím theo xác nhận người thực hiện."
+      },
+      "actual": "MOB-02: người dùng xác nhận PASS; ảnh toàn form và ảnh khi bàn phím mở. Khả năng cuộn/đóng bàn phím theo xác nhận người thực hiện.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-01.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-01.png",
+        "evidence/gui/T1D_MANUAL_01/image-02.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-004",
+      "runId": "T1D_MANUAL_01_GUI-D-004",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Passed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "MOB-03: người dùng xác nhận PASS; email có nhãn (Không đổi), nền khác trường sửa."
+      },
+      "actual": "MOB-03: người dùng xác nhận PASS; email có nhãn (Không đổi), nền khác trường sửa.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-01.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-01.png",
+        "evidence/gui/T1D_MANUAL_01/image-03.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-005",
+      "runId": "T1D_MANUAL_01_GUI-D-005",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Passed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "MOB-03: người dùng xác nhận PASS; email test@eshop.com giữ nguyên trên các ảnh sau. Thao tác thử nhập/dán dựa vào xác nhận người dùng, ảnh tĩnh không tự chứng minh thao tác."
+      },
+      "actual": "MOB-03: người dùng xác nhận PASS; email test@eshop.com giữ nguyên trên các ảnh sau. Thao tác thử nhập/dán dựa vào xác nhận người dùng, ảnh tĩnh không tự chứng minh thao tác.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-03.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-03.png",
+        "evidence/gui/T1D_MANUAL_01/image-09.png",
+        "evidence/gui/T1D_MANUAL_01/image-10.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-006",
+      "runId": "T1D_MANUAL_01_GUI-D-006",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Blocked",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Đã nhập Nguyễn Văn Ánh; ảnh sau đăng nhập lại còn tên có dấu, nhưng lần lưu với số đúng 0912345678 báo lỗi. Chưa chứng minh lưu tên với bộ dữ liệu hợp lệ theo D006; lần lưu số 1912345678 thuộc dữ liệu sai miền."
+      },
+      "actual": "Đã nhập Nguyễn Văn Ánh; ảnh sau đăng nhập lại còn tên có dấu, nhưng lần lưu với số đúng 0912345678 báo lỗi. Chưa chứng minh lưu tên với bộ dữ liệu hợp lệ theo D006; lần lưu số 1912345678 thuộc dữ liệu sai miền.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-04.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-04.png",
+        "evidence/gui/T1D_MANUAL_01/image-06.png",
+        "evidence/gui/T1D_MANUAL_01/image-10.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-007",
+      "runId": "T1D_MANUAL_01_GUI-D-007",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Failed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Theo người dùng, cả 091234567 / 0912345678 / 09123456789 / 091234567890 đều báo lỗi. 9/12 bị từ chối đúng kỳ vọng; 10/11 bắt đầu 0 cũng bị từ chối. Ảnh là thông báo đại diện, không phải ảnh riêng từng vector."
+      },
+      "actual": "Theo người dùng, cả 091234567 / 0912345678 / 09123456789 / 091234567890 đều báo lỗi. 9/12 bị từ chối đúng kỳ vọng; 10/11 bắt đầu 0 cũng bị từ chối. Ảnh là thông báo đại diện, không phải ảnh riêng từng vector.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-05.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-05.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-008",
+      "runId": "T1D_MANUAL_01_GUI-D-008",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Failed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Người dùng xác nhận 1912345678 cập nhật thành công, dùng ảnh 9 thay ảnh 6 dán nhầm; 09abc45678 báo lỗi ở ảnh 7. Bàn phím điện thoại chưa có ảnh riêng, không tự kết luận phần đó đạt."
+      },
+      "actual": "Người dùng xác nhận 1912345678 cập nhật thành công, dùng ảnh 9 thay ảnh 6 dán nhầm; 09abc45678 báo lỗi ở ảnh 7. Bàn phím điện thoại chưa có ảnh riêng, không tự kết luận phần đó đạt.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-07.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-07.png",
+        "evidence/gui/T1D_MANUAL_01/image-09.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-009",
+      "runId": "T1D_MANUAL_01_GUI-D-009",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Blocked",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Ảnh 6 có địa chỉ 12 Nguyễn Trãi Phường Bến Thành trên một dòng; ảnh sau đăng nhập lại để trống địa chỉ. Chưa có bằng chứng nhập/sửa nhiều dòng và lưu với điện thoại hợp lệ như D009 yêu cầu."
+      },
+      "actual": "Ảnh 6 có địa chỉ 12 Nguyễn Trãi Phường Bến Thành trên một dòng; ảnh sau đăng nhập lại để trống địa chỉ. Chưa có bằng chứng nhập/sửa nhiều dòng và lưu với điện thoại hợp lệ như D009 yêu cầu.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-04.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-04.png",
+        "evidence/gui/T1D_MANUAL_01/image-06.png",
+        "evidence/gui/T1D_MANUAL_01/image-10.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-010",
+      "runId": "T1D_MANUAL_01_GUI-D-010",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Passed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Người dùng xác nhận MOB-01 PASS và ảnh 10 là mở Profile sau đăng nhập; email test@eshop.com hiển thị."
+      },
+      "actual": "Người dùng xác nhận MOB-01 PASS và ảnh 10 là mở Profile sau đăng nhập; email test@eshop.com hiển thị.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-01.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-01.png",
+        "evidence/gui/T1D_MANUAL_01/image-10.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-011",
+      "runId": "T1D_MANUAL_01_GUI-D-011",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Passed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "MOB-02 được người dùng xác nhận PASS; ảnh bàn phím ở trường tên. Các trường khác và thao tác cuộn/đóng dựa vào xác nhận người dùng, không suy từ ảnh này."
+      },
+      "actual": "MOB-02 được người dùng xác nhận PASS; ảnh bàn phím ở trường tên. Các trường khác và thao tác cuộn/đóng dựa vào xác nhận người dùng, không suy từ ảnh này.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-02.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-02.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-012",
+      "runId": "T1D_MANUAL_01_GUI-D-012",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Failed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Ảnh nút ghi Thoát thay Đăng xuất. Người dùng xác nhận ảnh 11 sau bấm Thoát, ảnh 10 sau đăng nhập lại/mở Profile. Điều hướng ra đăng nhập được xác nhận; không có kiểm tra truy cập trái phép riêng."
+      },
+      "actual": "Ảnh nút ghi Thoát thay Đăng xuất. Người dùng xác nhận ảnh 11 sau bấm Thoát, ảnh 10 sau đăng nhập lại/mở Profile. Điều hướng ra đăng nhập được xác nhận; không có kiểm tra truy cập trái phép riêng.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-01.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-01.png",
+        "evidence/gui/T1D_MANUAL_01/image-11.png",
+        "evidence/gui/T1D_MANUAL_01/image-10.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-013",
+      "runId": "T1D_MANUAL_01_GUI-D-013",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Failed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Người dùng báo lưu bộ hồ sơ hợp lệ thì báo lỗi điện thoại; ảnh 4 có native alert Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số. Ảnh 6 hiển thị 0912345678; không phải bằng chứng cập nhật thành công."
+      },
+      "actual": "Người dùng báo lưu bộ hồ sơ hợp lệ thì báo lỗi điện thoại; ảnh 4 có native alert Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số. Ảnh 6 hiển thị 0912345678; không phải bằng chứng cập nhật thành công.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-04.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-04.png",
+        "evidence/gui/T1D_MANUAL_01/image-06.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-014",
+      "runId": "T1D_MANUAL_01_GUI-D-014",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Failed",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Dữ liệu có chữ bị từ chối; số đúng 0912345678 vẫn báo lỗi theo người dùng. Cập nhật thành công với 1912345678 không thỏa nhánh sửa về số hợp lệ; chưa có video/thứ tự đầy đủ từng lần bấm."
+      },
+      "actual": "Dữ liệu có chữ bị từ chối; số đúng 0912345678 vẫn báo lỗi theo người dùng. Cập nhật thành công với 1912345678 không thỏa nhánh sửa về số hợp lệ; chưa có video/thứ tự đầy đủ từng lần bấm.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-04.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-04.png",
+        "evidence/gui/T1D_MANUAL_01/image-06.png",
+        "evidence/gui/T1D_MANUAL_01/image-07.png",
+        "evidence/gui/T1D_MANUAL_01/image-09.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-015",
+      "runId": "T1D_MANUAL_01_GUI-D-015",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Spec-gap",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Ảnh cho thấy native alert giữa màn hình, không phải lỗi inline trên nút Cập nhật. Giữ điểm review cách áp dụng FR-22 cho native; chưa tự chốt native Alert tương đương hoặc không tương đương oracle."
+      },
+      "actual": "Ảnh cho thấy native alert giữa màn hình, không phải lỗi inline trên nút Cập nhật. Giữ điểm review cách áp dụng FR-22 cho native; chưa tự chốt native Alert tương đương hoặc không tương đương oracle.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-04.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-04.png",
+        "evidence/gui/T1D_MANUAL_01/image-05.png",
+        "evidence/gui/T1D_MANUAL_01/image-07.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    },
+    {
+      "itemId": "GUI-D-016",
+      "runId": "T1D_MANUAL_01_GUI-D-016",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Blocked",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Người dùng xác nhận ảnh có Lỗi cập nhật là lúc tắt mạng. Đã quan sát nhánh lỗi; chưa được cung cấp kết quả bật mạng rồi lưu lại và đối chiếu dữ liệu. Không coi ảnh Profile sau đăng nhập là minh chứng retry thành công."
+      },
+      "actual": "Người dùng xác nhận ảnh 8 có Lỗi cập nhật là lúc tắt mạng, ảnh 12 là cập nhật sau bật mạng; ảnh 9/10 có tên Nguyễn Văn Ánh và số 1912345678. Đã ghi nhận nhánh mất mạng và thao tác retry theo người thực hiện. D016 còn Blocked cho oracle dữ liệu hợp lệ vì retry dùng 1912345678 (sai miền); số đúng 0912345678 bị validation chặn. Ảnh sau retry không có phản hồi thành công riêng; không suy persistence backend chỉ từ ảnh form.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-08.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-08.png",
+        "evidence/gui/T1D_MANUAL_01/image-12.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+    }
+  ],
+  "history": [],
+  "historyDefinition": "Manual intake has no independently timestamped scenario log; do not count 16 mapped criteria as 16 automated scenario runs."
+}

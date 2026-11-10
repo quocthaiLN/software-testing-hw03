@@ -74,3 +74,8 @@ Artifact record created at 2026-11-10T14:15:30.902463+00:00 (not an original cha
 ## Mobile manual workflow reduction — activity summary (partial log)
 
 User prompt: “Ban hay rut gon so luong test tren mobile”. AI revised the manual recording workflow from 16 separately executed entries to 8 grouped cases, retaining traceability and blank per-criterion results for all 16 original GUI-D IDs. Shared setup/observations reduce repetition; phone boundary vectors and failure/recovery coverage retained. Updated generator, Markdown/PDF manual form, README, requirement clarification and progress. No device action, Mobile result, student bug description or independent student addition generated. This entry records the activity; it is not a recovered timestamped original transcript.
+
+
+## Student Mobile evidence integration — partial activity summary
+
+Student supplied 11 screenshots and manual observations, then one additional screenshot of updating after network restoration (12 uploads total). Student explicitly confirmed MOB-01/02/03 PASS; corrected the successful 1912345678 screenshot to image 9; identified “Lỗi cập nhật” image 8 as offline; confirmed image 11 after Thoát and image 10 after login/Profile; identified image 12 as retry after enabling network. AI preserved original PNG bytes with SHA-256, transcribed observations, and mapped separate statuses to 16 original IDs (7 Passed / 5 Failed / 3 Blocked / 1 Spec-gap). Updated workbook and interim Markdown/PDF report. No native actions, bug descriptions, independent student critique/additions, issue creation or invented execution timestamps. This remains a partial activity summary rather than the complete original interaction log.

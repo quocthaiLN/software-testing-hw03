@@ -1,20 +1,23 @@
 {
   "purpose": "Evidence checkpoint for interim Task 1 report, not completion approval",
-  "generatedAt": "2026-11-10T14:11:00.138819+00:00",
+  "generatedAt": "2026-11-10T14:53:08.895892+00:00",
   "counts": {
-    "Failed": 26,
-    "Passed": 26,
-    "Not run": 16
+    "Failed": 31,
+    "Passed": 33,
+    "Blocked": 3,
+    "Spec-gap": 1
   },
   "designed": 68,
-  "executed": 52,
+  "executed": 64,
   "scenarioRuns": 55,
-  "failedLatestImagesPresent": 26,
+  "manualGroupedCases": 8,
+  "manualCriteriaRecorded": 16,
+  "failedLatestImagesPresent": 31,
   "workbookStatusesMatched": true,
   "sources": [
     {
       "path": "GUI_Checklist.xlsx",
-      "sha256": "640bb7193db0563544d0aabb39321faca7c95a73cda831f976ec9b95e7b0cf63"
+      "sha256": "faae1bdf7e3c5a9ac6a7fd2171aa3cbe02d8df621cd69763e70a6f77a255864e"
     },
     {
       "path": "ai/task1_initial_checklist.json",
@@ -31,6 +34,10 @@
     {
       "path": "evidence/gui/apply_execution.json",
       "sha256": "a4dac227a91d84eef0c867b452a1c09842b638af8d5f63712e3c8f026a9406bd"
+    },
+    {
+      "path": "evidence/gui/mobile_execution.json",
+      "sha256": "a223082c9518870b8bb1644c07ea9d7683af1e24bb8ee964c7bfa94016e186a7"
     }
   ]
 }

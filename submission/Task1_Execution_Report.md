@@ -1,21 +1,21 @@
 # Task 1 - Báo cáo thực thi GUI (bản đang hoàn thiện)
 
-Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết kế gồm bốn feature A/B/C/D. Task 1 chưa hoàn tất: Mobile đang được sinh viên kiểm thử thủ công; kết quả chưa được cung cấp. Báo cáo này tổng hợp hồ sơ thực thi, không thay bug report do sinh viên tự viết.
+Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết kế gồm bốn feature A/B/C/D. Task 1 chưa hoàn tất: Đã tích hợp kết quả Mobile do sinh viên cung cấp và 12 ảnh gốc; 3 tiêu chí còn Blocked và 1 Spec-gap. Báo cáo này tổng hợp hồ sơ thực thi, không thay bug report do sinh viên tự viết.
 
 
 ## 1. Thống kê hiện tại
 
-| Feature | Thiết kế | Đã chạy | Passed | Failed | Not run |
-| --- | --- | --- | --- | --- | --- |
-| A / FR-02 - Web Login | 16 | 16 | 6 | 10 | 0 |
-| B / FR-09 - Web Apply Coupon | 8 | 8 | 5 | 3 | 0 |
-| C / FR-17 - Admin Coupons | 28 | 28 | 15 | 13 | 0 |
-| D / FR-04 - Mobile Profile | 16 | 0 | 0 | 0 | 16 |
-| Tổng | 68 | 52 | 26 | 26 | 16 |
+| Feature | Thiết kế | Chốt P/F | Passed | Failed | Chờ B/S | Not run |
+| --- | --- | --- | --- | --- | --- | --- |
+| A / FR-02 - Web Login | 16 | 16 | 6 | 10 | 0 | 0 |
+| B / FR-09 - Web Apply Coupon | 8 | 8 | 5 | 3 | 0 | 0 |
+| C / FR-17 - Admin Coupons | 28 | 28 | 15 | 13 | 0 | 0 |
+| D / FR-04 - Mobile Profile | 16 | 12 | 7 | 5 | 4 | 0 |
+| Tổng | 68 | 64 | 33 | 31 | 4 | 0 |
 
-52/68 mục đã thực thi (76,47%); 26/52 mục đã thực thi Passed (50%). Có 55 lượt chạy scenario thật do A003 và C006 được chạy lại; không nhân biến thể dữ liệu thành mục checklist mới. Một lần lỗi launcher trước UI bị loại khỏi số liệu sản phẩm. Số bug duy nhất chưa được xác định; 26 Failed không có nghĩa là 26 bug.
+64/68 mục đã chốt Passed/Failed; 33 Passed / 31 Failed / 3 Blocked / 1 Spec-gap / 0 Not run. Có 55 lượt scenario Web; 8 ca Mobile thủ công được ánh xạ vào 16 tiêu chí, không cộng 16 ánh xạ hoặc 12 ảnh thành số scenario runs.
 
-Blocked và Spec-gap chưa được gán cho mục Mobile nào vì chưa nhận kết quả. Các điểm oracle chưa rõ được nêu riêng ở mục 7. Không dùng smoke check, kết nối thiết bị hay nhập thử Unicode làm kết quả Mobile.
+Chờ B/S là tổng Blocked và Spec-gap; hai trạng thái vẫn tách riêng theo ID và Excel. Mọi tiêu chí Mobile đã có ghi nhận, nhưng ghi nhận một phần không đồng nghĩa hoàn tất kiểm tra. Số bug duy nhất chưa xác định; Failed không phải số bug đã khử trùng.
 
 
 ## 2. Phạm vi và cơ sở thiết kế
@@ -25,7 +25,7 @@ Blocked và Spec-gap chưa được gán cho mục Mobile nào vì chưa nhận 
 | A / Web /login | Nhãn, input, focus/bàn phím, login, phản hồi sai/khóa và phục hồi | Tài khoản thử riêng; không khóa tài khoản demo dùng chung |
 | B / Web /checkout | Khối coupon, điều kiện C1-C5, công thức/biên, phản hồi và recovery | Cart là tiền điều kiện; không chốt đơn/thanh toán |
 | C / Admin Coupons | Tạo, xem, xóa coupon; form, bảng, navigation và trạng thái | FR-17 chi tiết chỉ yêu cầu Thêm/Xem/Xóa; không tự thêm Sửa |
-| D / Expo Go Profile | Email chỉ đọc, tên/điện thoại/địa chỉ, bàn phím/cuộn, lưu, đăng xuất | Đang chờ kiểm thử thủ công; không gồm lịch sử/hủy đơn |
+| D / Expo Go Profile | Email chỉ đọc, tên/điện thoại/địa chỉ, bàn phím/cuộn, lưu, đăng xuất | Kết quả thủ công một phần; không gồm lịch sử/hủy đơn |
 
 Nguồn: đề HW03 §6 Task 1; EShop README v2.0 FR-02/04/09/17 và FR-21-24; API specification; bản tổng hợp bài giảng tại skills/gui-testing-guide do sinh viên chỉ định. Tiêu chí heuristic có H1-H10 để truy vết, không được tự gán thành yêu cầu nghiệp vụ. Domain/Boundary chọn input và trạng thái; GUI thật vẫn là đối tượng quan sát.
 
@@ -47,10 +47,10 @@ Bản AI đầu 68 mục được bảo toàn tại ai/task1_initial_checklist.m
 | Địa chỉ cục bộ | Web http://localhost:5173; Admin http://localhost:5174; API http://localhost:3000/api |
 | SUT nền tại lúc chạy | 85af3ba875c88283615e22cb108f13e2fccaf0e9; giữ các thay đổi local có sẵn, không khẳng định đây là checkout sạch |
 | Runner | Playwright; một worker; retries=0; Run ID mới mỗi lần; ảnh Failed và JSON quan sát thật |
-| Mobile readiness | Android thật TECNO KJ7 / Android 14 / Expo Go đã mở Profile tài khoản test; chưa tính Passed/Failed |
+| Mobile thủ công | Android thật / Expo Go theo ngữ cảnh phiên; ảnh gốc 1080×2436, tài khoản test@eshop.com. Model/OS từ bước setup trước không tự chứng minh metadata lần chạy này; timestamp đầy đủ và build chưa được cung cấp. |
 | Task 3 | Edge headless và viewport hẹp chưa thỏa ma trận Chrome/Firefox/Expo Go; không tuyên bố đã hoàn tất đa nền tảng |
 
-Trình tự thực thi: A → C → B; D chuyển sang sinh viên làm thủ công theo yêu cầu. Mỗi scenario có tiền điều kiện riêng; không dựa vào test trước. API/SQLite chỉ hỗ trợ fixture và đối chiếu; kết luận GUI dựa trên giao diện và request/response thật. Nếu assertion đầu hỏng, các assertion phía sau chưa chạy không được coi là đạt.
+Trình tự thực thi: A → C → B; D chuyển sang sinh viên làm thủ công theo yêu cầu. Mỗi scenario Web có tiền điều kiện riêng; Mobile theo trình tự thủ công do sinh viên mô tả, có giới hạn bằng chứng ảnh tĩnh. API/SQLite chỉ hỗ trợ fixture và đối chiếu; kết luận GUI dựa trên giao diện và request/response thật. Nếu assertion đầu hỏng, các assertion phía sau chưa chạy không được coi là đạt.
 
 | Trường hợp | Thiết lập được công bố |
 | --- | --- |
@@ -155,31 +155,57 @@ T1C_20261110_01 bị lỗi guard lúc worker nạp config, trước mọi thao t
 
 ## 5.D Kết quả theo mục - FR-04 - Mobile Profile
 
-Chưa nhận kết quả thủ công. Phiếu Task1_Mobile_Manual_Form.md/.pdf được chuẩn bị để ghi môi trường, input, actual và ảnh. Không suy diễn kết quả từ source hoặc readiness.
+Sinh viên xác nhận MOB-01/02/03 PASS; các trạng thái còn lại đối chiếu mô tả thao tác và ảnh thật. Bản phiếu vẫn là template trống; hồ sơ hiện tại nằm ở evidence/gui/mobile_execution.json. Ảnh 9 thay ảnh 6 cho số 1912345678; ảnh 8 lúc tắt mạng; ảnh 12 sau bật mạng; ảnh 11 sau Thoát và ảnh 10 sau đăng nhập lại.
 
 | Item ID | Tiêu chí giữ lại | IA | Trạng thái |
 | --- | --- | --- | --- |
-| GUI-D-001 | Tiêu đề và nhãn tiếng Việt | IA-01 | Not run |
-| GUI-D-002 | Màu cập nhật và đăng xuất | IA-01 | Not run |
-| GUI-D-003 | Layout trên màn hình điện thoại | IA-01 | Not run |
-| GUI-D-004 | Nhận biết email chỉ đọc | IA-01 | Not run |
-| GUI-D-005 | Không sửa email qua GUI | IA-02 | Not run |
-| GUI-D-006 | Tên tiếng Việt lưu nguyên vẹn | IA-02 | Not run |
-| GUI-D-007 | Biên độ dài số điện thoại | IA-02 | Not run |
-| GUI-D-008 | Điện thoại sai miền và kiểu bàn phím | IA-02 | Not run |
-| GUI-D-009 | Địa chỉ nhiều dòng | IA-02 | Not run |
-| GUI-D-010 | Đến hồ sơ từ điều hướng | IA-03 | Not run |
-| GUI-D-011 | Bàn phím không chặn thao tác lưu | IA-03 | Not run |
-| GUI-D-012 | Đăng xuất đúng nhãn và hiệu lực | IA-03 | Not run |
-| GUI-D-013 | Phản hồi cập nhật thành công | IA-04 | Not run |
-| GUI-D-014 | Sửa điện thoại sau lỗi | IA-04 | Not run |
-| GUI-D-015 | Vị trí lỗi form mobile | IA-04 | Not run |
-| GUI-D-016 | Phục hồi cập nhật khi mất mạng | IA-04 | Not run |
+| GUI-D-001 | Tiêu đề và nhãn tiếng Việt | IA-01 | Passed |
+| GUI-D-002 | Màu cập nhật và đăng xuất | IA-01 | Passed |
+| GUI-D-003 | Layout trên màn hình điện thoại | IA-01 | Passed |
+| GUI-D-004 | Nhận biết email chỉ đọc | IA-01 | Passed |
+| GUI-D-005 | Không sửa email qua GUI | IA-02 | Passed |
+| GUI-D-006 | Tên tiếng Việt lưu nguyên vẹn | IA-02 | Blocked |
+| GUI-D-007 | Biên độ dài số điện thoại | IA-02 | Failed |
+| GUI-D-008 | Điện thoại sai miền và kiểu bàn phím | IA-02 | Failed |
+| GUI-D-009 | Địa chỉ nhiều dòng | IA-02 | Blocked |
+| GUI-D-010 | Đến hồ sơ từ điều hướng | IA-03 | Passed |
+| GUI-D-011 | Bàn phím không chặn thao tác lưu | IA-03 | Passed |
+| GUI-D-012 | Đăng xuất đúng nhãn và hiệu lực | IA-03 | Failed |
+| GUI-D-013 | Phản hồi cập nhật thành công | IA-04 | Failed |
+| GUI-D-014 | Sửa điện thoại sau lỗi | IA-04 | Failed |
+| GUI-D-015 | Vị trí lỗi form mobile | IA-04 | Spec-gap |
+| GUI-D-016 | Phục hồi cập nhật khi mất mạng | IA-04 | Blocked |
+
+
+## 5.D.1 Ghi nhận Mobile theo ID gốc
+
+Các dòng sau là bản chép/đối chiếu dữ liệu thực thi, không phải mô tả bug do AI soạn. Passed dựa trên xác nhận người thực hiện kết hợp ảnh; ảnh tĩnh không tự chứng minh mọi thao tác chạm, cuộn hay dán. Từng vector biên được người dùng xác nhận, ảnh alert là bằng chứng đại diện.
+
+| ID / trạng thái | Quan sát và giới hạn | Ảnh gốc |
+| --- | --- | --- |
+| GUI-D-001 / Passed | MOB-01: người dùng xác nhận PASS; ảnh hiển thị Hồ sơ của bạn và các nhãn tiếng Việt. | image-01.png |
+| GUI-D-002 / Passed | MOB-01: người dùng xác nhận PASS; ảnh có Cập nhật xanh và Thoát đỏ. Nhãn đăng xuất được đánh giá riêng ở D012. | image-01.png |
+| GUI-D-003 / Passed | MOB-02: người dùng xác nhận PASS; ảnh toàn form và ảnh khi bàn phím mở. Khả năng cuộn/đóng bàn phím theo xác nhận người thực hiện. | image-01.png, image-02.png |
+| GUI-D-004 / Passed | MOB-03: người dùng xác nhận PASS; email có nhãn (Không đổi), nền khác trường sửa. | image-01.png, image-03.png |
+| GUI-D-005 / Passed | MOB-03: người dùng xác nhận PASS; email test@eshop.com giữ nguyên trên các ảnh sau. Thao tác thử nhập/dán dựa vào xác nhận người dùng, ảnh tĩnh không tự chứng minh thao tác. | image-03.png, image-09.png, image-10.png |
+| GUI-D-006 / Blocked | Đã nhập Nguyễn Văn Ánh; ảnh sau đăng nhập lại còn tên có dấu, nhưng lần lưu với số đúng 0912345678 báo lỗi. Chưa chứng minh lưu tên với bộ dữ liệu hợp lệ theo D006; lần lưu số 1912345678 thuộc dữ liệu sai miền. | image-04.png, image-06.png, image-10.png |
+| GUI-D-007 / Failed | Theo người dùng, cả 091234567 / 0912345678 / 09123456789 / 091234567890 đều báo lỗi. 9/12 bị từ chối đúng kỳ vọng; 10/11 bắt đầu 0 cũng bị từ chối. Ảnh là thông báo đại diện, không phải ảnh riêng từng vector. | image-05.png |
+| GUI-D-008 / Failed | Người dùng xác nhận 1912345678 cập nhật thành công, dùng ảnh 9 thay ảnh 6 dán nhầm; 09abc45678 báo lỗi ở ảnh 7. Bàn phím điện thoại chưa có ảnh riêng, không tự kết luận phần đó đạt. | image-07.png, image-09.png |
+| GUI-D-009 / Blocked | Ảnh 6 có địa chỉ 12 Nguyễn Trãi Phường Bến Thành trên một dòng; ảnh sau đăng nhập lại để trống địa chỉ. Chưa có bằng chứng nhập/sửa nhiều dòng và lưu với điện thoại hợp lệ như D009 yêu cầu. | image-04.png, image-06.png, image-10.png |
+| GUI-D-010 / Passed | Người dùng xác nhận MOB-01 PASS và ảnh 10 là mở Profile sau đăng nhập; email test@eshop.com hiển thị. | image-01.png, image-10.png |
+| GUI-D-011 / Passed | MOB-02 được người dùng xác nhận PASS; ảnh bàn phím ở trường tên. Các trường khác và thao tác cuộn/đóng dựa vào xác nhận người dùng, không suy từ ảnh này. | image-02.png |
+| GUI-D-012 / Failed | Ảnh nút ghi Thoát thay Đăng xuất. Người dùng xác nhận ảnh 11 sau bấm Thoát, ảnh 10 sau đăng nhập lại/mở Profile. Điều hướng ra đăng nhập được xác nhận; không có kiểm tra truy cập trái phép riêng. | image-01.png, image-11.png, image-10.png |
+| GUI-D-013 / Failed | Người dùng báo lưu bộ hồ sơ hợp lệ thì báo lỗi điện thoại; ảnh 4 có native alert Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số. Ảnh 6 hiển thị 0912345678; không phải bằng chứng cập nhật thành công. | image-04.png, image-06.png |
+| GUI-D-014 / Failed | Dữ liệu có chữ bị từ chối; số đúng 0912345678 vẫn báo lỗi theo người dùng. Cập nhật thành công với 1912345678 không thỏa nhánh sửa về số hợp lệ; chưa có video/thứ tự đầy đủ từng lần bấm. | image-04.png, image-06.png, image-07.png, image-09.png |
+| GUI-D-015 / Spec-gap | Ảnh cho thấy native alert giữa màn hình, không phải lỗi inline trên nút Cập nhật. Giữ điểm review cách áp dụng FR-22 cho native; chưa tự chốt native Alert tương đương hoặc không tương đương oracle. | image-04.png, image-05.png, image-07.png |
+| GUI-D-016 / Blocked | Người dùng xác nhận ảnh 8 có Lỗi cập nhật là lúc tắt mạng, ảnh 12 là cập nhật sau bật mạng; ảnh 9/10 có tên Nguyễn Văn Ánh và số 1912345678. Đã ghi nhận nhánh mất mạng và thao tác retry theo người thực hiện. D016 còn Blocked cho oracle dữ liệu hợp lệ vì retry dùng 1912345678 (sai miền); số đúng 0912345678 bị validation chặn. Ảnh sau retry không có phản hồi thành công riêng; không suy persistence backend chỉ từ ảnh form. | image-08.png, image-12.png |
+
+Các ảnh được lưu nguyên byte và SHA-256 trong evidence/gui/T1D_MANUAL_01/manifest.json. Giữ cả ảnh người dùng dán nhầm để bảo toàn nguồn; không dùng ảnh 6 làm bằng chứng 1912345678 thành công. Hash xác nhận ảnh 2/3, 4/5/7 và 9/10/12 giống nguyên byte. Ngữ cảnh khác nhau do sinh viên xác nhận; không tính upload thành các frame/lần chạy độc lập.
 
 
 ## 6. Độ phủ widget × heuristic
 
-Mỗi ô là số mục thiết kế / số mục đã chạy liên kết widget và heuristic. Đây là truy vết thiết kế, không phải số assertion đạt hoặc chứng nhận mọi trạng thái đã được thử. Dấu - nghĩa là chưa có ánh xạ. H10 chưa có mục; sinh viên cần xác định tính áp dụng và bổ sung khi review.
+Mỗi ô là số mục thiết kế / số mục đã chốt P/F liên kết widget và heuristic. Đây là truy vết thiết kế, không phải số assertion đạt hoặc chứng nhận mọi trạng thái đã được thử. Dấu - nghĩa là chưa có ánh xạ. H10 chưa có mục; sinh viên cần xác định tính áp dụng và bổ sung khi review.
 
 | Widget | H1 | H2 | H3 | H4 | H5 | H6 | H7 | H8 | H9 | H10 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -205,15 +231,15 @@ Mỗi ô là số mục thiết kế / số mục đã chạy liên kết widget
 | C-W10 | 2/2 | - | 1/1 | 1/1 | 2/2 | - | - | - | 1/1 | - |
 | C-W11 | 1/1 | - | 2/2 | 2/2 | 1/1 | 1/1 | 1/1 | - | - | - |
 | C-W12 | 1/1 | - | - | - | - | - | - | - | 2/2 | - |
-| D-W01 | - | 1/0 | - | 1/0 | - | - | - | - | - | - |
-| D-W02 | - | - | - | 1/0 | 1/0 | 1/0 | - | 1/0 | - | - |
-| D-W03 | - | 1/0 | 1/0 | - | - | - | 1/0 | 1/0 | - | - |
-| D-W04 | - | - | 1/0 | - | 2/0 | - | 2/0 | 1/0 | 2/0 | - |
-| D-W05 | - | 1/0 | 1/0 | - | - | - | 2/0 | 1/0 | - | - |
-| D-W06 | 2/0 | - | 1/0 | 1/0 | - | - | 1/0 | 1/0 | 3/0 | - |
-| D-W07 | - | - | 1/0 | 2/0 | - | - | - | - | - | - |
-| D-W08 | - | - | 1/0 | - | - | 1/0 | - | - | - | - |
-| D-W09 | 2/0 | - | - | - | - | - | - | - | 3/0 | - |
+| D-W01 | - | 1/1 | - | 1/1 | - | - | - | - | - | - |
+| D-W02 | - | - | - | 1/1 | 1/1 | 1/1 | - | 1/1 | - | - |
+| D-W03 | - | 1/0 | 1/1 | - | - | - | 1/1 | 1/1 | - | - |
+| D-W04 | - | - | 1/1 | - | 2/2 | - | 2/2 | 1/1 | 2/2 | - |
+| D-W05 | - | 1/0 | 1/1 | - | - | - | 2/1 | 1/1 | - | - |
+| D-W06 | 2/1 | - | 1/1 | 1/1 | - | - | 1/1 | 1/1 | 3/1 | - |
+| D-W07 | - | - | 1/1 | 2/2 | - | - | - | - | - | - |
+| D-W08 | - | - | 1/1 | - | - | 1/1 | - | - | - | - |
+| D-W09 | 2/1 | - | - | - | - | - | - | - | 3/1 | - |
 
 
 ## 7. Oracle và giới hạn cần review
@@ -222,7 +248,7 @@ FR-09 chưa nêu cách làm tròn tiền lẻ. Không dùng riêng khác biệt 
 
 FR-17 chưa yêu cầu percent ≤100, lượt là số nguyên hoặc ngày tạo luôn ở tương lai. Không thêm các oracle này để tăng số lỗi.
 
-D015: FR-22 yêu cầu lỗi trên submit; cách áp dụng cho native Alert vẫn cần sinh viên review. Chưa có kết quả thực thi D015.
+D015: FR-22 yêu cầu lỗi trên submit; cách áp dụng cho native Alert vẫn cần sinh viên review. Ảnh 4/5/7 cho thấy native Alert; D015 được giữ Spec-gap chờ quyết định oracle.
 
 Các tiêu chí loading, ngăn gửi lặp, xác nhận/hoàn tác xóa là heuristic đã có nguồn. Không gọi chúng là điều kiện nghiệp vụ FR-17.
 
@@ -233,14 +259,15 @@ Các scenario có nhiều biến thể không chứng minh mọi nhánh nếu d�
 
 | Hồ sơ trong bộ nộp | Vai trò |
 | --- | --- |
-| GUI_Checklist.xlsx | Working checklist, Execution, Summary và AI Review; 52 trạng thái raw khớp workbook ở checkpoint này. |
+| GUI_Checklist.xlsx | Working checklist, Execution, Summary và AI Review; 68 trạng thái từ hồ sơ Web và Mobile khớp workbook ở checkpoint này. |
 | evidence/gui/login_execution.json | 16 latest / 17 history; mỗi Failed latest trỏ tới ảnh thật. |
 | evidence/gui/admin_execution.json | 28 latest / 30 history; giữ kết quả superseded và launcher bị loại. |
 | evidence/gui/apply_execution.json | 8 latest / 8 history; giữ từng vector, fixture và request/response. |
-| evidence/gui/T1A_*, T1B_*, T1C_* | Playwright JSON, screenshot và attachment gốc. Tất cả 26 Failed latest có file ảnh local tồn tại. |
+| evidence/gui/T1A_*, T1B_*, T1C_* | Playwright JSON, screenshot và attachment gốc; 26 Web Failed có ảnh local. |
+| evidence/gui/mobile_execution.json; T1D_MANUAL_01/ | 16 tiêu chí ánh xạ, 12 ảnh gốc và hash; 5 Mobile Failed có ảnh, một số ảnh đại diện nhiều vector theo lời người thực hiện. |
 | Task1_AI_Review.md; ai/prompt_log.md | Keep đã ghi nhận; review độc lập/audit/transcript đầy đủ còn thiếu. Prompt log hiện là bản tóm tắt PARTIAL. |
 
-Cần kết quả và ảnh Mobile thủ công cho GUI-D-001…016; sau đó mới cập nhật workbook/báo cáo. Giữ trạng thái chưa chạy cho đến khi có bằng chứng.
+D006/D009 còn Blocked ở lưu hợp lệ và nhiều dòng; D016 đã có ảnh sau bật mạng nhưng dùng số sai miền 1912345678, còn Blocked cho oracle dữ liệu hợp lệ. D015 còn Spec-gap. Không suy persistence backend từ ảnh form; không tự sửa SUT để bỏ qua validation.
 
 Sinh viên tự review, sửa/bổ sung mục AI bỏ sót và ghi lý do. Không coi gợi ý hoặc phiếu AI tạo là đóng góp độc lập của sinh viên.
 
