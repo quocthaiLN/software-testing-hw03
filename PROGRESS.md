@@ -43,3 +43,11 @@ Task 1 remains in progress: real GUI runs, Failed screenshots, student-authored 
 Git evidence: initial design/source step committed as `ff0d501`; workbook export is a separate completed requirement step. Working tree checks use `git diff --check`. User input requested for actual student review/additions under assignment §6; this is a content requirement, not an extra permission request. No goal completion is claimed.
 
 | HW03-DOC / HW03-T1-02 step 3 — printable initial draft | done | `submission/ai/task1_initial_checklist.pdf`, 19 pages, 86,745 bytes. Produced from preserved Markdown/JSON with `tools/export_task1_initial_pdf.py`. Text checks confirmed every ID/title/step/expected/source/heuristic/status for all 68 items; rendered all 19 pages and visually reviewed them. No clipping, missing glyphs or split checklist cards observed. Initial Markdown/JSON unchanged. | Use PDF for student review; keep final execution report separate. |
+
+## Task 1 — student Keep and Login execution
+
+| Requirement / step | Status | Outputs / verification evidence | Next action |
+| --- | --- | --- | --- |
+| HW03-T1-03 — Keep decision | in_progress | User answered “Keep” to review request, interpreted as retaining all 68 initial items. Recorded verbatim in `Task1_AI_Review.md`. No detailed reasoning, reviewer signature, original message timestamp or student additions invented. | Complete independent student additions/reasons later; execute retained items now. |
+| HW03-T1-04 step A1 — reproducible Login harness | done | `tools/gui/`: Playwright config, LoginPage, fixtures, demo data and 16 ID-mapped tests. Bundled runtime, Edge headless 1280×800, one worker, no retries; failed-only screenshots and raw observations. Temporary per-test users avoid locking shared accounts. JavaScript syntax/runtime import checked. Existing SUT untouched. | Inspect actual run, classify harness failures separately from product observations and update workbook. |
+| HW03-T1-04 step A2 — Login run | in_progress | Started real local run `T1A_20261110_01` with 16 tests and unique demo fixtures. Results not yet concluded. | Wait for process completion, inspect JSON and Failed screenshots. |

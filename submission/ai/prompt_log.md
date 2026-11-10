@@ -29,3 +29,11 @@ Trả lời bổ sung của người dùng (nguyên văn):
 Tool: Codex; skills áp dụng: gui-testing-guide và Spreadsheets. AI đọc bản tổng hợp GUI do người dùng cung cấp, tạo intake, 68 mục checklist đầu, khung review trống và workbook dự thảo. Output checklist được giữ nguyên văn trong `task1_initial_checklist.md` và dạng dữ liệu `.json`; timestamp sinh artifact là 2026-11-10T19:28:16+07:00, không phải timestamp prompt. Source hashes ở `../../environment/task1-design-sources.json`.
 
 AI chưa điền verdict/review của sinh viên, chưa tự bổ sung thay sinh viên, chưa soạn bug report hoặc chạy GUI checklist. Bản ghi này tiếp tục là bản tóm tắt một phần, **không phải toàn bộ prompt/output hoặc audit hoàn chỉnh**; cần export cuộc trò chuyện và tool interactions với timestamp thật trước final submission.
+
+### Follow-up: student decision and execution start
+
+User response (verbatim):
+
+> Keep
+
+Recorded as user's global retain decision for the 68-item draft; not a student-authored rationale or an independent addition. AI next created a Playwright Login harness and started the actual 16-item run `T1A_20261110_01` against localhost with isolated demo accounts. Raw execution output is evidence, not a student-authored bug description. Initial checklist Markdown/JSON/PDF remain preserved; workbook is the working execution record. No original message timestamp or reviewer identity/signature was invented.
