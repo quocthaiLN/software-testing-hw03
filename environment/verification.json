@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-11-10T19:04:36.416915+07:00",
+  "purpose": "Environment smoke checks only; not HW03 GUI/usability execution",
+  "os": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+  "python": "3.14.4",
+  "node": {
+    "exit_code": 0,
+    "output": "v24.21.0"
+  },
+  "npm": {
+    "exit_code": 0,
+    "output": "11.19.0"
+  },
+  "sut_commit": {
+    "exit_code": 0,
+    "output": "85af3ba875c88283615e22cb108f13e2fccaf0e9"
+  },
+  "sut_status": {
+    "exit_code": 0,
+    "output": "M backend/database.sqlite\n M frontend-mobile/App.js\n M frontend-mobile/package-lock.json\n M frontend-mobile/package.json\n M run_servers.sh"
+  },
+  "lockfile_sha256": {
+    "backend": "ec3f3b2dbf1622f1b1121b9d5916ab0eb74d06ed8c59b16082c52c452eebd814",
+    "frontend-web": "233eda7584cdac2ef4ea426733dd04896c66018953b2085ea05bf327edd148c8",
+    "frontend-admin": "e0eaca4bc3a72aa6144af87100b6f298959a0559f78aec5a37daad7f5ef29914"
+  },
+  "browsers": {
+    "google-chrome": {
+      "error": "[Errno 2] No such file or directory: 'google-chrome'"
+    },
+    "firefox": {
+      "exit_code": 1,
+      "output": "Command '/usr/bin/firefox' requires the firefox snap to be installed.\nPlease install it with:\n\nsnap install firefox"
+    },
+    "microsoft-edge": {
+      "exit_code": 0,
+      "output": "Microsoft Edge 155.0.4283.45"
+    }
+  },
+  "checks": [
+    {
+      "check": "api",
+      "passed": true,
+      "http_status": 200
+    },
+    {
+      "check": "web",
+      "passed": true,
+      "http_status": 200
+    },
+    {
+      "check": "admin",
+      "passed": true,
+      "http_status": 200
+    },
+    {
+      "check": "login:user",
+      "passed": true,
+      "http_status": 200
+    },
+    {
+      "check": "login:admin",
+      "passed": true,
+      "http_status": 200
+    }
+  ]
+}
