@@ -3,9 +3,9 @@
 ## Hướng dẫn
 
 1. Bản rút gọn gồm 8 ca thao tác, gộp từ 16 tiêu chí Mobile gốc. Dùng chung bước mở màn hình, nhập/lưu và quan sát để giảm thao tác lặp. Vẫn ghi kết quả theo ID gốc để đối chiếu Excel; không tính 8 ca là 8 tiêu chí mới.
-2. Phiếu trống cho Android thật / Expo Go; mọi kết quả vẫn Not run. Bản AI gốc và Excel giữ 68 tiêu chí, gồm 16 Mobile chưa chạy; Web giữ 26 Passed / 26 Failed.
+2. Phiếu trống cho Android thật / Expo Go; mọi kết quả vẫn Not run. Bản AI gốc giữ nguyên; Excel chứa kết quả đã nhận và 3 ca revision 2 chưa chạy; Web giữ 26 Passed / 26 Failed.
 3. Thực hiện MOB-01 đến MOB-08, đăng xuất cuối cùng. Dùng tài khoản thử; ghi môi trường và dữ liệu thực tế. Passed chỉ khi quan sát đủ kỳ vọng; Failed cần ảnh và thực tế. Các tiêu chí cùng ca có thể có kết quả khác nhau.
-4. Nếu số hợp lệ bị từ chối, vẫn thử đủ bốn vector MOB-05. Không dùng số sai đặc tả để kết luận lưu thành công. Phần chưa thể chạy ghi Blocked và ID phụ thuộc; oracle chưa rõ ghi Spec-gap.
+4. Nếu số hợp lệ bị từ chối, vẫn thử đủ bốn vector MOB-05. Chỉ D006/D009/D016 revision 2 dùng 1912345678 để cô lập kiểm tra; không dùng kết quả đó để kết luận validation hoặc lưu bằng số hợp lệ FR-04 đạt. Phần chưa thể chạy ghi Blocked và ID phụ thuộc; oracle chưa rõ ghi Spec-gap.
 5. Mỗi ghi nhận phải nêu ID gốc và vector; ảnh ví dụ GUI-D-007-phone10.png. Không tự suy kết quả mọi tiêu chí từ một lần lưu. Bug ID chỉ điền sau khi sinh viên tự viết báo cáo.
 6. Đây là bản gộp do AI theo yêu cầu giảm số ca; không phải phần sinh viên tự bổ sung. Kết quả và bằng chứng để trống cho sinh viên điền sau.
 
@@ -76,11 +76,11 @@
 | Kết quả GUI-D-004 | Not run |
 | Kết quả GUI-D-005 | Not run |
 
-## MOB-04 - Lưu hồ sơ hợp lệ
+## MOB-04 - Lưu hồ sơ và kiểm tra cô lập
 
-**Bước / input:** Nhập tên Nguyễn Văn Ánh, điện thoại 0912345678 và địa chỉ hai dòng “12 Nguyễn Trãi<br>Phường Bến Thành”. Sửa địa chỉ, bấm Cập nhật; quan sát phản hồi, rời rồi mở lại Hồ sơ và đối chiếu cả email.
+**Bước / input:** D013: giữ số đúng 0912345678 để kiểm tra lưu hợp lệ (kết quả lỗi cũ giữ riêng). D006/D009 revision 2: dùng fixture 1912345678 đã được ứng dụng chấp nhận, nhập tên Nguyễn Văn Ánh và địa chỉ hai dòng “12 Nguyễn Trãi<br>Phường Bến Thành”. Sửa địa chỉ từ 12 thành 14 Nguyễn Trãi, bấm Cập nhật; quan sát phản hồi, rời rồi mở lại Hồ sơ và đối chiếu cả email.
 
-**Kỳ vọng:** Có phản hồi thành công; tên giữ dấu, địa chỉ giữ nội dung đã sửa, không tràn che nút; dữ liệu còn sau mở lại và email không đổi. Không tự đặt giới hạn độ dài tên/địa chỉ.
+**Kỳ vọng:** Có phản hồi thành công; tên giữ dấu, địa chỉ giữ nội dung đã sửa, không tràn che nút; dữ liệu còn sau mở lại và email không đổi. Không tự đặt giới hạn độ dài tên/địa chỉ. D006/D009 chỉ đánh giá lưu tên/địa chỉ với fixture sai miền; không kết luận fixture hợp lệ FR-04.
 
 **ID gốc:** GUI-D-006, GUI-D-009, GUI-D-013
 
@@ -136,9 +136,9 @@
 
 ## MOB-07 - Mất mạng và phục hồi
 
-**Bước / input:** Sau khi đã lưu được dữ liệu hợp lệ, ghi trạng thái mạng rồi ngắt mạng, thay tên/địa chỉ và lưu. Khôi phục mạng như ban đầu, thử lại và mở lại Hồ sơ.
+**Bước / input:** D016 revision 2: dùng fixture 1912345678; khi có mạng lưu tên Mạng A và mở lại xác nhận. Ghi trạng thái mạng rồi ngắt kết nối tới API, đổi tên Mạng B và lưu. Khôi phục mạng, lưu lại và mở lại Hồ sơ.
 
-**Kỳ vọng:** Không báo thành công giả khi mất mạng; có lỗi và thử lại được; dữ liệu sau phục hồi được đối chiếu thật. Nếu validation chặn trước request, ghi Blocked thay vì kết luận đã thử mất mạng.
+**Kỳ vọng:** Không báo thành công giả khi mất mạng; có lỗi và thử lại được; mở lại thấy tên Mạng B, đối chiếu với baseline Mạng A. Fixture 1912345678 không hợp lệ FR-04; ca này chỉ cô lập recovery. Nếu validation chặn trước request, ghi Blocked thay vì kết luận đã thử mất mạng.
 
 **ID gốc:** GUI-D-016
 

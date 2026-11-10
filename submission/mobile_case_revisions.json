@@ -1,0 +1,37 @@
+{
+  "purpose": "Working checklist revision; original AI and prior observations preserved",
+  "phoneFixture": "1912345678",
+  "fixtureLimitation": "Ứng dụng đã chấp nhận, nhưng không đúng FR-04 bắt đầu 0 / 10–11 chữ số. D007/D008/D013/D014 giữ nguyên kiểm tra số hợp lệ và dữ liệu sai miền.",
+  "items": [
+    {
+      "id": "GUI-D-006",
+      "revision": 2,
+      "title": "Tên tiếng Việt lưu nguyên vẹn - kiểm tra cô lập",
+      "steps": "Dùng điện thoại 1912345678 đã quan sát được ứng dụng chấp nhận như fixture cô lập, không coi là số hợp lệ FR-04. Nhập Nguyễn Văn Ánh, bấm Cập nhật, quan sát phản hồi rồi rời và mở lại Hồ sơ.",
+      "expected": "Tên giữ nguyên dấu sau mở lại; ghi phản hồi và dữ liệu thật. Chỉ đánh giá lưu Unicode với fixture 1912345678; không chứng minh cập nhật bằng số hợp lệ FR-04.",
+      "source": "FR-04; H2; fixture cô lập do người dùng yêu cầu sau kết quả thực tế",
+      "reason": "Người dùng yêu cầu sửa số điện thoại cho ba ca Blocked; tách kiểm tra Unicode/multiline/recovery khỏi lỗi validation điện thoại. AI soạn sửa theo yêu cầu, không phải mục sinh viên tự thêm.",
+      "status": "Not run"
+    },
+    {
+      "id": "GUI-D-009",
+      "revision": 2,
+      "title": "Địa chỉ nhiều dòng - kiểm tra cô lập",
+      "steps": "Dùng điện thoại 1912345678 làm fixture cô lập. Nhập địa chỉ hai dòng: 12 Nguyễn Trãi / Phường Bến Thành (xuống dòng giữa hai phần), sửa thành 14 Nguyễn Trãi / Phường Bến Thành, lưu rồi rời và mở lại Hồ sơ.",
+      "expected": "Địa chỉ nhập/sửa nhiều dòng được, không tràn che nút; sau mở lại giữ nội dung 14 Nguyễn Trãi và Phường Bến Thành. Đối chiếu thật, không kết luận từ ảnh form chưa lưu; fixture sai miền không chứng minh validation FR-04.",
+      "source": "FR-04; widget Text Boxes; fixture cô lập do người dùng yêu cầu sau kết quả thực tế",
+      "reason": "Người dùng yêu cầu sửa số điện thoại cho ba ca Blocked; tách kiểm tra Unicode/multiline/recovery khỏi lỗi validation điện thoại. AI soạn sửa theo yêu cầu, không phải mục sinh viên tự thêm.",
+      "status": "Not run"
+    },
+    {
+      "id": "GUI-D-016",
+      "revision": 2,
+      "title": "Phục hồi mất mạng - kiểm tra cô lập",
+      "steps": "Dùng điện thoại 1912345678 làm fixture cô lập. Khi có mạng lưu tên Mạng A và mở lại để xác nhận baseline. Ghi trạng thái mạng, tắt kết nối tới API, đổi tên thành Mạng B và lưu. Bật lại mạng như ban đầu, thử lưu lại, rời và mở lại Hồ sơ.",
+      "expected": "Khi mất mạng có lỗi, không báo thành công giả; sau khôi phục lưu lại được và mở lại thấy Mạng B. Ghi từng phản hồi và dữ liệu trước/sau. Đây là recovery với fixture ứng dụng chấp nhận, không chứng minh số 1912345678 hợp lệ theo FR-04.",
+      "source": "H1/H9; strategies Integration; fixture cô lập do người dùng yêu cầu sau kết quả thực tế",
+      "reason": "Người dùng yêu cầu sửa số điện thoại cho ba ca Blocked; tách kiểm tra Unicode/multiline/recovery khỏi lỗi validation điện thoại. AI soạn sửa theo yêu cầu, không phải mục sinh viên tự thêm.",
+      "status": "Not run"
+    }
+  ]
+}

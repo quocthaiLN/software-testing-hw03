@@ -79,3 +79,8 @@ User prompt: “Ban hay rut gon so luong test tren mobile”. AI revised the man
 ## Student Mobile evidence integration — partial activity summary
 
 Student supplied 11 screenshots and manual observations, then one additional screenshot of updating after network restoration (12 uploads total). Student explicitly confirmed MOB-01/02/03 PASS; corrected the successful 1912345678 screenshot to image 9; identified “Lỗi cập nhật” image 8 as offline; confirmed image 11 after Thoát and image 10 after login/Profile; identified image 12 as retry after enabling network. AI preserved original PNG bytes with SHA-256, transcribed observations, and mapped separate statuses to 16 original IDs (7 Passed / 5 Failed / 3 Blocked / 1 Spec-gap). Updated workbook and interim Markdown/PDF report. No native actions, bug descriptions, independent student critique/additions, issue creation or invented execution timestamps. This remains a partial activity summary rather than the complete original interaction log.
+
+
+## Revision of three blocked Mobile criteria — partial activity summary
+
+User: “Ban sua lai sdt trong test case cho phu hop voi 3 cai block di”. AI revised D006/D009/D016 to fixture 1912345678 for isolated Unicode, multiline address and network recovery checks; explicitly retained FR-04 validation oracle in D007/D008/D013/D014. Preserved original AI and prior Blocked records, set revision 2 to Not run, updated Excel working design/review and manual form/report PDFs. No rerun or new Passed result claimed; no student addition/bug prose generated.
