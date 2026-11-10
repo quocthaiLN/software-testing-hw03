@@ -2,10 +2,10 @@
 
 ## Hướng dẫn
 
-1. Bản rút gọn gồm 8 ca thao tác, gộp từ 16 tiêu chí Mobile gốc. Dùng chung bước mở màn hình, nhập/lưu và quan sát để giảm thao tác lặp. Vẫn ghi kết quả theo ID gốc để đối chiếu Excel; không tính 8 ca là 8 tiêu chí mới.
-2. Phiếu trống cho Android thật / Expo Go; mọi kết quả vẫn Not run. Bản AI gốc giữ nguyên; Excel chứa kết quả đã nhận và 3 ca revision 2 chưa chạy; Web giữ 26 Passed / 26 Failed.
-3. Thực hiện MOB-01 đến MOB-08, đăng xuất cuối cùng. Dùng tài khoản thử; ghi môi trường và dữ liệu thực tế. Passed chỉ khi quan sát đủ kỳ vọng; Failed cần ảnh và thực tế. Các tiêu chí cùng ca có thể có kết quả khác nhau.
-4. Nếu số hợp lệ bị từ chối, vẫn thử đủ bốn vector MOB-05. Chỉ D006/D009/D016 revision 2 dùng 1912345678 để cô lập kiểm tra; không dùng kết quả đó để kết luận validation hoặc lưu bằng số hợp lệ FR-04 đạt. Phần chưa thể chạy ghi Blocked và ID phụ thuộc; oracle chưa rõ ghi Spec-gap.
+1. Bản rút gọn gồm 7 nhóm ca thao tác cho 13 tiêu chí Mobile active; D006/D009/D016 đã Removed. Dùng chung bước mở màn hình, nhập/lưu và quan sát để giảm thao tác lặp. Vẫn ghi kết quả theo ID gốc để đối chiếu Excel; không tính nhóm ca thành tiêu chí mới.
+2. Phiếu trống cho Android thật / Expo Go; mọi kết quả vẫn Not run. Bản AI gốc giữ nguyên; Excel có 65 mục active đã kết luận và 3 dòng Removed để truy vết; Web giữ 26 Passed / 26 Failed.
+3. Dùng các nhóm MOB-01…06 và MOB-08 (MOB-07 đã loại), đăng xuất cuối cùng. Dùng tài khoản thử; ghi môi trường và dữ liệu thực tế. Passed chỉ khi quan sát đủ kỳ vọng; Failed cần ảnh và thực tế. Các tiêu chí cùng ca có thể có kết quả khác nhau.
+4. Nếu số hợp lệ bị từ chối, vẫn thử đủ bốn vector MOB-05. D006/D009/D016 đã loại, không cần chạy lại; không dùng kết quả đó để kết luận validation hoặc lưu bằng số hợp lệ FR-04 đạt. Phần chưa thể chạy ghi Blocked và ID phụ thuộc; oracle chưa rõ ghi Spec-gap.
 5. Mỗi ghi nhận phải nêu ID gốc và vector; ảnh ví dụ GUI-D-007-phone10.png. Không tự suy kết quả mọi tiêu chí từ một lần lưu. Bug ID chỉ điền sau khi sinh viên tự viết báo cáo.
 6. Đây là bản gộp do AI theo yêu cầu giảm số ca; không phải phần sinh viên tự bổ sung. Kết quả và bằng chứng để trống cho sinh viên điền sau.
 
@@ -78,13 +78,13 @@
 
 ## MOB-04 - Lưu hồ sơ và kiểm tra cô lập
 
-**Bước / input:** D013: giữ số đúng 0912345678 để kiểm tra lưu hợp lệ (kết quả lỗi cũ giữ riêng). D006/D009 revision 2: dùng fixture 1912345678 đã được ứng dụng chấp nhận, nhập tên Nguyễn Văn Ánh và địa chỉ hai dòng “12 Nguyễn Trãi<br>Phường Bến Thành”. Sửa địa chỉ từ 12 thành 14 Nguyễn Trãi, bấm Cập nhật; quan sát phản hồi, rời rồi mở lại Hồ sơ và đối chiếu cả email.
+**Bước / input:** D013: nhập bộ hồ sơ với điện thoại 0912345678, bấm Cập nhật và quan sát phản hồi; đối chiếu dữ liệu sau mở lại nếu lưu được.
 
-**Kỳ vọng:** Có phản hồi thành công; tên giữ dấu, địa chỉ giữ nội dung đã sửa, không tràn che nút; dữ liệu còn sau mở lại và email không đổi. Không tự đặt giới hạn độ dài tên/địa chỉ. D006/D009 chỉ đánh giá lưu tên/địa chỉ với fixture sai miền; không kết luận fixture hợp lệ FR-04.
+**Kỳ vọng:** Có phản hồi thành công và dữ liệu được giữ khi mở lại. Không dùng số sai miền để kết luận lưu hợp lệ đạt. D006/D009 đã loại khỏi scope.
 
-**ID gốc:** GUI-D-006, GUI-D-009, GUI-D-013
+**ID gốc:** GUI-D-013
 
-**Nguồn / heuristic:** FR-04; H2; FR-04; widget Text Boxes; FR-04; H1 / H1,H2,H7
+**Nguồn / heuristic:** FR-04; H1 / H1
 
 | Trường ghi nhận | Nội dung |
 | --- | --- |
@@ -92,8 +92,6 @@
 | Thực tế quan sát |  |
 | Ảnh / vector / phụ thuộc / điểm cần review |  |
 | Bug ID (nếu có) |  |
-| Kết quả GUI-D-006 | Not run |
-| Kết quả GUI-D-009 | Not run |
 | Kết quả GUI-D-013 | Not run |
 
 ## MOB-05 - Biên số điện thoại
@@ -118,7 +116,7 @@
 
 **Bước / input:** Kiểm tra bàn phím điện thoại; thử lưu 1912345678 và dán 09abc45678. Ghi nội dung/vị trí lỗi, sau đó sửa thành 0912345678 và lưu lại.
 
-**Kỳ vọng:** Bàn phím thuận nhập số; cả hai dữ liệu sai miền bị từ chối; lỗi dễ hiểu, sửa và thử lại được. FR-22 yêu cầu lỗi trên nút submit; nếu chỉ có native alert, ghi cách xuất hiện để review, không tự coi tương đương.
+**Kỳ vọng:** Bàn phím thuận nhập số; cả hai dữ liệu sai miền bị từ chối; lỗi dễ hiểu, sửa và thử lại được. FR-22 yêu cầu lỗi trên nút submit; native Alert được đánh giá theo vị trí, FR-22 không bắt buộc inline.
 
 **ID gốc:** GUI-D-008, GUI-D-014, GUI-D-015
 
@@ -133,24 +131,6 @@
 | Kết quả GUI-D-008 | Not run |
 | Kết quả GUI-D-014 | Not run |
 | Kết quả GUI-D-015 | Not run |
-
-## MOB-07 - Mất mạng và phục hồi
-
-**Bước / input:** D016 revision 2: dùng fixture 1912345678; khi có mạng lưu tên Mạng A và mở lại xác nhận. Ghi trạng thái mạng rồi ngắt kết nối tới API, đổi tên Mạng B và lưu. Khôi phục mạng, lưu lại và mở lại Hồ sơ.
-
-**Kỳ vọng:** Không báo thành công giả khi mất mạng; có lỗi và thử lại được; mở lại thấy tên Mạng B, đối chiếu với baseline Mạng A. Fixture 1912345678 không hợp lệ FR-04; ca này chỉ cô lập recovery. Nếu validation chặn trước request, ghi Blocked thay vì kết luận đã thử mất mạng.
-
-**ID gốc:** GUI-D-016
-
-**Nguồn / heuristic:** H1/H9; strategies Integration / H1,H9
-
-| Trường ghi nhận | Nội dung |
-| --- | --- |
-| Thời điểm / tiền điều kiện / input thực tế |  |
-| Thực tế quan sát |  |
-| Ảnh / vector / phụ thuộc / điểm cần review |  |
-| Bug ID (nếu có) |  |
-| Kết quả GUI-D-016 | Not run |
 
 ## MOB-08 - Đăng xuất
 

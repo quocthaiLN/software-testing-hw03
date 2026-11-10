@@ -39,3 +39,8 @@ Theo yêu cầu người dùng rút gọn số test Mobile: phiếu thủ công 
 Cập nhật sau nhận kết quả thủ công: 12 ảnh gốc và lời xác nhận được ánh xạ vào 16 ID GUI-D tại `submission/evidence/gui/mobile_execution.json`; Mobile 7 Passed / 5 Failed / 3 Blocked / 1 Spec-gap. Tổng 68 tiêu chí: 33 Passed / 31 Failed / 3 Blocked / 1 Spec-gap. Bản AI gốc và phiếu template giữ nguyên; Excel/báo cáo đã tích hợp actual. Phần còn chờ là lưu hợp lệ, multiline, recovery đúng miền và oracle FR-22; kết quả ghi nhận không tự thỏa mọi acceptance criterion của HW03-T1-04.
 
 Theo yêu cầu sửa số điện thoại cho ba ca Blocked, D006/D009/D016 revision 2 dùng 1912345678 làm fixture cô lập; giữ oracle điện thoại ở D007/D008/D013/D014. Ba ca sửa chuyển Not run chờ thực hiện theo bước mới; Blocked revision 1 và ảnh không bị sửa. Tổng hiện tại 33 Passed / 31 Failed / 3 Not run / 1 Spec-gap.
+
+
+## Phạm vi hiện tại sau rà soát Task 1
+
+Người dùng yêu cầu loại D006/D009/D016; giữ ID và lịch sử, không tính vào phạm vi active. Checklist hiện 65 mục (A16/B8/C28/D13), đủ IA-01…04; 34 Passed / 31 Failed / 0 Not run / 0 Blocked / 0 Spec-gap. D015 được chốt theo FR-22 nguyên văn về vị trí lỗi, không tự thêm điều kiện inline. Bản AI ban đầu 68 mục vẫn là bản lịch sử. HW03-T1-01/02 và bước thực thi của HW03-T1-04 có bằng chứng; HW03-T1-03 (tự bổ sung) và HW03-T1-05 (student bug reports/Issues), AI/DOC vẫn chưa đủ. Không lấy việc thu hẹp scope hoặc có commit tổng kết làm bằng chứng hoàn tất toàn Task 1.

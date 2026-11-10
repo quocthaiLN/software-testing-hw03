@@ -1,6 +1,6 @@
 # Task 1 - Báo cáo thực thi GUI (bản đang hoàn thiện)
 
-Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết kế gồm bốn feature A/B/C/D. Task 1 chưa hoàn tất: Đã tích hợp kết quả Mobile do sinh viên cung cấp và 12 ảnh gốc; 3 ca sửa revision 2 còn Not run và 1 Spec-gap; kết quả Blocked revision 1 giữ trong hồ sơ. Báo cáo này tổng hợp hồ sơ thực thi, không thay bug report do sinh viên tự viết.
+Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết kế gồm bốn feature A/B/C/D. Task 1 chưa hoàn tất: Đã tích hợp kết quả Mobile do sinh viên cung cấp và 12 ảnh gốc; D006/D009/D016 đã loại theo yêu cầu; D015 chốt theo FR-22 nguyên văn. 65 tiêu chí active đều có kết luận. Review/bổ sung độc lập và bug reports/Issues vẫn còn thiếu. Báo cáo này tổng hợp hồ sơ thực thi, không thay bug report do sinh viên tự viết.
 
 
 ## 1. Thống kê hiện tại
@@ -10,12 +10,12 @@ Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết k
 | A / FR-02 - Web Login | 16 | 16 | 6 | 10 | 0 | 0 |
 | B / FR-09 - Web Apply Coupon | 8 | 8 | 5 | 3 | 0 | 0 |
 | C / FR-17 - Admin Coupons | 28 | 28 | 15 | 13 | 0 | 0 |
-| D / FR-04 - Mobile Profile | 16 | 12 | 7 | 5 | 1 | 3 |
-| Tổng | 68 | 64 | 33 | 31 | 1 | 3 |
+| D / FR-04 - Mobile Profile | 13 | 13 | 8 | 5 | 0 | 0 |
+| Tổng | 65 | 65 | 34 | 31 | 0 | 0 |
 
-64/68 mục đã chốt Passed/Failed; 33 Passed / 31 Failed / 0 Blocked / 1 Spec-gap / 3 Not run. Có 55 lượt scenario Web; 8 ca Mobile thủ công được ánh xạ vào 16 tiêu chí, không cộng 16 ánh xạ hoặc 12 ảnh thành số scenario runs.
+65/65 mục đã chốt Passed/Failed; 34 Passed / 31 Failed / 0 Blocked / 0 Spec-gap / 0 Not run. Có 55 lượt scenario Web; 7 nhóm ca Mobile còn lại ánh xạ vào 13 tiêu chí active, không cộng 16 ánh xạ hoặc 12 ảnh thành số scenario runs.
 
-Chờ B/S là tổng Blocked và Spec-gap; hai trạng thái vẫn tách riêng theo ID và Excel. 16 tiêu chí có ghi nhận ở revision 1; ba ca revision 2 chưa chạy. Không dùng ảnh cũ để tự kết luận thiết kế mới Passed. Số bug duy nhất chưa xác định; Failed không phải số bug đã khử trùng.
+Chờ B/S là tổng Blocked và Spec-gap; hai trạng thái vẫn tách riêng theo ID và Excel. Bản AI gốc 68 mục; 3 Removed không tính vào phạm vi active. D015 chốt bằng review oracle trên ảnh hiện có, không phải lượt chạy mới. Số bug duy nhất chưa xác định; Failed không phải số bug đã khử trùng.
 
 
 ## 2. Phạm vi và cơ sở thiết kế
@@ -25,18 +25,18 @@ Chờ B/S là tổng Blocked và Spec-gap; hai trạng thái vẫn tách riêng 
 | A / Web /login | Nhãn, input, focus/bàn phím, login, phản hồi sai/khóa và phục hồi | Tài khoản thử riêng; không khóa tài khoản demo dùng chung |
 | B / Web /checkout | Khối coupon, điều kiện C1-C5, công thức/biên, phản hồi và recovery | Cart là tiền điều kiện; không chốt đơn/thanh toán |
 | C / Admin Coupons | Tạo, xem, xóa coupon; form, bảng, navigation và trạng thái | FR-17 chi tiết chỉ yêu cầu Thêm/Xem/Xóa; không tự thêm Sửa |
-| D / Expo Go Profile | Email chỉ đọc, tên/điện thoại/địa chỉ, bàn phím/cuộn, lưu, đăng xuất | Kết quả thủ công một phần; không gồm lịch sử/hủy đơn |
+| D / Expo Go Profile | Email chỉ đọc, điện thoại, bàn phím/cuộn, phản hồi lưu và đăng xuất | Loại lưu tên, địa chỉ nhiều dòng và recovery; không gồm lịch sử/hủy đơn |
 
 Nguồn: đề HW03 §6 Task 1; EShop README v2.0 FR-02/04/09/17 và FR-21-24; API specification; bản tổng hợp bài giảng tại skills/gui-testing-guide do sinh viên chỉ định. Tiêu chí heuristic có H1-H10 để truy vết, không được tự gán thành yêu cầu nghiệp vụ. Domain/Boundary chọn input và trạng thái; GUI thật vẫn là đối tượng quan sát.
 
 | IA | A | B | C | D | Tổng |
 | --- | --- | --- | --- | --- | --- |
 | IA-01 | 4 | 1 | 6 | 4 | 15 |
-| IA-02 | 6 | 2 | 12 | 5 | 25 |
+| IA-02 | 6 | 2 | 12 | 3 | 23 |
 | IA-03 | 2 | 1 | 4 | 3 | 10 |
-| IA-04 | 4 | 4 | 6 | 4 | 18 |
+| IA-04 | 4 | 4 | 6 | 3 | 17 |
 
-Bảo toàn 68 mục AI gốc; Keep ban đầu, sau đó người dùng yêu cầu sửa D006/D009/D016. Phản biện và phần sinh viên tự thêm còn thiếu.
+Bảo toàn 68 mục AI gốc; Keep ban đầu, sau đó yêu cầu sửa rồi loại D006/D009/D016. Phản biện và phần sinh viên tự thêm còn thiếu.
 
 
 ## 3. Môi trường và phương pháp thực thi
@@ -164,28 +164,26 @@ Sinh viên xác nhận MOB-01/02/03 PASS; các trạng thái còn lại đối c
 | GUI-D-003 | Layout trên màn hình điện thoại | IA-01 | Passed |
 | GUI-D-004 | Nhận biết email chỉ đọc | IA-01 | Passed |
 | GUI-D-005 | Không sửa email qua GUI | IA-02 | Passed |
-| GUI-D-006 | Tên tiếng Việt lưu nguyên vẹn - kiểm tra cô lập | IA-02 | Not run |
 | GUI-D-007 | Biên độ dài số điện thoại | IA-02 | Failed |
 | GUI-D-008 | Điện thoại sai miền và kiểu bàn phím | IA-02 | Failed |
-| GUI-D-009 | Địa chỉ nhiều dòng - kiểm tra cô lập | IA-02 | Not run |
 | GUI-D-010 | Đến hồ sơ từ điều hướng | IA-03 | Passed |
 | GUI-D-011 | Bàn phím không chặn thao tác lưu | IA-03 | Passed |
 | GUI-D-012 | Đăng xuất đúng nhãn và hiệu lực | IA-03 | Failed |
 | GUI-D-013 | Phản hồi cập nhật thành công | IA-04 | Failed |
 | GUI-D-014 | Sửa điện thoại sau lỗi | IA-04 | Failed |
-| GUI-D-015 | Vị trí lỗi form mobile | IA-04 | Spec-gap |
-| GUI-D-016 | Phục hồi mất mạng - kiểm tra cô lập | IA-04 | Not run |
+| GUI-D-015 | Vị trí lỗi form mobile | IA-04 | Passed |
 
 
 ## 5.D.1 Ghi nhận Mobile theo ID gốc
 
-Theo yêu cầu người dùng, D006/D009/D016 revision 2 dùng 1912345678 để cô lập Unicode, địa chỉ nhiều dòng và recovery. Đây là fixture sai miền FR-04 nhưng ứng dụng đang chấp nhận. D007/D008/D013/D014 giữ nguyên oracle validation. Bản AI đầu và actual revision 1 không bị sửa.
+Lịch sử thiết kế: D006/D009/D016 revision 2 dùng 1912345678 để cô lập Unicode, địa chỉ nhiều dòng và recovery. Đây là fixture sai miền FR-04 nhưng ứng dụng đang chấp nhận. D007/D008/D013/D014 giữ nguyên oracle validation. Bản AI đầu và actual revision 1 không bị sửa.
 
-| ID sửa | Bước / input revision 2 | Kỳ vọng giới hạn |
+| ID | Quyết định | Căn cứ |
 | --- | --- | --- |
-| GUI-D-006 | Dùng điện thoại 1912345678 đã quan sát được ứng dụng chấp nhận như fixture cô lập, không coi là số hợp lệ FR-04. Nhập Nguyễn Văn Ánh, bấm Cập nhật, quan sát phản hồi rồi rời và mở lại Hồ sơ. | Tên giữ nguyên dấu sau mở lại; ghi phản hồi và dữ liệu thật. Chỉ đánh giá lưu Unicode với fixture 1912345678; không chứng minh cập nhật bằng số hợp lệ FR-04. |
-| GUI-D-009 | Dùng điện thoại 1912345678 làm fixture cô lập. Nhập địa chỉ hai dòng: 12 Nguyễn Trãi / Phường Bến Thành (xuống dòng giữa hai phần), sửa thành 14 Nguyễn Trãi / Phường Bến Thành, lưu rồi rời và mở lại Hồ sơ. | Địa chỉ nhập/sửa nhiều dòng được, không tràn che nút; sau mở lại giữ nội dung 14 Nguyễn Trãi và Phường Bến Thành. Đối chiếu thật, không kết luận từ ảnh form chưa lưu; fixture sai miền không chứng minh validation FR-04. |
-| GUI-D-016 | Dùng điện thoại 1912345678 làm fixture cô lập. Khi có mạng lưu tên Mạng A và mở lại để xác nhận baseline. Ghi trạng thái mạng, tắt kết nối tới API, đổi tên thành Mạng B và lưu. Bật lại mạng như ban đầu, thử lưu lại, rời và mở lại Hồ sơ. | Khi mất mạng có lỗi, không báo thành công giả; sau khôi phục lưu lại được và mở lại thấy Mạng B. Ghi từng phản hồi và dữ liệu trước/sau. Đây là recovery với fixture ứng dụng chấp nhận, không chứng minh số 1912345678 hợp lệ theo FR-04. |
+| GUI-D-006 | Remove | Người dùng yêu cầu “Loai bo luon cac truong hop nay”. Loại khỏi phạm vi hiện tại, giữ ID và thiết kế cũ để truy vết; không tính vào 65 mục active. |
+| GUI-D-009 | Remove | Người dùng yêu cầu “Loai bo luon cac truong hop nay”. Loại khỏi phạm vi hiện tại, giữ ID và thiết kế cũ để truy vết; không tính vào 65 mục active. |
+| GUI-D-016 | Remove | Người dùng yêu cầu “Loai bo luon cac truong hop nay”. Loại khỏi phạm vi hiện tại, giữ ID và thiết kế cũ để truy vết; không tính vào 65 mục active. |
+| GUI-D-015 | Revise | AI đối chiếu lại câu chữ FR-22 và ảnh gốc: yêu cầu inline trước đây không có trong nguồn. Đây là làm rõ oracle của AI, không phải đóng góp độc lập sinh viên. |
 
 Các dòng sau là bản chép/đối chiếu dữ liệu thực thi, không phải mô tả bug do AI soạn. Passed dựa trên xác nhận người thực hiện kết hợp ảnh; ảnh tĩnh không tự chứng minh mọi thao tác chạm, cuộn hay dán. Từng vector biên được người dùng xác nhận, ảnh alert là bằng chứng đại diện.
 
@@ -196,17 +194,14 @@ Các dòng sau là bản chép/đối chiếu dữ liệu thực thi, không ph�
 | GUI-D-003 / Passed | MOB-02: người dùng xác nhận PASS; ảnh toàn form và ảnh khi bàn phím mở. Khả năng cuộn/đóng bàn phím theo xác nhận người thực hiện. | image-01.png, image-02.png |
 | GUI-D-004 / Passed | MOB-03: người dùng xác nhận PASS; email có nhãn (Không đổi), nền khác trường sửa. | image-01.png, image-03.png |
 | GUI-D-005 / Passed | MOB-03: người dùng xác nhận PASS; email test@eshop.com giữ nguyên trên các ảnh sau. Thao tác thử nhập/dán dựa vào xác nhận người dùng, ảnh tĩnh không tự chứng minh thao tác. | image-03.png, image-09.png, image-10.png |
-| GUI-D-006 / Not run | Ca revision 2 đổi fixture sang 1912345678 theo yêu cầu người dùng; chưa chạy lại. Các ảnh và quan sát revision 1 giữ trong priorCriterionRevisions, không tự gán kết quả cũ cho kỳ vọng mới. |  |
 | GUI-D-007 / Failed | Theo người dùng, cả 091234567 / 0912345678 / 09123456789 / 091234567890 đều báo lỗi. 9/12 bị từ chối đúng kỳ vọng; 10/11 bắt đầu 0 cũng bị từ chối. Ảnh là thông báo đại diện, không phải ảnh riêng từng vector. | image-05.png |
 | GUI-D-008 / Failed | Người dùng xác nhận 1912345678 cập nhật thành công, dùng ảnh 9 thay ảnh 6 dán nhầm; 09abc45678 báo lỗi ở ảnh 7. Bàn phím điện thoại chưa có ảnh riêng, không tự kết luận phần đó đạt. | image-07.png, image-09.png |
-| GUI-D-009 / Not run | Ca revision 2 đổi fixture sang 1912345678 theo yêu cầu người dùng; chưa chạy lại. Các ảnh và quan sát revision 1 giữ trong priorCriterionRevisions, không tự gán kết quả cũ cho kỳ vọng mới. |  |
 | GUI-D-010 / Passed | Người dùng xác nhận MOB-01 PASS và ảnh 10 là mở Profile sau đăng nhập; email test@eshop.com hiển thị. | image-01.png, image-10.png |
 | GUI-D-011 / Passed | MOB-02 được người dùng xác nhận PASS; ảnh bàn phím ở trường tên. Các trường khác và thao tác cuộn/đóng dựa vào xác nhận người dùng, không suy từ ảnh này. | image-02.png |
 | GUI-D-012 / Failed | Ảnh nút ghi Thoát thay Đăng xuất. Người dùng xác nhận ảnh 11 sau bấm Thoát, ảnh 10 sau đăng nhập lại/mở Profile. Điều hướng ra đăng nhập được xác nhận; không có kiểm tra truy cập trái phép riêng. | image-01.png, image-11.png, image-10.png |
 | GUI-D-013 / Failed | Người dùng báo lưu bộ hồ sơ hợp lệ thì báo lỗi điện thoại; ảnh 4 có native alert Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số. Ảnh 6 hiển thị 0912345678; không phải bằng chứng cập nhật thành công. | image-04.png, image-06.png |
 | GUI-D-014 / Failed | Dữ liệu có chữ bị từ chối; số đúng 0912345678 vẫn báo lỗi theo người dùng. Cập nhật thành công với 1912345678 không thỏa nhánh sửa về số hợp lệ; chưa có video/thứ tự đầy đủ từng lần bấm. | image-04.png, image-06.png, image-07.png, image-09.png |
-| GUI-D-015 / Spec-gap | Ảnh cho thấy native alert giữa màn hình, không phải lỗi inline trên nút Cập nhật. Giữ điểm review cách áp dụng FR-22 cho native; chưa tự chốt native Alert tương đương hoặc không tương đương oracle. | image-04.png, image-05.png, image-07.png |
-| GUI-D-016 / Not run | Ca revision 2 đổi fixture sang 1912345678 theo yêu cầu người dùng; chưa chạy lại. Các ảnh và quan sát revision 1 giữ trong priorCriterionRevisions, không tự gán kết quả cũ cho kỳ vọng mới. |  |
+| GUI-D-015 / Passed | Đối chiếu FR-22 nguyên văn chỉ yêu cầu lỗi phía trên nút Submit, không yêu cầu inline. Ảnh 4/5/7: nội dung lỗi trong native Alert nằm phía trên nút Cập nhật đang hiển thị bên dưới. Chốt Passed cho tiêu chí vị trí; đây là review oracle trên ảnh cũ, không phải chạy mới và không xác nhận nội dung validation đúng. | image-04.png, image-05.png, image-07.png |
 
 
 ## 6. Độ phủ widget × heuristic
@@ -239,13 +234,13 @@ Mỗi ô là số mục thiết kế / số mục đã chốt P/F liên kết wi
 | C-W12 | 1/1 | - | - | - | - | - | - | - | 2/2 | - |
 | D-W01 | - | 1/1 | - | 1/1 | - | - | - | - | - | - |
 | D-W02 | - | - | - | 1/1 | 1/1 | 1/1 | - | 1/1 | - | - |
-| D-W03 | - | 1/0 | 1/1 | - | - | - | 1/1 | 1/1 | - | - |
+| D-W03 | - | - | 1/1 | - | - | - | 1/1 | 1/1 | - | - |
 | D-W04 | - | - | 1/1 | - | 2/2 | - | 2/2 | 1/1 | 2/2 | - |
-| D-W05 | - | 1/0 | 1/1 | - | - | - | 2/1 | 1/1 | - | - |
-| D-W06 | 2/1 | - | 1/1 | 1/1 | - | - | 1/1 | 1/1 | 3/1 | - |
+| D-W05 | - | - | 1/1 | - | - | - | 1/1 | 1/1 | - | - |
+| D-W06 | 1/1 | - | 1/1 | 1/1 | - | - | 1/1 | 1/1 | 2/2 | - |
 | D-W07 | - | - | 1/1 | 2/2 | - | - | - | - | - | - |
 | D-W08 | - | - | 1/1 | - | - | 1/1 | - | - | - | - |
-| D-W09 | 2/1 | - | - | - | - | - | - | - | 3/1 | - |
+| D-W09 | 1/1 | - | - | - | - | - | - | - | 2/2 | - |
 
 
 ## 7. Oracle và giới hạn cần review
@@ -254,7 +249,7 @@ FR-09 chưa nêu cách làm tròn tiền lẻ. Không dùng riêng khác biệt 
 
 FR-17 chưa yêu cầu percent ≤100, lượt là số nguyên hoặc ngày tạo luôn ở tương lai. Không thêm các oracle này để tăng số lỗi.
 
-D015: FR-22 yêu cầu lỗi trên submit; cách áp dụng cho native Alert vẫn cần sinh viên review. Ảnh 4/5/7 cho thấy native Alert; D015 được giữ Spec-gap chờ quyết định oracle.
+D015: FR-22 chỉ yêu cầu thông báo phía trên Submit, không quy định inline. Ảnh 4/5/7 cho thấy nội dung native Alert phía trên Cập nhật; chốt Passed về vị trí, không xác nhận đúng nội dung validation.
 
 Các tiêu chí loading, ngăn gửi lặp, xác nhận/hoàn tác xóa là heuristic đã có nguồn. Không gọi chúng là điều kiện nghiệp vụ FR-17.
 
@@ -265,7 +260,7 @@ Các scenario có nhiều biến thể không chứng minh mọi nhánh nếu d�
 
 | Hồ sơ trong bộ nộp | Vai trò |
 | --- | --- |
-| GUI_Checklist.xlsx | Working checklist, Execution, Summary và AI Review; 68 trạng thái từ hồ sơ Web và Mobile khớp workbook ở checkpoint này. |
+| GUI_Checklist.xlsx | Working checklist, Execution, Summary và AI Review; 65 trạng thái active và 3 Removed khớp workbook ở checkpoint này. |
 | evidence/gui/login_execution.json | 16 latest / 17 history; mỗi Failed latest trỏ tới ảnh thật. |
 | evidence/gui/admin_execution.json | 28 latest / 30 history; giữ kết quả superseded và launcher bị loại. |
 | evidence/gui/apply_execution.json | 8 latest / 8 history; giữ từng vector, fixture và request/response. |
@@ -273,7 +268,7 @@ Các scenario có nhiều biến thể không chứng minh mọi nhánh nếu d�
 | evidence/gui/mobile_execution.json; T1D_MANUAL_01/ | 16 tiêu chí ánh xạ, 12 ảnh gốc và hash; 5 Mobile Failed có ảnh, một số ảnh đại diện nhiều vector theo lời người thực hiện. |
 | Task1_AI_Review.md; ai/prompt_log.md | Keep đã ghi nhận; review độc lập/audit/transcript đầy đủ còn thiếu. Prompt log hiện là bản tóm tắt PARTIAL. |
 
-D006/D009/D016 revision 2 đã đổi fixture sang 1912345678 theo yêu cầu, hiện Not run chờ chạy lại đúng bước mới. Kết quả Blocked revision 1 bảo toàn trong priorCriterionRevisions của mobile_execution.json. D015 còn Spec-gap. Không suy persistence backend từ ảnh form; không tự sửa SUT để bỏ qua validation.
+D006/D009/D016 đã Removed theo yêu cầu; không cần chạy lại trong phạm vi hiện tại. D015 đã chốt Passed theo vị trí và FR-22. Giữ lịch sử revision và ảnh trong mobile_execution.json. Không suy persistence backend từ ảnh form; không tự sửa SUT để bỏ qua validation.
 
 Sinh viên tự review, sửa/bổ sung mục AI bỏ sót và ghi lý do. Không coi gợi ý hoặc phiếu AI tạo là đóng góp độc lập của sinh viên.
 
@@ -282,4 +277,18 @@ Sinh viên tự viết bug report Markdown, severity và GitHub Issues kèm ản
 Hoàn thiện transcript gốc, audit/disclosure/critique và thông tin sinh viên thật. Báo cáo hiện tại do AI tổng hợp dữ liệu thực thi; chưa phải bản sinh viên ký xác nhận.
 
 Hoàn thiện main report và PDF các tài liệu cần giữ, xuất Git log thật khi đóng gói. Task 2, Task 3 và tự chấm/ZIP chưa hoàn thành và không thuộc kết quả Task 1 ở checkpoint này.
+
+
+## 9. Tổng kết rà soát Task 1
+
+Phạm vi hiện tại 65 mục, bao phủ bốn feature và đủ IA-01…04; 34 Passed / 31 Failed. D006/D009/D016 đã Removed theo yêu cầu, giữ trong lịch sử và không tính hoàn tất bằng cách gán Passed. Phần thực thi theo phạm vi hiện tại đã có kết luận; Task 1 toàn bộ vẫn chưa đủ điều kiện nghiệm thu vì còn hồ sơ bắt buộc do sinh viên thực hiện.
+
+| Requirement | Kết luận rà soát | Phần còn thiếu |
+| --- | --- | --- |
+| HW03-T1-01 | Đã đối chiếu bản tổng hợp bài giảng do sinh viên cung cấp | Không có |
+| HW03-T1-02 | 65 mục active >40; đủ IA; giữ 68 mục AI gốc, Excel và summary | Không có cho bước thiết kế hiện tại |
+| HW03-T1-03 | Keep/Revise/Remove đã ghi; chưa đủ phần tự bổ sung | Sinh viên tự thêm mục AI bỏ sót và giải thích vì sao |
+| HW03-T1-04 | 65/65 active đã chốt; 31 Failed có đường dẫn ảnh local | Giữ công bố giới hạn ảnh đại diện/vector, timestamp/build Mobile chưa đủ |
+| HW03-T1-05 | Chưa hoàn thành | Sinh viên tự viết và khử trùng bug report; GitHub Issues kèm ảnh. Chưa có remote/URL |
+| HW03-AI / DOC | Báo cáo hiện tại không thay hồ sơ AI bắt buộc | Full transcript, audit/disclosure/critique và bản sinh viên xác nhận còn thiếu |
 

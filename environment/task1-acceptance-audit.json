@@ -1,0 +1,40 @@
+{
+  "purpose": "Task 1 acceptance audit; execution concluded, full acceptance pending student-owned deliverables",
+  "generatedAt": "2026-11-10T15:05:55.930077+00:00",
+  "counts": {
+    "Failed": 31,
+    "Passed": 34
+  },
+  "active": 65,
+  "initial": 68,
+  "removed": 3,
+  "reviewDecisions": {
+    "Keep": 64,
+    "Revise": 1,
+    "Remove": 3
+  },
+  "allActiveCriteriaConcluded": true,
+  "all31FailedHaveLocalImages": true,
+  "rawWorkbookReportMatched": true,
+  "IAcovered": [
+    "IA-01",
+    "IA-02",
+    "IA-03",
+    "IA-04"
+  ],
+  "pdfPages": {
+    "Task1_Execution_Report": 10,
+    "Task1_Mobile_Manual_Form": 5,
+    "Task1_AI_Review": 1
+  },
+  "pdfRenderedAndVisuallyReviewed": true,
+  "studentAdditionsReceived": 0,
+  "repositoryRemoteConfigured": false,
+  "studentBugReportsAndIssuesReceived": false,
+  "fullTask1Acceptance": false,
+  "remainingRequirements": [
+    "HW03-T1-03 independent additions and explanation",
+    "HW03-T1-05 student-authored bug reports and GitHub Issues",
+    "HW03-AI/DOC complete original records and student confirmation"
+  ]
+}

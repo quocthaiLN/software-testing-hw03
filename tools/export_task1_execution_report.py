@@ -45,11 +45,11 @@ def main():
     mobile=json.loads(mobile_path.read_text()) if mobile_path.exists() else {'latest':[]}
     for row in mobile['latest']:
         assert row['itemId'].startswith('GUI-D-') and row['itemId'] not in latest
-        assert row['status'] in ['Passed','Failed','Blocked','Spec-gap','Not run']
+        assert row['status'] in ['Passed','Failed','Blocked','Spec-gap','Not run','Removed']
         if row['status']=='Failed':assert (SUB/row['screenshot']).is_file()
         latest[row['itemId']]=row
     status={r['id']:latest[r['id']]['status'] if r['id'] in latest else 'Not run' for r in initial}
-    counts=Counter(status.values())
+    counts=Counter(v for v in status.values() if v!='Removed')
     concluded=counts['Passed']+counts['Failed']
     failed_images=sum(r['status']=='Failed' and (SUB/r['screenshot']).is_file() for r in latest.values())
     ns={'s':'http://schemas.openxmlformats.org/spreadsheetml/2006/main'}
@@ -62,31 +62,34 @@ def main():
             if v is not None:values[c.get('r')]=strings[int(v.text)] if c.get('t')=='s' else v.text
         workbook_status={values.get('A'+str(i)):values.get('M'+str(i)) for i in range(7,75)}
         assert workbook_status==status, 'Workbook diverged from checkpoint; reconcile before export'
+    archived=[r for r in initial if status[r['id']]=='Removed']
+    initial=[r for r in initial if status[r['id']]!='Removed']
+    assert len(initial)==65 and len(archived)==3
     blocks=[]
     def h(s):blocks.append(('h',s))
     def p(s):blocks.append(('p',s))
     def table(headers,rows,widths=None):blocks.append(('t',(headers,rows,widths)))
     def br():blocks.append(('br',None))
     h('Task 1 - Báo cáo thực thi GUI (bản đang hoàn thiện)')
-    p('Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết kế gồm bốn feature A/B/C/D. Task 1 chưa hoàn tất: Đã tích hợp kết quả Mobile do sinh viên cung cấp và 12 ảnh gốc; 3 ca sửa revision 2 còn Not run và 1 Spec-gap; kết quả Blocked revision 1 giữ trong hồ sơ. Báo cáo này tổng hợp hồ sơ thực thi, không thay bug report do sinh viên tự viết.')
+    p('Mốc dữ liệu: các lượt chạy Web ngày 2026-11-10. Phạm vi thiết kế gồm bốn feature A/B/C/D. Task 1 chưa hoàn tất: Đã tích hợp kết quả Mobile do sinh viên cung cấp và 12 ảnh gốc; D006/D009/D016 đã loại theo yêu cầu; D015 chốt theo FR-22 nguyên văn. 65 tiêu chí active đều có kết luận. Review/bổ sung độc lập và bug reports/Issues vẫn còn thiếu. Báo cáo này tổng hợp hồ sơ thực thi, không thay bug report do sinh viên tự viết.')
     h('1. Thống kê hiện tại')
     summary=[]
     for f,name in FEATURES.items():
         rs=[r for r in initial if r['feature']==f];c=Counter(status[r['id']]for r in rs)
         summary.append([f+' / '+name,len(rs),c['Passed']+c['Failed'],c['Passed'],c['Failed'],c['Blocked']+c['Spec-gap'],c['Not run']])
-    summary.append(['Tổng',68,concluded,counts['Passed'],counts['Failed'],counts['Blocked']+counts['Spec-gap'],counts['Not run']])
+    summary.append(['Tổng',len(initial),concluded,counts['Passed'],counts['Failed'],counts['Blocked']+counts['Spec-gap'],counts['Not run']])
     table(['Feature','Thiết kế','Chốt P/F','Passed','Failed','Chờ B/S','Not run'],summary,[.35,.11,.11,.11,.11,.11,.10])
-    p(f"{concluded}/68 mục đã chốt Passed/Failed; {counts['Passed']} Passed / {counts['Failed']} Failed / {counts['Blocked']} Blocked / {counts['Spec-gap']} Spec-gap / {counts['Not run']} Not run. Có 55 lượt scenario Web; 8 ca Mobile thủ công được ánh xạ vào 16 tiêu chí, không cộng 16 ánh xạ hoặc 12 ảnh thành số scenario runs.")
-    p('Chờ B/S là tổng Blocked và Spec-gap; hai trạng thái vẫn tách riêng theo ID và Excel. 16 tiêu chí có ghi nhận ở revision 1; ba ca revision 2 chưa chạy. Không dùng ảnh cũ để tự kết luận thiết kế mới Passed. Số bug duy nhất chưa xác định; Failed không phải số bug đã khử trùng.')
+    p(f"{concluded}/{len(initial)} mục đã chốt Passed/Failed; {counts['Passed']} Passed / {counts['Failed']} Failed / {counts['Blocked']} Blocked / {counts['Spec-gap']} Spec-gap / {counts['Not run']} Not run. Có 55 lượt scenario Web; 7 nhóm ca Mobile còn lại ánh xạ vào 13 tiêu chí active, không cộng 16 ánh xạ hoặc 12 ảnh thành số scenario runs.")
+    p('Chờ B/S là tổng Blocked và Spec-gap; hai trạng thái vẫn tách riêng theo ID và Excel. Bản AI gốc 68 mục; 3 Removed không tính vào phạm vi active. D015 chốt bằng review oracle trên ảnh hiện có, không phải lượt chạy mới. Số bug duy nhất chưa xác định; Failed không phải số bug đã khử trùng.')
     h('2. Phạm vi và cơ sở thiết kế')
     table(['Feature / màn hình','Nội dung trong phạm vi','Giới hạn'],[
       ['A / Web /login','Nhãn, input, focus/bàn phím, login, phản hồi sai/khóa và phục hồi','Tài khoản thử riêng; không khóa tài khoản demo dùng chung'],
       ['B / Web /checkout','Khối coupon, điều kiện C1-C5, công thức/biên, phản hồi và recovery','Cart là tiền điều kiện; không chốt đơn/thanh toán'],
       ['C / Admin Coupons','Tạo, xem, xóa coupon; form, bảng, navigation và trạng thái','FR-17 chi tiết chỉ yêu cầu Thêm/Xem/Xóa; không tự thêm Sửa'],
-      ['D / Expo Go Profile','Email chỉ đọc, tên/điện thoại/địa chỉ, bàn phím/cuộn, lưu, đăng xuất','Kết quả thủ công một phần; không gồm lịch sử/hủy đơn']],[.21,.45,.34])
+      ['D / Expo Go Profile','Email chỉ đọc, điện thoại, bàn phím/cuộn, phản hồi lưu và đăng xuất','Loại lưu tên, địa chỉ nhiều dòng và recovery; không gồm lịch sử/hủy đơn']],[.21,.45,.34])
     p('Nguồn: đề HW03 §6 Task 1; EShop README v2.0 FR-02/04/09/17 và FR-21-24; API specification; bản tổng hợp bài giảng tại skills/gui-testing-guide do sinh viên chỉ định. Tiêu chí heuristic có H1-H10 để truy vết, không được tự gán thành yêu cầu nghiệp vụ. Domain/Boundary chọn input và trạng thái; GUI thật vẫn là đối tượng quan sát.')
     table(['IA','A','B','C','D','Tổng'],[[ia]+[sum(r['feature']==f and r['ia']==ia for r in initial)for f in FEATURES]+[sum(r['ia']==ia for r in initial)] for ia in ['IA-01','IA-02','IA-03','IA-04']],[.25,.15,.15,.15,.15,.15])
-    p('Bảo toàn 68 mục AI gốc; Keep ban đầu, sau đó người dùng yêu cầu sửa D006/D009/D016. Phản biện và phần sinh viên tự thêm còn thiếu.')
+    p('Bảo toàn 68 mục AI gốc; Keep ban đầu, sau đó yêu cầu sửa rồi loại D006/D009/D016. Phản biện và phần sinh viên tự thêm còn thiếu.')
     br();h('3. Môi trường và phương pháp thực thi')
     table(['Thành phần','Giá trị / giới hạn'],[
       ['Web GUI đã chạy','Linux; Microsoft Edge headless 155.0.4283.45; viewport 1280×800; C006 thêm 390×844'],
@@ -117,15 +120,15 @@ def main():
         p('Đây là trạng thái checklist, không phải danh sách bug đã khử trùng. Bước, input và kỳ vọng gốc nằm trong checklist AI và workbook; actual, assertion và ảnh nằm trong hồ sơ raw tương ứng.' if f!='D' else 'Sinh viên xác nhận MOB-01/02/03 PASS; các trạng thái còn lại đối chiếu mô tả thao tác và ảnh thật. Bản phiếu vẫn là template trống; hồ sơ hiện tại nằm ở evidence/gui/mobile_execution.json. Ảnh 9 thay ảnh 6 cho số 1912345678; ảnh 8 lúc tắt mạng; ảnh 12 sau bật mạng; ảnh 11 sau Thoát và ảnh 10 sau đăng nhập lại.')
         table(['Item ID','Tiêu chí giữ lại','IA','Trạng thái'],[[r['id'],r['title'],r['ia'],status[r['id']]]for r in initial if r['feature']==f],[.20,.47,.13,.20])
     h('5.D.1 Ghi nhận Mobile theo ID gốc')
-    p('Theo yêu cầu người dùng, D006/D009/D016 revision 2 dùng 1912345678 để cô lập Unicode, địa chỉ nhiều dòng và recovery. Đây là fixture sai miền FR-04 nhưng ứng dụng đang chấp nhận. D007/D008/D013/D014 giữ nguyên oracle validation. Bản AI đầu và actual revision 1 không bị sửa.')
-    table(['ID sửa','Bước / input revision 2','Kỳ vọng giới hạn'],[[r['id'],r['steps'],r['expected']]for r in revisions],[.16,.43,.41])
+    p('Lịch sử thiết kế: D006/D009/D016 revision 2 dùng 1912345678 để cô lập Unicode, địa chỉ nhiều dòng và recovery. Đây là fixture sai miền FR-04 nhưng ứng dụng đang chấp nhận. D007/D008/D013/D014 giữ nguyên oracle validation. Bản AI đầu và actual revision 1 không bị sửa.')
+    table(['ID','Quyết định','Căn cứ'],[[r['id'],r.get('decision','Revise'),r['reason']]for r in revisions],[.16,.14,.70])
     p('Các dòng sau là bản chép/đối chiếu dữ liệu thực thi, không phải mô tả bug do AI soạn. Passed dựa trên xác nhận người thực hiện kết hợp ảnh; ảnh tĩnh không tự chứng minh mọi thao tác chạm, cuộn hay dán. Từng vector biên được người dùng xác nhận, ảnh alert là bằng chứng đại diện.')
-    table(['ID / trạng thái','Quan sát và giới hạn','Ảnh gốc'],[[r['itemId']+' / '+r['status'],r['actual'],', '.join(Path(x).name for x in r['screenshots'])]for r in mobile['latest']],[.20,.62,.18])
+    table(['ID / trạng thái','Quan sát và giới hạn','Ảnh gốc'],[[r['itemId']+' / '+r['status'],r['actual'],', '.join(Path(x).name for x in r['screenshots'])]for r in mobile['latest'] if r['status']!='Removed'],[.20,.62,.18])
 
     br();h('6. Độ phủ widget × heuristic')
     p('Mỗi ô là số mục thiết kế / số mục đã chốt P/F liên kết widget và heuristic. Đây là truy vết thiết kế, không phải số assertion đạt hoặc chứng nhận mọi trạng thái đã được thử. Dấu - nghĩa là chưa có ánh xạ. H10 chưa có mục; sinh viên cần xác định tính áp dụng và bổ sung khi review.')
     widgets=sorted({w.strip()for r in initial for w in r['widget'].split(',')})
-    assert len(widgets)==31
+    assert len(widgets)<=31
     matrix=[]
     for w in widgets:
         vals=[w]
@@ -138,13 +141,13 @@ def main():
     for s in [
       'FR-09 chưa nêu cách làm tròn tiền lẻ. Không dùng riêng khác biệt format số lẻ để khẳng định lỗi. Kết luận B005 không phụ thuộc việc chọn rounding policy; dữ liệu gốc giữ các vector và số tiền thật.',
       'FR-17 chưa yêu cầu percent ≤100, lượt là số nguyên hoặc ngày tạo luôn ở tương lai. Không thêm các oracle này để tăng số lỗi.',
-      'D015: FR-22 yêu cầu lỗi trên submit; cách áp dụng cho native Alert vẫn cần sinh viên review. Ảnh 4/5/7 cho thấy native Alert; D015 được giữ Spec-gap chờ quyết định oracle.',
+      'D015: FR-22 chỉ yêu cầu thông báo phía trên Submit, không quy định inline. Ảnh 4/5/7 cho thấy nội dung native Alert phía trên Cập nhật; chốt Passed về vị trí, không xác nhận đúng nội dung validation.',
       'Các tiêu chí loading, ngăn gửi lặp, xác nhận/hoàn tác xóa là heuristic đã có nguồn. Không gọi chúng là điều kiện nghiệp vụ FR-17.',
       'Các scenario có nhiều biến thể không chứng minh mọi nhánh nếu dừng sớm; raw log và mã test là căn cứ xác định phần thực sự đã chạy.'
     ]:p(s)
     h('8. Hồ sơ bằng chứng và công việc còn lại')
     table(['Hồ sơ trong bộ nộp','Vai trò'],[
-      ['GUI_Checklist.xlsx','Working checklist, Execution, Summary và AI Review; 68 trạng thái từ hồ sơ Web và Mobile khớp workbook ở checkpoint này.'],
+      ['GUI_Checklist.xlsx','Working checklist, Execution, Summary và AI Review; 65 trạng thái active và 3 Removed khớp workbook ở checkpoint này.'],
       ['evidence/gui/login_execution.json','16 latest / 17 history; mỗi Failed latest trỏ tới ảnh thật.'],
       ['evidence/gui/admin_execution.json','28 latest / 30 history; giữ kết quả superseded và launcher bị loại.'],
       ['evidence/gui/apply_execution.json','8 latest / 8 history; giữ từng vector, fixture và request/response.'],
@@ -152,12 +155,21 @@ def main():
       ['evidence/gui/mobile_execution.json; T1D_MANUAL_01/','16 tiêu chí ánh xạ, 12 ảnh gốc và hash; 5 Mobile Failed có ảnh, một số ảnh đại diện nhiều vector theo lời người thực hiện.'],
       ['Task1_AI_Review.md; ai/prompt_log.md','Keep đã ghi nhận; review độc lập/audit/transcript đầy đủ còn thiếu. Prompt log hiện là bản tóm tắt PARTIAL.']],[.46,.54])
     for s in [
-      'D006/D009/D016 revision 2 đã đổi fixture sang 1912345678 theo yêu cầu, hiện Not run chờ chạy lại đúng bước mới. Kết quả Blocked revision 1 bảo toàn trong priorCriterionRevisions của mobile_execution.json. D015 còn Spec-gap. Không suy persistence backend từ ảnh form; không tự sửa SUT để bỏ qua validation.',
+      'D006/D009/D016 đã Removed theo yêu cầu; không cần chạy lại trong phạm vi hiện tại. D015 đã chốt Passed theo vị trí và FR-22. Giữ lịch sử revision và ảnh trong mobile_execution.json. Không suy persistence backend từ ảnh form; không tự sửa SUT để bỏ qua validation.',
       'Sinh viên tự review, sửa/bổ sung mục AI bỏ sót và ghi lý do. Không coi gợi ý hoặc phiếu AI tạo là đóng góp độc lập của sinh viên.',
       'Sinh viên tự viết bug report Markdown, severity và GitHub Issues kèm ảnh; khử trùng trước thống kê bug. Repository HW03 hiện chưa có remote, issue URL/Bug ID chưa có. Báo cáo này không soạn mô tả bug.',
       'Hoàn thiện transcript gốc, audit/disclosure/critique và thông tin sinh viên thật. Báo cáo hiện tại do AI tổng hợp dữ liệu thực thi; chưa phải bản sinh viên ký xác nhận.',
       'Hoàn thiện main report và PDF các tài liệu cần giữ, xuất Git log thật khi đóng gói. Task 2, Task 3 và tự chấm/ZIP chưa hoàn thành và không thuộc kết quả Task 1 ở checkpoint này.'
     ]:p(s)
+    br();h('9. Tổng kết rà soát Task 1')
+    p('Phạm vi hiện tại 65 mục, bao phủ bốn feature và đủ IA-01…04; 34 Passed / 31 Failed. D006/D009/D016 đã Removed theo yêu cầu, giữ trong lịch sử và không tính hoàn tất bằng cách gán Passed. Phần thực thi theo phạm vi hiện tại đã có kết luận; Task 1 toàn bộ vẫn chưa đủ điều kiện nghiệm thu vì còn hồ sơ bắt buộc do sinh viên thực hiện.')
+    table(['Requirement','Kết luận rà soát','Phần còn thiếu'],[
+      ['HW03-T1-01','Đã đối chiếu bản tổng hợp bài giảng do sinh viên cung cấp','Không có'],
+      ['HW03-T1-02','65 mục active >40; đủ IA; giữ 68 mục AI gốc, Excel và summary','Không có cho bước thiết kế hiện tại'],
+      ['HW03-T1-03','Keep/Revise/Remove đã ghi; chưa đủ phần tự bổ sung','Sinh viên tự thêm mục AI bỏ sót và giải thích vì sao'],
+      ['HW03-T1-04','65/65 active đã chốt; 31 Failed có đường dẫn ảnh local','Giữ công bố giới hạn ảnh đại diện/vector, timestamp/build Mobile chưa đủ'],
+      ['HW03-T1-05','Chưa hoàn thành','Sinh viên tự viết và khử trùng bug report; GitHub Issues kèm ảnh. Chưa có remote/URL'],
+      ['HW03-AI / DOC','Báo cáo hiện tại không thay hồ sơ AI bắt buộc','Full transcript, audit/disclosure/critique và bản sinh viên xác nhận còn thiếu']],[.20,.41,.39])
     # Both formats are emitted from the same blocks, preventing summary drift.
     md=[]
     for kind,value in blocks:
@@ -192,7 +204,7 @@ def main():
             story += [t,Spacer(1,10)]
     def footer(c,d):
         c.setFont('DV',8);c.setFillColor(colors.HexColor('#64748B'))
-        c.drawString(42,25,'HW03 Task 1 - Web + Mobile thủ công - Còn ca sửa chưa chạy/Spec-gap')
+        c.drawString(42,25,'HW03 Task 1 - Web + Mobile thủ công - 65 mục active đã kết luận - Còn hồ sơ sinh viên')
         c.drawRightString(A4[0]-42,25,str(d.page))
     SimpleDocTemplate(str(OUT.with_suffix('.pdf')),pagesize=A4,leftMargin=42,rightMargin=42,topMargin=40,bottomMargin=42,
                       title='HW03 Task 1 - Interim GUI execution report',author='AI-assisted execution summary').build(story,onFirstPage=footer,onLaterPages=footer)
@@ -200,9 +212,9 @@ def main():
     if mobile_path.exists():paths.append(mobile_path)
     if revision_path.exists():paths.append(revision_path)
     checkpoint={'purpose':'Evidence checkpoint for interim Task 1 report, not completion approval',
-                'generatedAt':datetime.now(timezone.utc).isoformat(),'counts':dict(Counter(status.values())),
-                'designed':68,'executed':concluded,'scenarioRuns':55,'manualGroupedCases':8,
-                'manualCriteriaRecorded':len(mobile['latest']),'failedLatestImagesPresent':failed_images,
+                'generatedAt':datetime.now(timezone.utc).isoformat(),'counts':dict(counts),
+                'designed':len(initial),'initialDesigned':68,'removed':len(archived),'executed':concluded,'scenarioRuns':55,'manualGroupedCases':7,
+                'manualCriteriaRecorded':sum(r['status']!='Removed' for r in mobile['latest']),'failedLatestImagesPresent':failed_images,
                 'workbookStatusesMatched':True,
                 'sources':[{ 'path':str(p.relative_to(SUB)),'sha256':hashlib.sha256(p.read_bytes()).hexdigest()}for p in paths]}
     (SUB/'evidence/gui/task1_report_checkpoint.json').write_text(json.dumps(checkpoint,ensure_ascii=False,indent=2)+'\n')

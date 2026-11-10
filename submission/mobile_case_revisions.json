@@ -1,5 +1,5 @@
 {
-  "purpose": "Working checklist revision; original AI and prior observations preserved",
+  "purpose": "Working scope: 65 active criteria; three removals authorized by student; original AI preserved",
   "phoneFixture": "1912345678",
   "fixtureLimitation": "Ứng dụng đã chấp nhận, nhưng không đúng FR-04 bắt đầu 0 / 10–11 chữ số. D007/D008/D013/D014 giữ nguyên kiểm tra số hợp lệ và dữ liệu sai miền.",
   "items": [
@@ -10,8 +10,10 @@
       "steps": "Dùng điện thoại 1912345678 đã quan sát được ứng dụng chấp nhận như fixture cô lập, không coi là số hợp lệ FR-04. Nhập Nguyễn Văn Ánh, bấm Cập nhật, quan sát phản hồi rồi rời và mở lại Hồ sơ.",
       "expected": "Tên giữ nguyên dấu sau mở lại; ghi phản hồi và dữ liệu thật. Chỉ đánh giá lưu Unicode với fixture 1912345678; không chứng minh cập nhật bằng số hợp lệ FR-04.",
       "source": "FR-04; H2; fixture cô lập do người dùng yêu cầu sau kết quả thực tế",
-      "reason": "Người dùng yêu cầu sửa số điện thoại cho ba ca Blocked; tách kiểm tra Unicode/multiline/recovery khỏi lỗi validation điện thoại. AI soạn sửa theo yêu cầu, không phải mục sinh viên tự thêm.",
-      "status": "Not run"
+      "reason": "Người dùng yêu cầu “Loai bo luon cac truong hop nay”. Loại khỏi phạm vi hiện tại, giữ ID và thiết kế cũ để truy vết; không tính vào 65 mục active.",
+      "status": "Removed",
+      "scope": "removed",
+      "decision": "Remove"
     },
     {
       "id": "GUI-D-009",
@@ -20,8 +22,10 @@
       "steps": "Dùng điện thoại 1912345678 làm fixture cô lập. Nhập địa chỉ hai dòng: 12 Nguyễn Trãi / Phường Bến Thành (xuống dòng giữa hai phần), sửa thành 14 Nguyễn Trãi / Phường Bến Thành, lưu rồi rời và mở lại Hồ sơ.",
       "expected": "Địa chỉ nhập/sửa nhiều dòng được, không tràn che nút; sau mở lại giữ nội dung 14 Nguyễn Trãi và Phường Bến Thành. Đối chiếu thật, không kết luận từ ảnh form chưa lưu; fixture sai miền không chứng minh validation FR-04.",
       "source": "FR-04; widget Text Boxes; fixture cô lập do người dùng yêu cầu sau kết quả thực tế",
-      "reason": "Người dùng yêu cầu sửa số điện thoại cho ba ca Blocked; tách kiểm tra Unicode/multiline/recovery khỏi lỗi validation điện thoại. AI soạn sửa theo yêu cầu, không phải mục sinh viên tự thêm.",
-      "status": "Not run"
+      "reason": "Người dùng yêu cầu “Loai bo luon cac truong hop nay”. Loại khỏi phạm vi hiện tại, giữ ID và thiết kế cũ để truy vết; không tính vào 65 mục active.",
+      "status": "Removed",
+      "scope": "removed",
+      "decision": "Remove"
     },
     {
       "id": "GUI-D-016",
@@ -30,8 +34,22 @@
       "steps": "Dùng điện thoại 1912345678 làm fixture cô lập. Khi có mạng lưu tên Mạng A và mở lại để xác nhận baseline. Ghi trạng thái mạng, tắt kết nối tới API, đổi tên thành Mạng B và lưu. Bật lại mạng như ban đầu, thử lưu lại, rời và mở lại Hồ sơ.",
       "expected": "Khi mất mạng có lỗi, không báo thành công giả; sau khôi phục lưu lại được và mở lại thấy Mạng B. Ghi từng phản hồi và dữ liệu trước/sau. Đây là recovery với fixture ứng dụng chấp nhận, không chứng minh số 1912345678 hợp lệ theo FR-04.",
       "source": "H1/H9; strategies Integration; fixture cô lập do người dùng yêu cầu sau kết quả thực tế",
-      "reason": "Người dùng yêu cầu sửa số điện thoại cho ba ca Blocked; tách kiểm tra Unicode/multiline/recovery khỏi lỗi validation điện thoại. AI soạn sửa theo yêu cầu, không phải mục sinh viên tự thêm.",
-      "status": "Not run"
+      "reason": "Người dùng yêu cầu “Loai bo luon cac truong hop nay”. Loại khỏi phạm vi hiện tại, giữ ID và thiết kế cũ để truy vết; không tính vào 65 mục active.",
+      "status": "Removed",
+      "scope": "removed",
+      "decision": "Remove"
+    },
+    {
+      "id": "GUI-D-015",
+      "revision": 2,
+      "title": "Vị trí lỗi form mobile",
+      "steps": "Gây lỗi validate, quan sát vị trí nội dung thông báo so với nút Cập nhật trên ảnh gốc.",
+      "expected": "Theo FR-22, thông báo lỗi xuất hiện phía trên nút Submit. Đặc tả không bắt buộc inline; native Alert không tự bị loại. Chỉ đánh giá vị trí hiển thị, không đánh giá đúng/sai nội dung validation ở mục này.",
+      "source": "EShop README FR-22: Thông báo lỗi phải xuất hiện trên nút submit, không phải bên dưới.; ảnh T1D_MANUAL_01/image-04.png",
+      "reason": "AI đối chiếu lại câu chữ FR-22 và ảnh gốc: yêu cầu inline trước đây không có trong nguồn. Đây là làm rõ oracle của AI, không phải đóng góp độc lập sinh viên.",
+      "scope": "active",
+      "decision": "Revise",
+      "status": "Passed"
     }
   ]
 }

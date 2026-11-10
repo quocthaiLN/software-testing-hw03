@@ -84,3 +84,8 @@ Student supplied 11 screenshots and manual observations, then one additional scr
 ## Revision of three blocked Mobile criteria — partial activity summary
 
 User: “Ban sua lai sdt trong test case cho phu hop voi 3 cai block di”. AI revised D006/D009/D016 to fixture 1912345678 for isolated Unicode, multiline address and network recovery checks; explicitly retained FR-04 validation oracle in D007/D008/D013/D014. Preserved original AI and prior Blocked records, set revision 2 to Not run, updated Excel working design/review and manual form/report PDFs. No rerun or new Passed result claimed; no student addition/bug prose generated.
+
+
+## Task 1 audit and scope closure — partial activity summary
+
+User requested review/completion, then instructed “Loai bo luon cac truong hop nay” for D006/D009/D016. AI recorded Remove rather than inventing rerun outcomes, adjusted working scope/count formulas to 65 active and preserved initial 68 and revision history. Re-read FR-22 literal wording and original image 4; removed the unsupported inline-only interpretation and concluded D015 Passed for error position, using existing evidence. Current 34 Passed / 31 Failed. Reconciled Excel, raw JSON, review/README and report PDFs; checked counts, IDs, image/source hashes, saved formulas and visual layouts. Recorded that student additions/bug reports/Issues and full AI records remain absent. This audit log entry is an activity summary, not a reconstructed original transcript or student-authored critique/bug report.

@@ -73,7 +73,8 @@
     "Ảnh 4,5,7 có cùng nội dung alert; từng vector được ghi theo lời người thực hiện.",
     "Không biết timestamp đầy đủ, bản build chạy, hay trạng thái backend tại lúc chụp.",
     "Hash xác nhận các nhóm ảnh giống nguyên byte: 2/3, 4/5/7, 9/10/12. Các ngữ cảnh thao tác riêng dựa trên lời người thực hiện, không phải frame độc lập; giữ đủ 12 upload để truy vết.",
-    "D006/D009/D016 revision 2 dùng fixture 1912345678; kết quả hiện Not run, revision 1 Blocked được bảo toàn riêng. Không tính sửa thiết kế là chạy lại."
+    "D006/D009/D016 revision 2 dùng fixture 1912345678; kết quả hiện Not run, revision 1 Blocked được bảo toàn riêng. Không tính sửa thiết kế là chạy lại.",
+    "Theo yêu cầu người dùng, D006/D009/D016 đã Removed; D015 chốt vị trí lỗi bằng FR-22 nguyên văn và ảnh cũ, không bổ sung điều kiện inline."
   ],
   "latest": [
     {
@@ -186,17 +187,18 @@
       "suiteRun": "T1D_MANUAL_01",
       "startedAt": "",
       "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
-      "status": "Not run",
+      "status": "Removed",
       "observed": {
         "method": "Revised test design; not executed",
         "visibleText": ""
       },
-      "actual": "Ca revision 2 đổi fixture sang 1912345678 theo yêu cầu người dùng; chưa chạy lại. Các ảnh và quan sát revision 1 giữ trong priorCriterionRevisions, không tự gán kết quả cũ cho kỳ vọng mới.",
+      "actual": "Loại khỏi phạm vi theo yêu cầu người dùng; không tính là Passed/Failed, không cần chạy lại. Thiết kế và quan sát các revision trước giữ trong lịch sử.",
       "assertionMessages": [],
       "screenshot": "",
       "screenshots": [],
-      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description.",
-      "criterionRevision": 2
+      "notes": "Student-authorized scope removal, not a test outcome.",
+      "criterionRevision": 2,
+      "scope": "removed"
     },
     {
       "itemId": "GUI-D-007",
@@ -245,17 +247,18 @@
       "suiteRun": "T1D_MANUAL_01",
       "startedAt": "",
       "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
-      "status": "Not run",
+      "status": "Removed",
       "observed": {
         "method": "Revised test design; not executed",
         "visibleText": ""
       },
-      "actual": "Ca revision 2 đổi fixture sang 1912345678 theo yêu cầu người dùng; chưa chạy lại. Các ảnh và quan sát revision 1 giữ trong priorCriterionRevisions, không tự gán kết quả cũ cho kỳ vọng mới.",
+      "actual": "Loại khỏi phạm vi theo yêu cầu người dùng; không tính là Passed/Failed, không cần chạy lại. Thiết kế và quan sát các revision trước giữ trong lịch sử.",
       "assertionMessages": [],
       "screenshot": "",
       "screenshots": [],
-      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description.",
-      "criterionRevision": 2
+      "notes": "Student-authorized scope removal, not a test outcome.",
+      "criterionRevision": 2,
+      "scope": "removed"
     },
     {
       "itemId": "GUI-D-010",
@@ -370,13 +373,13 @@
       "suiteRun": "T1D_MANUAL_01",
       "startedAt": "",
       "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
-      "status": "Spec-gap",
+      "status": "Passed",
       "observed": {
         "method": "Student manual execution and uploaded screenshots",
         "account": "test@eshop.com",
         "visibleText": "Ảnh cho thấy native alert giữa màn hình, không phải lỗi inline trên nút Cập nhật. Giữ điểm review cách áp dụng FR-22 cho native; chưa tự chốt native Alert tương đương hoặc không tương đương oracle."
       },
-      "actual": "Ảnh cho thấy native alert giữa màn hình, không phải lỗi inline trên nút Cập nhật. Giữ điểm review cách áp dụng FR-22 cho native; chưa tự chốt native Alert tương đương hoặc không tương đương oracle.",
+      "actual": "Đối chiếu FR-22 nguyên văn chỉ yêu cầu lỗi phía trên nút Submit, không yêu cầu inline. Ảnh 4/5/7: nội dung lỗi trong native Alert nằm phía trên nút Cập nhật đang hiển thị bên dưới. Chốt Passed cho tiêu chí vị trí; đây là review oracle trên ảnh cũ, không phải chạy mới và không xác nhận nội dung validation đúng.",
       "assertionMessages": [],
       "screenshot": "evidence/gui/T1D_MANUAL_01/image-04.png",
       "screenshots": [
@@ -384,7 +387,9 @@
         "evidence/gui/T1D_MANUAL_01/image-05.png",
         "evidence/gui/T1D_MANUAL_01/image-07.png"
       ],
-      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description."
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description.",
+      "oracleRevision": 2,
+      "scope": "active"
     },
     {
       "itemId": "GUI-D-016",
@@ -392,17 +397,18 @@
       "suiteRun": "T1D_MANUAL_01",
       "startedAt": "",
       "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
-      "status": "Not run",
+      "status": "Removed",
       "observed": {
         "method": "Revised test design; not executed",
         "visibleText": ""
       },
-      "actual": "Ca revision 2 đổi fixture sang 1912345678 theo yêu cầu người dùng; chưa chạy lại. Các ảnh và quan sát revision 1 giữ trong priorCriterionRevisions, không tự gán kết quả cũ cho kỳ vọng mới.",
+      "actual": "Loại khỏi phạm vi theo yêu cầu người dùng; không tính là Passed/Failed, không cần chạy lại. Thiết kế và quan sát các revision trước giữ trong lịch sử.",
       "assertionMessages": [],
       "screenshot": "",
       "screenshots": [],
-      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description.",
-      "criterionRevision": 2
+      "notes": "Student-authorized scope removal, not a test outcome.",
+      "criterionRevision": 2,
+      "scope": "removed"
     }
   ],
   "history": [],
@@ -475,6 +481,83 @@
       ],
       "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description.",
       "criterionRevision": 1
+    },
+    {
+      "itemId": "GUI-D-006",
+      "runId": "",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Not run",
+      "observed": {
+        "method": "Revised test design; not executed",
+        "visibleText": ""
+      },
+      "actual": "Ca revision 2 đổi fixture sang 1912345678 theo yêu cầu người dùng; chưa chạy lại. Các ảnh và quan sát revision 1 giữ trong priorCriterionRevisions, không tự gán kết quả cũ cho kỳ vọng mới.",
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": [],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description.",
+      "criterionRevision": 2
+    },
+    {
+      "itemId": "GUI-D-009",
+      "runId": "",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Not run",
+      "observed": {
+        "method": "Revised test design; not executed",
+        "visibleText": ""
+      },
+      "actual": "Ca revision 2 đổi fixture sang 1912345678 theo yêu cầu người dùng; chưa chạy lại. Các ảnh và quan sát revision 1 giữ trong priorCriterionRevisions, không tự gán kết quả cũ cho kỳ vọng mới.",
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": [],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description.",
+      "criterionRevision": 2
+    },
+    {
+      "itemId": "GUI-D-015",
+      "runId": "T1D_MANUAL_01_GUI-D-015",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Spec-gap",
+      "observed": {
+        "method": "Student manual execution and uploaded screenshots",
+        "account": "test@eshop.com",
+        "visibleText": "Ảnh cho thấy native alert giữa màn hình, không phải lỗi inline trên nút Cập nhật. Giữ điểm review cách áp dụng FR-22 cho native; chưa tự chốt native Alert tương đương hoặc không tương đương oracle."
+      },
+      "actual": "Ảnh cho thấy native alert giữa màn hình, không phải lỗi inline trên nút Cập nhật. Giữ điểm review cách áp dụng FR-22 cho native; chưa tự chốt native Alert tương đương hoặc không tương đương oracle.",
+      "assertionMessages": [],
+      "screenshot": "evidence/gui/T1D_MANUAL_01/image-04.png",
+      "screenshots": [
+        "evidence/gui/T1D_MANUAL_01/image-04.png",
+        "evidence/gui/T1D_MANUAL_01/image-05.png",
+        "evidence/gui/T1D_MANUAL_01/image-07.png"
+      ],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description.",
+      "oracleRevision": 1
+    },
+    {
+      "itemId": "GUI-D-016",
+      "runId": "",
+      "suiteRun": "T1D_MANUAL_01",
+      "startedAt": "",
+      "timestampSource": "Không được cung cấp timestamp đầy đủ; giờ HH:MM trên ảnh không xác định ngày/múi giờ.",
+      "status": "Not run",
+      "observed": {
+        "method": "Revised test design; not executed",
+        "visibleText": ""
+      },
+      "actual": "Ca revision 2 đổi fixture sang 1912345678 theo yêu cầu người dùng; chưa chạy lại. Các ảnh và quan sát revision 1 giữ trong priorCriterionRevisions, không tự gán kết quả cũ cho kỳ vọng mới.",
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": [],
+      "notes": "Student-reported result, AI transcription/cross-check; not automated execution or student-authored bug description.",
+      "criterionRevision": 2
     }
   ]
 }

@@ -22,12 +22,13 @@
     },
     {
       "source": "submission/Task1_AI_Review.md",
-      "sourceSha256": "4d2679c8b1dea2282822936ba7513404b68e0117d6e70b203bd5b524a0f6b2f3",
+      "sourceSha256": "d044b649f9b491dad8eaa4c4ebbf70b63f0b5cdaa643ccfe95330528a25bbc7e",
       "pdf": "submission/Task1_AI_Review.pdf",
-      "pdfSha256": "9600df813ac0a6839447672912da7214bce13be8b68b264dec736ed6070340ad",
+      "pdfSha256": "f36d194248387473c451276833cb874f1aa29d2b20f52b762aea5bf7664d6cb2",
       "pages": 1,
       "sourceTextVerified": true,
-      "renderedAndVisuallyReviewed": true
+      "renderedAndVisuallyReviewed": true,
+      "updatedAt": "2026-11-10T15:05:55.929906+00:00"
     }
   ]
 }
