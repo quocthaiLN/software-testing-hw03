@@ -1,0 +1,126 @@
+[
+  {
+    "itemId": "GUI-A-001",
+    "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-001-title-describes-login/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-A-002",
+    "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-002-exactly-one-h1/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-A-003",
+    "screenshot": "evidence/gui/T1A_20261110_02/artifacts/login-GUI-A-003-Vietnamese-form-labels/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-A-005",
+    "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-005-email-input-type-and-invalid-format/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-A-006",
+    "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-006-password-masked/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-A-007",
+    "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-007-required-field-markers/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-A-010",
+    "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-010-natural-top-down-tab-order/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-A-014",
+    "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-014-error-above-submit/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-A-015",
+    "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-015-lock-threshold-at-three-consecutive-failures/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-A-016",
+    "screenshot": "evidence/gui/T1A_20261110_01/artifacts/login-GUI-A-016-login-recovers-after-30-second-lock/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-B-004",
+    "screenshot": "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-004-che-20ddb-mb-allows-return-navigation/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-B-005",
+    "screenshot": "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-B-006",
+    "screenshot": "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-002",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-002-one-descriptive-h1/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-003",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-003-create-blue-and-delete-red/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-006",
+    "screenshot": "evidence/gui/T1C_20261110_04/artifacts/coupons-GUI-C-006-form-does-not-overlap-on-resize/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-007",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-007-persistent-labels-and-required-markers/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-008",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-008-empty-and-whitespace-code-rejected/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-011",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-011-discount-value-boundaries/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-012",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-012-minimum-order-boundaries/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-014",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-014-all-mandatory-fields-reject-empty-values/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-021",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-021-tab-reachable-by-keyboard/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-024",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-024-error-understandable-and-above-submit/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-025",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-025-delete-can-be-cancelled-or-undone/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-027",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-027-empty-st-96299--isolated-empty-API-fixture/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-C-028",
+    "screenshot": "evidence/gui/T1C_20261110_02/artifacts/coupons-GUI-C-028-network--8f8a8--is-visible-and-recoverable/test-failed-1.png"
+  },
+  {
+    "itemId": "GUI-D-007",
+    "screenshot": "evidence/gui/T1D_MANUAL_01/image-05.png"
+  },
+  {
+    "itemId": "GUI-D-008",
+    "screenshot": "evidence/gui/T1D_MANUAL_01/image-07.png"
+  },
+  {
+    "itemId": "GUI-D-012",
+    "screenshot": "evidence/gui/T1D_MANUAL_01/image-01.png"
+  },
+  {
+    "itemId": "GUI-D-013",
+    "screenshot": "evidence/gui/T1D_MANUAL_01/image-04.png"
+  },
+  {
+    "itemId": "GUI-D-014",
+    "screenshot": "evidence/gui/T1D_MANUAL_01/image-04.png"
+  }
+]

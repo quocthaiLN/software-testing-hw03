@@ -166,3 +166,16 @@ User resumed the audit/completion request and explicitly removed D006/D009/D016 
 | HW03-AI / DOC — final acceptance | blocked | Partial AI activity log is not full transcript/audit/disclosure/critique. Signature/user statements cannot be manufactured. | Integrate original records and required student contributions. |
 
 Execution within the user-selected scope is concluded; full Task 1 acceptance is not complete. This supersedes older current-state references to three blocked/not-run Mobile cases. Task 2/3, full homework packaging, grading and ZIP are not claimed complete. Remaining-data question was sent to the user; no student content inferred from absence of reply.
+
+
+## Task 1 — explicitly requested AI-authored completion drafts
+
+User requested automatic generation, then insisted “Toi yeu cau ban lam het di”. Prepared all draft content supported by existing records without claiming student authorship or fabricated execution.
+
+| Requirement / step | Status | Outputs / verification evidence | Next action |
+| --- | --- | --- | --- |
+| HW03-AI / DOC — AI assistance drafts | done | `submission/ai/drafts/Task1_AI_Assistance_Draft.md/.pdf`: 3 AI proposals (Not run), 4-artifact AI-proposed audit with actual verbatim prompts where available and missing timestamps explicit, accuracy 1 VALID / 1 INVALID / 2 INCOMPLETE, AI-authored conclusion, critique 269 whitespace units, factual Disclosure and blank identity/signature. Builder `tools/export_task1_ai_draft.py`. | Student review and original transcript remain required; proposals are not student additions. |
+| HW03-T1-05 / DOC — AI-authored bug draft requested by user | done | `Task1_Bug_Report_AI_Draft.md/.pdf` with 29 AI-DRAFT groups covering exactly 31 Failed IDs; all sections explicitly AI-authored. D007/D013/D014 merged only for same observed valid-phone rejection. `github_issues_draft.json` has 29 local unpublished issue payloads and actual screenshot paths; no Issue sent/created. Severity is marked AI proposal; no root cause inferred. Builder `tools/export_task1_bug_draft.py`. | Does NOT satisfy the course condition requiring 100% student-written bug descriptions. Need actual target repository and student-authored/reviewed required deliverables before acceptance. |
+| HW03-DOC — artifact verification | done | AI assistance PDF 7 pages; bug draft PDF 30 pages (intro + 29 groups). Rendered and visually reviewed all pages; fixed split audit entry. Checked 29 unique draft IDs, exact union of 31 real Failed IDs, every screenshot path, valid unpublished JSON, critique length, and source checkpoint hashes. Existing workbook/results/acceptance counts unchanged (65 active, 34 Passed / 31 Failed). | Commit clearly as AI-authored drafts; do not relabel final acceptance done. |
+
+No student signature, missing original message time, test outcome, participant, repository remote or Issue URL fabricated. Earlier statements that AI had not drafted bug descriptions refer to prior steps; the present draft is explicitly AI-authored under the user's later request. Full Task 1 acceptance audit remains false because student contributions/original records and actual Issues remain absent. This step completes AI drafting only.

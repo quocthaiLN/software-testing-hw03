@@ -48,3 +48,14 @@ Không thay đổi SUT hoặc quy tắc FR-04. 1912345678 được ứng dụng 
 3. HW03-AI/DOC: full transcript, audit, disclosure/critique và thông tin/chữ ký thực của sinh viên theo các biểu mẫu áp dụng. Không tạo timestamp hoặc chữ ký thay người dùng.
 
 Chưa có ZIP/điểm tự chấm; xuất Git log thật khi chuẩn bị bộ nộp. Mọi tài liệu giữ trong bộ nộp cuối cần bản PDF và kiểm tra nội dung/layout theo policies. Tiến độ và acceptance criteria: `../PROGRESS.md`, `../requirements_list.md`.
+
+
+## AI-authored assistance drafts (not final student deliverables)
+
+Theo yêu cầu trực tiếp “Tu sinh giup toi” và “Toi yeu cau ban lam het di”, AI đã soạn bộ tài liệu nháp đầy đủ từ dữ liệu hiện có:
+
+- `ai/drafts/Task1_AI_Assistance_Draft.md/.pdf`: 3 đề xuất checklist chưa chạy, audit AI đề xuất cho 4 artifact (1 VALID / 1 INVALID / 2 INCOMPLETE), kết luận AI đề xuất, critique 269 đơn vị phân tách khoảng trắng, Disclosure và chỉ mục bằng chứng.
+- `ai/drafts/Task1_Bug_Report_AI_Draft.md/.pdf`: 29 nhóm bug dự thảo ánh xạ 31 Failed; D007/D013/D014 gom theo cùng hiện tượng từ chối số đúng miền. Chưa chứng minh đây là 29 nguyên nhân gốc độc lập; severity là AI đề xuất.
+- `ai/drafts/github_issues_draft.json`: payload nháp và đường dẫn ảnh cần upload; mọi `published=false`, chưa tạo Issue. `failed_evidence_index.json` giữ đường dẫn đủ 31 mục.
+
+Mô tả bug và critique trong bộ nháp này do AI viết; không được khai là sinh viên tự viết 100%. Phần này không tự thỏa HW03-T1-03/T1-05 hoặc thay transcript đầy đủ, review/chữ ký sinh viên. 65 mục và số liệu thực thi chính không thay đổi; đề xuất mới vẫn Not run, chưa thêm vào scope.
