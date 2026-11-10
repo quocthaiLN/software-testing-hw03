@@ -1,0 +1,129 @@
+{
+  "config": {
+    "argv": [
+      "/home/le-nguyen-quoc-thai/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "tools/gui/playwright.config.mjs",
+      "--grep",
+      "GUI-C-006"
+    ],
+    "configFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs",
+    "rootDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1C_20261110_03/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 65000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1C_20261110_03/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "coupons.spec.mjs",
+      "file": "coupons.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GUI-C-006: form does not overlap on resize",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 696,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:57:02.149Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUMtMDA2IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjU3OjAyLjkyNloiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTc0LyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMzkwLAogICAgImhlaWdodCI6IDg0NAogIH0sCiAgImJyb3dzZXIiOiAiMTU1LjAuNDI4My40NSIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wIEFkbWluXG5EYXNoYm9hcmRcbkRhbmggbeG7pWNcblPhuqNuIHBo4bqpbVxuTcOjIEdp4bqjbSBHacOhXG7EkMahbiBow6BuZ1xuTmfGsOG7nWkgZMO5bmdcbsSQxINuZyB4deG6pXRcblF14bqjbiBsw70gTcOjIEdp4bqjbSBHacOhXG5U4bqhbyBtw6MgZ2nhuqNtIGdpw6EgbeG7m2lcblBo4bqnbiB0csSDbSAoJSlcblPhu5EgdGnhu4FuIGPhu5EgxJHhu4tuaCAo4oKrKVxuVOG6oW8gbcOjXG5Nw6NcdExv4bqhaVx0R2nDoSB0cuG7i1x0xJDGoW4gdOG7kWkgdGhp4buDdVx0SOG6v3QgaOG6oW5cdEdp4bubaSBo4bqhbi9uZ8aw4budaVx0SMOgbmggxJHhu5luZ1xuU0FWRTEwXHRQaOG6p24gdHLEg21cdDEwJVx0MzAwLDAwMCDigqtcdDIwOTktMTItMzFcdDEgbOG6p25cdFjDs2FcbkJJR0JVWVx0Q+G7kSDEkeG7i25oXHQ1MCwwMDAg4oKrXHQ1MDAsMDAwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVklQMTAwXHRD4buRIMSR4buLbmhcdDEwMCwwMDAg4oKrXHQzMDAsMDAwIOKCq1x0MjA5OS0xMi0zMVx0MiBs4bqnblx0WMOzYVxuRVhQSVJFRFx0UGjhuqduIHRyxINtXHQyMCVcdDEwMCwwMDAg4oKrXHRI4bq/dCBo4bqhblx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyX0MzQ0NDOTBDXzBcdFBo4bqnbiB0csSDbVx0MTAlXHQzMDAsMDAwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyX0MzQ0NDOTBDXzFcdEPhu5EgxJHhu4tuaFx0NTAsMDAwIOKCq1x0NTAwLDAwMCDigqtcdDIwOTktMTItMzFcdDEgbOG6p25cdFjDs2FcblQxX1QxQ18yMDI2MTExMF8wMl9BMDJDQThBRl8wXHRQaOG6p24gdHLEg21cdDEwJVx0MTIzLDAwMCDigqtcdDIwOTktMTItMzFcdDIgbOG6p25cdFjDs2Fcblx0UGjhuqduIHRyxINtXHQxMCVcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMDk4QkZBMTBfMFx0UGjhuqduIHRyxINtXHQxMCVcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMjI4NzNGRkRfMFx0UGjhuqduIHRyxINtXHQtMSVcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMjI4NzNGRkRfMVx0UGjhuqduIHRyxINtXHQwJVx0MCDigqtcdDIwOTktMTItMzFcdDEgbOG6p25cdFjDs2FcblQxX1QxQ18yMDI2MTExMF8wMl8yMjg3M0ZGRF8yXHRQaOG6p24gdHLEg21cdDElXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzIyODczRkZEXzNcdEPhu5EgxJHhu4tuaFx0LTEg4oKrXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzIyODczRkZEXzRcdEPhu5EgxJHhu4tuaFx0MCDigqtcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMjI4NzNGRkRfNVx0Q+G7kSDEkeG7i25oXHQxIOKCq1x0MCDigqtcdDIwOTktMTItMzFcdDEgbOG6p25cdFjDs2FcblQxX1QxQ18yMDI2MTExMF8wMl8wMTlGMkIxNV8wXHRQaOG6p24gdHLEg21cdDEwJVx0LTEg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMDE5RjJCMTVfMVx0UGjhuqduIHRyxINtXHQxMCVcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMDE5RjJCMTVfMlx0UGjhuqduIHRyxINtXHQxMCVcdDEg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfOTQ2ODJERkNfMVx0UGjhuqduIHRyxINtXHQxMCVcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfOTQ2ODJERkNfMlx0UGjhuqduIHRyxINtXHQxMCVcdDAg4oKrXHQyMDk5LTEyLTMxXHQyIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfNTAxOTVEMjBfMVx0UGjhuqduIHRyxINtXHQxMCVcdOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzUwMTk1RDIwXzNcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzc1M0E1QUI3XzBcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzc1M0E1QUI3XzFcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzJEMTA0NUFCXzBcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzJEMTA0NUFCXzFcdEPhu5EgxJHhu4tuaFx0MTAg4oKrXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzcwNjMyMEE5XzBcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyX0JCOTkyMDlDXzFcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYSIsCiAgImlucHV0cyI6IFsKICAgIHsKICAgICAgInRhZyI6ICJJTlBVVCIsCiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicGxhY2Vob2xkZXIiOiAiTcOjIGNvdXBvbiAoVkQ6IFNBVkUxMCkiLAogICAgICAidmFsdWUiOiAiIiwKICAgICAgInJlcXVpcmVkIjogdHJ1ZSwKICAgICAgInZhbGlkIjogZmFsc2UKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiU0VMRUNUIiwKICAgICAgInR5cGUiOiAic2VsZWN0LW9uZSIsCiAgICAgICJwbGFjZWhvbGRlciI6IG51bGwsCiAgICAgICJ2YWx1ZSI6ICJwZXJjZW50IiwKICAgICAgInJlcXVpcmVkIjogZmFsc2UsCiAgICAgICJ2YWxpZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiSU5QVVQiLAogICAgICAidHlwZSI6ICJudW1iZXIiLAogICAgICAicGxhY2Vob2xkZXIiOiAiR2nDoSB0cuG7iyAlIChWRDogMTApIiwKICAgICAgInZhbHVlIjogIiIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IGZhbHNlCiAgICB9LAogICAgewogICAgICAidGFnIjogIklOUFVUIiwKICAgICAgInR5cGUiOiAibnVtYmVyIiwKICAgICAgInBsYWNlaG9sZGVyIjogIsSQxqFuIHThu5FpIHRoaeG7g3UgKOKCqykiLAogICAgICAidmFsdWUiOiAiMCIsCiAgICAgICJyZXF1aXJlZCI6IGZhbHNlLAogICAgICAidmFsaWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidGFnIjogIklOUFVUIiwKICAgICAgInR5cGUiOiAiZGF0ZSIsCiAgICAgICJwbGFjZWhvbGRlciI6ICJOZ8OgeSBo4bq/dCBo4bqhbiIsCiAgICAgICJ2YWx1ZSI6ICIiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiBmYWxzZQogICAgfSwKICAgIHsKICAgICAgInRhZyI6ICJJTlBVVCIsCiAgICAgICJ0eXBlIjogIm51bWJlciIsCiAgICAgICJwbGFjZWhvbGRlciI6ICJT4buRIGzhuqduIGTDuW5nIHThu5FpIMSRYS9uZ8aw4budaSIsCiAgICAgICJ2YWx1ZSI6ICIxIiwKICAgICAgInJlcXVpcmVkIjogZmFsc2UsCiAgICAgICJ2YWxpZCI6IHRydWUKICAgIH0KICBdLAogICJldmVudHMiOiB7CiAgICAiZGlhbG9ncyI6IFtdLAogICAgInJlcXVlc3RzIjogWwogICAgICB7CiAgICAgICAgIm1ldGhvZCI6ICJHRVQiLAogICAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9jb3Vwb25zIiwKICAgICAgICAic3RhdHVzIjogMjAwLAogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTI6NTc6MDIuNzE2WiIKICAgICAgfSwKICAgICAgewogICAgICAgICJtZXRob2QiOiAiR0VUIiwKICAgICAgICAidXJsIjogImh0dHA6Ly9sb2NhbGhvc3Q6MzAwMC9hcGkvY291cG9ucyIsCiAgICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjU3OjAyLjcxN1oiCiAgICAgIH0KICAgIF0sCiAgICAiZmF1bHRzIjogW10KICB9Cn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-4efbcb100e6eb4aee36c",
+          "file": "coupons.spec.mjs",
+          "line": 49,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T12:57:01.757Z",
+    "duration": 1351.9750000000001,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

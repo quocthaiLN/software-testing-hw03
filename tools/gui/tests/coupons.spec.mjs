@@ -47,6 +47,7 @@ test('GUI-C-005: table values match stored coupon',async({admin,adminApi})=>{
  await expect(admin.row(c.code).getByRole('cell')).toHaveText([c.code,'Phần trăm','10%',/123[,.\s]000\s*₫/,'2099-12-31','2 lần','Xóa']);
 });
 test('GUI-C-006: form does not overlap on resize',async({admin,page})=>{
+ await admin.code.fill('T1');await admin.value.fill('10');await admin.expires.fill('2099-12-31');
  for(const width of [1280,390]){
   await page.setViewportSize({width,height:width===1280?800:844});
   const overlaps=await admin.form.locator('input,select').evaluateAll(es=>{
@@ -55,6 +56,15 @@ test('GUI-C-006: form does not overlap on resize',async({admin,page})=>{
   });
   expect(overlaps,`overlap at viewport ${width}`).toEqual([]);
   await expect(admin.create).toBeVisible();
+  const clipped=await admin.form.locator('input').evaluateAll(es=>es.filter(e=>e.type!=='date').map(e=>{
+   const cs=getComputedStyle(e);const canvas=document.createElement('canvas');const ctx=canvas.getContext('2d');ctx.font=`${cs.fontSize} ${cs.fontFamily}`;
+   const available=e.clientWidth-parseFloat(cs.paddingLeft)-parseFloat(cs.paddingRight);
+   const firstGlyph=ctx.measureText(e.value[0]||'0').width;
+   return {placeholder:e.placeholder,available,firstGlyph};
+  }).filter(x=>x.available<x.firstGlyph));
+  expect(clipped,`input cannot show even one glyph at viewport ${width}`).toEqual([]);
+  // Temporary visual-QA capture, not a Passed screenshot attached to submission.
+  await page.screenshot({path:`/tmp/hw03-admin-layout-${width}.png`});
  }
 });
 test('GUI-C-007: persistent labels and required markers',async({admin})=>{

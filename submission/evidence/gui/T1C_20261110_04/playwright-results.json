@@ -1,0 +1,163 @@
+{
+  "config": {
+    "argv": [
+      "/home/le-nguyen-quoc-thai/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "tools/gui/playwright.config.mjs",
+      "--grep",
+      "GUI-C-006"
+    ],
+    "configFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs",
+    "rootDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1C_20261110_04/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 65000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1C_20261110_04/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "coupons.spec.mjs",
+      "file": "coupons.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GUI-C-006: form does not overlap on resize",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 705,
+                  "error": {
+                    "message": "Error: input cannot show even one glyph at viewport 390\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 22\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 8.896011352539062,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Mã coupon (VD: SAVE10)\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 9.152023315429688,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Giá trị % (VD: 10)\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 9.152023315429688,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Đơn tối thiểu (₫)\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 9.152023315429688,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Số lần dùng tối đa/người\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m",
+                    "stack": "Error: input cannot show even one glyph at viewport 390\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 22\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 8.896011352539062,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Mã coupon (VD: SAVE10)\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 9.152023315429688,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Giá trị % (VD: 10)\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 9.152023315429688,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Đơn tối thiểu (₫)\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 9.152023315429688,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Số lần dùng tối đa/người\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/coupons.spec.mjs:65:75",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/coupons.spec.mjs",
+                      "column": 75,
+                      "line": 65
+                    },
+                    "snippet": "  63 |    return {placeholder:e.placeholder,available,firstGlyph};\n  64 |   }).filter(x=>x.available<x.firstGlyph));\n> 65 |   expect(clipped,`input cannot show even one glyph at viewport ${width}`).toEqual([]);\n     |                                                                           ^\n  66 |   // Temporary visual-QA capture, not a Passed screenshot attached to submission.\n  67 |   await page.screenshot({path:`/tmp/hw03-admin-layout-${width}.png`});\n  68 |  }"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/coupons.spec.mjs",
+                        "column": 75,
+                        "line": 65
+                      },
+                      "message": "Error: input cannot show even one glyph at viewport 390\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoEqual\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // deep equality\u001b[22m\n\n\u001b[32m- Expected  -  1\u001b[39m\n\u001b[31m+ Received  + 22\u001b[39m\n\n\u001b[32m- Array []\u001b[39m\n\u001b[31m+ Array [\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 8.896011352539062,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Mã coupon (VD: SAVE10)\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 9.152023315429688,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Giá trị % (VD: 10)\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 9.152023315429688,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Đơn tối thiểu (₫)\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+   Object {\u001b[39m\n\u001b[31m+     \"available\": 0,\u001b[39m\n\u001b[31m+     \"firstGlyph\": 9.152023315429688,\u001b[39m\n\u001b[31m+     \"placeholder\": \"Số lần dùng tối đa/người\",\u001b[39m\n\u001b[31m+   },\u001b[39m\n\u001b[31m+ ]\u001b[39m\n\n  63 |    return {placeholder:e.placeholder,available,firstGlyph};\n  64 |   }).filter(x=>x.available<x.firstGlyph));\n> 65 |   expect(clipped,`input cannot show even one glyph at viewport ${width}`).toEqual([]);\n     |                                                                           ^\n  66 |   // Temporary visual-QA capture, not a Passed screenshot attached to submission.\n  67 |   await page.screenshot({path:`/tmp/hw03-admin-layout-${width}.png`});\n  68 |  }\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/coupons.spec.mjs:65:75"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:57:59.805Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1C_20261110_04/artifacts/coupons-GUI-C-006-form-does-not-overlap-on-resize/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUMtMDA2IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEyOjU4OjAwLjYxOVoiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTc0LyIsCiAgInZpZXdwb3J0IjogewogICAgIndpZHRoIjogMzkwLAogICAgImhlaWdodCI6IDg0NAogIH0sCiAgImJyb3dzZXIiOiAiMTU1LjAuNDI4My40NSIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wIEFkbWluXG5EYXNoYm9hcmRcbkRhbmggbeG7pWNcblPhuqNuIHBo4bqpbVxuTcOjIEdp4bqjbSBHacOhXG7EkMahbiBow6BuZ1xuTmfGsOG7nWkgZMO5bmdcbsSQxINuZyB4deG6pXRcblF14bqjbiBsw70gTcOjIEdp4bqjbSBHacOhXG5U4bqhbyBtw6MgZ2nhuqNtIGdpw6EgbeG7m2lcblBo4bqnbiB0csSDbSAoJSlcblPhu5EgdGnhu4FuIGPhu5EgxJHhu4tuaCAo4oKrKVxuVOG6oW8gbcOjXG5Nw6NcdExv4bqhaVx0R2nDoSB0cuG7i1x0xJDGoW4gdOG7kWkgdGhp4buDdVx0SOG6v3QgaOG6oW5cdEdp4bubaSBo4bqhbi9uZ8aw4budaVx0SMOgbmggxJHhu5luZ1xuU0FWRTEwXHRQaOG6p24gdHLEg21cdDEwJVx0MzAwLDAwMCDigqtcdDIwOTktMTItMzFcdDEgbOG6p25cdFjDs2FcbkJJR0JVWVx0Q+G7kSDEkeG7i25oXHQ1MCwwMDAg4oKrXHQ1MDAsMDAwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVklQMTAwXHRD4buRIMSR4buLbmhcdDEwMCwwMDAg4oKrXHQzMDAsMDAwIOKCq1x0MjA5OS0xMi0zMVx0MiBs4bqnblx0WMOzYVxuRVhQSVJFRFx0UGjhuqduIHRyxINtXHQyMCVcdDEwMCwwMDAg4oKrXHRI4bq/dCBo4bqhblx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyX0MzQ0NDOTBDXzBcdFBo4bqnbiB0csSDbVx0MTAlXHQzMDAsMDAwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyX0MzQ0NDOTBDXzFcdEPhu5EgxJHhu4tuaFx0NTAsMDAwIOKCq1x0NTAwLDAwMCDigqtcdDIwOTktMTItMzFcdDEgbOG6p25cdFjDs2FcblQxX1QxQ18yMDI2MTExMF8wMl9BMDJDQThBRl8wXHRQaOG6p24gdHLEg21cdDEwJVx0MTIzLDAwMCDigqtcdDIwOTktMTItMzFcdDIgbOG6p25cdFjDs2Fcblx0UGjhuqduIHRyxINtXHQxMCVcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMDk4QkZBMTBfMFx0UGjhuqduIHRyxINtXHQxMCVcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMjI4NzNGRkRfMFx0UGjhuqduIHRyxINtXHQtMSVcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMjI4NzNGRkRfMVx0UGjhuqduIHRyxINtXHQwJVx0MCDigqtcdDIwOTktMTItMzFcdDEgbOG6p25cdFjDs2FcblQxX1QxQ18yMDI2MTExMF8wMl8yMjg3M0ZGRF8yXHRQaOG6p24gdHLEg21cdDElXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzIyODczRkZEXzNcdEPhu5EgxJHhu4tuaFx0LTEg4oKrXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzIyODczRkZEXzRcdEPhu5EgxJHhu4tuaFx0MCDigqtcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMjI4NzNGRkRfNVx0Q+G7kSDEkeG7i25oXHQxIOKCq1x0MCDigqtcdDIwOTktMTItMzFcdDEgbOG6p25cdFjDs2FcblQxX1QxQ18yMDI2MTExMF8wMl8wMTlGMkIxNV8wXHRQaOG6p24gdHLEg21cdDEwJVx0LTEg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMDE5RjJCMTVfMVx0UGjhuqduIHRyxINtXHQxMCVcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfMDE5RjJCMTVfMlx0UGjhuqduIHRyxINtXHQxMCVcdDEg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfOTQ2ODJERkNfMVx0UGjhuqduIHRyxINtXHQxMCVcdDAg4oKrXHQyMDk5LTEyLTMxXHQxIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfOTQ2ODJERkNfMlx0UGjhuqduIHRyxINtXHQxMCVcdDAg4oKrXHQyMDk5LTEyLTMxXHQyIGzhuqduXHRYw7NhXG5UMV9UMUNfMjAyNjExMTBfMDJfNTAxOTVEMjBfMVx0UGjhuqduIHRyxINtXHQxMCVcdOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzUwMTk1RDIwXzNcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzc1M0E1QUI3XzBcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzc1M0E1QUI3XzFcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzJEMTA0NUFCXzBcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzJEMTA0NUFCXzFcdEPhu5EgxJHhu4tuaFx0MTAg4oKrXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyXzcwNjMyMEE5XzBcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYVxuVDFfVDFDXzIwMjYxMTEwXzAyX0JCOTkyMDlDXzFcdFBo4bqnbiB0csSDbVx0MTAlXHQwIOKCq1x0MjA5OS0xMi0zMVx0MSBs4bqnblx0WMOzYSIsCiAgImlucHV0cyI6IFsKICAgIHsKICAgICAgInRhZyI6ICJJTlBVVCIsCiAgICAgICJ0eXBlIjogInRleHQiLAogICAgICAicGxhY2Vob2xkZXIiOiAiTcOjIGNvdXBvbiAoVkQ6IFNBVkUxMCkiLAogICAgICAidmFsdWUiOiAiVDEiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidGFnIjogIlNFTEVDVCIsCiAgICAgICJ0eXBlIjogInNlbGVjdC1vbmUiLAogICAgICAicGxhY2Vob2xkZXIiOiBudWxsLAogICAgICAidmFsdWUiOiAicGVyY2VudCIsCiAgICAgICJyZXF1aXJlZCI6IGZhbHNlLAogICAgICAidmFsaWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidGFnIjogIklOUFVUIiwKICAgICAgInR5cGUiOiAibnVtYmVyIiwKICAgICAgInBsYWNlaG9sZGVyIjogIkdpw6EgdHLhu4sgJSAoVkQ6IDEwKSIsCiAgICAgICJ2YWx1ZSI6ICIxMCIsCiAgICAgICJyZXF1aXJlZCI6IHRydWUsCiAgICAgICJ2YWxpZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiSU5QVVQiLAogICAgICAidHlwZSI6ICJudW1iZXIiLAogICAgICAicGxhY2Vob2xkZXIiOiAixJDGoW4gdOG7kWkgdGhp4buDdSAo4oKrKSIsCiAgICAgICJ2YWx1ZSI6ICIwIiwKICAgICAgInJlcXVpcmVkIjogZmFsc2UsCiAgICAgICJ2YWxpZCI6IHRydWUKICAgIH0sCiAgICB7CiAgICAgICJ0YWciOiAiSU5QVVQiLAogICAgICAidHlwZSI6ICJkYXRlIiwKICAgICAgInBsYWNlaG9sZGVyIjogIk5nw6B5IGjhur90IGjhuqFuIiwKICAgICAgInZhbHVlIjogIjIwOTktMTItMzEiLAogICAgICAicmVxdWlyZWQiOiB0cnVlLAogICAgICAidmFsaWQiOiB0cnVlCiAgICB9LAogICAgewogICAgICAidGFnIjogIklOUFVUIiwKICAgICAgInR5cGUiOiAibnVtYmVyIiwKICAgICAgInBsYWNlaG9sZGVyIjogIlPhu5EgbOG6p24gZMO5bmcgdOG7kWkgxJFhL25nxrDhu51pIiwKICAgICAgInZhbHVlIjogIjEiLAogICAgICAicmVxdWlyZWQiOiBmYWxzZSwKICAgICAgInZhbGlkIjogdHJ1ZQogICAgfQogIF0sCiAgImV2ZW50cyI6IHsKICAgICJkaWFsb2dzIjogW10sCiAgICAicmVxdWVzdHMiOiBbCiAgICAgIHsKICAgICAgICAibWV0aG9kIjogIkdFVCIsCiAgICAgICAgInVybCI6ICJodHRwOi8vbG9jYWxob3N0OjMwMDAvYXBpL2NvdXBvbnMiLAogICAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMjo1ODowMC4zNDJaIgogICAgICB9LAogICAgICB7CiAgICAgICAgIm1ldGhvZCI6ICJHRVQiLAogICAgICAgICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDozMDAwL2FwaS9jb3Vwb25zIiwKICAgICAgICAic3RhdHVzIjogMjAwLAogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTI6NTg6MDAuMzQzWiIKICAgICAgfQogICAgXSwKICAgICJmYXVsdHMiOiBbXQogIH0KfQ=="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1C_20261110_04/artifacts/coupons-GUI-C-006-form-does-not-overlap-on-resize/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/coupons.spec.mjs",
+                    "column": 75,
+                    "line": 65
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-4efbcb100e6eb4aee36c",
+          "file": "coupons.spec.mjs",
+          "line": 49,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T12:57:59.384Z",
+    "duration": 1393.145,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}
