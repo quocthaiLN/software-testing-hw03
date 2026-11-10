@@ -179,3 +179,12 @@ User requested automatic generation, then insisted “Toi yeu cau ban lam het di
 | HW03-DOC — artifact verification | done | AI assistance PDF 7 pages; bug draft PDF 30 pages (intro + 29 groups). Rendered and visually reviewed all pages; fixed split audit entry. Checked 29 unique draft IDs, exact union of 31 real Failed IDs, every screenshot path, valid unpublished JSON, critique length, and source checkpoint hashes. Existing workbook/results/acceptance counts unchanged (65 active, 34 Passed / 31 Failed). | Commit clearly as AI-authored drafts; do not relabel final acceptance done. |
 
 No student signature, missing original message time, test outcome, participant, repository remote or Issue URL fabricated. Earlier statements that AI had not drafted bug descriptions refer to prior steps; the present draft is explicitly AI-authored under the user's later request. Full Task 1 acceptance audit remains false because student contributions/original records and actual Issues remain absent. This step completes AI drafting only.
+
+
+## Task 1 — consolidate repeated attribution labels
+
+| Requirement / step | Status | Outputs / verification evidence | Next action |
+| --- | --- | --- | --- |
+| HW03-DOC — presentation cleanup preserving Disclosure | done | User requested removal of repeated “do AI tạo/viết” wording and had already manually edited README and both draft Markdown files. Preserved those edits, shortened repeated heading/footer/author labels and severity labels, and retained complete centralized contribution attribution in Disclosure (including bug descriptions and critique). Bug report points to that Disclosure. Added `tools/export_task1_draft_pdfs.py` to render current Markdown read-only so hand edits are not overwritten by original generation scripts. Both PDFs regenerated, source-text checked and visually reviewed: assistance 7 pages / bug report 30 pages. | Use the Markdown-preserving renderer for future manual edits; authorship/acceptance facts remain accurate. |
+
+All source-block text was verified in PDFs, all pages rendered/reviewed; corrected overly broad section page breaks so Disclosure stays together. Working checklist/raw execution checkpoint hashes unchanged. No history, authorship claims, results, signatures, Issue URLs or acceptance gates were rewritten. The original generator scripts remain historical builders; current Markdown is authoritative for the edited draft presentation.

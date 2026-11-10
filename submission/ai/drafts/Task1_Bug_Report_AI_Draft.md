@@ -1,6 +1,6 @@
-# Task 1 - Bug Report AI Draft
+# Task 1 - Bug Report Draft
 
-BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của người dùng. Không phải bug report 100% sinh viên tự viết theo AI-01 §11; chưa đủ điều kiện thay bản nộp của sinh viên. Có 29 nhóm dự thảo từ 31 mục Failed; chưa chứng minh 29 nguyên nhân gốc riêng biệt. Không có Issue được tạo, ảnh chưa được tải lên GitHub. Không có test mới được chạy.
+29 nhóm dự thảo từ 31 mục Failed; chưa xác nhận số nguyên nhân gốc độc lập. Nguồn đóng góp được khai báo tập trung ở mục Disclosure của Task1_AI_Assistance_Draft. Issues chưa được tạo.
 
 ## AI-DRAFT-001 - Tiêu đề hiển thị Đăng Ký khi mở trang đăng nhập
 
@@ -8,7 +8,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-A-001
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Heading hiển thị “Đăng Ký” thay vì nội dung đăng nhập. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -37,7 +37,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-A-002
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Locator heading level 1 trả về 0 phần tử; kỳ vọng 1. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -66,7 +66,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-A-003
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Nút gửi mang nhãn “Sign In”; nhãn “Username” cũng xuất hiện trong ảnh/text quan sát. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -95,7 +95,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-A-005
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** DOM trả type="text" thay vì "email". Assertion type thất bại trước các kiểm tra tiếp theo. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -124,7 +124,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-A-006
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** DOM trả type="text" thay vì "password"; trường chứa mật khẩu thử GuiDemo123!. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -153,7 +153,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-A-007
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Nhãn “Username” không chứa dấu *. Không suy rằng mọi nhãn sau assertion đầu đều đã được kiểm. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -182,7 +182,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-A-010
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Sau Tab, link EShop không được focus như thứ tự trên-xuống đang kiểm; DOM nút gửi có tabindex="1" trong hồ sơ. Không suy nguyên nhân gốc. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -211,7 +211,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-A-014
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Phép đo đáy error=565, vị trí đầu nút submit=425; điều kiện error.bottom ≤ submit.top không đạt. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -240,7 +240,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-A-015
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** Trên các tài khoản riêng, đăng nhập đúng sau 1/2/3 lần sai nhận HTTP 200/403/403. Sau hai lần sai vẫn ở /login. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -269,7 +269,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-A-016
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** Sau thời gian đo 31.179 ms vẫn HTTP 403 và còn ở /login; không khẳng định thời gian khóa thực tế tối đa. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -298,7 +298,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-B-004
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Locator navigation có accessible name breadcrumb/đường dẫn không xuất hiện. Cần giữ giới hạn locator ngữ nghĩa khi diễn giải. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -327,7 +327,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-B-005
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** SAVE10 tổng 300000 trả 400; tổng 300001 trả discount -2700009 và final 3000010. BIGBUY tổng 500000 trả 400; tổng 500001 giảm 50000, final 450001. Đây là các quan sát, không suy rounding policy. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -359,7 +359,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-B-006
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** Các vector missing-auth và expired-jwt trả HTTP 200 dù kỳ vọng bị từ chối. JWT hết hạn là fixture public demo key, thay riêng header; không coi đây là chứng minh mọi đường khai thác. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -390,7 +390,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-002
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** h1 duy nhất mang nội dung “EShop Admin”, không khớp ngữ cảnh Mã Giảm Giá theo tiêu chí. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -419,7 +419,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-003
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Điều kiện kênh blue lớn hơn red và green trả false. Assertion dừng trước phép kiểm màu nút Xóa; không kết luận màu Xóa từ lần chạy này. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -448,7 +448,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-006
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** Phép đo available content width=0px trong khi glyph đầu khoảng 8.896–9.152px; ảnh QA xác nhận ô bị co. Kết quả geometry-only trước đây đã superseded. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -477,7 +477,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-007
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Locator form label trả 0, kỳ vọng 6. Assertion dừng trước các kiểm tra tiếp theo về dấu *. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -506,7 +506,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-008
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** Vector code chỉ chứa khoảng trắng được lưu: saved=true trong khi shouldAccept=false. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -536,7 +536,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-011
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** Vector discount_value=-1 được lưu dù kỳ vọng từ chối. Các vector đầy đủ nằm trong JSON gốc. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -569,7 +569,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-012
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** Vector min_order_amount=-1 được lưu dù kỳ vọng từ chối. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -599,7 +599,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-014
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** Vector min_order_amount rỗng được lưu dù kỳ vọng từ chối; không suy mọi trường trống có cùng hành vi. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -630,7 +630,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-021
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Sau tối đa 18 lần Tab, phần tử tab Coupons chưa thành document.activeElement. Đây là đường Tab được kiểm, không kết luận tất cả cơ chế bàn phím. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -659,7 +659,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-024
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Sau submit mã trùng, locator thông báo /mã.*tồn tại|trùng mã|không thể tạo/i không hiển thị; cần đối chiếu ảnh và text raw, không suy rằng backend đã tạo bản trùng. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -688,7 +688,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-025
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Không quan sát confirm/cancel hay Undo trong scenario xóa mã thử. Không gọi đây là yêu cầu FR-17 bắt buộc nếu nguồn chỉ là heuristic. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -717,7 +717,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-027
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Với GET coupons được fulfill danh sách rỗng có kiểm soát, tbody có 0 dòng nhưng không thấy message chưa có mã/không có mã/danh sách trống. Không xóa dữ liệu dùng chung. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -746,7 +746,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-C-028
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** GET /api/coupons bị abort có kiểm soát; không thấy lỗi tải/thử lại. Assertion đầu hỏng; các nhánh recovery/create/delete phía sau chưa được chạy. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -775,7 +775,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-D-007, GUI-D-013, GUI-D-014
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** Theo người thực hiện, 0912345678 và 09123456789 đều báo lỗi; ảnh alert ghi “Số điện thoại không hợp lệ. Vui lòng nhập đúng 9-10 chữ số.” Cả vector 9/12 cũng bị từ chối đúng kỳ vọng. Ảnh đại diện, không phải frame riêng từng vector. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -808,7 +808,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-D-008
 
-**Severity:** Major (AI đề xuất)
+**Severity:** Major (đề xuất)
 
 **Description:** Người dùng xác nhận 1912345678 lưu thành công, dùng ảnh 9; 09abc45678 báo lỗi ở ảnh 7. Không kết luận phần bàn phím điện thoại đã đạt. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -838,7 +838,7 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 
 **Related checklist IDs:** GUI-D-012
 
-**Severity:** Minor (AI đề xuất)
+**Severity:** Minor (đề xuất)
 
 **Description:** Ảnh nút ghi “Thoát”. Người dùng xác nhận sau bấm đến đăng nhập và sau đăng nhập lại mở Profile được; báo cáo này chỉ nêu sai nhãn, không khẳng định logout mất hiệu lực. Không suy đoán nguyên nhân gốc từ assertion đơn lẻ.
 
@@ -862,4 +862,3 @@ BẢN NHÁP MÔ TẢ LỖI DO AI VIẾT theo yêu cầu trực tiếp của ngư
 ![image-01.png](../../evidence/gui/T1D_MANUAL_01/image-01.png)
 ![image-11.png](../../evidence/gui/T1D_MANUAL_01/image-11.png)
 ![image-10.png](../../evidence/gui/T1D_MANUAL_01/image-10.png)
-

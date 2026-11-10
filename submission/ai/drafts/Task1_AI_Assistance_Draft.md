@@ -1,10 +1,8 @@
-## Task 1 - AI Assistance Draft
-
-DỰ THẢO DO AI VIẾT - CHƯA ĐƯỢC SINH VIÊN XÁC NHẬN. Không thay transcript, đóng góp độc lập, bug report hay chữ ký sinh viên. Không tự đưa các đề xuất dưới đây vào 65 mục đã kết luận. Dữ kiện hiện tại: 65 active, 34 Passed / 31 Failed; ba mục Removed giữ lịch sử.
+## Task 1 - Supporting Documents
 
 ## 1. Proposed checklist additions
 
-Ba đề xuất AI bổ sung, đều Not run. Chưa được tính là student additions; sinh viên cần tự đánh giá sự phù hợp, tránh trùng và ghi đóng góp thực của mình. Kỳ vọng từ heuristic là tiêu chí đánh giá, không tự biến thành yêu cầu FR.
+Ba đề xuất bổ sung, đều Not run. Chưa được tính là student additions; sinh viên cần tự đánh giá sự phù hợp, tránh trùng và ghi đóng góp thực của mình. Kỳ vọng từ heuristic là tiêu chí đánh giá, không tự biến thành yêu cầu FR.
 
 ## AI-PROP-01 / dự kiến GUI-A-017 - Accessible name của ô đăng nhập
 
@@ -14,7 +12,7 @@ Bước: Mở /login; dùng accessibility tree hoặc trình đọc màn hình l
 
 Kỳ vọng: Người dùng nhận biết đúng tên trường khi focus; không chỉ dựa vào placeholder hoặc vị trí nhìn thấy.
 
-AI reasoning: Checklist đầu kiểm tra nhãn nhìn thấy, input type và Tab; chưa có phép kiểm tên truy cập theo ngữ nghĩa. Đây là phân tích thiếu sót do AI, chưa phải lý do do sinh viên tự viết.
+Căn cứ đề xuất: Checklist đầu kiểm tra nhãn nhìn thấy, input type và Tab; chưa có phép kiểm tên truy cập theo ngữ nghĩa. Đây là phân tích thiếu sót do AI, chưa phải lý do do sinh viên tự viết.
 
 Status: Not run. Student decision / actual / evidence: __________
 
@@ -26,7 +24,7 @@ Bước: Bật trình đọc màn hình, giữ focus tại Áp dụng; thử m�
 
 Kỳ vọng: Phản hồi thành công/lỗi có thể được nhận biết qua công cụ hỗ trợ; nếu không, ghi quan sát và đánh giá theo heuristic.
 
-AI reasoning: B007/B008 đã kiểm loading/recovery, nhưng chưa kiểm cách công cụ hỗ trợ nhận thông báo.
+Căn cứ đề xuất: B007/B008 đã kiểm loading/recovery, nhưng chưa kiểm cách công cụ hỗ trợ nhận thông báo.
 
 Status: Not run. Student decision / actual / evidence: __________
 
@@ -38,13 +36,13 @@ Bước: Mở Admin Coupons; tìm trợ giúp cạnh code/type/value hoặc đư
 
 Kỳ vọng: Hướng dẫn nếu có phải đúng quy tắc code duy nhất, giá trị dương và loại phần trăm/cố định; ghi thiếu trợ giúp là quan sát heuristic, không tự coi mọi form bắt buộc tooltip.
 
-AI reasoning: Bản đầu tập trung kiểm validation và label; ma trận hiện chưa có mục H10. Không tự đưa giới hạn phần trăm/độ dài không có trong spec.
+Căn cứ đề xuất: Bản đầu tập trung kiểm validation và label; ma trận hiện chưa có mục H10. Không tự đưa giới hạn phần trăm/độ dài không có trong spec.
 
 Status: Not run. Student decision / actual / evidence: __________
 
 ## 2. AI Audit Report - draft assessment
 
-Theo AI-02: các nhãn giữ tiếng Anh, nội dung mới bằng tiếng Việt. Tool: Codex; model và timestamp gốc chưa xác minh. Các verdict sau là đánh giá do AI đề xuất, chưa phải nhận xét sinh viên. Thiếu prompt/output đầy đủ thì không coi bảng này là audit cuối.
+Theo AI-02: các nhãn giữ tiếng Anh, nội dung mới bằng tiếng Việt. Tool: Codex; model và timestamp gốc chưa xác minh. Các verdict dưới đây là dự thảo đánh giá, chưa được xác nhận. Thiếu prompt/output đầy đủ thì không coi bảng này là audit cuối.
 
 | Student Information | Value |
 | --- | --- |
@@ -62,7 +60,7 @@ Theo AI-02: các nhãn giữ tiếng Anh, nội dung mới bằng tiếng Việt
 
 (4) Reasoning: Guide yêu cầu truy vết widget × heuristic; matrix ban đầu chưa có H10, và các phần chỉ kiểm nhãn/Tab chưa bao phủ tên truy cập. Không phải mọi heuristic đều bắt buộc áp dụng.
 
-(5) Student Fix / actual attribution: Sinh viên đã trả lời Keep; các đề xuất bổ sung hiện do AI viết, chưa có student additions.
+(5) Student Fix / actual attribution: Sinh viên đã trả lời Keep;
 
 ## Artifact #2 - C006 narrow-viewport assertion
 
@@ -74,7 +72,7 @@ Theo AI-02: các nhãn giữ tiếng Anh, nội dung mới bằng tiếng Việt
 
 (4) Reasoning: Guide Compatibility và Text Boxes yêu cầu đọc/nhập được. Geometry-only không đủ khi nội dung input có chiều rộng 0px; lần đo/ảnh sau đã khiến C006 Failed.
 
-(5) Student Fix / actual attribution: AI đã sửa assertion sau visual QA; không ghi là sinh viên tự sửa code.
+(5) Student Fix / actual attribution: AI đã sửa assertion sau visual QA;
 
 ## Artifact #3 - D015 oracle
 
@@ -109,11 +107,9 @@ Theo AI-02: các nhãn giữ tiếng Anh, nội dung mới bằng tiếng Việt
 | INVALID | 1 / 25% |
 | INCOMPLETE | 2 / 50% |
 
-Conclusion - AI-authored draft (not student confirmation): AI phù hợp để tạo cấu trúc kiểm thử, triển khai phép kiểm lặp lại và tổng hợp bằng chứng. Giá trị của công cụ phụ thuộc vào đặc tả, dữ liệu và assertion được chọn. Trường hợp C006 cho thấy phép đo dễ tự động hóa chưa chắc đo đúng khả năng sử dụng. D015 cho thấy suy diễn thêm điều kiện ngoài nguồn có thể làm kết luận sai. Vì vậy, cần kiểm tra lại oracle và xem bằng chứng trước khi chốt. Khi thiếu dữ liệu, phải giữ trạng thái chưa xác minh thay vì điền kết quả. Không dùng đầu ra AI làm bằng chứng cho hoạt động cá nhân chưa diễn ra. Mandatory Disclosure / Signature: chưa ký; không tự điền lời cam kết thay sinh viên.
+Conclusion - draft: AI phù hợp để tạo cấu trúc kiểm thử, triển khai phép kiểm lặp lại và tổng hợp bằng chứng. Giá trị của công cụ phụ thuộc vào đặc tả, dữ liệu và assertion được chọn. Trường hợp C006 cho thấy phép đo dễ tự động hóa chưa chắc đo đúng khả năng sử dụng. D015 cho thấy suy diễn thêm điều kiện ngoài nguồn có thể làm kết luận sai. Vì vậy, cần kiểm tra lại oracle và xem bằng chứng trước khi chốt. Khi thiếu dữ liệu, phải giữ trạng thái chưa xác minh thay vì điền kết quả. Không dùng đầu ra AI làm bằng chứng cho hoạt động cá nhân chưa diễn ra. Mandatory Disclosure / Signature: chưa ký; không tự điền lời cam kết thay sinh viên.
 
-## 3. AI Critique - AI-authored draft
-
-Đoạn dưới do AI viết, không phải phản ánh cá nhân đã được sinh viên xác nhận. Sinh viên cần sửa theo trải nghiệm thật và công khai AI hỗ trợ; không đổi nhãn thành “tự viết hoàn toàn”.
+## 3. AI Critique
 
 Quá trình kiểm thử Task 1 cho thấy AI hỗ trợ tốt việc tổ chức checklist, viết mã thực thi và tổng hợp bằng chứng. Khả năng ánh xạ từng mục sang yêu cầu, dữ liệu và ảnh giúp đối chiếu kết quả thuận tiện. Tuy nhiên, độ đầy đủ của tài liệu không bảo đảm kết luận chính xác.
 
@@ -123,7 +119,7 @@ Một hạn chế xuất hiện ở kiểm tra bố cục Admin Coupons: phép �
 
 Bài học là dùng AI để tăng tốc thiết kế và xử lý hồ sơ, đồng thời kiểm tra lại oracle, tiền điều kiện và bằng chứng. Cần phân biệt mục bị loại khỏi phạm vi với mục đạt, ảnh tải lên với lượt chạy độc lập, và góp ý AI với đóng góp của sinh viên.
 
-Độ dài bản nháp: 269 đơn vị phân tách bằng khoảng trắng. Chưa thay phần critique cuối đã được sinh viên review.
+Độ dài bản nháp: 269 đơn vị phân tách bằng khoảng trắng.
 
 ## 4. AI Use Disclosure Form - draft facts
 
@@ -140,7 +136,7 @@ Bài học là dùng AI để tăng tốc thiết kế và xử lý hồ sơ, đ
 
 1. AI tool(s) used: Codex trong cuộc hội thoại này; sinh viên bổ sung công cụ khác nếu có. Không đoán model hoặc phiên bản.
 
-2. Stage(s): AI hỗ trợ outlining, drafting, revision, coding, phân tích dữ liệu thực thi và định dạng tài liệu. Mobile do sinh viên thao tác; Web harness do AI viết/chạy trong phiên được phép.
+2. Stage(s): AI hỗ trợ outlining, drafting, revision, coding, phân tích dữ liệu thực thi và định dạng tài liệu. Mobile do sinh viên thao tác;
 
 3. Main prompts or tasks given to the AI (verbatim):
 
@@ -152,7 +148,7 @@ Bài học là dùng AI để tăng tốc thiết kế và xử lý hồ sơ, đ
 
 Full transcript: chưa có bản xuất nguyên văn đầy đủ. ai/prompt_log.md hiện là activity summary PARTIAL, không thay Appendix A hoàn chỉnh.
 
-4. Specific parts AI contributed to: checklist đầu 68 mục, harness Web, tính toán/đối chiếu kết quả, chuyển ghi nhận Mobile sang hồ sơ, sửa phạm vi theo yêu cầu và các bản Markdown/PDF. Bộ dự thảo hiện tại gồm đề xuất thêm checklist, audit/critique/disclosure do AI viết; chưa có mục sinh viên tự thêm. Theo yêu cầu tiếp theo, AI đã viết riêng Task1_Bug_Report_AI_Draft: bản nháp lỗi do AI viết, không phải báo cáo 100% sinh viên tự viết.
+4. Specific parts AI contributed to: Codex hỗ trợ checklist đầu 68 mục, harness Web, tính toán/đối chiếu kết quả, chuyển ghi nhận Mobile sang hồ sơ, sửa phạm vi và định dạng Markdown/PDF. Codex cũng soạn các đề xuất checklist bổ sung, dự thảo audit/kết luận/critique/disclosure và bản nháp mô tả lỗi Task1_Bug_Report_AI_Draft. Mobile do sinh viên thao tác và cung cấp ảnh/ghi nhận. Các đề xuất mới chưa được thực thi; chưa có phần bổ sung độc lập, chữ ký hay xác nhận review của sinh viên trong bộ dự thảo này.
 
 5. Review/verification recorded: sinh viên trả lời Keep, cung cấp ảnh và mô tả Mobile, sửa nhầm ảnh, yêu cầu sửa rồi loại ba ca. AI chạy kiểm tra số liệu, đối chiếu ảnh/source, kiểm tra hash và layout. Phần tự review/audit còn cần sinh viên xác nhận; không tự nhận sinh viên đã làm các bước kiểm tra bằng công cụ của AI.
 
@@ -164,7 +160,7 @@ Sinh viên đọc nội dung xác nhận của mẫu AI-03 trước khi ký. B�
 
 ## 5. Bug report worksheet and evidence index
 
-AI-01 §11 yêu cầu bug descriptions do sinh viên viết 100%. Phần này là khung và danh mục bằng chứng. Bản nháp mô tả lỗi do AI đã được soạn riêng trong Task1_Bug_Report_AI_Draft.md/.pdf theo yêu cầu tiếp theo; chưa đáp ứng điều kiện student-written và không có Issue giả. 31 mục Failed không nhất thiết là 31 bug; sinh viên tự gom nguyên nhân trước khi tạo Bug ID.
+Phần này là khung và danh mục bằng chứng. Nội dung mô tả lỗi nằm tại Task1_Bug_Report_AI_Draft.md/.pdf; nguồn hỗ trợ được khai báo ở mục Disclosure. Issues chưa được tạo. 31 mục Failed không nhất thiết là 31 bug; sinh viên tự gom nguyên nhân trước khi tạo Bug ID.
 
 Bug ID / Title: __________
 
@@ -221,4 +217,3 @@ Danh mục JSON đi kèm giữ đường dẫn local đầy đủ. Bảng dướ
 ## Việc cần sinh viên làm trước khi dùng bộ này
 
 Review/sửa dự thảo theo trải nghiệm thật; tự viết bug descriptions; tự quyết định và bổ sung checklist; thực thi mục mới; cung cấp transcript đầy đủ; điền thông tin và ký thật. Không thay trạng thái acceptance chỉ vì đã có tài liệu AI dự thảo.
-

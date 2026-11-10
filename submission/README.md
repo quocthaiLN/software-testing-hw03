@@ -58,4 +58,4 @@ Theo yêu cầu trực tiếp “Tu sinh giup toi” và “Toi yeu cau ban lam 
 - `ai/drafts/Task1_Bug_Report_AI_Draft.md/.pdf`: 29 nhóm bug dự thảo ánh xạ 31 Failed; D007/D013/D014 gom theo cùng hiện tượng từ chối số đúng miền. Chưa chứng minh đây là 29 nguyên nhân gốc độc lập; severity là AI đề xuất.
 - `ai/drafts/github_issues_draft.json`: payload nháp và đường dẫn ảnh cần upload; mọi `published=false`, chưa tạo Issue. `failed_evidence_index.json` giữ đường dẫn đủ 31 mục.
 
-Mô tả bug và critique trong bộ nháp này do AI viết; không được khai là sinh viên tự viết 100%. Phần này không tự thỏa HW03-T1-03/T1-05 hoặc thay transcript đầy đủ, review/chữ ký sinh viên. 65 mục và số liệu thực thi chính không thay đổi; đề xuất mới vẫn Not run, chưa thêm vào scope.
+Nguồn đóng góp của bộ dự thảo được khai báo tập trung tại mục Disclosure trong `ai/drafts/Task1_AI_Assistance_Draft.md/.pdf`; các nhãn tác giả lặp ở tiêu đề/chân trang được lược gọn. Khi sửa Markdown thủ công, dùng `tools/export_task1_draft_pdfs.py` để xuất PDF, tránh sinh lại nguồn bằng các builder ban đầu.

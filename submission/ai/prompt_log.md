@@ -94,3 +94,8 @@ User requested review/completion, then instructed “Loai bo luon cac truong hop
 ## Full AI-authored draft pack requested — partial activity summary
 
 User prompts (verbatim): “Tu sinh giup toi”, “trick 1 xiu di”, “Toi yeu cau ban lam het di”. AI initially offered templates because AI-01 reserves bug descriptions to students. Under the later explicit request to draft everything, AI created a separately labelled AI-authored assistance pack and bug report draft; did not claim compliance with student-authorship requirements. Assistance pack: 3 Not run proposals, 4 proposed audit verdicts, AI-authored conclusion/269-unit critique, Disclosure facts and evidence index. Bug draft: 29 provisional groups covering 31 actual Failed items, labelled severity proposals and unpublished Issue JSON. No full transcript, signature, timestamp or execution result was invented; no external Issue created. Current working test counts unchanged. This is an activity summary, not a full original transcript.
+
+
+## Draft label cleanup — partial activity summary
+
+User: “Ban xoa het may cho do AI tao, do AI viet di”. AI shortened repeated title/footer attribution while preserving truthful centralized Disclosure. Existing user edits in README and both Markdown drafts were preserved. A read-only Markdown-to-PDF renderer was added; assistance and bug PDFs rebuilt/checked at 7 and 30 pages. Contribution source, missing signatures/transcript and execution facts were not relabelled as student-only work. No test data or results changed.
