@@ -61,3 +61,7 @@ Metro compiled an actual Android bundle; ADB subsequently detected an authorized
 ## Manual Mobile form preparation
 
 Artifact record created at 2026-11-10T14:06:31.822931+00:00 (not a recovered chat-message timestamp). User chose to stop automation and test Mobile manually. AI reformatted the retained 16 D items into `Task1_Mobile_Manual_Form.md` / `.pdf`, created a reproducible PDF builder, and checked IDs/steps/expectations plus rendered pages. No student results, critique, bug description, or independent checklist additions were authored. Device automation remained stopped; workbook unchanged. This remains a partial activity summary, not the full required verbatim transcript.
+
+## Interim execution report preparation
+
+Artifact record created at 2026-11-10T14:12:09.066380+00:00 (not a recovered message timestamp). AI summarized existing real Web raw JSON into Task1_Execution_Report.md/.pdf and a reproducible builder. Compared workbook statuses, checked Failed image files, emitted source hashes, and rendered/checked the PDF. Mobile remains 16 Not run; no device automation, bug descriptions, severity, signatures or independent student critique were created. This activity summary does not replace the required full verbatim transcript.

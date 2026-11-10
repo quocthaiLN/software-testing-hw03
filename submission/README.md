@@ -4,7 +4,7 @@ Trạng thái: đã bắt đầu thiết kế Task 1, chưa phải bài nộp ho
 
 | Nội dung | Nơi dự kiến / trạng thái |
 | --- | --- |
-| Main report Markdown + PDF | Chưa tạo; GUI, usability, cross-platform và phụ lục AI |
+| Main report Markdown + PDF | Chưa có bản toàn bài; `Task1_Execution_Report.md/.pdf` là phần GUI đang hoàn thiện, 52 mục Web có kết quả và 16 Mobile Not run |
 | Excel GUI checklist + test summary | `GUI_Checklist.xlsx`: 68 mục được người dùng Keep; Web A/B/C 52 đã chạy, 26 Passed / 26 Failed; Mobile D 16 Not run |
 | Bug report + GitHub Issues | Chưa có; sinh viên tự viết mô tả theo AI Agreement |
 | Usability | `evidence/usability/`; cần pilot + 7 phiên người thật, scale, notes, analysis |
@@ -22,6 +22,7 @@ Khi hoàn tất, bổ sung số màn hình/flow, checklist designed/executed/pas
 ## Task 1 hiện tại
 
 - `Task1_Plan.md`: phạm vi và kế hoạch bốn feature.
+- `Task1_Execution_Report.md` / `.pdf`: báo cáo Task 1 đang hoàn thiện, tổng hợp 52 kết quả Web thật, lịch sử chạy/fixture và ma trận widget × heuristic; 16 Mobile vẫn Not run. Checkpoint nguồn có SHA-256 tại `evidence/gui/task1_report_checkpoint.json`.
 - `Task1_Mobile_Manual_Form.md` / `.pdf`: phiếu trống ghi nhận 16 mục Mobile theo lựa chọn kiểm thử thủ công của sinh viên; chưa chứa kết quả.
 - `Task1_Intake.md`: feature briefs, 31 widgets, phase order, ma trận widget × heuristic và spec-gaps.
 - `ai/task1_initial_checklist.md` / `.json` / `.pdf`: bản AI gốc 68 mục được giữ để so sánh; PDF 19 trang đã render/kiểm tra.
