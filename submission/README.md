@@ -13,7 +13,7 @@ Trạng thái: đã bắt đầu thiết kế Task 1, chưa phải bài nộp ho
 | AI records | `ai/`; lưu prompt/output nguyên văn, audit/disclosure và critique 200–300 từ |
 | Skills + demo video | Chưa tạo |
 | Git log | Xuất lịch sử thật khi chuẩn bị nộp |
-| Tự chấm và thống kê | Chưa tự chấm; chưa có kiểm thử homework nào được thực hiện |
+| Tự chấm và thống kê | Chưa tự chấm; Task 1 Web A/B/C đã thực thi 52 mục, Mobile D chờ kiểm thử thủ công |
 
 Hướng dẫn môi trường ở `../ENVIRONMENT.md`; tiến độ ở `../PROGRESS.md`.
 Không dùng các smoke checks môi trường làm số lượng checklist Passed.
@@ -22,6 +22,7 @@ Khi hoàn tất, bổ sung số màn hình/flow, checklist designed/executed/pas
 ## Task 1 hiện tại
 
 - `Task1_Plan.md`: phạm vi và kế hoạch bốn feature.
+- `Task1_Mobile_Manual_Form.md` / `.pdf`: phiếu trống ghi nhận 16 mục Mobile theo lựa chọn kiểm thử thủ công của sinh viên; chưa chứa kết quả.
 - `Task1_Intake.md`: feature briefs, 31 widgets, phase order, ma trận widget × heuristic và spec-gaps.
 - `ai/task1_initial_checklist.md` / `.json` / `.pdf`: bản AI gốc 68 mục được giữ để so sánh; PDF 19 trang đã render/kiểm tra.
 - `Task1_AI_Review.md` và sheet AI Review trong Excel: ghi nhận trả lời “Keep” cho bản đầu; lý do chi tiết/mục sinh viên tự thêm còn thiếu.

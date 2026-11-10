@@ -57,3 +57,7 @@ User replies (verbatim):
 > Kết nối USB và bật gỡ lỗi USB để chạy tự động
 
 Metro compiled an actual Android bundle; ADB subsequently detected an authorized TECNO KJ7 / Android 14. Native Profile execution not inferred from these readiness signals. Original user-message timestamps remain unavailable in this partial log; export full transcript before final audit. No student additions, detailed critique, signatures or bug descriptions have been invented.
+
+## Manual Mobile form preparation
+
+Artifact record created at 2026-11-10T14:06:31.822931+00:00 (not a recovered chat-message timestamp). User chose to stop automation and test Mobile manually. AI reformatted the retained 16 D items into `Task1_Mobile_Manual_Form.md` / `.pdf`, created a reproducible PDF builder, and checked IDs/steps/expectations plus rendered pages. No student results, critique, bug description, or independent checklist additions were authored. Device automation remained stopped; workbook unchanged. This remains a partial activity summary, not the full required verbatim transcript.
