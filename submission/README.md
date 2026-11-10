@@ -23,8 +23,8 @@ Khi hoàn tất, bổ sung số màn hình/flow, checklist designed/executed/pas
 
 - `Task1_Plan.md`: phạm vi và kế hoạch bốn feature.
 - `Task1_Intake.md`: feature briefs, 31 widgets, phase order, ma trận widget × heuristic và spec-gaps.
-- `ai/task1_initial_checklist.md` / `.json`: bản AI gốc 68 mục được giữ để so sánh.
+- `ai/task1_initial_checklist.md` / `.json` / `.pdf`: bản AI gốc 68 mục được giữ để so sánh; PDF 19 trang đã render/kiểm tra.
 - `Task1_AI_Review.md` và sheet AI Review trong Excel: sinh viên tự review/bổ sung, hiện còn trống.
 - Checklist thiết kế dự thảo 68; thực thi 0; Passed 0; Failed 0. Không suy ra hệ thống không có bug từ số liệu này.
 
-Nguồn hướng dẫn GUI là bản tổng hợp do sinh viên cung cấp tại `skills/gui-testing-guide/`; chưa có PDF cho các tài liệu thiết kế mới. Mọi tài liệu được giữ trong bộ nộp cuối cần bản PDF theo policies, được render và kiểm tra trước đóng gói. Chưa có ZIP hoặc điểm tự chấm.
+Nguồn hướng dẫn GUI là bản tổng hợp do sinh viên cung cấp tại `skills/gui-testing-guide/`; các tài liệu thiết kế khác ngoài bản checklist AI đầu còn chờ PDF. Mọi tài liệu được giữ trong bộ nộp cuối cần bản PDF theo policies, được render và kiểm tra trước đóng gói. Chưa có ZIP hoặc điểm tự chấm.
