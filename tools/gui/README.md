@@ -40,3 +40,19 @@ Run only Admin tests by adding `--grep GUI-C-` to the command above. Run IDs mus
 - `T1C_20261110_04`: focused C006 with added content-width/glyph assertion; Failed. Final unique C items: 15 Passed / 13 Failed. Keep both superseded geometry results in history.
 
 C027 fulfils GET `/api/coupons` with a controlled empty list only for that test page. It tests actual UI rendering, without deleting shared backend data. C028 aborts that GET request to exercise the loading error; subsequent recovery/create/delete checks are not claimed executed after an earlier assertion failure. C015 tests native HTML date-input acceptance/rejection; it does not assert backend validation. C006 tests two web viewports and does not count as a native mobile run or a new Task 3 platform.
+
+## Apply Coupon extension
+
+`fixtures/checkout.mjs` creates an owned demo user, real backend products at exact boundary prices, and owned coupon/lifetime-usage fixtures. `pages/CheckoutPage.mjs` resets the in-memory cart by reloading, then uses Home search → Add to cart → Cart → Checkout. Tests verify the displayed total before applying a code; the editable-total field is never changed to fake a boundary. No actual order or payment is submitted.
+
+`tests/apply-coupon.spec.mjs` covers GUI-B-001…008. Run with `--grep GUI-B-`. `T1B_20261110_01`: 8 scenarios, 5 Passed / 3 Failed. All four percentage/fixed arithmetic vectors and nine C1–C5 eligibility vectors have actual response data; failed vectors receive additional native browser screenshots.
+
+Fixture details:
+
+- Inactive code: create an owned coupon through API, then parameterized SQLite UPDATE scoped to its exact ID/code; verify through the list API. Default coupons are untouched.
+- Used-count boundaries: seed lifetime usages through the SUT coupon-usage API; do not claim these are newly placed orders.
+- Expired JWT: replace only outgoing apply-coupon Authorization with a signed demo token exp=1, using the public key already in SUT source. The real server response and resulting UI are observed; no response is fabricated. Do not use this fixture against a real service.
+- Pending state: hold the real backend response behind a test-controlled gate to inspect disabled/pending UI and duplicate suppression, then release it.
+- Recovery: abort the apply transport, observe the actual error, restore transport and apply again.
+
+Native Android automation preparation uses the documented Playwright Android API: https://playwright.dev/docs/api/class-androiddevice . This reference supports the tool implementation; it does not replace required execution content or screenshots. ADB authentication and a real foreground Expo Go app are verified before any native UI action. The physical device is not a web viewport substitute.

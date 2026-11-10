@@ -1,0 +1,1735 @@
+{
+  "purpose": "Raw actual GUI execution observations; not student-authored bug descriptions",
+  "metrics": {
+    "designed": 68,
+    "executed": 52,
+    "passed": 26,
+    "failed": 26,
+    "notRun": 16,
+    "scenarioRuns": 55
+  },
+  "counts": {
+    "Passed": 5,
+    "Failed": 3
+  },
+  "latest": [
+    {
+      "itemId": "GUI-B-001",
+      "runId": "T1B_20261110_01_GUI-B-001",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:40.610Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-B-001",
+        "observedAt": "2026-11-10T13:11:42.218Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_2404aec5db_0 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\n\n✅ Áp dụng thành công! Giảm 50,000 ₫\n\nTiết kiệm: 50,000 ₫\n\nThành tiền: 450,001 ₫\n\nTổng thanh toán: 450,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:11:42.125Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_04AEC5DB_0",
+                "total_amount": 500001,
+                "user_id": 11
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:11:42.193Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 31,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [],
+          "fixtures": []
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "itemId": "GUI-B-002",
+      "runId": "T1B_20261110_01_GUI-B-002",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:42.283Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-B-002",
+        "observedAt": "2026-11-10T13:11:42.833Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_0d1ca464c5_0 x 1 — 300,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\nTổng thanh toán: 300,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [],
+          "responses": [],
+          "faults": [],
+          "fixtures": []
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "itemId": "GUI-B-003",
+      "runId": "T1B_20261110_01_GUI-B-003",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:42.888Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-B-003",
+        "observedAt": "2026-11-10T13:11:43.455Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_fbf2ec7a84_0 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\nTổng thanh toán: 500,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:11:43.403Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_F2EC7A84_0",
+                "total_amount": 500001,
+                "user_id": 13
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:11:43.412Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 32,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [],
+          "fixtures": []
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "itemId": "GUI-B-004",
+      "runId": "T1B_20261110_01_GUI-B-004",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:43.524Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-B-004",
+        "observedAt": "2026-11-10T13:11:47.040Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_488e9855a1_0 x 1 — 300,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\nTổng thanh toán: 300,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [],
+          "responses": [],
+          "faults": [],
+          "fixtures": []
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('navigation', { name: /breadcrumb|đường dẫn/i })\nExpected: visible\nTimeout: 3000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 3000ms\n  - waiting for getByRole('navigation', { name: /breadcrumb|đường dẫn/i })\n\n\n  24 | test('GUI-B-004: checkout breadcrumb allows return navigation',async({shop,page})=>{\n  25 |  await shop.prepare(300001);\n> 26 |  const breadcrumb=page.getByRole('navigation',{name:/breadcrumb|đường dẫn/i});await expect(breadcrumb).toBeVisible();\n     |                                                                                                        ^\n  27 |  await breadcrumb.getByRole('link',{name:/giỏ hàng/i}).click();await expect(page).toHaveURL(/\\/cart$/);\n  28 | });\n  29 | test('GUI-B-005: valid percentage and fixed boundary results',async({shop,page},info)=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:26:104"
+      ],
+      "screenshot": "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-004-che-20ddb-mb-allows-return-navigation/test-failed-1.png",
+      "screenshots": [
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-004-che-20ddb-mb-allows-return-navigation/test-failed-1.png"
+      ]
+    },
+    {
+      "itemId": "GUI-B-005",
+      "runId": "T1B_20261110_01_GUI-B-005",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:47.458Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-B-005",
+        "observedAt": "2026-11-10T13:11:55.620Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_382a547118_3 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\n\n✅ Áp dụng thành công! Giảm 50,000 ₫\n\nTiết kiệm: 50,000 ₫\n\nThành tiền: 450,001 ₫\n\nTổng thanh toán: 450,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:11:48.198Z",
+              "data": {
+                "code": "SAVE10",
+                "total_amount": 300000,
+                "user_id": 15
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:48.623Z",
+              "data": {
+                "code": "SAVE10",
+                "total_amount": 300001,
+                "user_id": 15
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:55.141Z",
+              "data": {
+                "code": "BIGBUY",
+                "total_amount": 500000,
+                "user_id": 15
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:55.537Z",
+              "data": {
+                "code": "BIGBUY",
+                "total_amount": 500001,
+                "user_id": 15
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:11:48.199Z",
+              "status": 400,
+              "body": {
+                "error": "Đơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:48.629Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 1,
+                "discount_amount": -2700009,
+                "final_amount": 3000010,
+                "message": "Áp dụng thành công! Giảm 10%"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:55.145Z",
+              "status": 400,
+              "body": {
+                "error": "Đơn hàng chưa đủ giá trị tối thiểu 500,000 ₫ để áp dụng mã này"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:55.546Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 2,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [],
+          "fixtures": []
+        }
+      },
+      "supplemental": {
+        "valid-SAVE10-300000": {
+          "input": {
+            "code": "SAVE10",
+            "total": 300000,
+            "discount": 30000
+          },
+          "expectedFinal": 270000,
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Đơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này"
+            }
+          },
+          "observedAt": "2026-11-10T13:11:48.202Z"
+        },
+        "valid-SAVE10-300001": {
+          "input": {
+            "code": "SAVE10",
+            "total": 300001,
+            "discount": 30000.1
+          },
+          "expectedFinal": 270000.9,
+          "result": {
+            "status": 200,
+            "body": {
+              "success": true,
+              "coupon_id": 1,
+              "discount_amount": -2700009,
+              "final_amount": 3000010,
+              "message": "Áp dụng thành công! Giảm 10%"
+            }
+          },
+          "observedAt": "2026-11-10T13:11:48.630Z"
+        },
+        "valid-BIGBUY-500000": {
+          "input": {
+            "code": "BIGBUY",
+            "total": 500000,
+            "discount": 50000
+          },
+          "expectedFinal": 450000,
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Đơn hàng chưa đủ giá trị tối thiểu 500,000 ₫ để áp dụng mã này"
+            }
+          },
+          "observedAt": "2026-11-10T13:11:55.149Z"
+        },
+        "valid-BIGBUY-500001": {
+          "input": {
+            "code": "BIGBUY",
+            "total": 500001,
+            "discount": 50000
+          },
+          "expectedFinal": 450001,
+          "result": {
+            "status": 200,
+            "body": {
+              "success": true,
+              "coupon_id": 2,
+              "discount_amount": 50000,
+              "final_amount": 450001,
+              "message": "Áp dụng thành công! Giảm 50,000 ₫"
+            }
+          },
+          "observedAt": "2026-11-10T13:11:55.550Z"
+        }
+      },
+      "assertionMessages": [
+        "Error: SAVE10 at total 300000\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n\n  33 |   const mismatch=result.status!==200||!Number.isFinite(result.body.discount_amount)||!Number.isFinite(result.body.final_amount)||Math.abs(result.body.discount_amount-v.discount)>0.001||Math.abs(result.body.final_amount-expectedFinal)>0.001;\n  34 |   await capture(info,page,`valid-${v.code}-${v.total}`,{input:v,expectedFinal,result},mismatch);\n> 35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n     |                                                              ^\n  36 |   if(result.status===200){\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:35:62",
+        "Error: expect(received).toBeCloseTo(expected, precision)\n\nExpected: 30000.1\nReceived: -2700009\n\nExpected precision:    2\nExpected difference: < 0.005\nReceived difference:   2730009.1\n\n  35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n  36 |   if(result.status===200){\n> 37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n     |                                             ^\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n  39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n  40 |   }\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:37:45",
+        "Error: expect(received).toBeCloseTo(expected, precision)\n\nExpected: 270000.9\nReceived: 3000010\n\nExpected precision:    2\nExpected difference: < 0.005\nReceived difference:   2730009.1\n\n  35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n  36 |   if(result.status===200){\n> 37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n     |                                                                                                             ^\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n  39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n  40 |   }\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:37:109",
+        "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  getByText(/^Tiết kiệm:/)\nExpected: \"Tiết kiệm: 30,000.1 ₫\"\nReceived: \"Tiết kiệm: -2,700,009 ₫\"\nTimeout:  3000ms\n\nCall log:\n  - Expect \"soft toHaveText\" with timeout 3000ms\n  - waiting for getByText(/^Tiết kiệm:/)\n    10 × locator resolved to <p>…</p>\n       - unexpected value \"Tiết kiệm: -2,700,009 ₫\"\n\n\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n> 39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n     |                                      ^\n  40 |   }\n  41 |  }\n  42 | });\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:39:38",
+        "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  getByText(/^Thành tiền:/)\nExpected: \"Thành tiền: 270,000.9 ₫\"\nReceived: \"Thành tiền: 3,000,010 ₫\"\nTimeout:  3000ms\n\nCall log:\n  - Expect \"soft toHaveText\" with timeout 3000ms\n  - waiting for getByText(/^Thành tiền:/)\n    10 × locator resolved to <p>…</p>\n       - unexpected value \"Thành tiền: 3,000,010 ₫\"\n\n\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n> 39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n     |                                                                                                            ^\n  40 |   }\n  41 |  }\n  42 | });\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:39:108",
+        "Error: BIGBUY at total 500000\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n\n  33 |   const mismatch=result.status!==200||!Number.isFinite(result.body.discount_amount)||!Number.isFinite(result.body.final_amount)||Math.abs(result.body.discount_amount-v.discount)>0.001||Math.abs(result.body.final_amount-expectedFinal)>0.001;\n  34 |   await capture(info,page,`valid-${v.code}-${v.total}`,{input:v,expectedFinal,result},mismatch);\n> 35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n     |                                                              ^\n  36 |   if(result.status===200){\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:35:62"
+      ],
+      "screenshot": "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/test-failed-1.png",
+      "screenshots": [
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-0d015817badeeee5a9e5bedfbb0905c914d34728.png",
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-a50d0edcce7ebe355541d3a8cd16c95c1a28f672.png",
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-5d7984ac573e42fcf396dc3b3949ca17bfddad2a.png",
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/test-failed-1.png"
+      ]
+    },
+    {
+      "itemId": "GUI-B-006",
+      "runId": "T1B_20261110_01_GUI-B-006",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:56.020Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-B-006",
+        "observedAt": "2026-11-10T13:12:00.203Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_bd36bf0c37_8 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\n\n✅ Áp dụng thành công! Giảm 50,000 ₫\n\nTiết kiệm: 50,000 ₫\n\nThành tiền: 450,001 ₫\n\nTổng thanh toán: 450,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:11:57.007Z",
+              "data": {
+                "code": "NONE_T1B_20261110_01",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:57.405Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_0",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:57.789Z",
+              "data": {
+                "code": "EXPIRED",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.168Z",
+              "data": {
+                "code": "SAVE10",
+                "total_amount": 299999,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.525Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_1",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.923Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_2",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:59.272Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_3",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:59.704Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_4",
+                "total_amount": 500001,
+                "user_id": null
+              },
+              "authorizationPresent": false
+            },
+            {
+              "observedAt": "2026-11-10T13:12:00.131Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_4",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:11:57.011Z",
+              "status": 404,
+              "body": {
+                "error": "Mã giảm giá không tồn tại hoặc đã bị vô hiệu hóa"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:57.412Z",
+              "status": 404,
+              "body": {
+                "error": "Mã giảm giá không tồn tại hoặc đã bị vô hiệu hóa"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:57.794Z",
+              "status": 400,
+              "body": {
+                "error": "Mã giảm giá đã hết hạn"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.179Z",
+              "status": 400,
+              "body": {
+                "error": "Đơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.528Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 34,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.928Z",
+              "status": 400,
+              "body": {
+                "error": "Bạn đã sử dụng mã này 2 lần (đã đạt giới hạn)"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:59.278Z",
+              "status": 400,
+              "body": {
+                "error": "Bạn đã sử dụng mã này 2 lần (đã đạt giới hạn)"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:59.712Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 37,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:12:00.137Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 37,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [],
+          "fixtures": [
+            {
+              "mode": "Expired JWT transport fixture",
+              "exp": 1,
+              "scope": "Only outgoing apply-coupon Authorization header replaced; real backend response retained"
+            }
+          ]
+        }
+      },
+      "supplemental": {
+        "eligibility-nonexistent": {
+          "case": {
+            "name": "nonexistent",
+            "code": "NONE_T1B_20261110_01",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 404,
+            "body": {
+              "error": "Mã giảm giá không tồn tại hoặc đã bị vô hiệu hóa"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:57.016Z"
+        },
+        "eligibility-inactive": {
+          "case": {
+            "name": "inactive",
+            "code": "T1_T1B_20261110_01_36BF0C37_0",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 404,
+            "body": {
+              "error": "Mã giảm giá không tồn tại hoặc đã bị vô hiệu hóa"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:57.424Z"
+        },
+        "eligibility-expired": {
+          "case": {
+            "name": "expired",
+            "code": "EXPIRED",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Mã giảm giá đã hết hạn"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:57.798Z"
+        },
+        "eligibility-below-minimum": {
+          "case": {
+            "name": "below-minimum",
+            "code": "SAVE10",
+            "total": 299999,
+            "accept": false
+          },
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Đơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:58.192Z"
+        },
+        "eligibility-usage-1-limit-2": {
+          "case": {
+            "name": "usage-1-limit-2",
+            "code": "T1_T1B_20261110_01_36BF0C37_1",
+            "total": 500001,
+            "accept": true
+          },
+          "result": {
+            "status": 200,
+            "body": {
+              "success": true,
+              "coupon_id": 34,
+              "discount_amount": 50000,
+              "final_amount": 450001,
+              "message": "Áp dụng thành công! Giảm 50,000 ₫"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:58.532Z"
+        },
+        "eligibility-usage-2-limit-2": {
+          "case": {
+            "name": "usage-2-limit-2",
+            "code": "T1_T1B_20261110_01_36BF0C37_2",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Bạn đã sử dụng mã này 2 lần (đã đạt giới hạn)"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:58.930Z"
+        },
+        "eligibility-usage-3-limit-2": {
+          "case": {
+            "name": "usage-3-limit-2",
+            "code": "T1_T1B_20261110_01_36BF0C37_3",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Bạn đã sử dụng mã này 2 lần (đã đạt giới hạn)"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:59.280Z"
+        },
+        "eligibility-missing-auth": {
+          "case": {
+            "name": "missing-auth",
+            "code": "T1_T1B_20261110_01_36BF0C37_4",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 200,
+            "body": {
+              "success": true,
+              "coupon_id": 37,
+              "discount_amount": 50000,
+              "final_amount": 450001,
+              "message": "Áp dụng thành công! Giảm 50,000 ₫"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:59.715Z"
+        },
+        "eligibility-expired-jwt": {
+          "case": {
+            "name": "expired-jwt",
+            "code": "T1_T1B_20261110_01_36BF0C37_4",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 200,
+            "body": {
+              "success": true,
+              "coupon_id": 37,
+              "discount_amount": 50000,
+              "final_amount": 450001,
+              "message": "Áp dụng thành công! Giảm 50,000 ₫"
+            }
+          },
+          "transportFixture": "signed expired JWT exp=1",
+          "observedAt": "2026-11-10T13:12:00.138Z"
+        }
+      },
+      "assertionMessages": [
+        "Error: missing-auth\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: false\nReceived: true\n\n  55 |   const result=await shop.ui.apply(v.code);const accepted=result.status===200;\n  56 |   await capture(info,page,`eligibility-${v.name}`,{case:v,result,transportFixture:v.name==='expired-jwt'?'signed expired JWT exp=1':null},accepted!==v.accept);\n> 57 |   expect.soft(accepted,v.name).toBe(v.accept);\n     |                                ^\n  58 |   if(!accepted){await expect.soft(shop.ui.error).toBeVisible();await expect.soft(shop.ui.saving).toHaveCount(0);}\n  59 |   else if(v.accept)await expect.soft(shop.ui.saving).toBeVisible();\n  60 |   await page.unroute('**/api/apply-coupon');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:57:32",
+        "Error: expired-jwt\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: false\nReceived: true\n\n  55 |   const result=await shop.ui.apply(v.code);const accepted=result.status===200;\n  56 |   await capture(info,page,`eligibility-${v.name}`,{case:v,result,transportFixture:v.name==='expired-jwt'?'signed expired JWT exp=1':null},accepted!==v.accept);\n> 57 |   expect.soft(accepted,v.name).toBe(v.accept);\n     |                                ^\n  58 |   if(!accepted){await expect.soft(shop.ui.error).toBeVisible();await expect.soft(shop.ui.saving).toHaveCount(0);}\n  59 |   else if(v.accept)await expect.soft(shop.ui.saving).toBeVisible();\n  60 |   await page.unroute('**/api/apply-coupon');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:57:32"
+      ],
+      "screenshot": "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/test-failed-1.png",
+      "screenshots": [
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/attachments/failed-vector-screenshot-5351da4399293cf06c598167d8e8dcfc51dc5fa4.png",
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/attachments/failed-vector-screenshot-6c07a590cc1aafd7749208a986aa3d6d76759513.png",
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/test-failed-1.png"
+      ]
+    },
+    {
+      "itemId": "GUI-B-007",
+      "runId": "T1B_20261110_01_GUI-B-007",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:12:00.626Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-B-007",
+        "observedAt": "2026-11-10T13:12:01.497Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_64828dfd50_0 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\n\n✅ Áp dụng thành công! Giảm 50,000 ₫\n\nTiết kiệm: 50,000 ₫\n\nThành tiền: 450,001 ₫\n\nTổng thanh toán: 450,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:12:01.459Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_828DFD50_0",
+                "total_amount": 500001,
+                "user_id": 17
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:12:01.478Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 38,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [],
+          "fixtures": [
+            {
+              "mode": "Hold real backend response until pending UI has been checked",
+              "fabricatedResponse": false
+            }
+          ]
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "itemId": "GUI-B-008",
+      "runId": "T1B_20261110_01_GUI-B-008",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:12:01.571Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-B-008",
+        "observedAt": "2026-11-10T13:12:02.323Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_0d5248af73_0 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\n\n✅ Áp dụng thành công! Giảm 50,000 ₫\n\nTiết kiệm: 50,000 ₫\n\nThành tiền: 450,001 ₫\n\nTổng thanh toán: 450,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:12:02.121Z",
+              "data": {
+                "code": "NONE_T1B_20261110_01",
+                "total_amount": 500001,
+                "user_id": 18
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:12:02.190Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_5248AF73_0",
+                "total_amount": 500001,
+                "user_id": 18
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:12:02.258Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_5248AF73_0",
+                "total_amount": 500001,
+                "user_id": 18
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:12:02.301Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_5248AF73_0",
+                "total_amount": 500001,
+                "user_id": 18
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:12:02.128Z",
+              "status": 404,
+              "body": {
+                "error": "Mã giảm giá không tồn tại hoặc đã bị vô hiệu hóa"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:12:02.195Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 39,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:12:02.312Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 39,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [
+            {
+              "observedAt": "2026-11-10T13:12:02.262Z",
+              "error": "net::ERR_FAILED"
+            }
+          ],
+          "fixtures": [
+            {
+              "mode": "Transport abort for apply-coupon recovery"
+            }
+          ]
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": []
+    }
+  ],
+  "history": [
+    {
+      "itemId": "GUI-B-001",
+      "runId": "T1B_20261110_01_GUI-B-001",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:40.610Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-B-001",
+        "observedAt": "2026-11-10T13:11:42.218Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_2404aec5db_0 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\n\n✅ Áp dụng thành công! Giảm 50,000 ₫\n\nTiết kiệm: 50,000 ₫\n\nThành tiền: 450,001 ₫\n\nTổng thanh toán: 450,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:11:42.125Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_04AEC5DB_0",
+                "total_amount": 500001,
+                "user_id": 11
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:11:42.193Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 31,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [],
+          "fixtures": []
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "itemId": "GUI-B-002",
+      "runId": "T1B_20261110_01_GUI-B-002",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:42.283Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-B-002",
+        "observedAt": "2026-11-10T13:11:42.833Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_0d1ca464c5_0 x 1 — 300,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\nTổng thanh toán: 300,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [],
+          "responses": [],
+          "faults": [],
+          "fixtures": []
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "itemId": "GUI-B-003",
+      "runId": "T1B_20261110_01_GUI-B-003",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:42.888Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-B-003",
+        "observedAt": "2026-11-10T13:11:43.455Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_fbf2ec7a84_0 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\nTổng thanh toán: 500,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:11:43.403Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_F2EC7A84_0",
+                "total_amount": 500001,
+                "user_id": 13
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:11:43.412Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 32,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [],
+          "fixtures": []
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "itemId": "GUI-B-004",
+      "runId": "T1B_20261110_01_GUI-B-004",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:43.524Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-B-004",
+        "observedAt": "2026-11-10T13:11:47.040Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_488e9855a1_0 x 1 — 300,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\nTổng thanh toán: 300,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [],
+          "responses": [],
+          "faults": [],
+          "fixtures": []
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [
+        "Error: expect(locator).toBeVisible() failed\n\nLocator: getByRole('navigation', { name: /breadcrumb|đường dẫn/i })\nExpected: visible\nTimeout: 3000ms\nError: element(s) not found\n\nCall log:\n  - Expect \"toBeVisible\" with timeout 3000ms\n  - waiting for getByRole('navigation', { name: /breadcrumb|đường dẫn/i })\n\n\n  24 | test('GUI-B-004: checkout breadcrumb allows return navigation',async({shop,page})=>{\n  25 |  await shop.prepare(300001);\n> 26 |  const breadcrumb=page.getByRole('navigation',{name:/breadcrumb|đường dẫn/i});await expect(breadcrumb).toBeVisible();\n     |                                                                                                        ^\n  27 |  await breadcrumb.getByRole('link',{name:/giỏ hàng/i}).click();await expect(page).toHaveURL(/\\/cart$/);\n  28 | });\n  29 | test('GUI-B-005: valid percentage and fixed boundary results',async({shop,page},info)=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:26:104"
+      ],
+      "screenshot": "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-004-che-20ddb-mb-allows-return-navigation/test-failed-1.png",
+      "screenshots": [
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-004-che-20ddb-mb-allows-return-navigation/test-failed-1.png"
+      ]
+    },
+    {
+      "itemId": "GUI-B-005",
+      "runId": "T1B_20261110_01_GUI-B-005",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:47.458Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-B-005",
+        "observedAt": "2026-11-10T13:11:55.620Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_382a547118_3 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\n\n✅ Áp dụng thành công! Giảm 50,000 ₫\n\nTiết kiệm: 50,000 ₫\n\nThành tiền: 450,001 ₫\n\nTổng thanh toán: 450,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:11:48.198Z",
+              "data": {
+                "code": "SAVE10",
+                "total_amount": 300000,
+                "user_id": 15
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:48.623Z",
+              "data": {
+                "code": "SAVE10",
+                "total_amount": 300001,
+                "user_id": 15
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:55.141Z",
+              "data": {
+                "code": "BIGBUY",
+                "total_amount": 500000,
+                "user_id": 15
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:55.537Z",
+              "data": {
+                "code": "BIGBUY",
+                "total_amount": 500001,
+                "user_id": 15
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:11:48.199Z",
+              "status": 400,
+              "body": {
+                "error": "Đơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:48.629Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 1,
+                "discount_amount": -2700009,
+                "final_amount": 3000010,
+                "message": "Áp dụng thành công! Giảm 10%"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:55.145Z",
+              "status": 400,
+              "body": {
+                "error": "Đơn hàng chưa đủ giá trị tối thiểu 500,000 ₫ để áp dụng mã này"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:55.546Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 2,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [],
+          "fixtures": []
+        }
+      },
+      "supplemental": {
+        "valid-SAVE10-300000": {
+          "input": {
+            "code": "SAVE10",
+            "total": 300000,
+            "discount": 30000
+          },
+          "expectedFinal": 270000,
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Đơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này"
+            }
+          },
+          "observedAt": "2026-11-10T13:11:48.202Z"
+        },
+        "valid-SAVE10-300001": {
+          "input": {
+            "code": "SAVE10",
+            "total": 300001,
+            "discount": 30000.1
+          },
+          "expectedFinal": 270000.9,
+          "result": {
+            "status": 200,
+            "body": {
+              "success": true,
+              "coupon_id": 1,
+              "discount_amount": -2700009,
+              "final_amount": 3000010,
+              "message": "Áp dụng thành công! Giảm 10%"
+            }
+          },
+          "observedAt": "2026-11-10T13:11:48.630Z"
+        },
+        "valid-BIGBUY-500000": {
+          "input": {
+            "code": "BIGBUY",
+            "total": 500000,
+            "discount": 50000
+          },
+          "expectedFinal": 450000,
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Đơn hàng chưa đủ giá trị tối thiểu 500,000 ₫ để áp dụng mã này"
+            }
+          },
+          "observedAt": "2026-11-10T13:11:55.149Z"
+        },
+        "valid-BIGBUY-500001": {
+          "input": {
+            "code": "BIGBUY",
+            "total": 500001,
+            "discount": 50000
+          },
+          "expectedFinal": 450001,
+          "result": {
+            "status": 200,
+            "body": {
+              "success": true,
+              "coupon_id": 2,
+              "discount_amount": 50000,
+              "final_amount": 450001,
+              "message": "Áp dụng thành công! Giảm 50,000 ₫"
+            }
+          },
+          "observedAt": "2026-11-10T13:11:55.550Z"
+        }
+      },
+      "assertionMessages": [
+        "Error: SAVE10 at total 300000\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n\n  33 |   const mismatch=result.status!==200||!Number.isFinite(result.body.discount_amount)||!Number.isFinite(result.body.final_amount)||Math.abs(result.body.discount_amount-v.discount)>0.001||Math.abs(result.body.final_amount-expectedFinal)>0.001;\n  34 |   await capture(info,page,`valid-${v.code}-${v.total}`,{input:v,expectedFinal,result},mismatch);\n> 35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n     |                                                              ^\n  36 |   if(result.status===200){\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:35:62",
+        "Error: expect(received).toBeCloseTo(expected, precision)\n\nExpected: 30000.1\nReceived: -2700009\n\nExpected precision:    2\nExpected difference: < 0.005\nReceived difference:   2730009.1\n\n  35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n  36 |   if(result.status===200){\n> 37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n     |                                             ^\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n  39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n  40 |   }\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:37:45",
+        "Error: expect(received).toBeCloseTo(expected, precision)\n\nExpected: 270000.9\nReceived: 3000010\n\nExpected precision:    2\nExpected difference: < 0.005\nReceived difference:   2730009.1\n\n  35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n  36 |   if(result.status===200){\n> 37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n     |                                                                                                             ^\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n  39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n  40 |   }\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:37:109",
+        "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  getByText(/^Tiết kiệm:/)\nExpected: \"Tiết kiệm: 30,000.1 ₫\"\nReceived: \"Tiết kiệm: -2,700,009 ₫\"\nTimeout:  3000ms\n\nCall log:\n  - Expect \"soft toHaveText\" with timeout 3000ms\n  - waiting for getByText(/^Tiết kiệm:/)\n    10 × locator resolved to <p>…</p>\n       - unexpected value \"Tiết kiệm: -2,700,009 ₫\"\n\n\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n> 39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n     |                                      ^\n  40 |   }\n  41 |  }\n  42 | });\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:39:38",
+        "Error: expect(locator).toHaveText(expected) failed\n\nLocator:  getByText(/^Thành tiền:/)\nExpected: \"Thành tiền: 270,000.9 ₫\"\nReceived: \"Thành tiền: 3,000,010 ₫\"\nTimeout:  3000ms\n\nCall log:\n  - Expect \"soft toHaveText\" with timeout 3000ms\n  - waiting for getByText(/^Thành tiền:/)\n    10 × locator resolved to <p>…</p>\n       - unexpected value \"Thành tiền: 3,000,010 ₫\"\n\n\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n> 39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n     |                                                                                                            ^\n  40 |   }\n  41 |  }\n  42 | });\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:39:108",
+        "Error: BIGBUY at total 500000\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: 200\nReceived: 400\n\n  33 |   const mismatch=result.status!==200||!Number.isFinite(result.body.discount_amount)||!Number.isFinite(result.body.final_amount)||Math.abs(result.body.discount_amount-v.discount)>0.001||Math.abs(result.body.final_amount-expectedFinal)>0.001;\n  34 |   await capture(info,page,`valid-${v.code}-${v.total}`,{input:v,expectedFinal,result},mismatch);\n> 35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n     |                                                              ^\n  36 |   if(result.status===200){\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:35:62"
+      ],
+      "screenshot": "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/test-failed-1.png",
+      "screenshots": [
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-0d015817badeeee5a9e5bedfbb0905c914d34728.png",
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-a50d0edcce7ebe355541d3a8cd16c95c1a28f672.png",
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-5d7984ac573e42fcf396dc3b3949ca17bfddad2a.png",
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/test-failed-1.png"
+      ]
+    },
+    {
+      "itemId": "GUI-B-006",
+      "runId": "T1B_20261110_01_GUI-B-006",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:11:56.020Z",
+      "status": "Failed",
+      "observed": {
+        "itemId": "GUI-B-006",
+        "observedAt": "2026-11-10T13:12:00.203Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_bd36bf0c37_8 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\n\n✅ Áp dụng thành công! Giảm 50,000 ₫\n\nTiết kiệm: 50,000 ₫\n\nThành tiền: 450,001 ₫\n\nTổng thanh toán: 450,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:11:57.007Z",
+              "data": {
+                "code": "NONE_T1B_20261110_01",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:57.405Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_0",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:57.789Z",
+              "data": {
+                "code": "EXPIRED",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.168Z",
+              "data": {
+                "code": "SAVE10",
+                "total_amount": 299999,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.525Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_1",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.923Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_2",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:59.272Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_3",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:11:59.704Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_4",
+                "total_amount": 500001,
+                "user_id": null
+              },
+              "authorizationPresent": false
+            },
+            {
+              "observedAt": "2026-11-10T13:12:00.131Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_36BF0C37_4",
+                "total_amount": 500001,
+                "user_id": 16
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:11:57.011Z",
+              "status": 404,
+              "body": {
+                "error": "Mã giảm giá không tồn tại hoặc đã bị vô hiệu hóa"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:57.412Z",
+              "status": 404,
+              "body": {
+                "error": "Mã giảm giá không tồn tại hoặc đã bị vô hiệu hóa"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:57.794Z",
+              "status": 400,
+              "body": {
+                "error": "Mã giảm giá đã hết hạn"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.179Z",
+              "status": 400,
+              "body": {
+                "error": "Đơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.528Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 34,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:58.928Z",
+              "status": 400,
+              "body": {
+                "error": "Bạn đã sử dụng mã này 2 lần (đã đạt giới hạn)"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:59.278Z",
+              "status": 400,
+              "body": {
+                "error": "Bạn đã sử dụng mã này 2 lần (đã đạt giới hạn)"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:11:59.712Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 37,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:12:00.137Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 37,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [],
+          "fixtures": [
+            {
+              "mode": "Expired JWT transport fixture",
+              "exp": 1,
+              "scope": "Only outgoing apply-coupon Authorization header replaced; real backend response retained"
+            }
+          ]
+        }
+      },
+      "supplemental": {
+        "eligibility-nonexistent": {
+          "case": {
+            "name": "nonexistent",
+            "code": "NONE_T1B_20261110_01",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 404,
+            "body": {
+              "error": "Mã giảm giá không tồn tại hoặc đã bị vô hiệu hóa"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:57.016Z"
+        },
+        "eligibility-inactive": {
+          "case": {
+            "name": "inactive",
+            "code": "T1_T1B_20261110_01_36BF0C37_0",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 404,
+            "body": {
+              "error": "Mã giảm giá không tồn tại hoặc đã bị vô hiệu hóa"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:57.424Z"
+        },
+        "eligibility-expired": {
+          "case": {
+            "name": "expired",
+            "code": "EXPIRED",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Mã giảm giá đã hết hạn"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:57.798Z"
+        },
+        "eligibility-below-minimum": {
+          "case": {
+            "name": "below-minimum",
+            "code": "SAVE10",
+            "total": 299999,
+            "accept": false
+          },
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Đơn hàng chưa đủ giá trị tối thiểu 300,000 ₫ để áp dụng mã này"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:58.192Z"
+        },
+        "eligibility-usage-1-limit-2": {
+          "case": {
+            "name": "usage-1-limit-2",
+            "code": "T1_T1B_20261110_01_36BF0C37_1",
+            "total": 500001,
+            "accept": true
+          },
+          "result": {
+            "status": 200,
+            "body": {
+              "success": true,
+              "coupon_id": 34,
+              "discount_amount": 50000,
+              "final_amount": 450001,
+              "message": "Áp dụng thành công! Giảm 50,000 ₫"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:58.532Z"
+        },
+        "eligibility-usage-2-limit-2": {
+          "case": {
+            "name": "usage-2-limit-2",
+            "code": "T1_T1B_20261110_01_36BF0C37_2",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Bạn đã sử dụng mã này 2 lần (đã đạt giới hạn)"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:58.930Z"
+        },
+        "eligibility-usage-3-limit-2": {
+          "case": {
+            "name": "usage-3-limit-2",
+            "code": "T1_T1B_20261110_01_36BF0C37_3",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 400,
+            "body": {
+              "error": "Bạn đã sử dụng mã này 2 lần (đã đạt giới hạn)"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:59.280Z"
+        },
+        "eligibility-missing-auth": {
+          "case": {
+            "name": "missing-auth",
+            "code": "T1_T1B_20261110_01_36BF0C37_4",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 200,
+            "body": {
+              "success": true,
+              "coupon_id": 37,
+              "discount_amount": 50000,
+              "final_amount": 450001,
+              "message": "Áp dụng thành công! Giảm 50,000 ₫"
+            }
+          },
+          "transportFixture": null,
+          "observedAt": "2026-11-10T13:11:59.715Z"
+        },
+        "eligibility-expired-jwt": {
+          "case": {
+            "name": "expired-jwt",
+            "code": "T1_T1B_20261110_01_36BF0C37_4",
+            "total": 500001,
+            "accept": false
+          },
+          "result": {
+            "status": 200,
+            "body": {
+              "success": true,
+              "coupon_id": 37,
+              "discount_amount": 50000,
+              "final_amount": 450001,
+              "message": "Áp dụng thành công! Giảm 50,000 ₫"
+            }
+          },
+          "transportFixture": "signed expired JWT exp=1",
+          "observedAt": "2026-11-10T13:12:00.138Z"
+        }
+      },
+      "assertionMessages": [
+        "Error: missing-auth\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: false\nReceived: true\n\n  55 |   const result=await shop.ui.apply(v.code);const accepted=result.status===200;\n  56 |   await capture(info,page,`eligibility-${v.name}`,{case:v,result,transportFixture:v.name==='expired-jwt'?'signed expired JWT exp=1':null},accepted!==v.accept);\n> 57 |   expect.soft(accepted,v.name).toBe(v.accept);\n     |                                ^\n  58 |   if(!accepted){await expect.soft(shop.ui.error).toBeVisible();await expect.soft(shop.ui.saving).toHaveCount(0);}\n  59 |   else if(v.accept)await expect.soft(shop.ui.saving).toBeVisible();\n  60 |   await page.unroute('**/api/apply-coupon');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:57:32",
+        "Error: expired-jwt\n\nexpect(received).toBe(expected) // Object.is equality\n\nExpected: false\nReceived: true\n\n  55 |   const result=await shop.ui.apply(v.code);const accepted=result.status===200;\n  56 |   await capture(info,page,`eligibility-${v.name}`,{case:v,result,transportFixture:v.name==='expired-jwt'?'signed expired JWT exp=1':null},accepted!==v.accept);\n> 57 |   expect.soft(accepted,v.name).toBe(v.accept);\n     |                                ^\n  58 |   if(!accepted){await expect.soft(shop.ui.error).toBeVisible();await expect.soft(shop.ui.saving).toHaveCount(0);}\n  59 |   else if(v.accept)await expect.soft(shop.ui.saving).toBeVisible();\n  60 |   await page.unroute('**/api/apply-coupon');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:57:32"
+      ],
+      "screenshot": "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/test-failed-1.png",
+      "screenshots": [
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/attachments/failed-vector-screenshot-5351da4399293cf06c598167d8e8dcfc51dc5fa4.png",
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/attachments/failed-vector-screenshot-6c07a590cc1aafd7749208a986aa3d6d76759513.png",
+        "evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/test-failed-1.png"
+      ]
+    },
+    {
+      "itemId": "GUI-B-007",
+      "runId": "T1B_20261110_01_GUI-B-007",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:12:00.626Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-B-007",
+        "observedAt": "2026-11-10T13:12:01.497Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_64828dfd50_0 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\n\n✅ Áp dụng thành công! Giảm 50,000 ₫\n\nTiết kiệm: 50,000 ₫\n\nThành tiền: 450,001 ₫\n\nTổng thanh toán: 450,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:12:01.459Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_828DFD50_0",
+                "total_amount": 500001,
+                "user_id": 17
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:12:01.478Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 38,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [],
+          "fixtures": [
+            {
+              "mode": "Hold real backend response until pending UI has been checked",
+              "fabricatedResponse": false
+            }
+          ]
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": []
+    },
+    {
+      "itemId": "GUI-B-008",
+      "runId": "T1B_20261110_01_GUI-B-008",
+      "suiteRun": "T1B_20261110_01",
+      "startedAt": "2026-11-10T13:12:01.571Z",
+      "status": "Passed",
+      "observed": {
+        "itemId": "GUI-B-008",
+        "observedAt": "2026-11-10T13:12:02.323Z",
+        "url": "http://localhost:5173/checkout",
+        "viewport": {
+          "width": 1280,
+          "height": 800
+        },
+        "browser": "155.0.4283.45",
+        "visibleText": "EShop\nGiỏ hàng\nChào, HW03 Coupon UI\nThoát\nXác Nhận Đơn Hàng\nSản phẩm:\nT1B_T1B_20261110_01_0d5248af73_0 x 1 — 500,001 ₫\nTổng tiền thanh toán (VND):\nMã Giảm Giá\nÁp dụng\n\n✅ Áp dụng thành công! Giảm 50,000 ₫\n\nTiết kiệm: 50,000 ₫\n\nThành tiền: 450,001 ₫\n\nTổng thanh toán: 450,001 ₫\nXác Nhận Thanh Toán\n© 2026 EShop SUT. Dành cho mục đích kiểm thử.",
+        "events": {
+          "requests": [
+            {
+              "observedAt": "2026-11-10T13:12:02.121Z",
+              "data": {
+                "code": "NONE_T1B_20261110_01",
+                "total_amount": 500001,
+                "user_id": 18
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:12:02.190Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_5248AF73_0",
+                "total_amount": 500001,
+                "user_id": 18
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:12:02.258Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_5248AF73_0",
+                "total_amount": 500001,
+                "user_id": 18
+              },
+              "authorizationPresent": true
+            },
+            {
+              "observedAt": "2026-11-10T13:12:02.301Z",
+              "data": {
+                "code": "T1_T1B_20261110_01_5248AF73_0",
+                "total_amount": 500001,
+                "user_id": 18
+              },
+              "authorizationPresent": true
+            }
+          ],
+          "responses": [
+            {
+              "observedAt": "2026-11-10T13:12:02.128Z",
+              "status": 404,
+              "body": {
+                "error": "Mã giảm giá không tồn tại hoặc đã bị vô hiệu hóa"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:12:02.195Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 39,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            },
+            {
+              "observedAt": "2026-11-10T13:12:02.312Z",
+              "status": 200,
+              "body": {
+                "success": true,
+                "coupon_id": 39,
+                "discount_amount": 50000,
+                "final_amount": 450001,
+                "message": "Áp dụng thành công! Giảm 50,000 ₫"
+              }
+            }
+          ],
+          "faults": [
+            {
+              "observedAt": "2026-11-10T13:12:02.262Z",
+              "error": "net::ERR_FAILED"
+            }
+          ],
+          "fixtures": [
+            {
+              "mode": "Transport abort for apply-coupon recovery"
+            }
+          ]
+        }
+      },
+      "supplemental": {},
+      "assertionMessages": [],
+      "screenshot": "",
+      "screenshots": []
+    }
+  ]
+}

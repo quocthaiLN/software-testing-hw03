@@ -45,3 +45,15 @@ Run outcome: 16 Login items, 6 Passed / 10 Failed. One additional A003 run check
 AI created and executed 28 GUI-C scenarios. First launcher attempt rejected its own worker; corrected the inherited run guard and retained the failure as infrastructure evidence only. Main run initially yielded 16 Passed / 12 Failed. C006 geometry-only assertions did not prove readability: visual QA exposed 0px input content width at 390px. AI extended that assertion and reran C006; final C results are 15 Passed / 13 Failed. This is a recorded AI/tool correction, not an invented student-authored critique or student addition.
 
 AI imported observed results into the working Excel and preserved raw JSON/captures. C027 empty response and C028 transport fault fixtures are explicitly distinguished from backend end-to-end data. No student bug description or GitHub Issue body was drafted. User confirmed (verbatim): “Có Android thật và Expo Go”; native execution remains pending device connection.
+
+### Apply Coupon and native readiness continuation
+
+AI executed 8 GUI-B scenarios against real Web UI/backend: 5 Passed / 3 Failed. Seeded products create exact cart totals through normal UI; no editable total override or actual checkout payment. Raw arithmetic, eligibility and transport observations retained and imported into Excel, now 52 executed items total. Native connection QR is programmatically generated for the live Expo URL, not a fabricated test screenshot.
+
+User replies (verbatim):
+
+> Đã vào giao diện EShop
+
+> Kết nối USB và bật gỡ lỗi USB để chạy tự động
+
+Metro compiled an actual Android bundle; ADB subsequently detected an authorized TECNO KJ7 / Android 14. Native Profile execution not inferred from these readiness signals. Original user-message timestamps remain unavailable in this partial log; export full transcript before final audit. No student additions, detailed critique, signatures or bug descriptions have been invented.

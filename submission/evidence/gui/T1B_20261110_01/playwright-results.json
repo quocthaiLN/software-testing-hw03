@@ -1,0 +1,653 @@
+{
+  "config": {
+    "argv": [
+      "/home/le-nguyen-quoc-thai/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "tools/gui/playwright.config.mjs",
+      "--grep",
+      "GUI-B-"
+    ],
+    "configFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs",
+    "rootDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 65000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "apply-coupon.spec.mjs",
+      "file": "apply-coupon.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GUI-B-001: consistent displayed money units",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T13:11:40.610Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUItMDAxIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjQyLjIxOFoiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2NoZWNrb3V0IiwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDgwMAogIH0sCiAgImJyb3dzZXIiOiAiMTU1LjAuNDI4My40NSIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wXG5HaeG7jyBow6BuZ1xuQ2jDoG8sIEhXMDMgQ291cG9uIFVJXG5UaG/DoXRcbljDoWMgTmjhuq1uIMSQxqFuIEjDoG5nXG5T4bqjbiBwaOG6qW06XG5UMUJfVDFCXzIwMjYxMTEwXzAxXzI0MDRhZWM1ZGJfMCB4IDEg4oCUIDUwMCwwMDEg4oKrXG5U4buVbmcgdGnhu4FuIHRoYW5oIHRvw6FuIChWTkQpOlxuTcOjIEdp4bqjbSBHacOhXG7DgXAgZOG7pW5nXG5cbuKchSDDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqtcblxuVGnhur90IGtp4buHbTogNTAsMDAwIOKCq1xuXG5UaMOgbmggdGnhu4FuOiA0NTAsMDAxIOKCq1xuXG5U4buVbmcgdGhhbmggdG/DoW46IDQ1MCwwMDEg4oKrXG5Yw6FjIE5o4bqtbiBUaGFuaCBUb8OhblxuwqkgMjAyNiBFU2hvcCBTVVQuIETDoG5oIGNobyBt4bulYyDEkcOtY2gga2nhu4NtIHRo4butLiIsCiAgImV2ZW50cyI6IHsKICAgICJyZXF1ZXN0cyI6IFsKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NDIuMTI1WiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJUMV9UMUJfMjAyNjExMTBfMDFfMDRBRUM1REJfMCIsCiAgICAgICAgICAidG90YWxfYW1vdW50IjogNTAwMDAxLAogICAgICAgICAgInVzZXJfaWQiOiAxMQogICAgICAgIH0sCiAgICAgICAgImF1dGhvcml6YXRpb25QcmVzZW50IjogdHJ1ZQogICAgICB9CiAgICBdLAogICAgInJlc3BvbnNlcyI6IFsKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NDIuMTkzWiIsCiAgICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJzdWNjZXNzIjogdHJ1ZSwKICAgICAgICAgICJjb3Vwb25faWQiOiAzMSwKICAgICAgICAgICJkaXNjb3VudF9hbW91bnQiOiA1MDAwMCwKICAgICAgICAgICJmaW5hbF9hbW91bnQiOiA0NTAwMDEsCiAgICAgICAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgICAgICAgfQogICAgICB9CiAgICBdLAogICAgImZhdWx0cyI6IFtdLAogICAgImZpeHR1cmVzIjogW10KICB9Cn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1168db6a7884d9a1e991-ca80fbaa0e2404aec5db",
+          "file": "apply-coupon.spec.mjs",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "GUI-B-002: blank and whitespace codes do not apply",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 596,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T13:11:42.283Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUItMDAyIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjQyLjgzM1oiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2NoZWNrb3V0IiwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDgwMAogIH0sCiAgImJyb3dzZXIiOiAiMTU1LjAuNDI4My40NSIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wXG5HaeG7jyBow6BuZ1xuQ2jDoG8sIEhXMDMgQ291cG9uIFVJXG5UaG/DoXRcbljDoWMgTmjhuq1uIMSQxqFuIEjDoG5nXG5T4bqjbiBwaOG6qW06XG5UMUJfVDFCXzIwMjYxMTEwXzAxXzBkMWNhNDY0YzVfMCB4IDEg4oCUIDMwMCwwMDEg4oKrXG5U4buVbmcgdGnhu4FuIHRoYW5oIHRvw6FuIChWTkQpOlxuTcOjIEdp4bqjbSBHacOhXG7DgXAgZOG7pW5nXG5U4buVbmcgdGhhbmggdG/DoW46IDMwMCwwMDEg4oKrXG5Yw6FjIE5o4bqtbiBUaGFuaCBUb8OhblxuwqkgMjAyNiBFU2hvcCBTVVQuIETDoG5oIGNobyBt4bulYyDEkcOtY2gga2nhu4NtIHRo4butLiIsCiAgImV2ZW50cyI6IHsKICAgICJyZXF1ZXN0cyI6IFtdLAogICAgInJlc3BvbnNlcyI6IFtdLAogICAgImZhdWx0cyI6IFtdLAogICAgImZpeHR1cmVzIjogW10KICB9Cn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1168db6a7884d9a1e991-ea3267586d0d1ca464c5",
+          "file": "apply-coupon.spec.mjs",
+          "line": 13,
+          "column": 1
+        },
+        {
+          "title": "GUI-B-003: editing applied code clears stale reduction",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 625,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T13:11:42.888Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUItMDAzIiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjQzLjQ1NVoiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2NoZWNrb3V0IiwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDgwMAogIH0sCiAgImJyb3dzZXIiOiAiMTU1LjAuNDI4My40NSIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wXG5HaeG7jyBow6BuZ1xuQ2jDoG8sIEhXMDMgQ291cG9uIFVJXG5UaG/DoXRcbljDoWMgTmjhuq1uIMSQxqFuIEjDoG5nXG5T4bqjbiBwaOG6qW06XG5UMUJfVDFCXzIwMjYxMTEwXzAxX2ZiZjJlYzdhODRfMCB4IDEg4oCUIDUwMCwwMDEg4oKrXG5U4buVbmcgdGnhu4FuIHRoYW5oIHRvw6FuIChWTkQpOlxuTcOjIEdp4bqjbSBHacOhXG7DgXAgZOG7pW5nXG5U4buVbmcgdGhhbmggdG/DoW46IDUwMCwwMDEg4oKrXG5Yw6FjIE5o4bqtbiBUaGFuaCBUb8OhblxuwqkgMjAyNiBFU2hvcCBTVVQuIETDoG5oIGNobyBt4bulYyDEkcOtY2gga2nhu4NtIHRo4butLiIsCiAgImV2ZW50cyI6IHsKICAgICJyZXF1ZXN0cyI6IFsKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NDMuNDAzWiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJUMV9UMUJfMjAyNjExMTBfMDFfRjJFQzdBODRfMCIsCiAgICAgICAgICAidG90YWxfYW1vdW50IjogNTAwMDAxLAogICAgICAgICAgInVzZXJfaWQiOiAxMwogICAgICAgIH0sCiAgICAgICAgImF1dGhvcml6YXRpb25QcmVzZW50IjogdHJ1ZQogICAgICB9CiAgICBdLAogICAgInJlc3BvbnNlcyI6IFsKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NDMuNDEyWiIsCiAgICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJzdWNjZXNzIjogdHJ1ZSwKICAgICAgICAgICJjb3Vwb25faWQiOiAzMiwKICAgICAgICAgICJkaXNjb3VudF9hbW91bnQiOiA1MDAwMCwKICAgICAgICAgICJmaW5hbF9hbW91bnQiOiA0NTAwMDEsCiAgICAgICAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgICAgICAgfQogICAgICB9CiAgICBdLAogICAgImZhdWx0cyI6IFtdLAogICAgImZpeHR1cmVzIjogW10KICB9Cn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1168db6a7884d9a1e991-d8d4f918c9fbf2ec7a84",
+          "file": "apply-coupon.spec.mjs",
+          "line": 18,
+          "column": 1
+        },
+        {
+          "title": "GUI-B-004: checkout breadcrumb allows return navigation",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 3531,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: /breadcrumb|đường dẫn/i })\nExpected: visible\nTimeout: 3000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: /breadcrumb|đường dẫn/i })\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: /breadcrumb|đường dẫn/i })\nExpected: visible\nTimeout: 3000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: /breadcrumb|đường dẫn/i })\u001b[22m\n\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:26:104",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                      "column": 104,
+                      "line": 26
+                    },
+                    "snippet": "  24 | test('GUI-B-004: checkout breadcrumb allows return navigation',async({shop,page})=>{\n  25 |  await shop.prepare(300001);\n> 26 |  const breadcrumb=page.getByRole('navigation',{name:/breadcrumb|đường dẫn/i});await expect(breadcrumb).toBeVisible();\n     |                                                                                                        ^\n  27 |  await breadcrumb.getByRole('link',{name:/giỏ hàng/i}).click();await expect(page).toHaveURL(/\\/cart$/);\n  28 | });\n  29 | test('GUI-B-005: valid percentage and fixed boundary results',async({shop,page},info)=>{"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                        "column": 104,
+                        "line": 26
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('navigation', { name: /breadcrumb|đường dẫn/i })\nExpected: visible\nTimeout: 3000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('navigation', { name: /breadcrumb|đường dẫn/i })\u001b[22m\n\n\n  24 | test('GUI-B-004: checkout breadcrumb allows return navigation',async({shop,page})=>{\n  25 |  await shop.prepare(300001);\n> 26 |  const breadcrumb=page.getByRole('navigation',{name:/breadcrumb|đường dẫn/i});await expect(breadcrumb).toBeVisible();\n     |                                                                                                        ^\n  27 |  await breadcrumb.getByRole('link',{name:/giỏ hàng/i}).click();await expect(page).toHaveURL(/\\/cart$/);\n  28 | });\n  29 | test('GUI-B-005: valid percentage and fixed boundary results',async({shop,page},info)=>{\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:26:104"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T13:11:43.524Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-004-che-20ddb-mb-allows-return-navigation/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUItMDA0IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjQ3LjA0MFoiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2NoZWNrb3V0IiwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDgwMAogIH0sCiAgImJyb3dzZXIiOiAiMTU1LjAuNDI4My40NSIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wXG5HaeG7jyBow6BuZ1xuQ2jDoG8sIEhXMDMgQ291cG9uIFVJXG5UaG/DoXRcbljDoWMgTmjhuq1uIMSQxqFuIEjDoG5nXG5T4bqjbiBwaOG6qW06XG5UMUJfVDFCXzIwMjYxMTEwXzAxXzQ4OGU5ODU1YTFfMCB4IDEg4oCUIDMwMCwwMDEg4oKrXG5U4buVbmcgdGnhu4FuIHRoYW5oIHRvw6FuIChWTkQpOlxuTcOjIEdp4bqjbSBHacOhXG7DgXAgZOG7pW5nXG5U4buVbmcgdGhhbmggdG/DoW46IDMwMCwwMDEg4oKrXG5Yw6FjIE5o4bqtbiBUaGFuaCBUb8OhblxuwqkgMjAyNiBFU2hvcCBTVVQuIETDoG5oIGNobyBt4bulYyDEkcOtY2gga2nhu4NtIHRo4butLiIsCiAgImV2ZW50cyI6IHsKICAgICJyZXF1ZXN0cyI6IFtdLAogICAgInJlc3BvbnNlcyI6IFtdLAogICAgImZhdWx0cyI6IFtdLAogICAgImZpeHR1cmVzIjogW10KICB9Cn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-004-che-20ddb-mb-allows-return-navigation/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                    "column": 104,
+                    "line": 26
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1168db6a7884d9a1e991-5381780e6d488e9855a1",
+          "file": "apply-coupon.spec.mjs",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "GUI-B-005: valid percentage and fixed boundary results",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 8048,
+                  "error": {
+                    "message": "Error: SAVE10 at total 300000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m",
+                    "stack": "Error: SAVE10 at total 300000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:35:62",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                      "column": 62,
+                      "line": 35
+                    },
+                    "snippet": "  33 |   const mismatch=result.status!==200||!Number.isFinite(result.body.discount_amount)||!Number.isFinite(result.body.final_amount)||Math.abs(result.body.discount_amount-v.discount)>0.001||Math.abs(result.body.final_amount-expectedFinal)>0.001;\n  34 |   await capture(info,page,`valid-${v.code}-${v.total}`,{input:v,expectedFinal,result},mismatch);\n> 35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n     |                                                              ^\n  36 |   if(result.status===200){\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                        "column": 62,
+                        "line": 35
+                      },
+                      "message": "Error: SAVE10 at total 300000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n\n  33 |   const mismatch=result.status!==200||!Number.isFinite(result.body.discount_amount)||!Number.isFinite(result.body.final_amount)||Math.abs(result.body.discount_amount-v.discount)>0.001||Math.abs(result.body.final_amount-expectedFinal)>0.001;\n  34 |   await capture(info,page,`valid-${v.code}-${v.total}`,{input:v,expectedFinal,result},mismatch);\n> 35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n     |                                                              ^\n  36 |   if(result.status===200){\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:35:62"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                        "column": 45,
+                        "line": 37
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m30000.1\u001b[39m\nReceived: \u001b[31m-2700009\u001b[39m\n\nExpected precision:    2\nExpected difference: < \u001b[32m0.005\u001b[39m\nReceived difference:   \u001b[31m2730009.1\u001b[39m\n\n  35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n  36 |   if(result.status===200){\n> 37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n     |                                             ^\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n  39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n  40 |   }\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:37:45"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                        "column": 109,
+                        "line": 37
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeCloseTo\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m, \u001b[22mprecision\u001b[2m)\u001b[22m\n\nExpected: \u001b[32m270000.9\u001b[39m\nReceived: \u001b[31m3000010\u001b[39m\n\nExpected precision:    2\nExpected difference: < \u001b[32m0.005\u001b[39m\nReceived difference:   \u001b[31m2730009.1\u001b[39m\n\n  35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n  36 |   if(result.status===200){\n> 37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n     |                                                                                                             ^\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n  39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n  40 |   }\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:37:109"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                        "column": 38,
+                        "line": 39
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByText(/^Tiết kiệm:/)\nExpected: \u001b[32m\"Tiết kiệm: \u001b[7m30,000.1\u001b[27m ₫\"\u001b[39m\nReceived: \u001b[31m\"Tiết kiệm: \u001b[7m-2,700,009\u001b[27m ₫\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/^Tiết kiệm:/)\u001b[22m\n\u001b[2m    10 × locator resolved to <p>…</p>\u001b[22m\n\u001b[2m       - unexpected value \"Tiết kiệm: -2,700,009 ₫\"\u001b[22m\n\n\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n> 39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n     |                                      ^\n  40 |   }\n  41 |  }\n  42 | });\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:39:38"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                        "column": 108,
+                        "line": 39
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  getByText(/^Thành tiền:/)\nExpected: \u001b[32m\"Thành tiền: \u001b[7m270\u001b[27m,000\u001b[7m.9\u001b[27m ₫\"\u001b[39m\nReceived: \u001b[31m\"Thành tiền: \u001b[7m3\u001b[27m,000\u001b[7m,010\u001b[27m ₫\"\u001b[39m\nTimeout:  3000ms\n\nCall log:\n\u001b[2m  - Expect \"soft toHaveText\" with timeout 3000ms\u001b[22m\n\u001b[2m  - waiting for getByText(/^Thành tiền:/)\u001b[22m\n\u001b[2m    10 × locator resolved to <p>…</p>\u001b[22m\n\u001b[2m       - unexpected value \"Thành tiền: 3,000,010 ₫\"\u001b[22m\n\n\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n> 39 |    await expect.soft(shop.ui.saving).toHaveText(`Tiết kiệm: ${saving} ₫`);await expect.soft(shop.ui.final).toHaveText(`Thành tiền: ${final} ₫`);\n     |                                                                                                            ^\n  40 |   }\n  41 |  }\n  42 | });\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:39:108"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                        "column": 62,
+                        "line": 35
+                      },
+                      "message": "Error: BIGBUY at total 500000\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m200\u001b[39m\nReceived: \u001b[31m400\u001b[39m\n\n  33 |   const mismatch=result.status!==200||!Number.isFinite(result.body.discount_amount)||!Number.isFinite(result.body.final_amount)||Math.abs(result.body.discount_amount-v.discount)>0.001||Math.abs(result.body.final_amount-expectedFinal)>0.001;\n  34 |   await capture(info,page,`valid-${v.code}-${v.total}`,{input:v,expectedFinal,result},mismatch);\n> 35 |   expect.soft(result.status,`${v.code} at total ${v.total}`).toBe(200);\n     |                                                              ^\n  36 |   if(result.status===200){\n  37 |    expect.soft(result.body.discount_amount).toBeCloseTo(v.discount,2);expect.soft(result.body.final_amount).toBeCloseTo(expectedFinal,2);\n  38 |    const saving=await page.evaluate(n=>n.toLocaleString(),v.discount),final=await page.evaluate(n=>n.toLocaleString(),expectedFinal);\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:35:62"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T13:11:47.458Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "valid-SAVE10-300000",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbnB1dCI6IHsKICAgICJjb2RlIjogIlNBVkUxMCIsCiAgICAidG90YWwiOiAzMDAwMDAsCiAgICAiZGlzY291bnQiOiAzMDAwMAogIH0sCiAgImV4cGVjdGVkRmluYWwiOiAyNzAwMDAsCiAgInJlc3VsdCI6IHsKICAgICJzdGF0dXMiOiA0MDAsCiAgICAiYm9keSI6IHsKICAgICAgImVycm9yIjogIsSQxqFuIGjDoG5nIGNoxrBhIMSR4bunIGdpw6EgdHLhu4sgdOG7kWkgdGhp4buDdSAzMDAsMDAwIOKCqyDEkeG7gyDDoXAgZOG7pW5nIG3DoyBuw6B5IgogICAgfQogIH0sCiAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo0OC4yMDJaIgp9"
+                    },
+                    {
+                      "name": "failed-vector-screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-0d015817badeeee5a9e5bedfbb0905c914d34728.png"
+                    },
+                    {
+                      "name": "valid-SAVE10-300001",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbnB1dCI6IHsKICAgICJjb2RlIjogIlNBVkUxMCIsCiAgICAidG90YWwiOiAzMDAwMDEsCiAgICAiZGlzY291bnQiOiAzMDAwMC4xCiAgfSwKICAiZXhwZWN0ZWRGaW5hbCI6IDI3MDAwMC45LAogICJyZXN1bHQiOiB7CiAgICAic3RhdHVzIjogMjAwLAogICAgImJvZHkiOiB7CiAgICAgICJzdWNjZXNzIjogdHJ1ZSwKICAgICAgImNvdXBvbl9pZCI6IDEsCiAgICAgICJkaXNjb3VudF9hbW91bnQiOiAtMjcwMDAwOSwKICAgICAgImZpbmFsX2Ftb3VudCI6IDMwMDAwMTAsCiAgICAgICJtZXNzYWdlIjogIsOBcCBk4bulbmcgdGjDoG5oIGPDtG5nISBHaeG6o20gMTAlIgogICAgfQogIH0sCiAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo0OC42MzBaIgp9"
+                    },
+                    {
+                      "name": "failed-vector-screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-a50d0edcce7ebe355541d3a8cd16c95c1a28f672.png"
+                    },
+                    {
+                      "name": "valid-BIGBUY-500000",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbnB1dCI6IHsKICAgICJjb2RlIjogIkJJR0JVWSIsCiAgICAidG90YWwiOiA1MDAwMDAsCiAgICAiZGlzY291bnQiOiA1MDAwMAogIH0sCiAgImV4cGVjdGVkRmluYWwiOiA0NTAwMDAsCiAgInJlc3VsdCI6IHsKICAgICJzdGF0dXMiOiA0MDAsCiAgICAiYm9keSI6IHsKICAgICAgImVycm9yIjogIsSQxqFuIGjDoG5nIGNoxrBhIMSR4bunIGdpw6EgdHLhu4sgdOG7kWkgdGhp4buDdSA1MDAsMDAwIOKCqyDEkeG7gyDDoXAgZOG7pW5nIG3DoyBuw6B5IgogICAgfQogIH0sCiAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo1NS4xNDlaIgp9"
+                    },
+                    {
+                      "name": "failed-vector-screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/attachments/failed-vector-screenshot-5d7984ac573e42fcf396dc3b3949ca17bfddad2a.png"
+                    },
+                    {
+                      "name": "valid-BIGBUY-500001",
+                      "contentType": "application/json",
+                      "body": "ewogICJpbnB1dCI6IHsKICAgICJjb2RlIjogIkJJR0JVWSIsCiAgICAidG90YWwiOiA1MDAwMDEsCiAgICAiZGlzY291bnQiOiA1MDAwMAogIH0sCiAgImV4cGVjdGVkRmluYWwiOiA0NTAwMDEsCiAgInJlc3VsdCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgInN1Y2Nlc3MiOiB0cnVlLAogICAgICAiY291cG9uX2lkIjogMiwKICAgICAgImRpc2NvdW50X2Ftb3VudCI6IDUwMDAwLAogICAgICAiZmluYWxfYW1vdW50IjogNDUwMDAxLAogICAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgICB9CiAgfSwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU1LjU1MFoiCn0="
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUItMDA1IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU1LjYyMFoiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2NoZWNrb3V0IiwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDgwMAogIH0sCiAgImJyb3dzZXIiOiAiMTU1LjAuNDI4My40NSIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wXG5HaeG7jyBow6BuZ1xuQ2jDoG8sIEhXMDMgQ291cG9uIFVJXG5UaG/DoXRcbljDoWMgTmjhuq1uIMSQxqFuIEjDoG5nXG5T4bqjbiBwaOG6qW06XG5UMUJfVDFCXzIwMjYxMTEwXzAxXzM4MmE1NDcxMThfMyB4IDEg4oCUIDUwMCwwMDEg4oKrXG5U4buVbmcgdGnhu4FuIHRoYW5oIHRvw6FuIChWTkQpOlxuTcOjIEdp4bqjbSBHacOhXG7DgXAgZOG7pW5nXG5cbuKchSDDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqtcblxuVGnhur90IGtp4buHbTogNTAsMDAwIOKCq1xuXG5UaMOgbmggdGnhu4FuOiA0NTAsMDAxIOKCq1xuXG5U4buVbmcgdGhhbmggdG/DoW46IDQ1MCwwMDEg4oKrXG5Yw6FjIE5o4bqtbiBUaGFuaCBUb8OhblxuwqkgMjAyNiBFU2hvcCBTVVQuIETDoG5oIGNobyBt4bulYyDEkcOtY2gga2nhu4NtIHRo4butLiIsCiAgImV2ZW50cyI6IHsKICAgICJyZXF1ZXN0cyI6IFsKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NDguMTk4WiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJTQVZFMTAiLAogICAgICAgICAgInRvdGFsX2Ftb3VudCI6IDMwMDAwMCwKICAgICAgICAgICJ1c2VyX2lkIjogMTUKICAgICAgICB9LAogICAgICAgICJhdXRob3JpemF0aW9uUHJlc2VudCI6IHRydWUKICAgICAgfSwKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NDguNjIzWiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJTQVZFMTAiLAogICAgICAgICAgInRvdGFsX2Ftb3VudCI6IDMwMDAwMSwKICAgICAgICAgICJ1c2VyX2lkIjogMTUKICAgICAgICB9LAogICAgICAgICJhdXRob3JpemF0aW9uUHJlc2VudCI6IHRydWUKICAgICAgfSwKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NTUuMTQxWiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJCSUdCVVkiLAogICAgICAgICAgInRvdGFsX2Ftb3VudCI6IDUwMDAwMCwKICAgICAgICAgICJ1c2VyX2lkIjogMTUKICAgICAgICB9LAogICAgICAgICJhdXRob3JpemF0aW9uUHJlc2VudCI6IHRydWUKICAgICAgfSwKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NTUuNTM3WiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJCSUdCVVkiLAogICAgICAgICAgInRvdGFsX2Ftb3VudCI6IDUwMDAwMSwKICAgICAgICAgICJ1c2VyX2lkIjogMTUKICAgICAgICB9LAogICAgICAgICJhdXRob3JpemF0aW9uUHJlc2VudCI6IHRydWUKICAgICAgfQogICAgXSwKICAgICJyZXNwb25zZXMiOiBbCiAgICAgIHsKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjQ4LjE5OVoiLAogICAgICAgICJzdGF0dXMiOiA0MDAsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAixJDGoW4gaMOgbmcgY2jGsGEgxJHhu6cgZ2nDoSB0cuG7iyB04buRaSB0aGnhu4N1IDMwMCwwMDAg4oKrIMSR4buDIMOhcCBk4bulbmcgbcOjIG7DoHkiCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo0OC42MjlaIiwKICAgICAgICAic3RhdHVzIjogMjAwLAogICAgICAgICJib2R5IjogewogICAgICAgICAgInN1Y2Nlc3MiOiB0cnVlLAogICAgICAgICAgImNvdXBvbl9pZCI6IDEsCiAgICAgICAgICAiZGlzY291bnRfYW1vdW50IjogLTI3MDAwMDksCiAgICAgICAgICAiZmluYWxfYW1vdW50IjogMzAwMDAxMCwKICAgICAgICAgICJtZXNzYWdlIjogIsOBcCBk4bulbmcgdGjDoG5oIGPDtG5nISBHaeG6o20gMTAlIgogICAgICAgIH0KICAgICAgfSwKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NTUuMTQ1WiIsCiAgICAgICAgInN0YXR1cyI6IDQwMCwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJlcnJvciI6ICLEkMahbiBow6BuZyBjaMawYSDEkeG7pyBnacOhIHRy4buLIHThu5FpIHRoaeG7g3UgNTAwLDAwMCDigqsgxJHhu4Mgw6FwIGThu6VuZyBtw6MgbsOgeSIKICAgICAgICB9CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU1LjU0NloiLAogICAgICAgICJzdGF0dXMiOiAyMDAsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAic3VjY2VzcyI6IHRydWUsCiAgICAgICAgICAiY291cG9uX2lkIjogMiwKICAgICAgICAgICJkaXNjb3VudF9hbW91bnQiOiA1MDAwMCwKICAgICAgICAgICJmaW5hbF9hbW91bnQiOiA0NTAwMDEsCiAgICAgICAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgICAgICAgfQogICAgICB9CiAgICBdLAogICAgImZhdWx0cyI6IFtdLAogICAgImZpeHR1cmVzIjogW10KICB9Cn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-005-val-e30a5--and-fixed-boundary-results/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                    "column": 62,
+                    "line": 35
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1168db6a7884d9a1e991-4870e394df382a547118",
+          "file": "apply-coupon.spec.mjs",
+          "line": 29,
+          "column": 1
+        },
+        {
+          "title": "GUI-B-006: C1-C5 invalid eligibility and usage boundaries",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 4080,
+                  "error": {
+                    "message": "Error: missing-auth\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m",
+                    "stack": "Error: missing-auth\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:57:32",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                      "column": 32,
+                      "line": 57
+                    },
+                    "snippet": "  55 |   const result=await shop.ui.apply(v.code);const accepted=result.status===200;\n  56 |   await capture(info,page,`eligibility-${v.name}`,{case:v,result,transportFixture:v.name==='expired-jwt'?'signed expired JWT exp=1':null},accepted!==v.accept);\n> 57 |   expect.soft(accepted,v.name).toBe(v.accept);\n     |                                ^\n  58 |   if(!accepted){await expect.soft(shop.ui.error).toBeVisible();await expect.soft(shop.ui.saving).toHaveCount(0);}\n  59 |   else if(v.accept)await expect.soft(shop.ui.saving).toBeVisible();\n  60 |   await page.unroute('**/api/apply-coupon');"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                        "column": 32,
+                        "line": 57
+                      },
+                      "message": "Error: missing-auth\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  55 |   const result=await shop.ui.apply(v.code);const accepted=result.status===200;\n  56 |   await capture(info,page,`eligibility-${v.name}`,{case:v,result,transportFixture:v.name==='expired-jwt'?'signed expired JWT exp=1':null},accepted!==v.accept);\n> 57 |   expect.soft(accepted,v.name).toBe(v.accept);\n     |                                ^\n  58 |   if(!accepted){await expect.soft(shop.ui.error).toBeVisible();await expect.soft(shop.ui.saving).toHaveCount(0);}\n  59 |   else if(v.accept)await expect.soft(shop.ui.saving).toBeVisible();\n  60 |   await page.unroute('**/api/apply-coupon');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:57:32"
+                    },
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                        "column": 32,
+                        "line": 57
+                      },
+                      "message": "Error: expired-jwt\n\n\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mfalse\u001b[39m\nReceived: \u001b[31mtrue\u001b[39m\n\n  55 |   const result=await shop.ui.apply(v.code);const accepted=result.status===200;\n  56 |   await capture(info,page,`eligibility-${v.name}`,{case:v,result,transportFixture:v.name==='expired-jwt'?'signed expired JWT exp=1':null},accepted!==v.accept);\n> 57 |   expect.soft(accepted,v.name).toBe(v.accept);\n     |                                ^\n  58 |   if(!accepted){await expect.soft(shop.ui.error).toBeVisible();await expect.soft(shop.ui.saving).toHaveCount(0);}\n  59 |   else if(v.accept)await expect.soft(shop.ui.saving).toBeVisible();\n  60 |   await page.unroute('**/api/apply-coupon');\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs:57:32"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [
+                    {
+                      "buffer": ""
+                    }
+                  ],
+                  "retry": 0,
+                  "startTime": "2026-11-10T13:11:56.020Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "eligibility-nonexistent",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlIjogewogICAgIm5hbWUiOiAibm9uZXhpc3RlbnQiLAogICAgImNvZGUiOiAiTk9ORV9UMUJfMjAyNjExMTBfMDEiLAogICAgInRvdGFsIjogNTAwMDAxLAogICAgImFjY2VwdCI6IGZhbHNlCiAgfSwKICAicmVzdWx0IjogewogICAgInN0YXR1cyI6IDQwNCwKICAgICJib2R5IjogewogICAgICAiZXJyb3IiOiAiTcOjIGdp4bqjbSBnacOhIGtow7RuZyB04buTbiB04bqhaSBob+G6t2MgxJHDoyBi4buLIHbDtCBoaeG7h3UgaMOzYSIKICAgIH0KICB9LAogICJ0cmFuc3BvcnRGaXh0dXJlIjogbnVsbCwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU3LjAxNloiCn0="
+                    },
+                    {
+                      "name": "eligibility-inactive",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlIjogewogICAgIm5hbWUiOiAiaW5hY3RpdmUiLAogICAgImNvZGUiOiAiVDFfVDFCXzIwMjYxMTEwXzAxXzM2QkYwQzM3XzAiLAogICAgInRvdGFsIjogNTAwMDAxLAogICAgImFjY2VwdCI6IGZhbHNlCiAgfSwKICAicmVzdWx0IjogewogICAgInN0YXR1cyI6IDQwNCwKICAgICJib2R5IjogewogICAgICAiZXJyb3IiOiAiTcOjIGdp4bqjbSBnacOhIGtow7RuZyB04buTbiB04bqhaSBob+G6t2MgxJHDoyBi4buLIHbDtCBoaeG7h3UgaMOzYSIKICAgIH0KICB9LAogICJ0cmFuc3BvcnRGaXh0dXJlIjogbnVsbCwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU3LjQyNFoiCn0="
+                    },
+                    {
+                      "name": "eligibility-expired",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlIjogewogICAgIm5hbWUiOiAiZXhwaXJlZCIsCiAgICAiY29kZSI6ICJFWFBJUkVEIiwKICAgICJ0b3RhbCI6IDUwMDAwMSwKICAgICJhY2NlcHQiOiBmYWxzZQogIH0sCiAgInJlc3VsdCI6IHsKICAgICJzdGF0dXMiOiA0MDAsCiAgICAiYm9keSI6IHsKICAgICAgImVycm9yIjogIk3DoyBnaeG6o20gZ2nDoSDEkcOjIGjhur90IGjhuqFuIgogICAgfQogIH0sCiAgInRyYW5zcG9ydEZpeHR1cmUiOiBudWxsLAogICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NTcuNzk4WiIKfQ=="
+                    },
+                    {
+                      "name": "eligibility-below-minimum",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlIjogewogICAgIm5hbWUiOiAiYmVsb3ctbWluaW11bSIsCiAgICAiY29kZSI6ICJTQVZFMTAiLAogICAgInRvdGFsIjogMjk5OTk5LAogICAgImFjY2VwdCI6IGZhbHNlCiAgfSwKICAicmVzdWx0IjogewogICAgInN0YXR1cyI6IDQwMCwKICAgICJib2R5IjogewogICAgICAiZXJyb3IiOiAixJDGoW4gaMOgbmcgY2jGsGEgxJHhu6cgZ2nDoSB0cuG7iyB04buRaSB0aGnhu4N1IDMwMCwwMDAg4oKrIMSR4buDIMOhcCBk4bulbmcgbcOjIG7DoHkiCiAgICB9CiAgfSwKICAidHJhbnNwb3J0Rml4dHVyZSI6IG51bGwsCiAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo1OC4xOTJaIgp9"
+                    },
+                    {
+                      "name": "eligibility-usage-1-limit-2",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlIjogewogICAgIm5hbWUiOiAidXNhZ2UtMS1saW1pdC0yIiwKICAgICJjb2RlIjogIlQxX1QxQl8yMDI2MTExMF8wMV8zNkJGMEMzN18xIiwKICAgICJ0b3RhbCI6IDUwMDAwMSwKICAgICJhY2NlcHQiOiB0cnVlCiAgfSwKICAicmVzdWx0IjogewogICAgInN0YXR1cyI6IDIwMCwKICAgICJib2R5IjogewogICAgICAic3VjY2VzcyI6IHRydWUsCiAgICAgICJjb3Vwb25faWQiOiAzNCwKICAgICAgImRpc2NvdW50X2Ftb3VudCI6IDUwMDAwLAogICAgICAiZmluYWxfYW1vdW50IjogNDUwMDAxLAogICAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgICB9CiAgfSwKICAidHJhbnNwb3J0Rml4dHVyZSI6IG51bGwsCiAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo1OC41MzJaIgp9"
+                    },
+                    {
+                      "name": "eligibility-usage-2-limit-2",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlIjogewogICAgIm5hbWUiOiAidXNhZ2UtMi1saW1pdC0yIiwKICAgICJjb2RlIjogIlQxX1QxQl8yMDI2MTExMF8wMV8zNkJGMEMzN18yIiwKICAgICJ0b3RhbCI6IDUwMDAwMSwKICAgICJhY2NlcHQiOiBmYWxzZQogIH0sCiAgInJlc3VsdCI6IHsKICAgICJzdGF0dXMiOiA0MDAsCiAgICAiYm9keSI6IHsKICAgICAgImVycm9yIjogIkLhuqFuIMSRw6Mgc+G7rSBk4bulbmcgbcOjIG7DoHkgMiBs4bqnbiAoxJHDoyDEkeG6oXQgZ2nhu5tpIGjhuqFuKSIKICAgIH0KICB9LAogICJ0cmFuc3BvcnRGaXh0dXJlIjogbnVsbCwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU4LjkzMFoiCn0="
+                    },
+                    {
+                      "name": "eligibility-usage-3-limit-2",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlIjogewogICAgIm5hbWUiOiAidXNhZ2UtMy1saW1pdC0yIiwKICAgICJjb2RlIjogIlQxX1QxQl8yMDI2MTExMF8wMV8zNkJGMEMzN18zIiwKICAgICJ0b3RhbCI6IDUwMDAwMSwKICAgICJhY2NlcHQiOiBmYWxzZQogIH0sCiAgInJlc3VsdCI6IHsKICAgICJzdGF0dXMiOiA0MDAsCiAgICAiYm9keSI6IHsKICAgICAgImVycm9yIjogIkLhuqFuIMSRw6Mgc+G7rSBk4bulbmcgbcOjIG7DoHkgMiBs4bqnbiAoxJHDoyDEkeG6oXQgZ2nhu5tpIGjhuqFuKSIKICAgIH0KICB9LAogICJ0cmFuc3BvcnRGaXh0dXJlIjogbnVsbCwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU5LjI4MFoiCn0="
+                    },
+                    {
+                      "name": "eligibility-missing-auth",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlIjogewogICAgIm5hbWUiOiAibWlzc2luZy1hdXRoIiwKICAgICJjb2RlIjogIlQxX1QxQl8yMDI2MTExMF8wMV8zNkJGMEMzN180IiwKICAgICJ0b3RhbCI6IDUwMDAwMSwKICAgICJhY2NlcHQiOiBmYWxzZQogIH0sCiAgInJlc3VsdCI6IHsKICAgICJzdGF0dXMiOiAyMDAsCiAgICAiYm9keSI6IHsKICAgICAgInN1Y2Nlc3MiOiB0cnVlLAogICAgICAiY291cG9uX2lkIjogMzcsCiAgICAgICJkaXNjb3VudF9hbW91bnQiOiA1MDAwMCwKICAgICAgImZpbmFsX2Ftb3VudCI6IDQ1MDAwMSwKICAgICAgIm1lc3NhZ2UiOiAiw4FwIGThu6VuZyB0aMOgbmggY8O0bmchIEdp4bqjbSA1MCwwMDAg4oKrIgogICAgfQogIH0sCiAgInRyYW5zcG9ydEZpeHR1cmUiOiBudWxsLAogICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NTkuNzE1WiIKfQ=="
+                    },
+                    {
+                      "name": "failed-vector-screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/attachments/failed-vector-screenshot-5351da4399293cf06c598167d8e8dcfc51dc5fa4.png"
+                    },
+                    {
+                      "name": "eligibility-expired-jwt",
+                      "contentType": "application/json",
+                      "body": "ewogICJjYXNlIjogewogICAgIm5hbWUiOiAiZXhwaXJlZC1qd3QiLAogICAgImNvZGUiOiAiVDFfVDFCXzIwMjYxMTEwXzAxXzM2QkYwQzM3XzQiLAogICAgInRvdGFsIjogNTAwMDAxLAogICAgImFjY2VwdCI6IGZhbHNlCiAgfSwKICAicmVzdWx0IjogewogICAgInN0YXR1cyI6IDIwMCwKICAgICJib2R5IjogewogICAgICAic3VjY2VzcyI6IHRydWUsCiAgICAgICJjb3Vwb25faWQiOiAzNywKICAgICAgImRpc2NvdW50X2Ftb3VudCI6IDUwMDAwLAogICAgICAiZmluYWxfYW1vdW50IjogNDUwMDAxLAogICAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgICB9CiAgfSwKICAidHJhbnNwb3J0Rml4dHVyZSI6ICJzaWduZWQgZXhwaXJlZCBKV1QgZXhwPTEiLAogICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTI6MDAuMTM4WiIKfQ=="
+                    },
+                    {
+                      "name": "failed-vector-screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/attachments/failed-vector-screenshot-6c07a590cc1aafd7749208a986aa3d6d76759513.png"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/test-failed-1.png"
+                    },
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUItMDA2IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjEyOjAwLjIwM1oiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2NoZWNrb3V0IiwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDgwMAogIH0sCiAgImJyb3dzZXIiOiAiMTU1LjAuNDI4My40NSIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wXG5HaeG7jyBow6BuZ1xuQ2jDoG8sIEhXMDMgQ291cG9uIFVJXG5UaG/DoXRcbljDoWMgTmjhuq1uIMSQxqFuIEjDoG5nXG5T4bqjbiBwaOG6qW06XG5UMUJfVDFCXzIwMjYxMTEwXzAxX2JkMzZiZjBjMzdfOCB4IDEg4oCUIDUwMCwwMDEg4oKrXG5U4buVbmcgdGnhu4FuIHRoYW5oIHRvw6FuIChWTkQpOlxuTcOjIEdp4bqjbSBHacOhXG7DgXAgZOG7pW5nXG5cbuKchSDDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqtcblxuVGnhur90IGtp4buHbTogNTAsMDAwIOKCq1xuXG5UaMOgbmggdGnhu4FuOiA0NTAsMDAxIOKCq1xuXG5U4buVbmcgdGhhbmggdG/DoW46IDQ1MCwwMDEg4oKrXG5Yw6FjIE5o4bqtbiBUaGFuaCBUb8OhblxuwqkgMjAyNiBFU2hvcCBTVVQuIETDoG5oIGNobyBt4bulYyDEkcOtY2gga2nhu4NtIHRo4butLiIsCiAgImV2ZW50cyI6IHsKICAgICJyZXF1ZXN0cyI6IFsKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NTcuMDA3WiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJOT05FX1QxQl8yMDI2MTExMF8wMSIsCiAgICAgICAgICAidG90YWxfYW1vdW50IjogNTAwMDAxLAogICAgICAgICAgInVzZXJfaWQiOiAxNgogICAgICAgIH0sCiAgICAgICAgImF1dGhvcml6YXRpb25QcmVzZW50IjogdHJ1ZQogICAgICB9LAogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo1Ny40MDVaIiwKICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICJjb2RlIjogIlQxX1QxQl8yMDI2MTExMF8wMV8zNkJGMEMzN18wIiwKICAgICAgICAgICJ0b3RhbF9hbW91bnQiOiA1MDAwMDEsCiAgICAgICAgICAidXNlcl9pZCI6IDE2CiAgICAgICAgfSwKICAgICAgICAiYXV0aG9yaXphdGlvblByZXNlbnQiOiB0cnVlCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU3Ljc4OVoiLAogICAgICAgICJkYXRhIjogewogICAgICAgICAgImNvZGUiOiAiRVhQSVJFRCIsCiAgICAgICAgICAidG90YWxfYW1vdW50IjogNTAwMDAxLAogICAgICAgICAgInVzZXJfaWQiOiAxNgogICAgICAgIH0sCiAgICAgICAgImF1dGhvcml6YXRpb25QcmVzZW50IjogdHJ1ZQogICAgICB9LAogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo1OC4xNjhaIiwKICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICJjb2RlIjogIlNBVkUxMCIsCiAgICAgICAgICAidG90YWxfYW1vdW50IjogMjk5OTk5LAogICAgICAgICAgInVzZXJfaWQiOiAxNgogICAgICAgIH0sCiAgICAgICAgImF1dGhvcml6YXRpb25QcmVzZW50IjogdHJ1ZQogICAgICB9LAogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo1OC41MjVaIiwKICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICJjb2RlIjogIlQxX1QxQl8yMDI2MTExMF8wMV8zNkJGMEMzN18xIiwKICAgICAgICAgICJ0b3RhbF9hbW91bnQiOiA1MDAwMDEsCiAgICAgICAgICAidXNlcl9pZCI6IDE2CiAgICAgICAgfSwKICAgICAgICAiYXV0aG9yaXphdGlvblByZXNlbnQiOiB0cnVlCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU4LjkyM1oiLAogICAgICAgICJkYXRhIjogewogICAgICAgICAgImNvZGUiOiAiVDFfVDFCXzIwMjYxMTEwXzAxXzM2QkYwQzM3XzIiLAogICAgICAgICAgInRvdGFsX2Ftb3VudCI6IDUwMDAwMSwKICAgICAgICAgICJ1c2VyX2lkIjogMTYKICAgICAgICB9LAogICAgICAgICJhdXRob3JpemF0aW9uUHJlc2VudCI6IHRydWUKICAgICAgfSwKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NTkuMjcyWiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJUMV9UMUJfMjAyNjExMTBfMDFfMzZCRjBDMzdfMyIsCiAgICAgICAgICAidG90YWxfYW1vdW50IjogNTAwMDAxLAogICAgICAgICAgInVzZXJfaWQiOiAxNgogICAgICAgIH0sCiAgICAgICAgImF1dGhvcml6YXRpb25QcmVzZW50IjogdHJ1ZQogICAgICB9LAogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo1OS43MDRaIiwKICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICJjb2RlIjogIlQxX1QxQl8yMDI2MTExMF8wMV8zNkJGMEMzN180IiwKICAgICAgICAgICJ0b3RhbF9hbW91bnQiOiA1MDAwMDEsCiAgICAgICAgICAidXNlcl9pZCI6IG51bGwKICAgICAgICB9LAogICAgICAgICJhdXRob3JpemF0aW9uUHJlc2VudCI6IGZhbHNlCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjEyOjAwLjEzMVoiLAogICAgICAgICJkYXRhIjogewogICAgICAgICAgImNvZGUiOiAiVDFfVDFCXzIwMjYxMTEwXzAxXzM2QkYwQzM3XzQiLAogICAgICAgICAgInRvdGFsX2Ftb3VudCI6IDUwMDAwMSwKICAgICAgICAgICJ1c2VyX2lkIjogMTYKICAgICAgICB9LAogICAgICAgICJhdXRob3JpemF0aW9uUHJlc2VudCI6IHRydWUKICAgICAgfQogICAgXSwKICAgICJyZXNwb25zZXMiOiBbCiAgICAgIHsKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU3LjAxMVoiLAogICAgICAgICJzdGF0dXMiOiA0MDQsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiTcOjIGdp4bqjbSBnacOhIGtow7RuZyB04buTbiB04bqhaSBob+G6t2MgxJHDoyBi4buLIHbDtCBoaeG7h3UgaMOzYSIKICAgICAgICB9CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU3LjQxMloiLAogICAgICAgICJzdGF0dXMiOiA0MDQsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiTcOjIGdp4bqjbSBnacOhIGtow7RuZyB04buTbiB04bqhaSBob+G6t2MgxJHDoyBi4buLIHbDtCBoaeG7h3UgaMOzYSIKICAgICAgICB9CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU3Ljc5NFoiLAogICAgICAgICJzdGF0dXMiOiA0MDAsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiTcOjIGdp4bqjbSBnacOhIMSRw6MgaOG6v3QgaOG6oW4iCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo1OC4xNzlaIiwKICAgICAgICAic3RhdHVzIjogNDAwLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIsSQxqFuIGjDoG5nIGNoxrBhIMSR4bunIGdpw6EgdHLhu4sgdOG7kWkgdGhp4buDdSAzMDAsMDAwIOKCqyDEkeG7gyDDoXAgZOG7pW5nIG3DoyBuw6B5IgogICAgICAgIH0KICAgICAgfSwKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NTguNTI4WiIsCiAgICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJzdWNjZXNzIjogdHJ1ZSwKICAgICAgICAgICJjb3Vwb25faWQiOiAzNCwKICAgICAgICAgICJkaXNjb3VudF9hbW91bnQiOiA1MDAwMCwKICAgICAgICAgICJmaW5hbF9hbW91bnQiOiA0NTAwMDEsCiAgICAgICAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMTo1OC45MjhaIiwKICAgICAgICAic3RhdHVzIjogNDAwLAogICAgICAgICJib2R5IjogewogICAgICAgICAgImVycm9yIjogIkLhuqFuIMSRw6Mgc+G7rSBk4bulbmcgbcOjIG7DoHkgMiBs4bqnbiAoxJHDoyDEkeG6oXQgZ2nhu5tpIGjhuqFuKSIKICAgICAgICB9CiAgICAgIH0sCiAgICAgIHsKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjExOjU5LjI3OFoiLAogICAgICAgICJzdGF0dXMiOiA0MDAsCiAgICAgICAgImJvZHkiOiB7CiAgICAgICAgICAiZXJyb3IiOiAiQuG6oW4gxJHDoyBz4butIGThu6VuZyBtw6MgbsOgeSAyIGzhuqduICjEkcOjIMSR4bqhdCBnaeG7m2kgaOG6oW4pIgogICAgICAgIH0KICAgICAgfSwKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTE6NTkuNzEyWiIsCiAgICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJzdWNjZXNzIjogdHJ1ZSwKICAgICAgICAgICJjb3Vwb25faWQiOiAzNywKICAgICAgICAgICJkaXNjb3VudF9hbW91bnQiOiA1MDAwMCwKICAgICAgICAgICJmaW5hbF9hbW91bnQiOiA0NTAwMDEsCiAgICAgICAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMjowMC4xMzdaIiwKICAgICAgICAic3RhdHVzIjogMjAwLAogICAgICAgICJib2R5IjogewogICAgICAgICAgInN1Y2Nlc3MiOiB0cnVlLAogICAgICAgICAgImNvdXBvbl9pZCI6IDM3LAogICAgICAgICAgImRpc2NvdW50X2Ftb3VudCI6IDUwMDAwLAogICAgICAgICAgImZpbmFsX2Ftb3VudCI6IDQ1MDAwMSwKICAgICAgICAgICJtZXNzYWdlIjogIsOBcCBk4bulbmcgdGjDoG5oIGPDtG5nISBHaeG6o20gNTAsMDAwIOKCqyIKICAgICAgICB9CiAgICAgIH0KICAgIF0sCiAgICAiZmF1bHRzIjogW10sCiAgICAiZml4dHVyZXMiOiBbCiAgICAgIHsKICAgICAgICAibW9kZSI6ICJFeHBpcmVkIEpXVCB0cmFuc3BvcnQgZml4dHVyZSIsCiAgICAgICAgImV4cCI6IDEsCiAgICAgICAgInNjb3BlIjogIk9ubHkgb3V0Z29pbmcgYXBwbHktY291cG9uIEF1dGhvcml6YXRpb24gaGVhZGVyIHJlcGxhY2VkOyByZWFsIGJhY2tlbmQgcmVzcG9uc2UgcmV0YWluZWQiCiAgICAgIH0KICAgIF0KICB9Cn0="
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1B_20261110_01/artifacts/apply-coupon-GUI-B-006-C1--26cc3-bility-and-usage-boundaries/error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests/apply-coupon.spec.mjs",
+                    "column": 32,
+                    "line": 57
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "1168db6a7884d9a1e991-8bb1c762febd36bf0c37",
+          "file": "apply-coupon.spec.mjs",
+          "line": 43,
+          "column": 1
+        },
+        {
+          "title": "GUI-B-007: pending state prevents duplicate apply",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 804,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T13:12:00.626Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUItMDA3IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjEyOjAxLjQ5N1oiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2NoZWNrb3V0IiwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDgwMAogIH0sCiAgImJyb3dzZXIiOiAiMTU1LjAuNDI4My40NSIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wXG5HaeG7jyBow6BuZ1xuQ2jDoG8sIEhXMDMgQ291cG9uIFVJXG5UaG/DoXRcbljDoWMgTmjhuq1uIMSQxqFuIEjDoG5nXG5T4bqjbiBwaOG6qW06XG5UMUJfVDFCXzIwMjYxMTEwXzAxXzY0ODI4ZGZkNTBfMCB4IDEg4oCUIDUwMCwwMDEg4oKrXG5U4buVbmcgdGnhu4FuIHRoYW5oIHRvw6FuIChWTkQpOlxuTcOjIEdp4bqjbSBHacOhXG7DgXAgZOG7pW5nXG5cbuKchSDDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqtcblxuVGnhur90IGtp4buHbTogNTAsMDAwIOKCq1xuXG5UaMOgbmggdGnhu4FuOiA0NTAsMDAxIOKCq1xuXG5U4buVbmcgdGhhbmggdG/DoW46IDQ1MCwwMDEg4oKrXG5Yw6FjIE5o4bqtbiBUaGFuaCBUb8OhblxuwqkgMjAyNiBFU2hvcCBTVVQuIETDoG5oIGNobyBt4bulYyDEkcOtY2gga2nhu4NtIHRo4butLiIsCiAgImV2ZW50cyI6IHsKICAgICJyZXF1ZXN0cyI6IFsKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTI6MDEuNDU5WiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJUMV9UMUJfMjAyNjExMTBfMDFfODI4REZENTBfMCIsCiAgICAgICAgICAidG90YWxfYW1vdW50IjogNTAwMDAxLAogICAgICAgICAgInVzZXJfaWQiOiAxNwogICAgICAgIH0sCiAgICAgICAgImF1dGhvcml6YXRpb25QcmVzZW50IjogdHJ1ZQogICAgICB9CiAgICBdLAogICAgInJlc3BvbnNlcyI6IFsKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTI6MDEuNDc4WiIsCiAgICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJzdWNjZXNzIjogdHJ1ZSwKICAgICAgICAgICJjb3Vwb25faWQiOiAzOCwKICAgICAgICAgICJkaXNjb3VudF9hbW91bnQiOiA1MDAwMCwKICAgICAgICAgICJmaW5hbF9hbW91bnQiOiA0NTAwMDEsCiAgICAgICAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgICAgICAgfQogICAgICB9CiAgICBdLAogICAgImZhdWx0cyI6IFtdLAogICAgImZpeHR1cmVzIjogWwogICAgICB7CiAgICAgICAgIm1vZGUiOiAiSG9sZCByZWFsIGJhY2tlbmQgcmVzcG9uc2UgdW50aWwgcGVuZGluZyBVSSBoYXMgYmVlbiBjaGVja2VkIiwKICAgICAgICAiZmFicmljYXRlZFJlc3BvbnNlIjogZmFsc2UKICAgICAgfQogICAgXQogIH0KfQ=="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1168db6a7884d9a1e991-20c05f64d564828dfd50",
+          "file": "apply-coupon.spec.mjs",
+          "line": 63,
+          "column": 1
+        },
+        {
+          "title": "GUI-B-008: recover after bad code and transport failure",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 794,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T13:12:01.571Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "observed-ui",
+                      "contentType": "application/json",
+                      "body": "ewogICJpdGVtSWQiOiAiR1VJLUItMDA4IiwKICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjEyOjAyLjMyM1oiLAogICJ1cmwiOiAiaHR0cDovL2xvY2FsaG9zdDo1MTczL2NoZWNrb3V0IiwKICAidmlld3BvcnQiOiB7CiAgICAid2lkdGgiOiAxMjgwLAogICAgImhlaWdodCI6IDgwMAogIH0sCiAgImJyb3dzZXIiOiAiMTU1LjAuNDI4My40NSIsCiAgInZpc2libGVUZXh0IjogIkVTaG9wXG5HaeG7jyBow6BuZ1xuQ2jDoG8sIEhXMDMgQ291cG9uIFVJXG5UaG/DoXRcbljDoWMgTmjhuq1uIMSQxqFuIEjDoG5nXG5T4bqjbiBwaOG6qW06XG5UMUJfVDFCXzIwMjYxMTEwXzAxXzBkNTI0OGFmNzNfMCB4IDEg4oCUIDUwMCwwMDEg4oKrXG5U4buVbmcgdGnhu4FuIHRoYW5oIHRvw6FuIChWTkQpOlxuTcOjIEdp4bqjbSBHacOhXG7DgXAgZOG7pW5nXG5cbuKchSDDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqtcblxuVGnhur90IGtp4buHbTogNTAsMDAwIOKCq1xuXG5UaMOgbmggdGnhu4FuOiA0NTAsMDAxIOKCq1xuXG5U4buVbmcgdGhhbmggdG/DoW46IDQ1MCwwMDEg4oKrXG5Yw6FjIE5o4bqtbiBUaGFuaCBUb8OhblxuwqkgMjAyNiBFU2hvcCBTVVQuIETDoG5oIGNobyBt4bulYyDEkcOtY2gga2nhu4NtIHRo4butLiIsCiAgImV2ZW50cyI6IHsKICAgICJyZXF1ZXN0cyI6IFsKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTI6MDIuMTIxWiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJOT05FX1QxQl8yMDI2MTExMF8wMSIsCiAgICAgICAgICAidG90YWxfYW1vdW50IjogNTAwMDAxLAogICAgICAgICAgInVzZXJfaWQiOiAxOAogICAgICAgIH0sCiAgICAgICAgImF1dGhvcml6YXRpb25QcmVzZW50IjogdHJ1ZQogICAgICB9LAogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMjowMi4xOTBaIiwKICAgICAgICAiZGF0YSI6IHsKICAgICAgICAgICJjb2RlIjogIlQxX1QxQl8yMDI2MTExMF8wMV81MjQ4QUY3M18wIiwKICAgICAgICAgICJ0b3RhbF9hbW91bnQiOiA1MDAwMDEsCiAgICAgICAgICAidXNlcl9pZCI6IDE4CiAgICAgICAgfSwKICAgICAgICAiYXV0aG9yaXphdGlvblByZXNlbnQiOiB0cnVlCiAgICAgIH0sCiAgICAgIHsKICAgICAgICAib2JzZXJ2ZWRBdCI6ICIyMDI2LTExLTEwVDEzOjEyOjAyLjI1OFoiLAogICAgICAgICJkYXRhIjogewogICAgICAgICAgImNvZGUiOiAiVDFfVDFCXzIwMjYxMTEwXzAxXzUyNDhBRjczXzAiLAogICAgICAgICAgInRvdGFsX2Ftb3VudCI6IDUwMDAwMSwKICAgICAgICAgICJ1c2VyX2lkIjogMTgKICAgICAgICB9LAogICAgICAgICJhdXRob3JpemF0aW9uUHJlc2VudCI6IHRydWUKICAgICAgfSwKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTI6MDIuMzAxWiIsCiAgICAgICAgImRhdGEiOiB7CiAgICAgICAgICAiY29kZSI6ICJUMV9UMUJfMjAyNjExMTBfMDFfNTI0OEFGNzNfMCIsCiAgICAgICAgICAidG90YWxfYW1vdW50IjogNTAwMDAxLAogICAgICAgICAgInVzZXJfaWQiOiAxOAogICAgICAgIH0sCiAgICAgICAgImF1dGhvcml6YXRpb25QcmVzZW50IjogdHJ1ZQogICAgICB9CiAgICBdLAogICAgInJlc3BvbnNlcyI6IFsKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTI6MDIuMTI4WiIsCiAgICAgICAgInN0YXR1cyI6IDQwNCwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJlcnJvciI6ICJNw6MgZ2nhuqNtIGdpw6Ega2jDtG5nIHThu5NuIHThuqFpIGhv4bq3YyDEkcOjIGLhu4sgdsO0IGhp4buHdSBow7NhIgogICAgICAgIH0KICAgICAgfSwKICAgICAgewogICAgICAgICJvYnNlcnZlZEF0IjogIjIwMjYtMTEtMTBUMTM6MTI6MDIuMTk1WiIsCiAgICAgICAgInN0YXR1cyI6IDIwMCwKICAgICAgICAiYm9keSI6IHsKICAgICAgICAgICJzdWNjZXNzIjogdHJ1ZSwKICAgICAgICAgICJjb3Vwb25faWQiOiAzOSwKICAgICAgICAgICJkaXNjb3VudF9hbW91bnQiOiA1MDAwMCwKICAgICAgICAgICJmaW5hbF9hbW91bnQiOiA0NTAwMDEsCiAgICAgICAgICAibWVzc2FnZSI6ICLDgXAgZOG7pW5nIHRow6BuaCBjw7RuZyEgR2nhuqNtIDUwLDAwMCDigqsiCiAgICAgICAgfQogICAgICB9LAogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMjowMi4zMTJaIiwKICAgICAgICAic3RhdHVzIjogMjAwLAogICAgICAgICJib2R5IjogewogICAgICAgICAgInN1Y2Nlc3MiOiB0cnVlLAogICAgICAgICAgImNvdXBvbl9pZCI6IDM5LAogICAgICAgICAgImRpc2NvdW50X2Ftb3VudCI6IDUwMDAwLAogICAgICAgICAgImZpbmFsX2Ftb3VudCI6IDQ1MDAwMSwKICAgICAgICAgICJtZXNzYWdlIjogIsOBcCBk4bulbmcgdGjDoG5oIGPDtG5nISBHaeG6o20gNTAsMDAwIOKCqyIKICAgICAgICB9CiAgICAgIH0KICAgIF0sCiAgICAiZmF1bHRzIjogWwogICAgICB7CiAgICAgICAgIm9ic2VydmVkQXQiOiAiMjAyNi0xMS0xMFQxMzoxMjowMi4yNjJaIiwKICAgICAgICAiZXJyb3IiOiAibmV0OjpFUlJfRkFJTEVEIgogICAgICB9CiAgICBdLAogICAgImZpeHR1cmVzIjogWwogICAgICB7CiAgICAgICAgIm1vZGUiOiAiVHJhbnNwb3J0IGFib3J0IGZvciBhcHBseS1jb3Vwb24gcmVjb3ZlcnkiCiAgICAgIH0KICAgIF0KICB9Cn0="
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1168db6a7884d9a1e991-6092ab9ca30d5248af73",
+          "file": "apply-coupon.spec.mjs",
+          "line": 73,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T13:11:40.242Z",
+    "duration": 22251.354,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 3,
+    "flaky": 0
+  }
+}
