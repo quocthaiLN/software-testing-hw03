@@ -1,0 +1,1065 @@
+{
+  "config": {
+    "argv": [
+      "/home/le-nguyen-quoc-thai/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/node_modules/playwright/cli.js",
+      "test",
+      "--config",
+      "tools/gui/playwright.config.mjs",
+      "--grep",
+      "GUI-C-"
+    ],
+    "configFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs",
+    "rootDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1C_20261110_01/artifacts",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 65000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/submission/evidence/gui/T1C_20261110_01/playwright-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.62.1",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "coupons.spec.mjs",
+      "file": "coupons.spec.mjs",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GUI-C-001: Vietnamese coupon content",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "failed",
+                  "duration": 0,
+                  "error": {
+                    "message": "Error: Evidence already exists for T1C_20261110_01; choose a new GUI_RUN_ID",
+                    "stack": "Error: Evidence already exists for T1C_20261110_01; choose a new GUI_RUN_ID\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs:10:29",
+                    "location": {
+                      "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs",
+                      "column": 29,
+                      "line": 10
+                    },
+                    "snippet": "\u001b[90m   at \u001b[39m../playwright.config.mjs:10\n\n   8 | if(!run || !/^[A-Za-z0-9_-]+$/.test(run))throw new Error('Set GUI_RUN_ID to a unique run identifier');\n   9 | const output=path.resolve(here,'../../submission/evidence/gui',run);\n> 10 | if(existsSync(output))throw new Error(`Evidence already exists for ${run}; choose a new GUI_RUN_ID`);\n     |                             ^\n  11 | export default defineConfig({\n  12 |   testDir:path.join(here,'tests'),\n  13 |   outputDir:path.join(output,'artifacts'),"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs",
+                        "column": 29,
+                        "line": 10
+                      },
+                      "message": "Error: Evidence already exists for T1C_20261110_01; choose a new GUI_RUN_ID\n\n   at ../playwright.config.mjs:10\n\n   8 | if(!run || !/^[A-Za-z0-9_-]+$/.test(run))throw new Error('Set GUI_RUN_ID to a unique run identifier');\n   9 | const output=path.resolve(here,'../../submission/evidence/gui',run);\n> 10 | if(existsSync(output))throw new Error(`Evidence already exists for ${run}; choose a new GUI_RUN_ID`);\n     |                             ^\n  11 | export default defineConfig({\n  12 |   testDir:path.join(here,'tests'),\n  13 |   outputDir:path.join(output,'artifacts'),\n    at /home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs:10:29"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.207Z",
+                  "annotations": [],
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/home/le-nguyen-quoc-thai/src/school/testing/homework/hw03/tools/gui/playwright.config.mjs",
+                    "column": 29,
+                    "line": 10
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-280b25ffe9750c1a729f",
+          "file": "coupons.spec.mjs",
+          "line": 22,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-002: one descriptive h1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.208Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-b2a75dc132ce0b9248cf",
+          "file": "coupons.spec.mjs",
+          "line": 27,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-003: create blue and delete red",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-a0f0737fb7a3759fb3de",
+          "file": "coupons.spec.mjs",
+          "line": 31,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-004: correct units for percent and fixed",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-160e2557c6e1c3ccc90c",
+          "file": "coupons.spec.mjs",
+          "line": 37,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-005: table values match stored coupon",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-c238d0ac7552a02ca8af",
+          "file": "coupons.spec.mjs",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-006: form does not overlap on resize",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-4efbcb100e6eb4aee36c",
+          "file": "coupons.spec.mjs",
+          "line": 49,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-007: persistent labels and required markers",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-ea8e2495ad5e3e2ad07c",
+          "file": "coupons.spec.mjs",
+          "line": 60,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-008: empty and whitespace code rejected",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-e1731495c0b44595c632",
+          "file": "coupons.spec.mjs",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-009: duplicate code rejected",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-91e29f632a9f098bfa10",
+          "file": "coupons.spec.mjs",
+          "line": 68,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-010: type choices and keyboard selection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-b0f01d44d0123d8eca06",
+          "file": "coupons.spec.mjs",
+          "line": 74,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-011: discount value boundaries",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-6f0e5fb0596722873ffd",
+          "file": "coupons.spec.mjs",
+          "line": 79,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-012: minimum order boundaries",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-a66b8b7cbe0a019f2b15",
+          "file": "coupons.spec.mjs",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-013: uses-per-user boundaries",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-c9a8539bdaff94682dfc",
+          "file": "coupons.spec.mjs",
+          "line": 85,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-014: all mandatory fields reject empty values",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-3116469bce1250195d20",
+          "file": "coupons.spec.mjs",
+          "line": 88,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-015: leap date and invalid date picker values",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-aa08970d14618e8bf865",
+          "file": "coupons.spec.mjs",
+          "line": 91,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-016: discount hint follows type",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-7a83eb2fe9ad4ec53662",
+          "file": "coupons.spec.mjs",
+          "line": 100,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-017: form tab order",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-00ebc73dcd48fb1ac78e",
+          "file": "coupons.spec.mjs",
+          "line": 105,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-018: create using Enter and click",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-c5881f1f8e7f753a5ab7",
+          "file": "coupons.spec.mjs",
+          "line": 113,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-019: coupons tab opens correct screen",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-9a61161d2358f2967117",
+          "file": "coupons.spec.mjs",
+          "line": 116,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-020: active tab highlighted",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-2a0d622a1343d38953bc",
+          "file": "coupons.spec.mjs",
+          "line": 119,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-021: tab reachable by keyboard",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-1b10360dc442465a61aa",
+          "file": "coupons.spec.mjs",
+          "line": 124,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-022: navigating away does not mutate coupon data",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-ceb2fc2730eaa85e6a49",
+          "file": "coupons.spec.mjs",
+          "line": 131,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-023: successful create persists on reload",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-fd336de028eb2d1045ab",
+          "file": "coupons.spec.mjs",
+          "line": 136,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-024: error understandable and above submit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-1dcda04baf57706320a9",
+          "file": "coupons.spec.mjs",
+          "line": 139,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-025: delete can be cancelled or undone",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-bd85e7382bea1702dd57",
+          "file": "coupons.spec.mjs",
+          "line": 145,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-026: delete only target coupon and persist",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-479287efd4fdbb99209c",
+          "file": "coupons.spec.mjs",
+          "line": 160,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-027: empty-state UI using isolated empty API fixture",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.209Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-f4126232a7678949ac2c",
+          "file": "coupons.spec.mjs",
+          "line": 166,
+          "column": 1
+        },
+        {
+          "title": "GUI-C-028: network load error is visible and recoverable",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 65000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": -1,
+                  "parallelIndex": -1,
+                  "status": "skipped",
+                  "duration": 0,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-11-10T12:54:41.210Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "id": "be391c758718cea1f2e6-4aff1298905347a023e9",
+          "file": "coupons.spec.mjs",
+          "line": 172,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-11-10T12:54:40.829Z",
+    "duration": 389.257,
+    "expected": 0,
+    "skipped": 27,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

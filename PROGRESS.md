@@ -58,3 +58,10 @@ Execution environment: Edge headless (Chromium engine 155.0.4283.45), Linux, 128
 Numerical observations from raw attachments: correct-login HTTP statuses after 1/2/3 wrong attempts were 200/403/403 on separate users; lock-duration check still returned 403 after 31,179 ms. These are execution facts, not a bug report drafted for the student. Ten Failed checklist items are not asserted to be ten distinct bugs.
 
 Harness guard was added to refuse reuse of an existing evidence Run ID; verified the CLI refuses `T1A_20261110_01` before starting a browser. Public demo credentials only; browser observations do not store JWT tokens. Office lockfiles and local runtime symlink are excluded from staging; any existing live workbook lockfile is preserved.
+
+## Task 1 — Admin Coupons
+
+| Requirement / step | Status | Outputs / verification evidence | Next action |
+| --- | --- | --- | --- |
+| HW03-T1-04 step C1 — Admin harness | done | Added CouponsPage, isolated admin fixtures and 28 ID-mapped scenarios. Boundary vectors attach actual stored values and extra screenshots for unexpectedly accepted invalid data. C027 uses an explicitly labelled empty API response fixture; C028 uses transport fault injection. Real create/read/delete scenarios use dedicated T1 coupons. Syntax checked. | Run scenarios and classify raw results. |
+| HW03-T1-04 step C2 — launcher correction | done | `T1C_20261110_01` failed at config reload before any browser/test action: output-directory guard rejected its own worker. Raw report preserved, excluded from product Passed/Failed counts. Guard now passes an inherited active-run marker to workers while a fresh CLI still rejects an existing directory. | Use new Run ID `T1C_20261110_02`; verify worker starts and existing-ID refusal still works. |
